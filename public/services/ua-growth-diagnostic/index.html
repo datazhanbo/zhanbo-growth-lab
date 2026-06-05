@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>UA 买量增长数据诊断 | Zanbo Growth Lab</title>
+<meta name="keywords" content="">
+<meta name="description" content="UA 买量增长数据诊断
+UA Growth Data Diagnostic 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 &#43; 买量效率 &#43; 归因链路 &#43; 决策系统」的系统诊断。
+适合团队
+
+  
+      
+          客户类型
+          典型特征
+          主要痛点
+      
+  
+  
+      
+          成长期出海游戏 Studio
+          月消耗已有一定规模，主投 Meta / Google / TikTok / AppLovin 等平台
+          数据散、ROI 不稳、扩量困难
+      
+      
+          中小型休闲游戏发行团队
+          UA 团队 2–10 人，有 MMP 但 BI 能力较弱
+          优化师依赖后台和经验，缺统一看板
+      
+      
+          已有自研 BI 的成熟团队
+          有数据仓和看板，但指标口径复杂
+          老板、UA、BI 对 ROI 口径争议大
+      
+      
+          准备规模化买量的新项目
+          soft launch 或早期 scale 阶段
+          需要先确认 SDK、事件、归因和看板基础是否可靠
+      
+  
+
+要回答的四个问题
+
+数据准不准：媒体后台、MMP、SDK、BI 之间的 spend、install、revenue、ROI 是否一致？
+钱花得好不好：预算是否流向高质量 campaign、GEO、素材和媒体？
+归因链路有没有坑：AppsFlyer / SKAN / SDK / S2S / ad revenue 回传是否导致 ROI 失真？
+团队能否持续决策：是否有日常盯盘、异常告警、action tracking 和复盘机制？
+
+诊断范围
+广告平台与媒体后台
+覆盖 Meta、Google、TikTok、AppLovin、Unity / ironSource、Moloco、Liftoff 等主流买量平台。">
+<meta name="author" content="Zanbo">
+<link rel="canonical" href="http://localhost:1313/services/ua-growth-diagnostic/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a1a1b118b3e83435265dc39da18e54244bcc0e5481d1d034aadc0c899c51e15c.css" integrity="sha256-oaGxGLPoNDUmXcOdoY5UJEvMDlSB0dA0qtwMiZxR4Vw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/services/ua-growth-diagnostic/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/services/ua-growth-diagnostic/">
+  <meta property="og:site_name" content="Zanbo Growth Lab">
+  <meta property="og:title" content="UA 买量增长数据诊断">
+  <meta property="og:description" content="UA 买量增长数据诊断 UA Growth Data Diagnostic 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 &#43; 买量效率 &#43; 归因链路 &#43; 决策系统」的系统诊断。
+适合团队 客户类型 典型特征 主要痛点 成长期出海游戏 Studio 月消耗已有一定规模，主投 Meta / Google / TikTok / AppLovin 等平台 数据散、ROI 不稳、扩量困难 中小型休闲游戏发行团队 UA 团队 2–10 人，有 MMP 但 BI 能力较弱 优化师依赖后台和经验，缺统一看板 已有自研 BI 的成熟团队 有数据仓和看板，但指标口径复杂 老板、UA、BI 对 ROI 口径争议大 准备规模化买量的新项目 soft launch 或早期 scale 阶段 需要先确认 SDK、事件、归因和看板基础是否可靠 要回答的四个问题 数据准不准：媒体后台、MMP、SDK、BI 之间的 spend、install、revenue、ROI 是否一致？ 钱花得好不好：预算是否流向高质量 campaign、GEO、素材和媒体？ 归因链路有没有坑：AppsFlyer / SKAN / SDK / S2S / ad revenue 回传是否导致 ROI 失真？ 团队能否持续决策：是否有日常盯盘、异常告警、action tracking 和复盘机制？ 诊断范围 广告平台与媒体后台 覆盖 Meta、Google、TikTok、AppLovin、Unity / ironSource、Moloco、Liftoff 等主流买量平台。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="services">
+    <meta property="article:published_time" content="2026-06-05T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-06-05T00:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="UA 买量增长数据诊断">
+  <meta name="twitter:description" content="UA 买量增长数据诊断 UA Growth Data Diagnostic 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 &#43; 买量效率 &#43; 归因链路 &#43; 决策系统」的系统诊断。
+适合团队 客户类型 典型特征 主要痛点 成长期出海游戏 Studio 月消耗已有一定规模，主投 Meta / Google / TikTok / AppLovin 等平台 数据散、ROI 不稳、扩量困难 中小型休闲游戏发行团队 UA 团队 2–10 人，有 MMP 但 BI 能力较弱 优化师依赖后台和经验，缺统一看板 已有自研 BI 的成熟团队 有数据仓和看板，但指标口径复杂 老板、UA、BI 对 ROI 口径争议大 准备规模化买量的新项目 soft launch 或早期 scale 阶段 需要先确认 SDK、事件、归因和看板基础是否可靠 要回答的四个问题 数据准不准：媒体后台、MMP、SDK、BI 之间的 spend、install、revenue、ROI 是否一致？ 钱花得好不好：预算是否流向高质量 campaign、GEO、素材和媒体？ 归因链路有没有坑：AppsFlyer / SKAN / SDK / S2S / ad revenue 回传是否导致 ROI 失真？ 团队能否持续决策：是否有日常盯盘、异常告警、action tracking 和复盘机制？ 诊断范围 广告平台与媒体后台 覆盖 Meta、Google、TikTok、AppLovin、Unity / ironSource、Moloco、Liftoff 等主流买量平台。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "UA 买量增长数据诊断",
+      "item": "http://localhost:1313/services/ua-growth-diagnostic/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "UA 买量增长数据诊断",
+  "name": "UA 买量增长数据诊断",
+  "description": "UA 买量增长数据诊断 UA Growth Data Diagnostic 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 + 买量效率 + 归因链路 + 决策系统」的系统诊断。\n适合团队 客户类型 典型特征 主要痛点 成长期出海游戏 Studio 月消耗已有一定规模，主投 Meta / Google / TikTok / AppLovin 等平台 数据散、ROI 不稳、扩量困难 中小型休闲游戏发行团队 UA 团队 2–10 人，有 MMP 但 BI 能力较弱 优化师依赖后台和经验，缺统一看板 已有自研 BI 的成熟团队 有数据仓和看板，但指标口径复杂 老板、UA、BI 对 ROI 口径争议大 准备规模化买量的新项目 soft launch 或早期 scale 阶段 需要先确认 SDK、事件、归因和看板基础是否可靠 要回答的四个问题 数据准不准：媒体后台、MMP、SDK、BI 之间的 spend、install、revenue、ROI 是否一致？ 钱花得好不好：预算是否流向高质量 campaign、GEO、素材和媒体？ 归因链路有没有坑：AppsFlyer / SKAN / SDK / S2S / ad revenue 回传是否导致 ROI 失真？ 团队能否持续决策：是否有日常盯盘、异常告警、action tracking 和复盘机制？ 诊断范围 广告平台与媒体后台 覆盖 Meta、Google、TikTok、AppLovin、Unity / ironSource、Moloco、Liftoff 等主流买量平台。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "UA 买量增长数据诊断 UA Growth Data Diagnostic 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 + 买量效率 + 归因链路 + 决策系统」的系统诊断。\n适合团队 客户类型 典型特征 主要痛点 成长期出海游戏 Studio 月消耗已有一定规模，主投 Meta / Google / TikTok / AppLovin 等平台 数据散、ROI 不稳、扩量困难 中小型休闲游戏发行团队 UA 团队 2–10 人，有 MMP 但 BI 能力较弱 优化师依赖后台和经验，缺统一看板 已有自研 BI 的成熟团队 有数据仓和看板，但指标口径复杂 老板、UA、BI 对 ROI 口径争议大 准备规模化买量的新项目 soft launch 或早期 scale 阶段 需要先确认 SDK、事件、归因和看板基础是否可靠 要回答的四个问题 数据准不准：媒体后台、MMP、SDK、BI 之间的 spend、install、revenue、ROI 是否一致？ 钱花得好不好：预算是否流向高质量 campaign、GEO、素材和媒体？ 归因链路有没有坑：AppsFlyer / SKAN / SDK / S2S / ad revenue 回传是否导致 ROI 失真？ 团队能否持续决策：是否有日常盯盘、异常告警、action tracking 和复盘机制？ 诊断范围 广告平台与媒体后台 覆盖 Meta、Google、TikTok、AppLovin、Unity / ironSource、Moloco、Liftoff 等主流买量平台。\nAccount / BM：账户结构、权限、代理商、币种、时区、充值 Campaign：命名规范、目标、预算、状态、学习期 Ad Set / Ad Group：GEO、版位、人群、出价、优化事件 Creative：素材数量、生命周期、疲劳、挂载关系 Spend：消耗趋势、预算集中度、异常峰值 Action History：调价、暂停、扩量、换素材等操作记录 归因平台 / MMP 以 AppsFlyer 为主，可扩展 Adjust / Singular。\nAttribution：media_source、campaign、adset、ad 映射 Cost：cost import 与媒体后台对账 Cohort：D1 / D3 / D7 / D30 ROI、留存、ARPU SKAN：iOS SKAN 口径、CV schema、延迟 Raw Data：installs、events、revenue、uninstall Data API：Pull API / Push API / Data Locker 游戏 SDK 与事件发送逻辑 这是诊断中最容易被忽视、但最能解释「ROI 不准」的部分。\nSDK 初始化顺序、ATT 时机、媒体 SDK / MMP SDK / 聚合 SDK 协作 Event Taxonomy：install、login、level、purchase、ad_revenue、tutorial IAP revenue、ad revenue、订阅或其他收入回传 S2S 事件去重、重试、延迟和日志 Ad Mediation：MAX / LevelPlay / AdMob / TopOn 自有数据聚合与 BI 看板 数据源：媒体、MMP、变现、游戏内事件 ETL / ELT：更新频率、失败告警、补数机制 Dimension：app、media、campaign、geo、creative、optimizer Metric Contract：spend、revenue、ROI、ROAS、CPI、LTV Dashboard：管理层、UA Lead、优化师分层视图 Governance：owner、变更记录、异常说明 标准流程 Discovery / 业务访谈：确认业务目标、投放规模、数据现状、组织结构和痛点排序。 Read-only 数据授权与诊断快照：建立一次可复跑的数据快照，避免截图和人工导出造成偏差。 UA Diagnostic Data Room：用本地 SQLite / DuckDB 建立诊断数据房间。 四大诊断分析：Data Trust、UA Efficiency、Attribution \u0026 Event Chain、Decision System。 报告与路线图：输出评分、问题清单、Quick Win 和 30/60/90 天路线图。 典型交付物 《诊断范围确认表》 《数据授权与安全边界清单》 《数据可信度评分》 《买量效率评分与浪费 / 机会清单》 《归因缺口表与事件链路图》 《决策系统改进建议》 《30/60/90 天增长系统路线图》 不适合的情况 还没有稳定投放预算，数据量不足 只想外包投放执行 完全不愿提供只读数据授权，只能看截图 只想「做一个 dashboard」，但不愿先梳理指标和决策问题 ",
+  "wordCount" : "225",
+  "inLanguage": "zh",
+  "datePublished": "2026-06-05T00:00:00+08:00",
+  "dateModified": "2026-06-05T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Zanbo"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/services/ua-growth-diagnostic/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zanbo Growth Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zanbo Growth Lab (Alt + H)">Zanbo Growth Lab</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/services/" title="服务">
+                    <span>服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/work/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">主页</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      UA 买量增长数据诊断
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-06-05 00:00:00 +0800 CST'>2026年6月5日</span>&nbsp;·&nbsp;<span>2 分钟</span>&nbsp;·&nbsp;<span>Zanbo</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="ua-买量增长数据诊断">UA 买量增长数据诊断<a hidden class="anchor" aria-hidden="true" href="#ua-买量增长数据诊断">#</a></h1>
+<p><strong>UA Growth Data Diagnostic</strong> 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 + 买量效率 + 归因链路 + 决策系统」的系统诊断。</p>
+<h2 id="适合团队">适合团队<a hidden class="anchor" aria-hidden="true" href="#适合团队">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>客户类型</th>
+          <th>典型特征</th>
+          <th>主要痛点</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>成长期出海游戏 Studio</td>
+          <td>月消耗已有一定规模，主投 Meta / Google / TikTok / AppLovin 等平台</td>
+          <td>数据散、ROI 不稳、扩量困难</td>
+      </tr>
+      <tr>
+          <td>中小型休闲游戏发行团队</td>
+          <td>UA 团队 2–10 人，有 MMP 但 BI 能力较弱</td>
+          <td>优化师依赖后台和经验，缺统一看板</td>
+      </tr>
+      <tr>
+          <td>已有自研 BI 的成熟团队</td>
+          <td>有数据仓和看板，但指标口径复杂</td>
+          <td>老板、UA、BI 对 ROI 口径争议大</td>
+      </tr>
+      <tr>
+          <td>准备规模化买量的新项目</td>
+          <td>soft launch 或早期 scale 阶段</td>
+          <td>需要先确认 SDK、事件、归因和看板基础是否可靠</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="要回答的四个问题">要回答的四个问题<a hidden class="anchor" aria-hidden="true" href="#要回答的四个问题">#</a></h2>
+<ol>
+<li><strong>数据准不准</strong>：媒体后台、MMP、SDK、BI 之间的 spend、install、revenue、ROI 是否一致？</li>
+<li><strong>钱花得好不好</strong>：预算是否流向高质量 campaign、GEO、素材和媒体？</li>
+<li><strong>归因链路有没有坑</strong>：AppsFlyer / SKAN / SDK / S2S / ad revenue 回传是否导致 ROI 失真？</li>
+<li><strong>团队能否持续决策</strong>：是否有日常盯盘、异常告警、action tracking 和复盘机制？</li>
+</ol>
+<h2 id="诊断范围">诊断范围<a hidden class="anchor" aria-hidden="true" href="#诊断范围">#</a></h2>
+<h3 id="广告平台与媒体后台">广告平台与媒体后台<a hidden class="anchor" aria-hidden="true" href="#广告平台与媒体后台">#</a></h3>
+<p>覆盖 Meta、Google、TikTok、AppLovin、Unity / ironSource、Moloco、Liftoff 等主流买量平台。</p>
+<ul>
+<li>Account / BM：账户结构、权限、代理商、币种、时区、充值</li>
+<li>Campaign：命名规范、目标、预算、状态、学习期</li>
+<li>Ad Set / Ad Group：GEO、版位、人群、出价、优化事件</li>
+<li>Creative：素材数量、生命周期、疲劳、挂载关系</li>
+<li>Spend：消耗趋势、预算集中度、异常峰值</li>
+<li>Action History：调价、暂停、扩量、换素材等操作记录</li>
+</ul>
+<h3 id="归因平台--mmp">归因平台 / MMP<a hidden class="anchor" aria-hidden="true" href="#归因平台--mmp">#</a></h3>
+<p>以 AppsFlyer 为主，可扩展 Adjust / Singular。</p>
+<ul>
+<li>Attribution：media_source、campaign、adset、ad 映射</li>
+<li>Cost：cost import 与媒体后台对账</li>
+<li>Cohort：D1 / D3 / D7 / D30 ROI、留存、ARPU</li>
+<li>SKAN：iOS SKAN 口径、CV schema、延迟</li>
+<li>Raw Data：installs、events、revenue、uninstall</li>
+<li>Data API：Pull API / Push API / Data Locker</li>
+</ul>
+<h3 id="游戏-sdk-与事件发送逻辑">游戏 SDK 与事件发送逻辑<a hidden class="anchor" aria-hidden="true" href="#游戏-sdk-与事件发送逻辑">#</a></h3>
+<p>这是诊断中最容易被忽视、但最能解释「ROI 不准」的部分。</p>
+<ul>
+<li>SDK 初始化顺序、ATT 时机、媒体 SDK / MMP SDK / 聚合 SDK 协作</li>
+<li>Event Taxonomy：install、login、level、purchase、ad_revenue、tutorial</li>
+<li>IAP revenue、ad revenue、订阅或其他收入回传</li>
+<li>S2S 事件去重、重试、延迟和日志</li>
+<li>Ad Mediation：MAX / LevelPlay / AdMob / TopOn</li>
+</ul>
+<h3 id="自有数据聚合与-bi-看板">自有数据聚合与 BI 看板<a hidden class="anchor" aria-hidden="true" href="#自有数据聚合与-bi-看板">#</a></h3>
+<ul>
+<li>数据源：媒体、MMP、变现、游戏内事件</li>
+<li>ETL / ELT：更新频率、失败告警、补数机制</li>
+<li>Dimension：app、media、campaign、geo、creative、optimizer</li>
+<li>Metric Contract：spend、revenue、ROI、ROAS、CPI、LTV</li>
+<li>Dashboard：管理层、UA Lead、优化师分层视图</li>
+<li>Governance：owner、变更记录、异常说明</li>
+</ul>
+<h2 id="标准流程">标准流程<a hidden class="anchor" aria-hidden="true" href="#标准流程">#</a></h2>
+<ol>
+<li><strong>Discovery / 业务访谈</strong>：确认业务目标、投放规模、数据现状、组织结构和痛点排序。</li>
+<li><strong>Read-only 数据授权与诊断快照</strong>：建立一次可复跑的数据快照，避免截图和人工导出造成偏差。</li>
+<li><strong>UA Diagnostic Data Room</strong>：用本地 SQLite / DuckDB 建立诊断数据房间。</li>
+<li><strong>四大诊断分析</strong>：Data Trust、UA Efficiency、Attribution &amp; Event Chain、Decision System。</li>
+<li><strong>报告与路线图</strong>：输出评分、问题清单、Quick Win 和 30/60/90 天路线图。</li>
+</ol>
+<h2 id="典型交付物">典型交付物<a hidden class="anchor" aria-hidden="true" href="#典型交付物">#</a></h2>
+<ul>
+<li>《诊断范围确认表》</li>
+<li>《数据授权与安全边界清单》</li>
+<li>《数据可信度评分》</li>
+<li>《买量效率评分与浪费 / 机会清单》</li>
+<li>《归因缺口表与事件链路图》</li>
+<li>《决策系统改进建议》</li>
+<li>《30/60/90 天增长系统路线图》</li>
+</ul>
+<h2 id="不适合的情况">不适合的情况<a hidden class="anchor" aria-hidden="true" href="#不适合的情况">#</a></h2>
+<ul>
+<li>还没有稳定投放预算，数据量不足</li>
+<li>只想外包投放执行</li>
+<li>完全不愿提供只读数据授权，只能看截图</li>
+<li>只想「做一个 dashboard」，但不愿先梳理指标和决策问题</li>
+</ul>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zanbo Growth Lab</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

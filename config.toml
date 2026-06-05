@@ -1,0 +1,111 @@
+baseURL = "https://zanbo.netlify.app/"
+title = "Zanbo Growth Lab"
+languageCode = "zh-CN"
+defaultContentLanguage = "zh"
+theme = "PaperMod"
+enableRobotsTXT = true
+enableEmoji = true
+
+# 分页
+paginate = 10
+paginatePath = "page"
+
+# 永久链接
+[permalinks]
+  posts = "/posts/:title/"
+
+# 启用 Goldmark 渲染钩子（处理图片/链接路径）
+[markup.goldmark.renderHooks.image]
+enableDefault = true
+
+[markup.goldmark.renderHooks.link]
+enableDefault = true
+
+# 可选：启用相对 URL（部署到子目录时用，如 GitHub Pages）
+relativeURLs = true
+canonifyURLs = false
+
+# 菜单
+[menu]
+  [[menu.main]]
+    name = "首页"
+    url = "/"
+    weight = 10
+
+  [[menu.main]]
+    name = "文章"
+    url = "/posts/"
+    weight = 20
+
+  [[menu.main]]
+    name = "分类"
+    url = "/categories/"
+    weight = 30
+
+  [[menu.main]]
+    name = "标签"
+    url = "/tags/"
+    weight = 40
+
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
+    weight = 50
+
+# 站点参数
+[params]
+  author = "Zanbo"
+  description = "增长实验室 - 实验驱动产品增长、买量实现外延增长"
+  keywords = ["博客", "技术", "成长", "编程"]
+
+  # PaperMod 主题配置
+  env = "production"
+  title = "Zanbo Growth Lab"
+  defaultTheme = "auto"
+  disableThemeToggle = false
+  disableAnchoredHeadings = false
+  showReadingTime = true
+  ShowShareButtons = false
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowWordCount = false
+  ShowRssButtonInSectionTermList = true
+  UseHugoToc = true
+
+# 首页配置
+[homeInfoParams]
+  Title = "欢迎来到 Zanbo Growth Lab 👋"
+  Content = "增长实验室 - 实验驱动产品增长、买量实现外延增长。"
+
+# 社交链接
+socialIcons = [
+  { name = "github", url = "https://github.com/datazhanbo" },
+  { name = "rss", url = "index.xml" }
+]
+
+# Giscus 评论系统配置
+[params.giscus]
+  enable = false
+  repo = ""
+  repoId = ""
+  category = "Announcements"
+  categoryId = ""
+  mapping = "pathname"
+  strict = "0"
+  reactionsEnabled = "1"
+  emitMetadata = "0"
+  inputPosition = "bottom"
+  theme = "light"
+  lang = "zh-CN"
+  loading = "lazy"
+
+# 输出格式配置
+[outputs]
+  home = ["HTML", "RSS", "JSON"]
+
+# 作者配置
+[author]
+  name = "Zanbo"
+  email = ""
+  github = "datazhanbo"

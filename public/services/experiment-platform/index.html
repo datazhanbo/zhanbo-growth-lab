@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="zh" dir="auto" data-theme="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>A/B 实验与增长测量体系 | Zanbo Growth Lab</title>
+<meta name="keywords" content="">
+<meta name="description" content="A/B 实验与增长测量体系
+A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。
+我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 AI / Agent 决策是否具备可信反馈闭环。
+适合团队
+
+正在自建或重构 A/B 实验平台
+实验数量上升后，流量冲突、指标争议、统计解释问题变多
+产品、算法、运营团队都在做实验，但缺少统一流程和指标治理
+正在使用 AI 做出价、预算、素材或投放建议，需要确认测量反馈是否可靠
+
+六维诊断框架
+
+  
+      
+          模块
+          诊断对象
+          核心问题
+      
+  
+  
+      
+          流量管理与分流能力
+          分层、分桶、互斥、正交
+          是否支撑实验规模和复杂度
+      
+      
+          实验管理与流程规范
+          创建、审核、发布、回滚、归档
+          是否有完整生命周期管理
+      
+      
+          统计分析引擎能力
+          p-value、置信区间、CUPED、序贯检验
+          结论是否科学可信
+      
+      
+          指标体系健康度
+          北极星指标、护栏指标、长期指标
+          是否避免短期指标误导
+      
+      
+          工程架构与稳定性
+          SDK、配置、日志、容灾
+          是否稳定可靠
+      
+      
+          实验文化与组织效能
+          假设质量、复盘机制、决策习惯
+          是否真正用实验学习
+      
+  
+
+Agent-ready Measurement
+当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：
+
+这个 Agent 得到的反馈信号，是否足够正确、及时、稳定，能让它越学越好，而不是越优化越偏？
+
+重点检查：
+
+目标函数是否清晰：ROAS、LTV、留存、消耗、人效，谁是主目标？
+反馈延迟是否可解释：D1 / D3 / D7 / D30 指标如何进入决策？
+护栏指标是否完整：不能只优化短期 ROI，忽略留存、变现和素材疲劳
+决策日志是否可追溯：Agent 建议了什么，人做了什么，结果如何？
+是否有 holdout 或增量测量：避免把自然增长误判为投放贡献
+
+典型交付物
+
+《实验平台成熟度诊断报告》
+《流量分层与分桶模型建议》
+《实验流程与治理方案》
+《统计分析引擎能力清单》
+《指标体系与护栏指标设计》
+《Agent-ready Measurement 检查清单》
+《实验平台 30/60/90 天改进路线图》
+
+经验背景
+我曾在内容、电商、游戏等业务场景中建设和推广实验体系，覆盖推荐、搜索、广告、产品体验、运营策略等多类实验场景。我的关注点不是把统计术语讲复杂，而是让团队能在日常业务中更稳定地做出正确决策。">
+<meta name="author" content="Zanbo">
+<link rel="canonical" href="http://localhost:1313/services/experiment-platform/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.a1a1b118b3e83435265dc39da18e54244bcc0e5481d1d034aadc0c899c51e15c.css" integrity="sha256-oaGxGLPoNDUmXcOdoY5UJEvMDlSB0dA0qtwMiZxR4Vw=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" hreflang="zh" href="http://localhost:1313/services/experiment-platform/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+                color-scheme: dark;
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .toc {
+                background: var(--entry);
+            }
+        }
+
+    </style>
+</noscript>
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else if (localStorage.getItem("pref-theme") === "light") {
+       document.querySelector("html").dataset.theme = 'light';
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector("html").dataset.theme = 'dark';
+    } else {
+        document.querySelector("html").dataset.theme = 'light';
+    }
+
+</script><meta property="og:url" content="http://localhost:1313/services/experiment-platform/">
+  <meta property="og:site_name" content="Zanbo Growth Lab">
+  <meta property="og:title" content="A/B 实验与增长测量体系">
+  <meta property="og:description" content="A/B 实验与增长测量体系 A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。
+我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 AI / Agent 决策是否具备可信反馈闭环。
+适合团队 正在自建或重构 A/B 实验平台 实验数量上升后，流量冲突、指标争议、统计解释问题变多 产品、算法、运营团队都在做实验，但缺少统一流程和指标治理 正在使用 AI 做出价、预算、素材或投放建议，需要确认测量反馈是否可靠 六维诊断框架 模块 诊断对象 核心问题 流量管理与分流能力 分层、分桶、互斥、正交 是否支撑实验规模和复杂度 实验管理与流程规范 创建、审核、发布、回滚、归档 是否有完整生命周期管理 统计分析引擎能力 p-value、置信区间、CUPED、序贯检验 结论是否科学可信 指标体系健康度 北极星指标、护栏指标、长期指标 是否避免短期指标误导 工程架构与稳定性 SDK、配置、日志、容灾 是否稳定可靠 实验文化与组织效能 假设质量、复盘机制、决策习惯 是否真正用实验学习 Agent-ready Measurement 当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：
+这个 Agent 得到的反馈信号，是否足够正确、及时、稳定，能让它越学越好，而不是越优化越偏？
+重点检查：
+目标函数是否清晰：ROAS、LTV、留存、消耗、人效，谁是主目标？ 反馈延迟是否可解释：D1 / D3 / D7 / D30 指标如何进入决策？ 护栏指标是否完整：不能只优化短期 ROI，忽略留存、变现和素材疲劳 决策日志是否可追溯：Agent 建议了什么，人做了什么，结果如何？ 是否有 holdout 或增量测量：避免把自然增长误判为投放贡献 典型交付物 《实验平台成熟度诊断报告》 《流量分层与分桶模型建议》 《实验流程与治理方案》 《统计分析引擎能力清单》 《指标体系与护栏指标设计》 《Agent-ready Measurement 检查清单》 《实验平台 30/60/90 天改进路线图》 经验背景 我曾在内容、电商、游戏等业务场景中建设和推广实验体系，覆盖推荐、搜索、广告、产品体验、运营策略等多类实验场景。我的关注点不是把统计术语讲复杂，而是让团队能在日常业务中更稳定地做出正确决策。">
+  <meta property="og:locale" content="zh_CN">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="services">
+    <meta property="article:published_time" content="2026-06-05T00:00:00+08:00">
+    <meta property="article:modified_time" content="2026-06-05T00:00:00+08:00">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="A/B 实验与增长测量体系">
+  <meta name="twitter:description" content="A/B 实验与增长测量体系 A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。
+我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 AI / Agent 决策是否具备可信反馈闭环。
+适合团队 正在自建或重构 A/B 实验平台 实验数量上升后，流量冲突、指标争议、统计解释问题变多 产品、算法、运营团队都在做实验，但缺少统一流程和指标治理 正在使用 AI 做出价、预算、素材或投放建议，需要确认测量反馈是否可靠 六维诊断框架 模块 诊断对象 核心问题 流量管理与分流能力 分层、分桶、互斥、正交 是否支撑实验规模和复杂度 实验管理与流程规范 创建、审核、发布、回滚、归档 是否有完整生命周期管理 统计分析引擎能力 p-value、置信区间、CUPED、序贯检验 结论是否科学可信 指标体系健康度 北极星指标、护栏指标、长期指标 是否避免短期指标误导 工程架构与稳定性 SDK、配置、日志、容灾 是否稳定可靠 实验文化与组织效能 假设质量、复盘机制、决策习惯 是否真正用实验学习 Agent-ready Measurement 当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：
+这个 Agent 得到的反馈信号，是否足够正确、及时、稳定，能让它越学越好，而不是越优化越偏？
+重点检查：
+目标函数是否清晰：ROAS、LTV、留存、消耗、人效，谁是主目标？ 反馈延迟是否可解释：D1 / D3 / D7 / D30 指标如何进入决策？ 护栏指标是否完整：不能只优化短期 ROI，忽略留存、变现和素材疲劳 决策日志是否可追溯：Agent 建议了什么，人做了什么，结果如何？ 是否有 holdout 或增量测量：避免把自然增长误判为投放贡献 典型交付物 《实验平台成熟度诊断报告》 《流量分层与分桶模型建议》 《实验流程与治理方案》 《统计分析引擎能力清单》 《指标体系与护栏指标设计》 《Agent-ready Measurement 检查清单》 《实验平台 30/60/90 天改进路线图》 经验背景 我曾在内容、电商、游戏等业务场景中建设和推广实验体系，覆盖推荐、搜索、广告、产品体验、运营策略等多类实验场景。我的关注点不是把统计术语讲复杂，而是让团队能在日常业务中更稳定地做出正确决策。">
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position":  1 ,
+      "name": "A/B 实验与增长测量体系",
+      "item": "http://localhost:1313/services/experiment-platform/"
+    }
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "A/B 实验与增长测量体系",
+  "name": "A\/B 实验与增长测量体系",
+  "description": "A/B 实验与增长测量体系 A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。\n我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 AI / Agent 决策是否具备可信反馈闭环。\n适合团队 正在自建或重构 A/B 实验平台 实验数量上升后，流量冲突、指标争议、统计解释问题变多 产品、算法、运营团队都在做实验，但缺少统一流程和指标治理 正在使用 AI 做出价、预算、素材或投放建议，需要确认测量反馈是否可靠 六维诊断框架 模块 诊断对象 核心问题 流量管理与分流能力 分层、分桶、互斥、正交 是否支撑实验规模和复杂度 实验管理与流程规范 创建、审核、发布、回滚、归档 是否有完整生命周期管理 统计分析引擎能力 p-value、置信区间、CUPED、序贯检验 结论是否科学可信 指标体系健康度 北极星指标、护栏指标、长期指标 是否避免短期指标误导 工程架构与稳定性 SDK、配置、日志、容灾 是否稳定可靠 实验文化与组织效能 假设质量、复盘机制、决策习惯 是否真正用实验学习 Agent-ready Measurement 当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：\n这个 Agent 得到的反馈信号，是否足够正确、及时、稳定，能让它越学越好，而不是越优化越偏？\n重点检查：\n目标函数是否清晰：ROAS、LTV、留存、消耗、人效，谁是主目标？ 反馈延迟是否可解释：D1 / D3 / D7 / D30 指标如何进入决策？ 护栏指标是否完整：不能只优化短期 ROI，忽略留存、变现和素材疲劳 决策日志是否可追溯：Agent 建议了什么，人做了什么，结果如何？ 是否有 holdout 或增量测量：避免把自然增长误判为投放贡献 典型交付物 《实验平台成熟度诊断报告》 《流量分层与分桶模型建议》 《实验流程与治理方案》 《统计分析引擎能力清单》 《指标体系与护栏指标设计》 《Agent-ready Measurement 检查清单》 《实验平台 30/60/90 天改进路线图》 经验背景 我曾在内容、电商、游戏等业务场景中建设和推广实验体系，覆盖推荐、搜索、广告、产品体验、运营策略等多类实验场景。我的关注点不是把统计术语讲复杂，而是让团队能在日常业务中更稳定地做出正确决策。\n",
+  "keywords": [
+    
+  ],
+  "articleBody": "A/B 实验与增长测量体系 A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。\n我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 AI / Agent 决策是否具备可信反馈闭环。\n适合团队 正在自建或重构 A/B 实验平台 实验数量上升后，流量冲突、指标争议、统计解释问题变多 产品、算法、运营团队都在做实验，但缺少统一流程和指标治理 正在使用 AI 做出价、预算、素材或投放建议，需要确认测量反馈是否可靠 六维诊断框架 模块 诊断对象 核心问题 流量管理与分流能力 分层、分桶、互斥、正交 是否支撑实验规模和复杂度 实验管理与流程规范 创建、审核、发布、回滚、归档 是否有完整生命周期管理 统计分析引擎能力 p-value、置信区间、CUPED、序贯检验 结论是否科学可信 指标体系健康度 北极星指标、护栏指标、长期指标 是否避免短期指标误导 工程架构与稳定性 SDK、配置、日志、容灾 是否稳定可靠 实验文化与组织效能 假设质量、复盘机制、决策习惯 是否真正用实验学习 Agent-ready Measurement 当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：\n这个 Agent 得到的反馈信号，是否足够正确、及时、稳定，能让它越学越好，而不是越优化越偏？\n重点检查：\n目标函数是否清晰：ROAS、LTV、留存、消耗、人效，谁是主目标？ 反馈延迟是否可解释：D1 / D3 / D7 / D30 指标如何进入决策？ 护栏指标是否完整：不能只优化短期 ROI，忽略留存、变现和素材疲劳 决策日志是否可追溯：Agent 建议了什么，人做了什么，结果如何？ 是否有 holdout 或增量测量：避免把自然增长误判为投放贡献 典型交付物 《实验平台成熟度诊断报告》 《流量分层与分桶模型建议》 《实验流程与治理方案》 《统计分析引擎能力清单》 《指标体系与护栏指标设计》 《Agent-ready Measurement 检查清单》 《实验平台 30/60/90 天改进路线图》 经验背景 我曾在内容、电商、游戏等业务场景中建设和推广实验体系，覆盖推荐、搜索、广告、产品体验、运营策略等多类实验场景。我的关注点不是把统计术语讲复杂，而是让团队能在日常业务中更稳定地做出正确决策。\n",
+  "wordCount" : "81",
+  "inLanguage": "zh",
+  "datePublished": "2026-06-05T00:00:00+08:00",
+  "dateModified": "2026-06-05T00:00:00+08:00",
+  "author":{
+    "@type": "Person",
+    "name": "Zanbo"
+  },
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "http://localhost:1313/services/experiment-platform/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Zanbo Growth Lab",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "http://localhost:1313/favicon.ico"
+    }
+  }
+}
+</script>
+</head>
+<body id="top">
+    <header class="header">
+    <nav class="header-nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="Zanbo Growth Lab (Alt + H)">Zanbo Growth Lab</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" class="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg class="sun" xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu" class="menu">
+            <li>
+                <a href="http://localhost:1313/" title="首页">
+                    <span>首页</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/services/" title="服务">
+                    <span>服务</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/work/" title="案例">
+                    <span>案例</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/posts/" title="文章">
+                    <span>文章</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+
+<article class="post-single">
+  <header class="post-header">
+    <nav class="breadcrumbs" role="navigation" aria-label="Breadcrumb">
+            <a href="/">主页</a>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right">
+        <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+</nav>
+    <h1 class="post-title entry-hint-parent">
+      A/B 实验与增长测量体系
+    </h1>
+    <div class="post-meta">
+
+<span title='2026-06-05 00:00:00 +0800 CST'>2026年6月5日</span>&nbsp;·&nbsp;<span>1 分钟</span>&nbsp;·&nbsp;<span>Zanbo</span>
+
+</div>
+  </header> 
+  <div class="post-content md-content"><h1 id="ab-实验与增长测量体系">A/B 实验与增长测量体系<a hidden class="anchor" aria-hidden="true" href="#ab-实验与增长测量体系">#</a></h1>
+<p>A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。</p>
+<p>我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 <strong>AI / Agent 决策是否具备可信反馈闭环</strong>。</p>
+<h2 id="适合团队">适合团队<a hidden class="anchor" aria-hidden="true" href="#适合团队">#</a></h2>
+<ul>
+<li>正在自建或重构 A/B 实验平台</li>
+<li>实验数量上升后，流量冲突、指标争议、统计解释问题变多</li>
+<li>产品、算法、运营团队都在做实验，但缺少统一流程和指标治理</li>
+<li>正在使用 AI 做出价、预算、素材或投放建议，需要确认测量反馈是否可靠</li>
+</ul>
+<h2 id="六维诊断框架">六维诊断框架<a hidden class="anchor" aria-hidden="true" href="#六维诊断框架">#</a></h2>
+<table>
+  <thead>
+      <tr>
+          <th>模块</th>
+          <th>诊断对象</th>
+          <th>核心问题</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>流量管理与分流能力</td>
+          <td>分层、分桶、互斥、正交</td>
+          <td>是否支撑实验规模和复杂度</td>
+      </tr>
+      <tr>
+          <td>实验管理与流程规范</td>
+          <td>创建、审核、发布、回滚、归档</td>
+          <td>是否有完整生命周期管理</td>
+      </tr>
+      <tr>
+          <td>统计分析引擎能力</td>
+          <td>p-value、置信区间、CUPED、序贯检验</td>
+          <td>结论是否科学可信</td>
+      </tr>
+      <tr>
+          <td>指标体系健康度</td>
+          <td>北极星指标、护栏指标、长期指标</td>
+          <td>是否避免短期指标误导</td>
+      </tr>
+      <tr>
+          <td>工程架构与稳定性</td>
+          <td>SDK、配置、日志、容灾</td>
+          <td>是否稳定可靠</td>
+      </tr>
+      <tr>
+          <td>实验文化与组织效能</td>
+          <td>假设质量、复盘机制、决策习惯</td>
+          <td>是否真正用实验学习</td>
+      </tr>
+  </tbody>
+</table>
+<h2 id="agent-ready-measurement">Agent-ready Measurement<a hidden class="anchor" aria-hidden="true" href="#agent-ready-measurement">#</a></h2>
+<p>当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：</p>
+<blockquote>
+<p>这个 Agent 得到的反馈信号，是否足够正确、及时、稳定，能让它越学越好，而不是越优化越偏？</p>
+</blockquote>
+<p>重点检查：</p>
+<ul>
+<li>目标函数是否清晰：ROAS、LTV、留存、消耗、人效，谁是主目标？</li>
+<li>反馈延迟是否可解释：D1 / D3 / D7 / D30 指标如何进入决策？</li>
+<li>护栏指标是否完整：不能只优化短期 ROI，忽略留存、变现和素材疲劳</li>
+<li>决策日志是否可追溯：Agent 建议了什么，人做了什么，结果如何？</li>
+<li>是否有 holdout 或增量测量：避免把自然增长误判为投放贡献</li>
+</ul>
+<h2 id="典型交付物">典型交付物<a hidden class="anchor" aria-hidden="true" href="#典型交付物">#</a></h2>
+<ul>
+<li>《实验平台成熟度诊断报告》</li>
+<li>《流量分层与分桶模型建议》</li>
+<li>《实验流程与治理方案》</li>
+<li>《统计分析引擎能力清单》</li>
+<li>《指标体系与护栏指标设计》</li>
+<li>《Agent-ready Measurement 检查清单》</li>
+<li>《实验平台 30/60/90 天改进路线图》</li>
+</ul>
+<h2 id="经验背景">经验背景<a hidden class="anchor" aria-hidden="true" href="#经验背景">#</a></h2>
+<p>我曾在内容、电商、游戏等业务场景中建设和推广实验体系，覆盖推荐、搜索、广告、产品体验、运营策略等多类实验场景。我的关注点不是把统计术语讲复杂，而是让团队能在日常业务中更稳定地做出正确决策。</p>
+
+
+  </div>
+
+  <footer class="post-footer">
+    <ul class="post-tags">
+    </ul>
+
+  </footer>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2026 <a href="http://localhost:1313/">Zanbo Growth Lab</a></span> · 
+
+    
+    
+    <span>
+        Powered by
+        <a href="https://gohugo.io/?utm_source=papermod" rel="noopener" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" id="top-link" class="top-link hidden" aria-label="go to top" title="Go to Top (Alt + G)" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevrons-up">
+        <polyline points="17 11 12 6 7 11"></polyline>
+        <polyline points="17 18 12 13 7 18"></polyline>
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu');
+    if (menu) {
+        
+        const scrollPosition = localStorage.getItem("menu-scroll-position");
+        if (scrollPosition) {
+            menu.scrollLeft = parseInt(scrollPosition, 10);
+        }
+        
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var toplink = document.getElementById("top-link");
+    window.onscroll = function () {
+        const scrollThreshold = window.innerHeight;
+        if (document.body.scrollTop > scrollThreshold || document.documentElement.scrollTop > scrollThreshold) {
+            toplink.classList.remove("hidden");
+        } else {
+            toplink.classList.add("hidden");
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        const html = document.querySelector("html");
+        if (html.dataset.theme === "dark") {
+            html.dataset.theme = 'light';
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            html.dataset.theme = 'dark';
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+<script>
+    document.querySelectorAll('pre > code').forEach((codeblock) => {
+        const container = codeblock.parentNode.parentNode;
+
+        const copybutton = document.createElement('button');
+        copybutton.classList.add('copy-code');
+        copybutton.innerHTML = '复制';
+
+        function copyingDone() {
+            copybutton.innerHTML = '已复制！';
+            setTimeout(() => {
+                copybutton.innerHTML = '复制';
+            }, 2000);
+        }
+
+        copybutton.addEventListener('click', (cb) => {
+            if ('clipboard' in navigator) {
+                navigator.clipboard.writeText(codeblock.textContent);
+                copyingDone();
+                return;
+            }
+
+            const range = document.createRange();
+            range.selectNodeContents(codeblock);
+            const selection = window.getSelection();
+            selection.removeAllRanges();
+            selection.addRange(range);
+            try {
+                document.execCommand('copy');
+                copyingDone();
+            } catch (e) { };
+            selection.removeRange(range);
+        });
+
+        if (container.classList.contains("highlight")) {
+            container.appendChild(copybutton);
+        } else if (container.parentNode.firstChild == container) {
+            
+        } else if (codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.nodeName == "TABLE") {
+            
+            codeblock.parentNode.parentNode.parentNode.parentNode.parentNode.appendChild(copybutton);
+        } else {
+            
+            codeblock.parentNode.appendChild(copybutton);
+        }
+    });
+</script>
+</body>
+
+</html>

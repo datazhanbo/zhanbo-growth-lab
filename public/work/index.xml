@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Works on Zanbo Growth Lab</title>
+    <link>http://localhost:1313/work/</link>
+    <description>Recent content in Works on Zanbo Growth Lab</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/work/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>案例：A/B 实验平台与实验文化建设</title>
+      <link>http://localhost:1313/work/experiment-platform/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/work/experiment-platform/</guid>
+      <description>&lt;h1 id=&#34;案例ab-实验平台与实验文化建设&#34;&gt;案例：A/B 实验平台与实验文化建设&lt;/h1&gt;
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;我在内容、电商、游戏等场景中参与过实验体系建设和方法论推广。实验平台的挑战通常不是单个功能，而是技术、统计、流程和组织文化同时成立。&lt;/p&gt;
+&lt;p&gt;常见问题：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有配置中心，但没有完整实验生命周期&lt;/li&gt;
+&lt;li&gt;有 p-value，但业务不知道如何解释实验结论&lt;/li&gt;
+&lt;li&gt;有大量实验，但流量互斥、正交、分层不清晰&lt;/li&gt;
+&lt;li&gt;有短期指标提升，但长期留存、变现、用户体验被忽视&lt;/li&gt;
+&lt;li&gt;实验结果没有沉淀，团队重复踩坑&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;解决框架&#34;&gt;解决框架&lt;/h2&gt;
+&lt;h3 id=&#34;1-流量管理&#34;&gt;1. 流量管理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hash 分流，保证用户命中一致&lt;/li&gt;
+&lt;li&gt;支持用户 ID、设备 ID、请求 ID 等多种分流维度&lt;/li&gt;
+&lt;li&gt;正交分层与流量复用&lt;/li&gt;
+&lt;li&gt;互斥实验、联合实验、条件分流和白名单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-实验管理&#34;&gt;2. 实验管理&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;创建实验时明确假设、目标指标和护栏指标&lt;/li&gt;
+&lt;li&gt;审核、发布、灰度、暂停、回滚、归档全生命周期&lt;/li&gt;
+&lt;li&gt;实验模板和最小样本量计算&lt;/li&gt;
+&lt;li&gt;操作审计日志和实验复盘&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-统计分析&#34;&gt;3. 统计分析&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Welch&amp;rsquo;s t-test、Z-test、Chi-square、Delta Method&lt;/li&gt;
+&lt;li&gt;CUPED、分层分析、MDE 分析&lt;/li&gt;
+&lt;li&gt;多重比较校正、序贯检验、非参数检验&lt;/li&gt;
+&lt;li&gt;输出效应量、置信区间，而不是只看显著性&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;4-指标体系&#34;&gt;4. 指标体系&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;北极星指标：业务最关心的长期目标&lt;/li&gt;
+&lt;li&gt;核心指标：实验直接影响的业务指标&lt;/li&gt;
+&lt;li&gt;护栏指标：防止局部优化伤害整体体验&lt;/li&gt;
+&lt;li&gt;长期指标：留存、LTV、复购、生态健康&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;组织推广&#34;&gt;组织推广&lt;/h2&gt;
+&lt;p&gt;在快手等场景中，实验方法论推广不仅是产品建设，也包括培训、案例复盘和共识建设。实验平台要真正有效，必须让产品、算法、运营和管理层对「什么是可信结论」形成共同语言。&lt;/p&gt;
+&lt;h2 id=&#34;可复用方法&#34;&gt;可复用方法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;每个实验先写假设，再配置流量&lt;/li&gt;
+&lt;li&gt;每个实验必须有护栏指标&lt;/li&gt;
+&lt;li&gt;每个推全动作必须有复盘依据&lt;/li&gt;
+&lt;li&gt;对复杂业务场景，先做诊断再谈平台功能&lt;/li&gt;
+&lt;li&gt;当 AI / Agent 参与决策时，必须先确认反馈信号是否可信&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    <item>
+      <title>案例：策略产能，投放团队的第二增长曲线</title>
+      <link>http://localhost:1313/work/strategy-capacity/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/work/strategy-capacity/</guid>
+      <description>&lt;h1 id=&#34;案例策略产能投放团队的第二增长曲线&#34;&gt;案例：策略产能，投放团队的第二增长曲线&lt;/h1&gt;
+&lt;h2 id=&#34;什么是策略产能&#34;&gt;什么是策略产能&lt;/h2&gt;
+&lt;p&gt;当买量团队规模变大后，瓶颈往往不是单个优化师够不够努力，而是团队每天能产生多少高质量策略判断。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;策略产能&lt;/strong&gt; = 投放团队把数据、经验和判断转化为有效增长动作的能力。&lt;/p&gt;
+&lt;p&gt;它不等于操作时长，也不等于 campaign 数量，而是团队能否持续回答：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;哪些 campaign 应该扩量？&lt;/li&gt;
+&lt;li&gt;哪些 GEO 被低估？&lt;/li&gt;
+&lt;li&gt;哪些素材正在疲劳？&lt;/li&gt;
+&lt;li&gt;哪些出价和预算动作有效？&lt;/li&gt;
+&lt;li&gt;哪些经验可以沉淀为规则和模板？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;诊断指标&#34;&gt;诊断指标&lt;/h2&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;指标&lt;/th&gt;
+          &lt;th&gt;含义&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;人效消耗&lt;/td&gt;
+          &lt;td&gt;月总消耗 / 优化师人数&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;策略时间占比&lt;/td&gt;
+          &lt;td&gt;策略判断时间 / 工作时间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;新人上手周期&lt;/td&gt;
+          &lt;td&gt;新优化师多久能独立管盘&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;动作复盘率&lt;/td&gt;
+          &lt;td&gt;调价、暂停、扩量、换素材后是否追踪效果&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;策略复用率&lt;/td&gt;
+          &lt;td&gt;是否有可复用的规则、模板和 playbook&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;常见低产能信号&#34;&gt;常见低产能信号&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;优化师每天大量时间花在搭建、导数、截图、做日报&lt;/li&gt;
+&lt;li&gt;老板问 ROI，UA、BI、财务给出不同解释&lt;/li&gt;
+&lt;li&gt;调整预算和出价后，没有 before/after 复盘&lt;/li&gt;
+&lt;li&gt;素材测试靠感觉，新素材和老素材的生命周期不清楚&lt;/li&gt;
+&lt;li&gt;新人学习周期长，只能跟着老优化师口口相传&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;提升路径&#34;&gt;提升路径&lt;/h2&gt;
+&lt;h3 id=&#34;1-减操作&#34;&gt;1. 减操作&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;批量创编&lt;/li&gt;
+&lt;li&gt;模板化 campaign 创建&lt;/li&gt;
+&lt;li&gt;自动导数和固定看板&lt;/li&gt;
+&lt;li&gt;命名规范和维度映射&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-推信号&#34;&gt;2. 推信号&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;ROI 红绿看板&lt;/li&gt;
+&lt;li&gt;CPI / ROAS / 留存异常预警&lt;/li&gt;
+&lt;li&gt;素材疲劳检测&lt;/li&gt;
+&lt;li&gt;高潜力 GEO / campaign 机会清单&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-沉策略&#34;&gt;3. 沉策略&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;策略模板库&lt;/li&gt;
+&lt;li&gt;动作审计日志&lt;/li&gt;
+&lt;li&gt;Action Tracking&lt;/li&gt;
+&lt;li&gt;周期性复盘机制&lt;/li&gt;
+&lt;li&gt;规则引擎与 Agent 建议草案&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
+&lt;p&gt;当策略产能提升后，优化师不再只是后台操作员，而是增长策略设计者。平台的价值也不只是节省时间，而是让团队更稳定地做出正确决策。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>案例：出海游戏 UA 增长数据诊断</title>
+      <link>http://localhost:1313/work/ua-growth-diagnostic/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/work/ua-growth-diagnostic/</guid>
+      <description>&lt;h1 id=&#34;案例出海游戏-ua-增长数据诊断&#34;&gt;案例：出海游戏 UA 增长数据诊断&lt;/h1&gt;
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;出海游戏团队在规模化买量后，常见问题不是「没有数据」，而是数据太多、口径太散、系统之间互相解释不清：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;媒体后台、MMP、BI 的 spend、install、revenue、ROI 对不上&lt;/li&gt;
+&lt;li&gt;Campaign 命名和层级变化导致 cohort 历史不可比&lt;/li&gt;
+&lt;li&gt;iOS SKAN、user-level 归因和广告变现收入混在一起解释&lt;/li&gt;
+&lt;li&gt;优化师每天看多个后台，但动作缺少效果追踪&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;核心判断&#34;&gt;核心判断&lt;/h2&gt;
+&lt;p&gt;买量诊断不能只看 ROI 报表，要同时检查四条链路：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;广告平台链路&lt;/strong&gt;：账户、campaign、adset、creative、spend、action history&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;MMP 归因链路&lt;/strong&gt;：AppsFlyer / Adjust / Singular 的 cost、cohort、SKAN、raw data&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;游戏事件链路&lt;/strong&gt;：SDK 初始化、event taxonomy、IAP / ad revenue、S2S 去重与延迟&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;BI 决策链路&lt;/strong&gt;：指标口径、更新 SLA、维度表、dashboard 分层、异常说明&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;方案&#34;&gt;方案&lt;/h2&gt;
+&lt;p&gt;建立一次本地诊断数据房间：&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;UA Diagnostic Data Room
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├─ raw/                  # 原始导出或 API 响应
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├─ db/ua_diagnostic.db   # SQLite / DuckDB
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├─ scripts/              # fetch / import / analyze 脚本
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├─ mappings/             # media / campaign / geo / creative 映射
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├─ metrics/              # 指标口径定义
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  ├─ checks/               # 数据质量检查
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  └─ reports/              # 诊断报告与图表
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;围绕四个评分输出：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>案例：发行/投放平台从 L1 到 L4</title>
+      <link>http://localhost:1313/work/publishing-platform-l1-l4/</link>
+      <pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/work/publishing-platform-l1-l4/</guid>
+      <description>&lt;h1 id=&#34;案例发行投放平台从-l1-到-l4&#34;&gt;案例：发行/投放平台从 L1 到 L4&lt;/h1&gt;
+&lt;h2 id=&#34;背景&#34;&gt;背景&lt;/h2&gt;
+&lt;p&gt;一个成熟的出海发行团队，增长系统通常不是从零开始，而是在大量工具、报表、后台和手工流程之上继续增长。&lt;/p&gt;
+&lt;p&gt;典型现状：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;优化师在媒体后台、MMP、BI、变现平台之间来回切换&lt;/li&gt;
+&lt;li&gt;素材、campaign、GEO、媒体、包体之间缺少统一模型&lt;/li&gt;
+&lt;li&gt;老 BI 报表很多，但缺少统一指标合同和业务解释&lt;/li&gt;
+&lt;li&gt;对账、充值、授信、权限、API token 等后台能力被低估&lt;/li&gt;
+&lt;li&gt;业务希望 AI Agent 自动优化，但底层数据和动作记录还不完整&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;能力分层&#34;&gt;能力分层&lt;/h2&gt;
+&lt;p&gt;我把发行平台拆成 L1–L5：&lt;/p&gt;
+&lt;table&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;层级&lt;/th&gt;
+          &lt;th&gt;状态&lt;/th&gt;
+          &lt;th&gt;核心能力&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;L1&lt;/td&gt;
+          &lt;td&gt;信息可见&lt;/td&gt;
+          &lt;td&gt;统一看数、基础 ROI、素材效果、账户余额&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;L2&lt;/td&gt;
+          &lt;td&gt;数据整合&lt;/td&gt;
+          &lt;td&gt;媒体 API、MMP 入仓、cost / revenue 对齐、SKAN 处理&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;L3&lt;/td&gt;
+          &lt;td&gt;效率工具&lt;/td&gt;
+          &lt;td&gt;批量创编、素材挂载、跨媒体操作、账户财务对账&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;L4&lt;/td&gt;
+          &lt;td&gt;策略辅助&lt;/td&gt;
+          &lt;td&gt;红绿看板、异常预警、素材疲劳、投放健康度&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;L5&lt;/td&gt;
+          &lt;td&gt;策略自动化&lt;/td&gt;
+          &lt;td&gt;规则引擎、自动执行、跨媒体预算协同、Agent 闭环&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;建设路线&#34;&gt;建设路线&lt;/h2&gt;
+&lt;h3 id=&#34;phase-1统一数据底座&#34;&gt;Phase 1：统一数据底座&lt;/h3&gt;
+&lt;p&gt;目标是从「人找数」变成「统一看数」。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ROI360 看板&lt;/li&gt;
+&lt;li&gt;Campaign / Ad Set / Creative 统一维度&lt;/li&gt;
+&lt;li&gt;媒体 cost 与 MMP revenue 对账&lt;/li&gt;
+&lt;li&gt;包体、媒体、国家、campaign 多维分析&lt;/li&gt;
+&lt;li&gt;数据延迟、失败、补数机制&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;phase-2效率工具&#34;&gt;Phase 2：效率工具&lt;/h3&gt;
+&lt;p&gt;目标是减少重复操作，让优化师从搭建和搬运中释放出来。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

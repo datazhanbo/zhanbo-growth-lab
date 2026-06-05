@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Zanbo Growth Lab</title>
+    <link>http://localhost:1313/</link>
+    <description>Recent content on Zanbo Growth Lab</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Thu, 14 May 2026 15:10:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>企业级 AI 应用落地：从 FOMO 到真正的业务增长</title>
+      <link>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</link>
+      <pubDate>Thu, 14 May 2026 15:10:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</guid>
+      <description>AI 带来的个人效能提升有目共睹，但企业级落地却面临集体 FOMO。本文从红杉资本、OpenAI、神策数据等行业先锋的视角，解读企业 AI 应用的真正路径。</description>
+    </item>
+    <item>
+      <title>欢迎来到展博增长实验室</title>
+      <link>http://localhost:1313/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%B1%95%E5%8D%9A%E5%A2%9E%E9%95%BF%E5%AE%9E%E9%AA%8C%E5%AE%A4/</link>
+      <pubDate>Thu, 07 May 2026 22:17:55 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0%E5%B1%95%E5%8D%9A%E5%A2%9E%E9%95%BF%E5%AE%9E%E9%AA%8C%E5%AE%A4/</guid>
+      <description>&lt;h2 id=&#34;欢迎&#34;&gt;欢迎！&lt;/h2&gt;
+&lt;p&gt;这是我的第一篇博客文章，欢迎来到 &lt;strong&gt;Zanbo Growth Lab&lt;/strong&gt;！&lt;/p&gt;
+&lt;p&gt;&lt;img alt=&#34;效果图&#34; loading=&#34;lazy&#34; src=&#34;../../../public/posts/hello-world/Pasted_image_20260507124038.png&#34;&gt;&lt;/p&gt;
+&lt;h2 id=&#34;关于这个站点&#34;&gt;关于这个站点&lt;/h2&gt;
+&lt;p&gt;这个站点使用了以下技术栈：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Hugo&lt;/strong&gt; - 静态站点生成器&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;PaperMod&lt;/strong&gt; - 简洁美观的主题&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Decap CMS&lt;/strong&gt; - 内容管理后台&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Netlify&lt;/strong&gt; - 托管和自动部署&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;为什么选择这个方案&#34;&gt;为什么选择这个方案？&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;速度快&lt;/strong&gt; - Hugo 构建速度极快，页面加载也很快&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Git 驱动&lt;/strong&gt; - 所有内容都在 Git 中管理，版本控制方便&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;免费托管&lt;/strong&gt; - Netlify 提供免费的托管和 CDN&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;可视化编辑&lt;/strong&gt; - 通过 &lt;code&gt;/admin&lt;/code&gt; 可以可视化编辑内容&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;接下来的计划&#34;&gt;接下来的计划&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 配置 Giscus 评论系统&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 发布更多技术文章&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 完善站点的分类和标签&lt;/li&gt;
+&lt;li&gt;&lt;input disabled=&#34;&#34; type=&#34;checkbox&#34;&gt; 添加更多个性化配置&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;感谢你的访问！欢迎常来看看 😄&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Hello World! 欢迎来到 Zanbo Growth Lab</title>
+      <link>http://localhost:1313/posts/hello-world-%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0-zanbo-growth-lab/</link>
+      <pubDate>Thu, 07 May 2026 10:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/hello-world-%E6%AC%A2%E8%BF%8E%E6%9D%A5%E5%88%B0-zanbo-growth-lab/</guid>
+      <description>第一篇博客文章，介绍这个站点的搭建过程</description>
+    </item>
+    <item>
+      <title>关于我</title>
+      <link>http://localhost:1313/about/</link>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/about/</guid>
+      <description>&lt;h2 id=&#34;关于-zhanbo展博&#34;&gt;关于 Zhanbo/展博&lt;/h2&gt;
+&lt;p&gt;你好！我是 展博，一名增长顾问，通过实验驱动产品增长，通过投放和营销实现外延增长。&lt;/p&gt;
+&lt;h3 id=&#34;我的兴趣探索exploration--利用exploitation&#34;&gt;我的兴趣（探索Exploration + 利用Exploitation）&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;探索&lt;/strong&gt;不同的业务，理解商业是如何运行的&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;08年入行做IT咨询顾问服务国家电网、移动、联通帮他们进行信息化建设&lt;/li&gt;
+&lt;li&gt;14年探索互联网金融和互联网支付的系统建设、产品逻辑&lt;/li&gt;
+&lt;li&gt;15年开启大数据咨询和产品之路，历经出行(滴滴)、短视频(快手)、电商(Shopee)、出海游戏(HungryStudio)等不同行业&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;利用&lt;/strong&gt;数据产品推动业务发展&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol&gt;
+&lt;li&gt;18年始通过AB实验驱动产品增长，助力内容、电商、游戏在搜广推、体验等场景北极星指标的提升&lt;/li&gt;
+&lt;li&gt;22年始推动AI大模型在企业内的应用，通过gateway、agent等形态提升人效和业务指标&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;联系我&#34;&gt;联系我&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;GitHub: &lt;a href=&#34;https://github.com/datazhanbo&#34;&gt;@datazhanbo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Weixin: growth_zhanbo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;blockquote&gt;
+&lt;p&gt;学习如逆水行舟，不进则退。&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+  </channel>
+</rss>

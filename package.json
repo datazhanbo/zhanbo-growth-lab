@@ -1,0 +1,13 @@
+{
+  "name": "zanbo-growth-lab",
+  "version": "1.0.0",
+  "description": "Personal blog powered by Hugo + Decap CMS",
+  "scripts": {
+    "start": "hugo server -D",
+    "build": "hugo --gc --minify",
+    "dev": "hugo server -D --port 1313"
+  },
+  "keywords": ["hugo", "blog", "netlify", "cms"],
+  "author": "Zanbo",
+  "license": "MIT"
+}
