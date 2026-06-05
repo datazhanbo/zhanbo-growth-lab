@@ -1,84 +1,51 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Services on Zanbo Growth Lab</title>
-    <link>http://localhost:1313/services/</link>
-    <description>Recent content in Services on Zanbo Growth Lab</description>
-    <generator>Hugo</generator>
-    <language>zh-CN</language>
-    <lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>A/B 实验与增长测量体系</title>
-      <link>http://localhost:1313/services/experiment-platform/</link>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/experiment-platform/</guid>
-      <description>&lt;h1 id=&#34;ab-实验与增长测量体系&#34;&gt;A/B 实验与增长测量体系&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Services on Zhanbo Growth Lab</title><link>https://zanbo.netlify.app/services/</link><description>Recent content in Services on Zhanbo Growth Lab</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://zanbo.netlify.app/services/index.xml" rel="self" type="application/rss+xml"/><item><title>A/B 实验与增长测量体系</title><link>https://zanbo.netlify.app/services/experiment-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/services/experiment-platform/</guid><description>&lt;h1 id="ab-实验与增长测量体系"&gt;A/B 实验与增长测量体系&lt;/h1&gt;
 &lt;p&gt;A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。&lt;/p&gt;
 &lt;p&gt;我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 &lt;strong&gt;AI / Agent 决策是否具备可信反馈闭环&lt;/strong&gt;。&lt;/p&gt;
-&lt;h2 id=&#34;适合团队&#34;&gt;适合团队&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;正在自建或重构 A/B 实验平台&lt;/li&gt;
-&lt;li&gt;实验数量上升后，流量冲突、指标争议、统计解释问题变多&lt;/li&gt;
-&lt;li&gt;产品、算法、运营团队都在做实验，但缺少统一流程和指标治理&lt;/li&gt;
-&lt;li&gt;正在使用 AI 做出价、预算、素材或投放建议，需要确认测量反馈是否可靠&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;六维诊断框架&#34;&gt;六维诊断框架&lt;/h2&gt;
+&lt;h2 id="六维诊断框架"&gt;六维诊断框架&lt;/h2&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;模块&lt;/th&gt;
-          &lt;th&gt;诊断对象&lt;/th&gt;
-          &lt;th&gt;核心问题&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;流量管理与分流能力&lt;/td&gt;
-          &lt;td&gt;分层、分桶、互斥、正交&lt;/td&gt;
-          &lt;td&gt;是否支撑实验规模和复杂度&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;实验管理与流程规范&lt;/td&gt;
-          &lt;td&gt;创建、审核、发布、回滚、归档&lt;/td&gt;
-          &lt;td&gt;是否有完整生命周期管理&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;统计分析引擎能力&lt;/td&gt;
-          &lt;td&gt;p-value、置信区间、CUPED、序贯检验&lt;/td&gt;
-          &lt;td&gt;结论是否科学可信&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;指标体系健康度&lt;/td&gt;
-          &lt;td&gt;北极星指标、护栏指标、长期指标&lt;/td&gt;
-          &lt;td&gt;是否避免短期指标误导&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;工程架构与稳定性&lt;/td&gt;
-          &lt;td&gt;SDK、配置、日志、容灾&lt;/td&gt;
-          &lt;td&gt;是否稳定可靠&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;实验文化与组织效能&lt;/td&gt;
-          &lt;td&gt;假设质量、复盘机制、决策习惯&lt;/td&gt;
-          &lt;td&gt;是否真正用实验学习&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;模块&lt;/th&gt;
+&lt;th&gt;诊断对象&lt;/th&gt;
+&lt;th&gt;核心问题&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;流量管理与分流能力&lt;/td&gt;
+&lt;td&gt;分层、分桶、互斥、正交&lt;/td&gt;
+&lt;td&gt;是否支撑实验规模和复杂度&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;实验管理与流程规范&lt;/td&gt;
+&lt;td&gt;创建、审核、发布、回滚、归档&lt;/td&gt;
+&lt;td&gt;是否有完整生命周期管理&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;统计分析引擎能力&lt;/td&gt;
+&lt;td&gt;p-value、置信区间、CUPED、序贯检验&lt;/td&gt;
+&lt;td&gt;结论是否科学可信&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;指标体系健康度&lt;/td&gt;
+&lt;td&gt;北极星指标、护栏指标、长期指标&lt;/td&gt;
+&lt;td&gt;是否避免短期指标误导&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;工程架构与稳定性&lt;/td&gt;
+&lt;td&gt;SDK、配置、日志、容灾&lt;/td&gt;
+&lt;td&gt;是否稳定可靠&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;实验文化与组织效能&lt;/td&gt;
+&lt;td&gt;假设质量、复盘机制、决策习惯&lt;/td&gt;
+&lt;td&gt;是否真正用实验学习&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;agent-ready-measurement&#34;&gt;Agent-ready Measurement&lt;/h2&gt;
-&lt;p&gt;当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;这个 Agent 得到的反馈信号，是否足够正确、及时、稳定，能让它越学越好，而不是越优化越偏？&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;重点检查：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;目标函数是否清晰：ROAS、LTV、留存、消耗、人效，谁是主目标？&lt;/li&gt;
-&lt;li&gt;反馈延迟是否可解释：D1 / D3 / D7 / D30 指标如何进入决策？&lt;/li&gt;
-&lt;li&gt;护栏指标是否完整：不能只优化短期 ROI，忽略留存、变现和素材疲劳&lt;/li&gt;
-&lt;li&gt;决策日志是否可追溯：Agent 建议了什么，人做了什么，结果如何？&lt;/li&gt;
-&lt;li&gt;是否有 holdout 或增量测量：避免把自然增长误判为投放贡献&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;典型交付物&#34;&gt;典型交付物&lt;/h2&gt;
+&lt;h2 id="agent-ready-measurement"&gt;Agent-ready Measurement&lt;/h2&gt;
+&lt;p&gt;当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：反馈信号是否足够正确、及时、稳定，能让 Agent 越学越好，而不是越优化越偏。&lt;/p&gt;
+&lt;h2 id="典型交付物"&gt;典型交付物&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;《实验平台成熟度诊断报告》&lt;/li&gt;
 &lt;li&gt;《流量分层与分桶模型建议》&lt;/li&gt;
@@ -87,69 +54,49 @@
 &lt;li&gt;《指标体系与护栏指标设计》&lt;/li&gt;
 &lt;li&gt;《Agent-ready Measurement 检查清单》&lt;/li&gt;
 &lt;li&gt;《实验平台 30/60/90 天改进路线图》&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;经验背景&#34;&gt;经验背景&lt;/h2&gt;
-&lt;p&gt;我曾在内容、电商、游戏等业务场景中建设和推广实验体系，覆盖推荐、搜索、广告、产品体验、运营策略等多类实验场景。我的关注点不是把统计术语讲复杂，而是让团队能在日常业务中更稳定地做出正确决策。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>UA 买量增长数据诊断</title>
-      <link>http://localhost:1313/services/ua-growth-diagnostic/</link>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/ua-growth-diagnostic/</guid>
-      <description>&lt;h1 id=&#34;ua-买量增长数据诊断&#34;&gt;UA 买量增长数据诊断&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>UA 买量增长数据诊断</title><link>https://zanbo.netlify.app/services/ua-growth-diagnostic/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/services/ua-growth-diagnostic/</guid><description>&lt;h1 id="ua-买量增长数据诊断"&gt;UA 买量增长数据诊断&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;UA Growth Data Diagnostic&lt;/strong&gt; 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 + 买量效率 + 归因链路 + 决策系统」的系统诊断。&lt;/p&gt;
-&lt;h2 id=&#34;适合团队&#34;&gt;适合团队&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;客户类型&lt;/th&gt;
-          &lt;th&gt;典型特征&lt;/th&gt;
-          &lt;th&gt;主要痛点&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;成长期出海游戏 Studio&lt;/td&gt;
-          &lt;td&gt;月消耗已有一定规模，主投 Meta / Google / TikTok / AppLovin 等平台&lt;/td&gt;
-          &lt;td&gt;数据散、ROI 不稳、扩量困难&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;中小型休闲游戏发行团队&lt;/td&gt;
-          &lt;td&gt;UA 团队 2–10 人，有 MMP 但 BI 能力较弱&lt;/td&gt;
-          &lt;td&gt;优化师依赖后台和经验，缺统一看板&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;已有自研 BI 的成熟团队&lt;/td&gt;
-          &lt;td&gt;有数据仓和看板，但指标口径复杂&lt;/td&gt;
-          &lt;td&gt;老板、UA、BI 对 ROI 口径争议大&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;准备规模化买量的新项目&lt;/td&gt;
-          &lt;td&gt;soft launch 或早期 scale 阶段&lt;/td&gt;
-          &lt;td&gt;需要先确认 SDK、事件、归因和看板基础是否可靠&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;要回答的四个问题&#34;&gt;要回答的四个问题&lt;/h2&gt;
+&lt;h2 id="适合团队"&gt;适合团队&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;成长期出海游戏 Studio：数据散、ROI 不稳、扩量困难&lt;/li&gt;
+&lt;li&gt;中小型休闲游戏发行团队：优化师依赖后台和经验，缺统一看板&lt;/li&gt;
+&lt;li&gt;已有自研 BI 的成熟团队：老板、UA、BI 对 ROI 口径争议大&lt;/li&gt;
+&lt;li&gt;准备规模化买量的新项目：需要确认 SDK、事件、归因和看板基础是否可靠&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="要回答的四个问题"&gt;要回答的四个问题&lt;/h2&gt;
 &lt;ol&gt;
 &lt;li&gt;&lt;strong&gt;数据准不准&lt;/strong&gt;：媒体后台、MMP、SDK、BI 之间的 spend、install、revenue、ROI 是否一致？&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;钱花得好不好&lt;/strong&gt;：预算是否流向高质量 campaign、GEO、素材和媒体？&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;归因链路有没有坑&lt;/strong&gt;：AppsFlyer / SKAN / SDK / S2S / ad revenue 回传是否导致 ROI 失真？&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;团队能否持续决策&lt;/strong&gt;：是否有日常盯盘、异常告警、action tracking 和复盘机制？&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;诊断范围&#34;&gt;诊断范围&lt;/h2&gt;
-&lt;h3 id=&#34;广告平台与媒体后台&#34;&gt;广告平台与媒体后台&lt;/h3&gt;
-&lt;p&gt;覆盖 Meta、Google、TikTok、AppLovin、Unity / ironSource、Moloco、Liftoff 等主流买量平台。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>发行/投放平台建设咨询</title>
-      <link>http://localhost:1313/services/publishing-platform/</link>
-      <pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/publishing-platform/</guid>
-      <description>&lt;h1 id=&#34;发行投放平台建设咨询&#34;&gt;发行/投放平台建设咨询&lt;/h1&gt;
+&lt;h2 id="诊断范围"&gt;诊断范围&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;广告平台与媒体后台：账户、Campaign、Ad Set、Creative、Spend、Action History&lt;/li&gt;
+&lt;li&gt;归因平台 / MMP：Attribution、Cost、Cohort、SKAN、Raw Data、Data API&lt;/li&gt;
+&lt;li&gt;游戏 SDK 与事件：SDK 初始化、Event Taxonomy、Revenue、S2S、Ad Mediation&lt;/li&gt;
+&lt;li&gt;自有数据聚合与 BI：数据源、ETL、维度、指标合同、看板和治理&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="标准流程"&gt;标准流程&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Discovery / 业务访谈&lt;/strong&gt;：确认业务目标、投放规模、数据现状、组织结构和痛点排序。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Read-only 数据授权与诊断快照&lt;/strong&gt;：建立一次可复跑的数据快照，避免截图和人工导出造成偏差。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;UA Diagnostic Data Room&lt;/strong&gt;：用本地 SQLite / DuckDB 建立诊断数据房间。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;四大诊断分析&lt;/strong&gt;：Data Trust、UA Efficiency、Attribution &amp;amp; Event Chain、Decision System。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;报告与路线图&lt;/strong&gt;：输出评分、问题清单、Quick Win 和 30/60/90 天路线图。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="典型交付物"&gt;典型交付物&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;《诊断范围确认表》&lt;/li&gt;
+&lt;li&gt;《数据授权与安全边界清单》&lt;/li&gt;
+&lt;li&gt;《数据可信度评分》&lt;/li&gt;
+&lt;li&gt;《买量效率评分与浪费 / 机会清单》&lt;/li&gt;
+&lt;li&gt;《归因缺口表与事件链路图》&lt;/li&gt;
+&lt;li&gt;《决策系统改进建议》&lt;/li&gt;
+&lt;li&gt;《30/60/90 天增长系统路线图》&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>发行/投放平台建设咨询</title><link>https://zanbo.netlify.app/services/publishing-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/services/publishing-platform/</guid><description>&lt;h1 id="发行投放平台建设咨询"&gt;发行/投放平台建设咨询&lt;/h1&gt;
 &lt;p&gt;面向出海游戏发行团队，帮助从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能发行体系。&lt;/p&gt;
-&lt;h2 id=&#34;背景问题&#34;&gt;背景问题&lt;/h2&gt;
-&lt;p&gt;很多增长团队在规模化后会遇到同一类问题：&lt;/p&gt;
+&lt;h2 id="背景问题"&gt;背景问题&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;优化师每天切换 5–8 个平台后台，数据割裂，看数效率低&lt;/li&gt;
 &lt;li&gt;老 BI 累计大量零散报表，没有统一模型，数据准确性和时效性堪忧&lt;/li&gt;
@@ -157,121 +104,48 @@
 &lt;li&gt;KOL、达人、合同、付款和效果数据割裂&lt;/li&gt;
 &lt;li&gt;账户充值、授信、对账全靠人工，财务与投放口径难统一&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&#34;核心价值主张&#34;&gt;核心价值主张&lt;/h2&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;&#34;&gt;&lt;code class=&#34;language-text&#34; data-lang=&#34;text&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;打通数据 → 提升效率 → 沉淀策略 → AI 赋能
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;   ↓          ↓          ↓         ↓
-&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  统一数仓   批量操作   经验固化   Agent 辅助优化
-&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;目标不是一次性做完所有平台能力，而是按阶段建设：先让数据可信，再让团队提效，最后把策略沉淀为系统能力。&lt;/p&gt;
-&lt;h2 id=&#34;能力分层&#34;&gt;能力分层&lt;/h2&gt;
+&lt;h2 id="能力分层"&gt;能力分层&lt;/h2&gt;
 &lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;能力层&lt;/th&gt;
-          &lt;th&gt;核心功能&lt;/th&gt;
-          &lt;th&gt;业务价值&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;L1 数据基建&lt;/td&gt;
-          &lt;td&gt;统一数仓、ROI360 看板、素材效果、营销效果&lt;/td&gt;
-          &lt;td&gt;数据打通，看数效率提升&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;L2 智能辅助&lt;/td&gt;
-          &lt;td&gt;Campaign 红绿看板、异常预警、信号体系&lt;/td&gt;
-          &lt;td&gt;问题发现从天级缩短到小时级或分钟级&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;L3 操作工具&lt;/td&gt;
-          &lt;td&gt;跨媒体批量创编、素材库、账户财务对账&lt;/td&gt;
-          &lt;td&gt;优化师和设计师人效提升&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;L4 AI Agent&lt;/td&gt;
-          &lt;td&gt;UA Monitor + Ad Agent 双轮驱动&lt;/td&gt;
-          &lt;td&gt;日常监控、分析、建议自动化&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;能力层&lt;/th&gt;
+&lt;th&gt;核心功能&lt;/th&gt;
+&lt;th&gt;业务价值&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;L1 数据基建&lt;/td&gt;
+&lt;td&gt;统一数仓、ROI360 看板、素材效果、营销效果&lt;/td&gt;
+&lt;td&gt;数据打通，看数效率提升&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L2 智能辅助&lt;/td&gt;
+&lt;td&gt;Campaign 红绿看板、异常预警、信号体系&lt;/td&gt;
+&lt;td&gt;问题发现从天级缩短到小时级或分钟级&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L3 操作工具&lt;/td&gt;
+&lt;td&gt;跨媒体批量创编、素材库、账户财务对账&lt;/td&gt;
+&lt;td&gt;优化师和设计师人效提升&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;L4 AI Agent&lt;/td&gt;
+&lt;td&gt;UA Monitor + Ad Agent 双轮驱动&lt;/td&gt;
+&lt;td&gt;日常监控、分析、建议自动化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id=&#34;四大建设抓手&#34;&gt;四大建设抓手&lt;/h2&gt;
-&lt;h3 id=&#34;1-出价与预算&#34;&gt;1. 出价与预算&lt;/h3&gt;
+&lt;h2 id="四大建设抓手"&gt;四大建设抓手&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;出价与预算&lt;/strong&gt;：长期 LTV 目标反推出价、跨媒体边际 ROI 均衡、预算 pacing。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;点位与回传信号&lt;/strong&gt;：自定义事件管道、事件质量评分、MMP postback + 自研回传。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;人群与一方数据&lt;/strong&gt;：高价值用户 seed、设备图谱、RTA 能力规划。&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;素材与创意智能&lt;/strong&gt;：统一素材库、素材标签、效果归因、疲劳检测、批量创编。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="典型交付"&gt;典型交付&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;长期 LTV 目标反推出价&lt;/li&gt;
-&lt;li&gt;跨媒体边际 ROI 均衡&lt;/li&gt;
-&lt;li&gt;预算 pacing 与 ROI 衰减监控&lt;/li&gt;
-&lt;li&gt;Campaign / GEO / 媒体组合的红绿信号&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;2-点位与回传信号&#34;&gt;2. 点位与回传信号&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;构建自定义事件管道&lt;/li&gt;
-&lt;li&gt;事件质量评分：找到更能预测 LTV 的事件&lt;/li&gt;
-&lt;li&gt;MMP postback + 自研回传策略&lt;/li&gt;
-&lt;li&gt;媒体优化事件与业务真实价值对齐&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;3-人群与一方数据&#34;&gt;3. 人群与一方数据&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;跨游戏一方数据沉淀&lt;/li&gt;
-&lt;li&gt;高价值用户 seed 自动化&lt;/li&gt;
-&lt;li&gt;设备图谱和 RTA 能力规划&lt;/li&gt;
-&lt;li&gt;Audience / Value Rules / Lookalike 策略设计&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;4-素材与创意智能&#34;&gt;4. 素材与创意智能&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;统一素材库与命名规范&lt;/li&gt;
-&lt;li&gt;素材标签体系和效果归因&lt;/li&gt;
-&lt;li&gt;素材生命周期：测试、起量、衰退、疲劳&lt;/li&gt;
-&lt;li&gt;批量创编、批量挂载、自动化规则分析&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2 id=&#34;典型交付&#34;&gt;典型交付&lt;/h2&gt;
-&lt;h3 id=&#34;平台蓝图&#34;&gt;平台蓝图&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;业务问题拆解&lt;/li&gt;
-&lt;li&gt;用户角色与工作流&lt;/li&gt;
-&lt;li&gt;L1–L5 能力分层&lt;/li&gt;
-&lt;li&gt;MVP 范围和非目标范围&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;产品与数据方案&#34;&gt;产品与数据方案&lt;/h3&gt;
-&lt;ul&gt;
-&lt;li&gt;ROI360 / Campaign 健康度 / 素材效果 / 账户财务看板设计&lt;/li&gt;
-&lt;li&gt;指标口径和 Metric Contract&lt;/li&gt;
-&lt;li&gt;媒体、MMP、游戏事件、变现数据的数据模型&lt;/li&gt;
-&lt;li&gt;Campaign / Ad Set / Creative 统一抽象层&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3 id=&#34;实施路线图&#34;&gt;实施路线图&lt;/h3&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;阶段&lt;/th&gt;
-          &lt;th&gt;核心交付&lt;/th&gt;
-          &lt;th&gt;目标&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Phase 1&lt;/td&gt;
-          &lt;td&gt;统一数据底座 + 关键看板&lt;/td&gt;
-          &lt;td&gt;从「人找数」到「统一看数」&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Phase 2&lt;/td&gt;
-          &lt;td&gt;批量操作 + 素材库&lt;/td&gt;
-          &lt;td&gt;从「手工操作」到「效率工具」&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;Phase 3&lt;/td&gt;
-          &lt;td&gt;策略引擎 + AI Agent&lt;/td&gt;
-          &lt;td&gt;从「经验判断」到「系统辅助决策」&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;h2 id=&#34;我的角色&#34;&gt;我的角色&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;帮助管理层明确平台建设的 ROI 叙事和优先级&lt;/li&gt;
-&lt;li&gt;帮助产品团队拆解 PRD、数据模型和能力边界&lt;/li&gt;
-&lt;li&gt;帮助研发/数据团队评审架构、指标口径和 API 适配方式&lt;/li&gt;
-&lt;li&gt;帮助 UA 团队把日常经验转化为策略规则、信号和复盘机制&lt;/li&gt;
-&lt;/ul&gt;</description>
-    </item>
-  </channel>
-</rss>
+&lt;li&gt;平台蓝图：业务问题拆解、角色工作流、L1–L5 能力分层、MVP 范围&lt;/li&gt;
+&lt;li&gt;产品与数据方案：ROI360、Campaign 健康度、素材效果、账户财务看板设计&lt;/li&gt;
+&lt;li&gt;实施路线图：Phase 1 数据底座、Phase 2 效率工具、Phase 3 策略引擎与 AI Agent&lt;/li&gt;
+&lt;/ul&gt;</description></item></channel></rss>
