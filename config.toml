@@ -1,4 +1,4 @@
-baseURL = "https://zanbo.netlify.app/"
+baseURL = "https://zhanbo.netlify.app/"
 title = "Zhanbo Growth Lab"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh"
@@ -21,8 +21,8 @@ enableDefault = true
 [markup.goldmark.renderHooks.link]
 enableDefault = true
 
-# 可选：启用相对 URL（部署到子目录时用，如 GitHub Pages）
-relativeURLs = true
+# Netlify 部署在根域名，使用绝对 URL 避免内页导航生成相对路径
+relativeURLs = false
 canonifyURLs = false
 
 # 菜单
