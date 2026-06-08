@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Services on Zhanbo Growth Lab</title><link>https://zanbo.netlify.app/services/</link><description>Recent content in Services on Zhanbo Growth Lab</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://zanbo.netlify.app/services/index.xml" rel="self" type="application/rss+xml"/><item><title>A/B 实验与增长测量体系</title><link>https://zanbo.netlify.app/services/experiment-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/services/experiment-platform/</guid><description>&lt;h1 id="ab-实验与增长测量体系"&gt;A/B 实验与增长测量体系&lt;/h1&gt;
-&lt;p&gt;A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的测量系统。&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Services on Zhanbo Growth Lab</title><link>https://abtest.chat/services/</link><description>Recent content in Services on Zhanbo Growth Lab</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://abtest.chat/services/index.xml" rel="self" type="application/rss+xml"/><item><title>A/B 实验与增长测量体系</title><link>https://abtest.chat/services/experiment-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/services/experiment-platform/</guid><description>&lt;h1 id="ab-实验与增长体系"&gt;A/B 实验与增长体系&lt;/h1&gt;
+&lt;p&gt;A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的贝叶斯系统（先验基础上指导后验）。&lt;/p&gt;
 &lt;p&gt;我提供实验平台与增长测量体系的诊断、设计和实施陪跑，尤其关注 &lt;strong&gt;AI / Agent 决策是否具备可信反馈闭环&lt;/strong&gt;。&lt;/p&gt;
 &lt;h2 id="六维诊断框架"&gt;六维诊断框架&lt;/h2&gt;
 &lt;table&gt;
@@ -43,8 +43,14 @@
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;h2 id="agent-ready-measurement"&gt;Agent-ready Measurement&lt;/h2&gt;
-&lt;p&gt;当团队开始用 AI / Agent 做投放建议、预算调整、素材推荐时，实验体系要新增一个问题：反馈信号是否足够正确、及时、稳定，能让 Agent 越学越好，而不是越优化越偏。&lt;/p&gt;
+&lt;h2 id="实验即增长"&gt;实验即增长&lt;/h2&gt;
+&lt;p&gt;通过实验的方法不断优化用户体验、产品特性、买量和营销效率以及商业化收益。 企业内部典型的实验场景&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;用户体验：通过持续的实验优化用户体验，通过时长、留存、GMV/局数/得分等进行衡量&lt;/li&gt;
+&lt;li&gt;产品特性：通过持续实验探索产品发展方向，解决用户需求，提供更多功能或者内容&lt;/li&gt;
+&lt;li&gt;买量和营销效率：通过持续的实验（产品内、媒体侧）优化买量和传播效率，提升ROI，持续提供外延增长动力&lt;/li&gt;
+&lt;li&gt;商业化收益：通过持续的实验优化ecpm，提升用户ltv，为产品和买量提供弹药&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h2 id="典型交付物"&gt;典型交付物&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;《实验平台成熟度诊断报告》&lt;/li&gt;
@@ -54,7 +60,7 @@
 &lt;li&gt;《指标体系与护栏指标设计》&lt;/li&gt;
 &lt;li&gt;《Agent-ready Measurement 检查清单》&lt;/li&gt;
 &lt;li&gt;《实验平台 30/60/90 天改进路线图》&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>UA 买量增长数据诊断</title><link>https://zanbo.netlify.app/services/ua-growth-diagnostic/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/services/ua-growth-diagnostic/</guid><description>&lt;h1 id="ua-买量增长数据诊断"&gt;UA 买量增长数据诊断&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>UA 买量增长数据诊断</title><link>https://abtest.chat/services/ua-growth-diagnostic/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/services/ua-growth-diagnostic/</guid><description>&lt;h1 id="ua-买量增长数据诊断"&gt;UA 买量增长数据诊断&lt;/h1&gt;
 &lt;p&gt;&lt;strong&gt;UA Growth Data Diagnostic&lt;/strong&gt; 帮助出海游戏 Studio 建立一套可验证、可复跑、可落地的买量增长诊断体系，把「去后台看数」升级为「数据可信度 + 买量效率 + 归因链路 + 决策系统」的系统诊断。&lt;/p&gt;
 &lt;h2 id="适合团队"&gt;适合团队&lt;/h2&gt;
 &lt;ul&gt;
@@ -94,7 +100,7 @@
 &lt;li&gt;《归因缺口表与事件链路图》&lt;/li&gt;
 &lt;li&gt;《决策系统改进建议》&lt;/li&gt;
 &lt;li&gt;《30/60/90 天增长系统路线图》&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>发行/投放平台建设咨询</title><link>https://zanbo.netlify.app/services/publishing-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/services/publishing-platform/</guid><description>&lt;h1 id="发行投放平台建设咨询"&gt;发行/投放平台建设咨询&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>发行/投放平台建设咨询</title><link>https://abtest.chat/services/publishing-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/services/publishing-platform/</guid><description>&lt;h1 id="发行投放平台建设咨询"&gt;发行/投放平台建设咨询&lt;/h1&gt;
 &lt;p&gt;面向出海游戏发行团队，帮助从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能发行体系。&lt;/p&gt;
 &lt;h2 id="背景问题"&gt;背景问题&lt;/h2&gt;
 &lt;ul&gt;

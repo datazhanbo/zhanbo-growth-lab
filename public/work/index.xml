@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Works on Zhanbo Growth Lab</title><link>https://zanbo.netlify.app/work/</link><description>Recent content in Works on Zhanbo Growth Lab</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://zanbo.netlify.app/work/index.xml" rel="self" type="application/rss+xml"/><item><title>案例：A/B 实验平台与实验文化建设</title><link>https://zanbo.netlify.app/work/experiment-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/work/experiment-platform/</guid><description>&lt;h1 id="案例ab-实验平台与实验文化建设"&gt;案例：A/B 实验平台与实验文化建设&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>Works on Zhanbo Growth Lab</title><link>https://abtest.chat/work/</link><description>Recent content in Works on Zhanbo Growth Lab</description><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 05 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://abtest.chat/work/index.xml" rel="self" type="application/rss+xml"/><item><title>案例：A/B 实验平台与实验文化建设</title><link>https://abtest.chat/work/experiment-platform/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/work/experiment-platform/</guid><description>&lt;h1 id="案例ab-实验平台与实验文化建设"&gt;案例：A/B 实验平台与实验文化建设&lt;/h1&gt;
 &lt;h2 id="背景"&gt;背景&lt;/h2&gt;
 &lt;p&gt;我在内容、电商、游戏等场景中参与过实验体系建设和方法论推广。实验平台的挑战通常不是单个功能，而是技术、统计、流程和组织文化同时成立。&lt;/p&gt;
 &lt;p&gt;常见问题：&lt;/p&gt;
@@ -17,7 +17,30 @@
 &lt;li&gt;指标体系：北极星指标、核心指标、护栏指标、长期指标&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="组织推广"&gt;组织推广&lt;/h2&gt;
-&lt;p&gt;实验平台要真正有效，必须让产品、算法、运营和管理层对「什么是可信结论」形成共同语言。&lt;/p&gt;</description></item><item><title>案例：策略产能，投放团队的第二增长曲线</title><link>https://zanbo.netlify.app/work/strategy-capacity/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/work/strategy-capacity/</guid><description>&lt;h1 id="案例策略产能投放团队的第二增长曲线"&gt;案例：策略产能，投放团队的第二增长曲线&lt;/h1&gt;
+&lt;p&gt;实验平台要真正有效，必须让产品、算法、运营和管理层对「什么是可信结论」形成共同语言。&lt;/p&gt;
+&lt;h2 id="内容平台案例"&gt;内容平台案例&lt;/h2&gt;
+&lt;p&gt;19年-21年负责快手实验平台迭代，在社区科学部内部（python版本）世界流量模型、分流服务和指标pipeline基础上进行重构，支持公司产品、社科、商业化全业务的实验度量，面向管理层、一线业务提供决策依据。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;流量模型升级，基于Google重叠实验框架进行流量域、层管理，实现业务的拆分，并提供业务长期基线对照&lt;/li&gt;
+&lt;li&gt;分流服务升级，支持随机实验、随机区组实验（用户分层），支持联合实验、父子实验等级联逻辑&lt;/li&gt;
+&lt;li&gt;指标引擎升级，平台实现业务指标口径和计算的统筹，提供北极星指标、综合分指标进行实验度量，并基于核心指标检验进行流量质检（PreAA）&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="海外电商案例"&gt;海外电商案例&lt;/h2&gt;
+&lt;p&gt;22年-25年负责Shopee实验平台重建，把过去分散在各个业务（推荐、搜索、电商、广告）的实验平台进行统一，通过完整的实验度量Infra&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;流量框架，基于Google框架支持了流量域的嵌套，更好的进行搜广推的holdout控制和效果归因&lt;/li&gt;
+&lt;li&gt;分流服务，流量框架提供的正交、互斥计算，以及分流服务内部提供的联合、父子、正则等动态路由能力&lt;/li&gt;
+&lt;li&gt;指标分析，实现了z-test/welch&amp;rsquo;s t-test/chi-squre test等检验方法，以及delta methond等variance缩减方法，通过报告模板支持快速实验洞察，打通rollout流程，对接github实现审核和自动发布&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id="出海游戏案例"&gt;出海游戏案例&lt;/h2&gt;
+&lt;p&gt;25年上半年为头部出海休闲游戏提供实验平台咨询服务，从互斥流量桶升级到重叠实验框架，实现千级别的实验并发，提高两个数量级，主要交付&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;实验平台诊断，聚焦客户主要问题进行实验平台概念、平台实现的诊断（互斥桶模型、CSR分流）&lt;/li&gt;
+&lt;li&gt;流量框架升级，按照重叠流量框架进行流量域、层的切分（新增域、活跃域，算法层、UI层、商业化层等），实现完全的基于实验的配置分发&lt;/li&gt;
+&lt;li&gt;特性拆分和治理，正交特性的拆分以及实验治理，提升流量同质性，打通游戏引擎研发（特性 feature）-发版（bundle），实现实验配置的自动化&lt;/li&gt;
+&lt;li&gt;实验分析提升，收敛核心指标，通过综合分、质量分、效能分提高决策效率，通过CUPED和贝叶斯分析降噪提高分析的置信度&lt;/li&gt;
+&lt;li&gt;实验文化和创意库，团队内部普及实验问题，并通过创意库提高创意产能（结合大模型）&lt;/li&gt;
+&lt;/ol&gt;</description></item><item><title>案例：策略产能，投放团队的第二增长曲线</title><link>https://abtest.chat/work/strategy-capacity/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/work/strategy-capacity/</guid><description>&lt;h1 id="案例策略产能投放团队的第二增长曲线"&gt;案例：策略产能，投放团队的第二增长曲线&lt;/h1&gt;
 &lt;h2 id="什么是策略产能"&gt;什么是策略产能&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;策略产能&lt;/strong&gt; = 投放团队把数据、经验和判断转化为有效增长动作的能力。&lt;/p&gt;
 &lt;p&gt;它不等于操作时长，也不等于 campaign 数量，而是团队能否持续回答：&lt;/p&gt;
@@ -27,6 +50,13 @@
 &lt;li&gt;哪些素材正在疲劳？&lt;/li&gt;
 &lt;li&gt;哪些出价和预算动作有效？&lt;/li&gt;
 &lt;li&gt;哪些经验可以沉淀为规则和模板？&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;关键动作：
+核心围绕“出价、点位、素材、人群”进行策略探索，充分利用一方自有数据、二方平台数据、三方采买数据&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;自有数据&lt;/strong&gt;：埋点sdk、mmp sdk、media sdk回传的数据，除内部分析，按需把数据传送给媒体或者MMP平台（提高学习效率、ROI准确性）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;平台数据&lt;/strong&gt;：按照颗粒度和时效性同步媒体和平台的数据，自建分析和dashboard提升，不断迭代买量效率和策略迭代&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;三方数据&lt;/strong&gt;：按需采购行业benchmark数据进行参照，明确竞品打分，了解市场趋势&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="诊断指标"&gt;诊断指标&lt;/h2&gt;
 &lt;table&gt;
@@ -64,7 +94,7 @@
 &lt;li&gt;&lt;strong&gt;减操作&lt;/strong&gt;：批量创编、模板化 campaign、自动导数、命名规范。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;推信号&lt;/strong&gt;：ROI 红绿看板、异常预警、素材疲劳检测、机会清单。&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;沉策略&lt;/strong&gt;：策略模板库、动作审计日志、Action Tracking、规则引擎与 Agent 建议草案。&lt;/li&gt;
-&lt;/ol&gt;</description></item><item><title>案例：出海游戏 UA 增长数据诊断</title><link>https://zanbo.netlify.app/work/ua-growth-diagnostic/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/work/ua-growth-diagnostic/</guid><description>&lt;h1 id="案例出海游戏-ua-增长数据诊断"&gt;案例：出海游戏 UA 增长数据诊断&lt;/h1&gt;
+&lt;/ol&gt;</description></item><item><title>案例：出海游戏 UA 增长数据诊断</title><link>https://abtest.chat/work/ua-growth-diagnostic/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/work/ua-growth-diagnostic/</guid><description>&lt;h1 id="案例出海游戏-ua-增长数据诊断"&gt;案例：出海游戏 UA 增长数据诊断&lt;/h1&gt;
 &lt;h2 id="背景"&gt;背景&lt;/h2&gt;
 &lt;p&gt;出海游戏团队在规模化买量后，常见问题不是「没有数据」，而是数据太多、口径太散、系统之间互相解释不清。&lt;/p&gt;
 &lt;ul&gt;
@@ -89,7 +119,7 @@
 &lt;li&gt;原始数据、本地脚本、指标口径和图表全部可复跑&lt;/li&gt;
 &lt;li&gt;区分管理层看板、UA Lead 看板和优化师工作台&lt;/li&gt;
 &lt;li&gt;每个投放动作必须形成 action tracking：动作前、动作后、预期、结果&lt;/li&gt;
-&lt;/ul&gt;</description></item><item><title>案例：发行/投放平台从 L1 到 L4</title><link>https://zanbo.netlify.app/work/publishing-platform-l1-l4/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://zanbo.netlify.app/work/publishing-platform-l1-l4/</guid><description>&lt;h1 id="案例发行投放平台从-l1-到-l4"&gt;案例：发行/投放平台从 L1 到 L4&lt;/h1&gt;
+&lt;/ul&gt;</description></item><item><title>案例：发行/投放平台从 L1 到 L5</title><link>https://abtest.chat/work/publishing-platform-l1-l4/</link><pubDate>Fri, 05 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/work/publishing-platform-l1-l4/</guid><description>&lt;h1 id="案例发行投放平台从-l1-到-l5"&gt;案例：发行/投放平台从 L1 到 L5&lt;/h1&gt;
 &lt;h2 id="背景"&gt;背景&lt;/h2&gt;
 &lt;p&gt;成熟出海发行团队的增长系统通常不是从零开始，而是在大量工具、报表、后台和手工流程之上继续增长。&lt;/p&gt;
 &lt;p&gt;典型现状：&lt;/p&gt;
@@ -143,4 +173,13 @@
 &lt;li&gt;先解决数据可信，再谈 AI 自动化&lt;/li&gt;
 &lt;li&gt;对业务方要用 Quick Win 换长期能力建设空间&lt;/li&gt;
 &lt;li&gt;对管理层要用 ROI、人效、风险降低讲平台价值&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="出海游戏案例"&gt;出海游戏案例&lt;/h2&gt;
+&lt;p&gt;客户通过BI进行了简单的媒体、mmp数据聚合，但是整体数据隔离、可视化体验差、优化师效率不高&amp;amp;难以产出高效策略（L0阶段），如何推动平台升级&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;L1信息可见&lt;/strong&gt;: 数据先行，将零散的媒体数据、MMP数据进行整理、查询引擎加速，提供统一的通用报表支持ROI查看（包含计划维度、消耗指标、效果指标、以及ROI等评估指标）&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L2数据整合&lt;/strong&gt;：在L1的基础上进行媒体数据、MMP数据、自有数据的分层建设和聚合（ods-dwd-dws-ads），支持维度扩展、时效拓展&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L3效率工具&lt;/strong&gt;：通过媒体直连进行批量的计划、素材创建，提高设计师、优化师效率&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L4策略辅助&lt;/strong&gt;：围绕“出价、点位、素材、人群”进行策略的迭代，并通过平台功能实现策略的执行和实验对比&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;L5策略自动化&lt;/strong&gt;： 通过Agent实现策略的自动迭代，以及对话盯盘、快速计划干预等（具体可以参考AD Agent案例）&lt;/li&gt;
 &lt;/ul&gt;</description></item></channel></rss>
