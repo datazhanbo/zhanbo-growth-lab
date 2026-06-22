@@ -1,0 +1,24 @@
+{{- with site.Params.images }}
+{{- range first 1 . }}
+<meta property="og:image" content="{{ . | absURL }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="{{ . | absURL }}">
+{{- end }}
+{{- end }}
+{{- if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": {{ site.Title }},
+  "alternateName": "Zhanbo Growth Lab",
+  "url": {{ site.Home.Permalink }},
+  "description": {{ site.Params.description }},
+  "inLanguage": "zh-CN",
+  "publisher": {
+    "@type": "Person",
+    "name": "何赞"
+  }
+}
+</script>
+{{- end }}

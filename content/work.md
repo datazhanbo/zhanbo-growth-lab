@@ -1,6 +1,8 @@
 ---
 title: "案例"
 date: 2026-06-05T00:00:00+08:00
+description: "出海游戏增长、UA 买量诊断、A/B 实验平台、发行投放平台和策略自动化案例。"
+keywords: ["出海游戏案例", "买量案例", "实验平台案例", "发行平台", "策略自动化"]
 draft: false
 comments: false
 ---
@@ -14,7 +16,7 @@ comments: false
 | 案例 | 关键词 | 解决的问题 |
 |---|---|---|
 | [出海游戏 UA 增长数据诊断](/work/ua-growth-diagnostic/) | UA、MMP、ROI、归因、BI | 判断 ROI 是否可信、钱浪费在哪里、如何建立日常决策系统 |
-| [发行/投放平台从 L1 到 L4](/work/publishing-platform-l1-l4/) | 发行平台、素材、批量创编、策略引擎 | 从多后台人工操作升级为统一增长平台 |
+| [发行/投放平台从 L1 到 L5](/work/publishing-platform-l1-l4/) | 发行平台、素材、批量创编、策略引擎、Agent 闭环 | 从多后台人工操作升级为统一增长平台 |
 | [A/B 实验平台与实验文化建设](/work/experiment-platform/) | 实验平台、统计分析、指标体系 | 让产品、算法、运营能通过实验持续学习 |
 | [策略产能：投放团队的第二增长曲线](/work/strategy-capacity/) | 优化师效率、策略沉淀、自动化 | 把优化师从操作中释放出来，把经验沉淀为系统能力 |
 

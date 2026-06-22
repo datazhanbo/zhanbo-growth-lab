@@ -1,5 +1,5 @@
 ---
-title: "A/B 实验与增长测量体系"
+title: "A/B 实验与增长体系"
 date: 2026-06-05T00:00:00+08:00
 draft: false
 comments: false

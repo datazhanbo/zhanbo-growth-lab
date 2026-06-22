@@ -1,6 +1,8 @@
 ---
-title: "Zhanbo Growth Lab"
+title: "展博增长实验室"
 date: 2026-05-07T00:00:00+08:00
+description: "展博增长实验室面向出海游戏 Studio 和增长团队，提供 UA 买量诊断、A/B 实验体系、商业化增长和 AI Agent 增长系统咨询。"
+keywords: ["展博增长实验室", "出海游戏增长", "UA买量", "AB测试", "增长咨询", "AI Agent"]
 draft: false
 ---
 

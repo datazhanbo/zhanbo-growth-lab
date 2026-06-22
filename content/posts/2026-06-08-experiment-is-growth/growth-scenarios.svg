@@ -1,0 +1,39 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#F7FAFC"/>
+  <rect x="56" y="52" width="1088" height="656" rx="32" fill="white" stroke="#E2E8F0" stroke-width="2"/>
+
+  <text x="600" y="118" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="42" font-weight="700" fill="#111827">企业增长的四类典型实验场景</text>
+  <text x="600" y="162" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="22" fill="#64748B">通过持续实验优化用户体验、产品方向、买量效率与商业化收益</text>
+
+  <circle cx="600" cy="390" r="108" fill="#EEF2FF" stroke="#6366F1" stroke-width="3"/>
+  <text x="600" y="374" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="34" font-weight="700" fill="#3730A3">实验</text>
+  <text x="600" y="415" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="30" font-weight="700" fill="#3730A3">即增长</text>
+
+  <path d="M518 318 L382 250" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M682 318 L818 250" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M518 462 L382 530" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+  <path d="M682 462 L818 530" stroke="#CBD5E1" stroke-width="4" stroke-linecap="round"/>
+
+  <rect x="132" y="204" width="326" height="150" rx="24" fill="#ECFDF5" stroke="#10B981" stroke-width="2"/>
+  <text x="295" y="256" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="30" font-weight="700" fill="#065F46">用户体验</text>
+  <text x="295" y="296" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="20" fill="#047857">新手引导 · 难度 · UI · 留存</text>
+  <text x="295" y="326" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="18" fill="#047857">衡量：时长 / 留存 / 对局数</text>
+
+  <rect x="742" y="204" width="326" height="150" rx="24" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2"/>
+  <text x="905" y="256" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="30" font-weight="700" fill="#1E3A8A">产品特性</text>
+  <text x="905" y="296" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="20" fill="#1D4ED8">玩法 · 社交 · 活动 · 功能</text>
+  <text x="905" y="326" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="18" fill="#1D4ED8">衡量：需求验证 / 留存 / 付费</text>
+
+  <rect x="132" y="482" width="326" height="150" rx="24" fill="#FFF7ED" stroke="#F97316" stroke-width="2"/>
+  <text x="295" y="534" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="30" font-weight="700" fill="#9A3412">买量与营销</text>
+  <text x="295" y="574" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="20" fill="#C2410C">素材 · 受众 · 出价 · 国家</text>
+  <text x="295" y="604" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="18" fill="#C2410C">衡量：CTR / CPI / ROAS / ROI</text>
+
+  <rect x="742" y="482" width="326" height="150" rx="24" fill="#FDF2F8" stroke="#EC4899" stroke-width="2"/>
+  <text x="905" y="534" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="30" font-weight="700" fill="#9D174D">商业化收益</text>
+  <text x="905" y="574" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="20" fill="#BE185D">礼包 · 广告 · eCPM · LTV</text>
+  <text x="905" y="604" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="18" fill="#BE185D">衡量：ARPU / 付费率 / LTV</text>
+
+  <rect x="376" y="662" width="448" height="40" rx="20" fill="#F1F5F9"/>
+  <text x="600" y="688" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','PingFang SC','Microsoft YaHei',Arial,sans-serif" font-size="18" fill="#475569">假设 → 实验 → 数据 → 结论 → 迭代</text>
+</svg>

@@ -7,7 +7,7 @@ comments: false
 
 # 关于展博
 
-你好，我是何赞，常用名字展博。我的当前定位是 **Data & AI 独立咨询顾问**，专注于出海游戏增长、数据产品、买量平台、A/B 实验和 AI Agent 增长系统。
+你好，我是何赞，花名展博。我的当前定位是 **Data & AI 独立咨询顾问**，专注于出海游戏增长、数据产品、买量平台、A/B 实验和 AI Agent 增长系统。
 
 Zhanbo Growth Lab 是我的个人增长实验室：一方面沉淀我在数据产品和增长平台上的方法论，另一方面为出海游戏 Studio 和增长团队提供咨询服务。
 
@@ -59,5 +59,6 @@ Zhanbo Growth Lab 是我的个人增长实验室：一方面沉淀我在数据�
 
 - GitHub: [@datazhanbo](https://github.com/datazhanbo)
 - Weixin: growth_zhanbo
+- 微信公众号：展博增长实验室
 
 如果你正在处理出海买量、归因、实验平台或增长系统建设问题，可以从 [服务](/services/) 或 [案例](/work/) 开始了解。
