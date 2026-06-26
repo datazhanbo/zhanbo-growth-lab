@@ -88,6 +88,9 @@ canonifyURLs = false
   publisherType = "Person"
   sameAs = ["https://github.com/datazhanbo"]
 
+[params.analytics.google]
+  id = "G-H31QEMFKYD"
+
 # 首页配置
 [homeInfoParams]
   Title = "展博增长实验室"
