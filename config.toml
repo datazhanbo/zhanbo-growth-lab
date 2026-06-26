@@ -10,6 +10,15 @@ enableEmoji = true
 paginate = 10
 paginatePath = "page"
 
+# 分类系统 - 支持全站标签筛选
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+# 让所有section都支持taxonomy
+[params.taxonomies]
+  includeSections = ["posts", "work", "services"]
+
 # 永久链接
 [permalinks]
   posts = "/posts/:title/"
