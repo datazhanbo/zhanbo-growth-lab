@@ -2,8 +2,8 @@
 title: 企业级 AI 应用落地：从 FOMO 到真正的业务增长
 date: 2026-05-14T15:10:00+08:00
 description: "AI 带来的个人效能提升有目共睹，但企业级落地却面临集体 FOMO。本文从红杉资本、OpenAI、神策数据等行业先锋的视角，解读企业 AI 应用的真正路径。"
-tags: ["AI Native", "企业级 AI", "Agent", "咨询", "Sequoia"]
-categories: ["AI 商业"]
+tags: ["AI Native", "企业级 AI", "AI Agent", "咨询", "Sequoia"]
+categories: ["AI 工程"]
 draft: false
 showToc: true
 TocOpen: false
@@ -160,3 +160,11 @@ License   AI Worker   按价值定价
 3. 桑文峰, "AGI is coming，还需要软件公司吗？", 2026-05-13
 4. McKinsey Global Survey on AI, 2026
 5. MIT Sloan Management Review, "The State of Enterprise AI Adoption", 2026
+
+---
+
+## 延伸阅读
+
+- [企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗]({{< ref "posts/2026-05-enterprise-ai-agent-7-layer-funnel" >}})——把"AI Native 该怎么落地"从战略层进一步拆到工程层的 7 层漏斗。
+- [Meta 商业化大变革：从 Marketing API 到 Agentic Ads]({{< ref "posts/2026-06-meta-agentic-ads-a2a" >}})——从最典型的商业化场景（广告买量）看 Agent 化的行业趋势。
+- [钛动开了 5 年户，除了充钱没用过任何产品——如何自建 inhouse 投放平台]({{< ref "posts/2026-07-04-agentic-ua-inhouse-ad-platform" >}})——AI 冲击下代投 / SaaS / inhouse 三种路径的终局判断。

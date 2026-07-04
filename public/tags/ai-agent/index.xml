@@ -1,9 +1,29 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>AI Agent on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title><link>https://abtest.chat/tags/ai-agent/</link><description>Recent content in AI Agent on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description><image><title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title><url>https://abtest.chat/images/og-default.svg</url><link>https://abtest.chat/images/og-default.svg</link></image><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://abtest.chat/tags/ai-agent/index.xml" rel="self" type="application/rss+xml"/><item><title>智能发行平台建设咨询</title><link>https://abtest.chat/services/publishing-platform/</link><pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/services/publishing-platform/</guid><description>&lt;h1 id="智能发行平台建设咨询"&gt;智能发行平台建设咨询&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>AI Agent on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+    <link>http://localhost:1313/tags/ai-agent/</link>
+    <description>Recent content in AI Agent on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
+    <image>
+      <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/ai-agent/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>智能发行平台建设咨询</title>
+      <link>http://localhost:1313/services/publishing-platform/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/services/publishing-platform/</guid>
+      <description>&lt;h1 id=&#34;智能发行平台建设咨询&#34;&gt;智能发行平台建设咨询&lt;/h1&gt;
 &lt;p&gt;4周内，把发行团队从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能增长体系。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;优秀的优化师把时间花在决策上，不是每天切8个后台粘数。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;当你的优化师一半时间在做&amp;quot;数据搬运工&amp;quot;，设计师和投放协作要靠Excel/飞书文件夹，财务对账要翻3个系统——你缺的不是人，是平台。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="适合谁"&gt;适合谁&lt;/h2&gt;
+&lt;h2 id=&#34;适合谁&#34;&gt;适合谁&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;本服务特别适合：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;🎮 中大型出海游戏发行商：3款以上产品并行，月消耗百万美金级&lt;/li&gt;
@@ -19,42 +39,66 @@
 &lt;p&gt;&amp;ldquo;想上 AI 自动投放，但连基础的数据打通都没做好&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id="服务周期"&gt;服务周期&lt;/h2&gt;
+&lt;h2 id=&#34;服务周期&#34;&gt;服务周期&lt;/h2&gt;
 &lt;p&gt;🕒 &lt;strong&gt;4周蓝图设计 + 12周实施陪跑（可选）&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="发行平台能力分层模型"&gt;发行平台能力分层模型&lt;/h2&gt;
+&lt;h2 id=&#34;发行平台能力分层模型&#34;&gt;发行平台能力分层模型&lt;/h2&gt;
 &lt;p&gt;我们不做&amp;quot;一步到位&amp;quot;的空中楼阁——&lt;strong&gt;从L1到L4，每层都有明确的业务价值&lt;/strong&gt;：&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;能力层级&lt;/th&gt;
-&lt;th&gt;核心功能&lt;/th&gt;
-&lt;th&gt;业务价值&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;L1 数据基建&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;统一数仓、ROI360 看板、素材效果、营销效果&lt;/td&gt;
-&lt;td&gt;数据打通，看数效率提升 50%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;L2 智能辅助&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Campaign 红绿看板、异常预警、信号体系&lt;/td&gt;
-&lt;td&gt;问题发现从天级缩短到分钟级&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;L3 操作工具&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;跨媒体批量创编、素材库、账户财务对账&lt;/td&gt;
-&lt;td&gt;优化师和设计师人效提升 30%&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;L4 AI Agent&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;UA Monitor + Ad Agent 双轮驱动&lt;/td&gt;
-&lt;td&gt;80% 日常监控、分析、建议自动化&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;能力层级&lt;/th&gt;
+          &lt;th&gt;核心功能&lt;/th&gt;
+          &lt;th&gt;业务价值&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;L1 数据基建&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;统一数仓、ROI360 看板、素材效果、营销效果&lt;/td&gt;
+          &lt;td&gt;数据打通，看数效率提升 50%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;L2 智能辅助&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Campaign 红绿看板、异常预警、信号体系&lt;/td&gt;
+          &lt;td&gt;问题发现从天级缩短到分钟级&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;L3 操作工具&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;跨媒体批量创编、素材库、账户财务对账&lt;/td&gt;
+          &lt;td&gt;优化师和设计师人效提升 30%&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;L4 AI Agent&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;UA Monitor + Ad Agent 双轮驱动&lt;/td&gt;
+          &lt;td&gt;80% 日常监控、分析、建议自动化&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;h2 id="四大建设抓手"&gt;四大建设抓手&lt;/h2&gt;
-&lt;p&gt;不追求大而全，&lt;strong&gt;每个抓手都指向具体的业务结果&lt;/strong&gt;：&lt;/p&gt;</description></item></channel></rss>
+&lt;h2 id=&#34;四大建设抓手&#34;&gt;四大建设抓手&lt;/h2&gt;
+&lt;p&gt;不追求大而全，&lt;strong&gt;每个抓手都指向具体的业务结果&lt;/strong&gt;：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Meta 商业化大变革：从 Marketing API 到 Agentic Ads——未来的广告买量是 A2A 架构</title>
+      <link>http://localhost:1313/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</guid>
+      <description>从 Meta 广告平台的 20 年演进，看 Marketing API 为什么从 v1 一路走到 v25，以及广告主侧的 Ad Agent 为什么会越来越重要。</description>
+    </item>
+    <item>
+      <title>企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗</title>
+      <link>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</guid>
+      <description>从最强的模型到最终的业务指标，中间隔着至少 7 层漏斗。用 Ad Agent 实战案例，系统讲解 AI 应用交付的漏斗模型、技术选型、实施路径与不同规模企业的最佳实践。</description>
+    </item>
+    <item>
+      <title>企业级 AI 应用落地：从 FOMO 到真正的业务增长</title>
+      <link>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</link>
+      <pubDate>Thu, 14 May 2026 15:10:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</guid>
+      <description>AI 带来的个人效能提升有目共睹，但企业级落地却面临集体 FOMO。本文从红杉资本、OpenAI、神策数据等行业先锋的视角，解读企业 AI 应用的真正路径。</description>
+    </item>
+  </channel>
+</rss>

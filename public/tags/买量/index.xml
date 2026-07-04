@@ -1,9 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>买量 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title><link>https://abtest.chat/tags/%E4%B9%B0%E9%87%8F/</link><description>Recent content in 买量 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description><image><title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title><url>https://abtest.chat/images/og-default.svg</url><link>https://abtest.chat/images/og-default.svg</link></image><generator>Hugo</generator><language>zh-CN</language><lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate><atom:link href="https://abtest.chat/tags/%E4%B9%B0%E9%87%8F/index.xml" rel="self" type="application/rss+xml"/><item><title>UA买量增长数据诊断冲刺</title><link>https://abtest.chat/services/ua-growth-diagnostic/</link><pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/services/ua-growth-diagnostic/</guid><description>&lt;h1 id="ua买量增长数据诊断冲刺"&gt;UA买量增长数据诊断冲刺&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>买量 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+    <link>http://localhost:1313/tags/%E4%B9%B0%E9%87%8F/</link>
+    <description>Recent content in 买量 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
+    <image>
+      <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E4%B9%B0%E9%87%8F/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>钛动开了5年户，除了充钱没用过任何产品——留给钛动们的时间不多了，以及如何自建 inhouse 投放平台</title>
+      <link>http://localhost:1313/posts/%E9%92%9B%E5%8A%A8%E5%BC%80%E4%BA%865%E5%B9%B4%E6%88%B7%E9%99%A4%E4%BA%86%E5%85%85%E9%92%B1%E6%B2%A1%E7%94%A8%E8%BF%87%E4%BB%BB%E4%BD%95%E4%BA%A7%E5%93%81%E7%95%99%E7%BB%99%E9%92%9B%E5%8A%A8%E4%BB%AC%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%8D%E5%A4%9A%E4%BA%86%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA-inhouse-%E6%8A%95%E6%94%BE%E5%B9%B3%E5%8F%B0/</link>
+      <pubDate>Sat, 04 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E9%92%9B%E5%8A%A8%E5%BC%80%E4%BA%865%E5%B9%B4%E6%88%B7%E9%99%A4%E4%BA%86%E5%85%85%E9%92%B1%E6%B2%A1%E7%94%A8%E8%BF%87%E4%BB%BB%E4%BD%95%E4%BA%A7%E5%93%81%E7%95%99%E7%BB%99%E9%92%9B%E5%8A%A8%E4%BB%AC%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%8D%E5%A4%9A%E4%BA%86%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA-inhouse-%E6%8A%95%E6%94%BE%E5%B9%B3%E5%8F%B0/</guid>
+      <description>钛动 IPO 是一个节点，不是终点。Agentic UA 冲击下代投、SaaS、inhouse 三种路径的终局判断。</description>
+    </item>
+    <item>
+      <title>UA买量增长数据诊断冲刺</title>
+      <link>http://localhost:1313/services/ua-growth-diagnostic/</link>
+      <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/services/ua-growth-diagnostic/</guid>
+      <description>&lt;h1 id=&#34;ua买量增长数据诊断冲刺&#34;&gt;UA买量增长数据诊断冲刺&lt;/h1&gt;
 &lt;p&gt;2周内，把买量从&amp;quot;去后台看数&amp;quot;升级为&amp;quot;数据可信 + 效率可测 + 归因清晰 + 决策可复现&amp;quot;的增长系统。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;90%的买量问题，不是优化师不够努力，而是数据本身就不全面、不可信。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;ROI算不准、归因有坑、老板和团队对不上数——这些根本不是&amp;quot;再招两个优化师&amp;quot;能解决的问题。&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="适合谁"&gt;适合谁&lt;/h2&gt;
+&lt;h2 id=&#34;适合谁&#34;&gt;适合谁&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;本服务特别适合：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;🚀 成长期出海游戏 Studio：数据散、ROI 不稳、扩量困难&lt;/li&gt;
@@ -19,70 +46,94 @@
 &lt;p&gt;&amp;ldquo;优化师每天盯8个后台，人效极低，还经常漏异常&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id="服务周期"&gt;服务周期&lt;/h2&gt;
+&lt;h2 id=&#34;服务周期&#34;&gt;服务周期&lt;/h2&gt;
 &lt;p&gt;🕒 &lt;strong&gt;2周数据诊断 + 4周落地陪跑（可选）&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id="我们要回答的四个核心问题"&gt;我们要回答的四个核心问题&lt;/h2&gt;
+&lt;h2 id=&#34;我们要回答的四个核心问题&#34;&gt;我们要回答的四个核心问题&lt;/h2&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;问题&lt;/th&gt;
-&lt;th&gt;本质&lt;/th&gt;
-&lt;th&gt;为什么重要&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;数据准不准&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;可信度基线&lt;/td&gt;
-&lt;td&gt;数据错了，所有决策都是错的&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;钱花得好不好&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;效率诊断&lt;/td&gt;
-&lt;td&gt;找到预算浪费，释放20-30%的增长空间&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;归因链路有没有坑&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;基础建设&lt;/td&gt;
-&lt;td&gt;SKAN、MMP、SDK、S2S 环环相扣，一个环节错全错&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;团队能否持续决策&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;组织能力&lt;/td&gt;
-&lt;td&gt;从&amp;quot;人盯数&amp;quot;变成&amp;quot;数找人&amp;quot;&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;问题&lt;/th&gt;
+          &lt;th&gt;本质&lt;/th&gt;
+          &lt;th&gt;为什么重要&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;数据准不准&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;可信度基线&lt;/td&gt;
+          &lt;td&gt;数据错了，所有决策都是错的&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;钱花得好不好&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;效率诊断&lt;/td&gt;
+          &lt;td&gt;找到预算浪费，释放20-30%的增长空间&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;归因链路有没有坑&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;基础建设&lt;/td&gt;
+          &lt;td&gt;SKAN、MMP、SDK、S2S 环环相扣，一个环节错全错&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;团队能否持续决策&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;组织能力&lt;/td&gt;
+          &lt;td&gt;从&amp;quot;人盯数&amp;quot;变成&amp;quot;数找人&amp;quot;&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;h2 id="诊断范围全覆盖"&gt;诊断范围全覆盖&lt;/h2&gt;
+&lt;h2 id=&#34;诊断范围全覆盖&#34;&gt;诊断范围全覆盖&lt;/h2&gt;
 &lt;p&gt;不只是看某个后台的数据，而是&lt;strong&gt;全链路端到端扫描&lt;/strong&gt;：&lt;/p&gt;
 &lt;table&gt;
-&lt;thead&gt;
-&lt;tr&gt;
-&lt;th&gt;层级&lt;/th&gt;
-&lt;th&gt;诊断内容&lt;/th&gt;
-&lt;/tr&gt;
-&lt;/thead&gt;
-&lt;tbody&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;广告平台与媒体&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;账户、Campaign、Ad Set、Creative、Spend、Action History&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;归因平台 / MMP&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;Attribution、Cost、Cohort、SKAN、Raw Data、Data API&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;游戏 SDK 与事件&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;SDK 初始化、Event Taxonomy、Revenue、S2S、Ad Mediation&lt;/td&gt;
-&lt;/tr&gt;
-&lt;tr&gt;
-&lt;td&gt;&lt;strong&gt;数据聚合与 BI&lt;/strong&gt;&lt;/td&gt;
-&lt;td&gt;数据源、ETL、维度、指标合同、看板和治理&lt;/td&gt;
-&lt;/tr&gt;
-&lt;/tbody&gt;
+  &lt;thead&gt;
+      &lt;tr&gt;
+          &lt;th&gt;层级&lt;/th&gt;
+          &lt;th&gt;诊断内容&lt;/th&gt;
+      &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;广告平台与媒体&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;账户、Campaign、Ad Set、Creative、Spend、Action History&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;归因平台 / MMP&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;Attribution、Cost、Cohort、SKAN、Raw Data、Data API&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;游戏 SDK 与事件&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;SDK 初始化、Event Taxonomy、Revenue、S2S、Ad Mediation&lt;/td&gt;
+      &lt;/tr&gt;
+      &lt;tr&gt;
+          &lt;td&gt;&lt;strong&gt;数据聚合与 BI&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;数据源、ETL、维度、指标合同、看板和治理&lt;/td&gt;
+      &lt;/tr&gt;
+  &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;hr&gt;
-&lt;h2 id="你将拿到什么核心交付物"&gt;你将拿到什么（核心交付物）&lt;/h2&gt;
-&lt;p&gt;不是空泛的&amp;quot;优化建议&amp;quot;，而是&lt;strong&gt;优化师第二天就能用的行动清单&lt;/strong&gt;：&lt;/p&gt;</description></item><item><title>出海休闲游戏小团队，如何建立第一套增长系统？</title><link>https://abtest.chat/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</link><pubDate>Mon, 15 Jun 2026 00:00:00 +0800</pubDate><guid>https://abtest.chat/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</guid><description>小 studio 的增长起点不只是买量，而是一套能让产品、买量、商业化持续互相校准的实验增长系统。</description></item></channel></rss>
+&lt;h2 id=&#34;你将拿到什么核心交付物&#34;&gt;你将拿到什么（核心交付物）&lt;/h2&gt;
+&lt;p&gt;不是空泛的&amp;quot;优化建议&amp;quot;，而是&lt;strong&gt;优化师第二天就能用的行动清单&lt;/strong&gt;：&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>出海休闲游戏小团队，如何建立第一套增长系统？</title>
+      <link>http://localhost:1313/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</link>
+      <pubDate>Mon, 15 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</guid>
+      <description>小 studio 的增长起点不只是买量，而是一套能让产品、买量、商业化持续互相校准的实验增长系统。</description>
+    </item>
+    <item>
+      <title>Meta 商业化大变革：从 Marketing API 到 Agentic Ads——未来的广告买量是 A2A 架构</title>
+      <link>http://localhost:1313/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</link>
+      <pubDate>Mon, 01 Jun 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</guid>
+      <description>从 Meta 广告平台的 20 年演进，看 Marketing API 为什么从 v1 一路走到 v25，以及广告主侧的 Ad Agent 为什么会越来越重要。</description>
+    </item>
+    <item>
+      <title>企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗</title>
+      <link>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</link>
+      <pubDate>Fri, 29 May 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</guid>
+      <description>从最强的模型到最终的业务指标，中间隔着至少 7 层漏斗。用 Ad Agent 实战案例，系统讲解 AI 应用交付的漏斗模型、技术选型、实施路径与不同规模企业的最佳实践。</description>
+    </item>
+  </channel>
+</rss>

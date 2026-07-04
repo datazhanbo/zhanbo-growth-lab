@@ -30,6 +30,10 @@ enableDefault = true
 [markup.goldmark.renderHooks.link]
 enableDefault = true
 
+# 允许 Markdown 中的原始 HTML（表格里的 <br>、可选样式等）
+[markup.goldmark.renderer]
+unsafe = true
+
 # Netlify 部署在根域名，使用绝对 URL 避免内页导航生成相对路径
 relativeURLs = false
 canonifyURLs = false
