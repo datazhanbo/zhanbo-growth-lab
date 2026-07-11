@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Services on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-    <link>http://localhost:1313/services/</link>
-    <description>Recent content in Services on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
+    <title>服务 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+    <link>http://localhost:1314/services/</link>
+    <description>Recent content in 服务 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
     <image>
       <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-      <url>http://localhost:1313/images/og-default.svg</url>
-      <link>http://localhost:1313/images/og-default.svg</link>
+      <url>http://localhost:1314/images/og-default.svg</url>
+      <link>http://localhost:1314/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/services/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/services/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UA买量增长数据诊断冲刺</title>
-      <link>http://localhost:1313/services/ua-growth-diagnostic/</link>
+      <link>http://localhost:1314/services/ua-growth-diagnostic/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/ua-growth-diagnostic/</guid>
+      <guid>http://localhost:1314/services/ua-growth-diagnostic/</guid>
       <description>&lt;h1 id=&#34;ua买量增长数据诊断冲刺&#34;&gt;UA买量增长数据诊断冲刺&lt;/h1&gt;
 &lt;p&gt;2周内，把买量从&amp;quot;去后台看数&amp;quot;升级为&amp;quot;数据可信 + 效率可测 + 归因清晰 + 决策可复现&amp;quot;的增长系统。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;90%的买量问题，不是优化师不够努力，而是数据本身就不全面、不可信。&lt;/strong&gt;&lt;/p&gt;
@@ -109,9 +109,9 @@
     </item>
     <item>
       <title>实验平台搭建与诊断冲刺</title>
-      <link>http://localhost:1313/services/experiment-platform/</link>
+      <link>http://localhost:1314/services/experiment-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/experiment-platform/</guid>
+      <guid>http://localhost:1314/services/experiment-platform/</guid>
       <description>&lt;h1 id=&#34;实验平台搭建与诊断冲刺&#34;&gt;实验平台搭建与诊断冲刺&lt;/h1&gt;
 &lt;p&gt;2周内，把你的A/B实验从&amp;quot;看看数据&amp;quot;变成&amp;quot;支撑AI决策的可信反馈闭环&amp;quot;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的贝叶斯系统。&lt;/strong&gt;&lt;/p&gt;
@@ -217,9 +217,9 @@
     </item>
     <item>
       <title>智能发行平台建设咨询</title>
-      <link>http://localhost:1313/services/publishing-platform/</link>
+      <link>http://localhost:1314/services/publishing-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/publishing-platform/</guid>
+      <guid>http://localhost:1314/services/publishing-platform/</guid>
       <description>&lt;h1 id=&#34;智能发行平台建设咨询&#34;&gt;智能发行平台建设咨询&lt;/h1&gt;
 &lt;p&gt;4周内，把发行团队从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能增长体系。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;优秀的优化师把时间花在决策上，不是每天切8个后台粘数。&lt;/strong&gt;&lt;/p&gt;

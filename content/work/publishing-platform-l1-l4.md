@@ -89,7 +89,7 @@ service: "/services/publishing-platform/"
 
 👉 查看完整服务介绍：[智能发行平台建设咨询](/services/publishing-platform/)
 
-**这个案例适合你吗？** 如果你也遇到"平台越做越乱、人效瓶颈、AI落不了地"的问题，加我微信聊聊：`growth_zhanbo`
+**这个案例适合你吗？** 如果你也遇到"平台越做越乱、人效瓶颈、AI落不了地"的问题，加我微信聊聊：`zanhe1984`
 
 ---
 

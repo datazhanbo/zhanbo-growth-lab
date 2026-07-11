@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Works on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-    <link>http://localhost:1313/work/</link>
-    <description>Recent content in Works on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
+    <title>案例与实践 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+    <link>http://localhost:1314/work/</link>
+    <description>Recent content in 案例与实践 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
     <image>
       <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-      <url>http://localhost:1313/images/og-default.svg</url>
-      <link>http://localhost:1313/images/og-default.svg</link>
+      <url>http://localhost:1314/images/og-default.svg</url>
+      <link>http://localhost:1314/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/work/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/work/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>案例：UA数据三套数，ROI差35%</title>
-      <link>http://localhost:1313/work/ua-growth-diagnostic/</link>
+      <link>http://localhost:1314/work/ua-growth-diagnostic/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/ua-growth-diagnostic/</guid>
+      <guid>http://localhost:1314/work/ua-growth-diagnostic/</guid>
       <description>&lt;h1 id=&#34;案例ua数据三套数roi差35&#34;&gt;案例：UA数据三套数，ROI差35%&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：某出海休闲游戏，日消耗50万美金，UA团队8人&lt;/p&gt;
@@ -98,13 +98,13 @@
 &lt;li&gt;✅ 因为数据可信，团队终于敢把日消耗从50万往100万扩了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/ua-growth-diagnostic/&#34;&gt;UA买量增长数据诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/ua-growth-diagnostic/&#34;&gt;UA买量增长数据诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>案例：策略产能，投放团队的第二增长曲线</title>
-      <link>http://localhost:1313/work/strategy-capacity/</link>
+      <link>http://localhost:1314/work/strategy-capacity/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/strategy-capacity/</guid>
+      <guid>http://localhost:1314/work/strategy-capacity/</guid>
       <description>&lt;h1 id=&#34;案例策略产能投放团队的第二增长曲线&#34;&gt;案例：策略产能，投放团队的第二增长曲线&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：5人以上UA团队，人均消耗遇到天花板，招人也涨不动GMV&lt;/p&gt;
@@ -210,9 +210,9 @@
     </item>
     <item>
       <title>案例：发行平台从L0到L4，人效翻倍</title>
-      <link>http://localhost:1313/work/publishing-platform-l1-l4/</link>
+      <link>http://localhost:1314/work/publishing-platform-l1-l4/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/publishing-platform-l1-l4/</guid>
+      <guid>http://localhost:1314/work/publishing-platform-l1-l4/</guid>
       <description>&lt;h1 id=&#34;案例发行平台从l0到l4人效翻倍&#34;&gt;案例：发行平台从L0到L4，人效翻倍&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部出海休闲游戏发行商，15人优化师团队，月消耗数百万美金&lt;/p&gt;
@@ -310,13 +310,13 @@
 &lt;li&gt;✅ &lt;strong&gt;团队信心&lt;/strong&gt;：每层上线都有ROI，管理层愿意持续投入，平台越做越顺&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/publishing-platform/&#34;&gt;智能发行平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/publishing-platform/&#34;&gt;智能发行平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>案例：千级并发实验，从互斥桶到重叠框架</title>
-      <link>http://localhost:1313/work/experiment-platform/</link>
+      <link>http://localhost:1314/work/experiment-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/experiment-platform/</guid>
+      <guid>http://localhost:1314/work/experiment-platform/</guid>
       <description>&lt;h1 id=&#34;案例千级并发实验从互斥桶到重叠框架&#34;&gt;案例：千级并发实验，从互斥桶到重叠框架&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部出海休闲游戏，MAU亿级，产品/算法/商业化团队并行做实验&lt;/p&gt;
@@ -404,7 +404,7 @@
 &lt;li&gt;✅ 创意产能提升，实验数量上来了，产品迭代速度明显加快&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/experiment-platform/&#34;&gt;实验平台搭建与诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/experiment-platform/&#34;&gt;实验平台搭建与诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

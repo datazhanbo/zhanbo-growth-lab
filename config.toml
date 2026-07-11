@@ -56,13 +56,18 @@ canonifyURLs = false
     weight = 30
 
   [[menu.main]]
-    name = "关于"
-    url = "/about/"
-    weight = 40
+    name = "诊断"
+    url = "/diagnostic/"
+    weight = 35
 
   [[menu.main]]
     name = "文章"
     url = "/posts/"
+    weight = 40
+
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
     weight = 50
 
 # 站点参数

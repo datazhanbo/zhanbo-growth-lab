@@ -2,36 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>展博增长实验室 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-    <link>http://localhost:1313/</link>
+    <link>http://localhost:1314/</link>
     <description>Recent content in 展博增长实验室 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
     <image>
       <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-      <url>http://localhost:1313/images/og-default.svg</url>
-      <link>http://localhost:1313/images/og-default.svg</link>
+      <url>http://localhost:1314/images/og-default.svg</url>
+      <link>http://localhost:1314/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 04 Jul 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1314/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>实验即增长：我的产品正式发布</title>
-      <link>http://localhost:1313/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link>
+      <link>http://localhost:1314/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link>
       <pubDate>Mon, 08 Jun 2026 10:45:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid>
+      <guid>http://localhost:1314/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid>
       <description>增长不是一次灵感，也不是某个爆款素材、某个新渠道、某个产品改版带来的偶然结果。真正可持续的增长，来自一套能够不断提出假设、验证假设、沉淀结论、再继续迭代的实验体系。</description>
     </item>
     <item>
+      <title>AD Agent 开发实录和版本迭代——4 天从两个 Skill 到一个能自治的投放大脑</title>
+      <link>http://localhost:1314/posts/ad-agent-%E5%BC%80%E5%8F%91%E5%AE%9E%E5%BD%95%E5%92%8C%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A34-%E5%A4%A9%E4%BB%8E%E4%B8%A4%E4%B8%AA-skill-%E5%88%B0%E4%B8%80%E4%B8%AA%E8%83%BD%E8%87%AA%E6%B2%BB%E7%9A%84%E6%8A%95%E6%94%BE%E5%A4%A7%E8%84%91/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/posts/ad-agent-%E5%BC%80%E5%8F%91%E5%AE%9E%E5%BD%95%E5%92%8C%E7%89%88%E6%9C%AC%E8%BF%AD%E4%BB%A34-%E5%A4%A9%E4%BB%8E%E4%B8%A4%E4%B8%AA-skill-%E5%88%B0%E4%B8%80%E4%B8%AA%E8%83%BD%E8%87%AA%E6%B2%BB%E7%9A%84%E6%8A%95%E6%94%BE%E5%A4%A7%E8%84%91/</guid>
+      <description>4 天、10 个版本、5 个 Phase：从 Cursor 里的两个 Skill，到能自治的 SmartUA ad-agent。附 5 道就绪度自测和 90 天路线图诊断。</description>
+    </item>
+    <item>
+      <title>增长智能化成熟度诊断</title>
+      <link>http://localhost:1314/diagnostic/</link>
+      <pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/diagnostic/</guid>
+      <description>面向出海游戏、应用与增长团队的自评工具：判断你的团队适合从实验、数据平台，还是 Ad Agent 开始建设。</description>
+    </item>
+    <item>
       <title>钛动开了5年户，除了充钱没用过任何产品——留给钛动们的时间不多了，以及如何自建 inhouse 投放平台</title>
-      <link>http://localhost:1313/posts/%E9%92%9B%E5%8A%A8%E5%BC%80%E4%BA%865%E5%B9%B4%E6%88%B7%E9%99%A4%E4%BA%86%E5%85%85%E9%92%B1%E6%B2%A1%E7%94%A8%E8%BF%87%E4%BB%BB%E4%BD%95%E4%BA%A7%E5%93%81%E7%95%99%E7%BB%99%E9%92%9B%E5%8A%A8%E4%BB%AC%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%8D%E5%A4%9A%E4%BA%86%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA-inhouse-%E6%8A%95%E6%94%BE%E5%B9%B3%E5%8F%B0/</link>
+      <link>http://localhost:1314/posts/%E9%92%9B%E5%8A%A8%E5%BC%80%E4%BA%865%E5%B9%B4%E6%88%B7%E9%99%A4%E4%BA%86%E5%85%85%E9%92%B1%E6%B2%A1%E7%94%A8%E8%BF%87%E4%BB%BB%E4%BD%95%E4%BA%A7%E5%93%81%E7%95%99%E7%BB%99%E9%92%9B%E5%8A%A8%E4%BB%AC%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%8D%E5%A4%9A%E4%BA%86%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA-inhouse-%E6%8A%95%E6%94%BE%E5%B9%B3%E5%8F%B0/</link>
       <pubDate>Sat, 04 Jul 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E9%92%9B%E5%8A%A8%E5%BC%80%E4%BA%865%E5%B9%B4%E6%88%B7%E9%99%A4%E4%BA%86%E5%85%85%E9%92%B1%E6%B2%A1%E7%94%A8%E8%BF%87%E4%BB%BB%E4%BD%95%E4%BA%A7%E5%93%81%E7%95%99%E7%BB%99%E9%92%9B%E5%8A%A8%E4%BB%AC%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%8D%E5%A4%9A%E4%BA%86%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA-inhouse-%E6%8A%95%E6%94%BE%E5%B9%B3%E5%8F%B0/</guid>
+      <guid>http://localhost:1314/posts/%E9%92%9B%E5%8A%A8%E5%BC%80%E4%BA%865%E5%B9%B4%E6%88%B7%E9%99%A4%E4%BA%86%E5%85%85%E9%92%B1%E6%B2%A1%E7%94%A8%E8%BF%87%E4%BB%BB%E4%BD%95%E4%BA%A7%E5%93%81%E7%95%99%E7%BB%99%E9%92%9B%E5%8A%A8%E4%BB%AC%E7%9A%84%E6%97%B6%E9%97%B4%E4%B8%8D%E5%A4%9A%E4%BA%86%E4%BB%A5%E5%8F%8A%E5%A6%82%E4%BD%95%E8%87%AA%E5%BB%BA-inhouse-%E6%8A%95%E6%94%BE%E5%B9%B3%E5%8F%B0/</guid>
       <description>钛动 IPO 是一个节点，不是终点。Agentic UA 冲击下代投、SaaS、inhouse 三种路径的终局判断。</description>
     </item>
     <item>
       <title>UA买量增长数据诊断冲刺</title>
-      <link>http://localhost:1313/services/ua-growth-diagnostic/</link>
+      <link>http://localhost:1314/services/ua-growth-diagnostic/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/ua-growth-diagnostic/</guid>
+      <guid>http://localhost:1314/services/ua-growth-diagnostic/</guid>
       <description>&lt;h1 id=&#34;ua买量增长数据诊断冲刺&#34;&gt;UA买量增长数据诊断冲刺&lt;/h1&gt;
 &lt;p&gt;2周内，把买量从&amp;quot;去后台看数&amp;quot;升级为&amp;quot;数据可信 + 效率可测 + 归因清晰 + 决策可复现&amp;quot;的增长系统。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;90%的买量问题，不是优化师不够努力，而是数据本身就不全面、不可信。&lt;/strong&gt;&lt;/p&gt;
@@ -123,9 +137,9 @@
     </item>
     <item>
       <title>案例：UA数据三套数，ROI差35%</title>
-      <link>http://localhost:1313/work/ua-growth-diagnostic/</link>
+      <link>http://localhost:1314/work/ua-growth-diagnostic/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/ua-growth-diagnostic/</guid>
+      <guid>http://localhost:1314/work/ua-growth-diagnostic/</guid>
       <description>&lt;h1 id=&#34;案例ua数据三套数roi差35&#34;&gt;案例：UA数据三套数，ROI差35%&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：某出海休闲游戏，日消耗50万美金，UA团队8人&lt;/p&gt;
@@ -206,13 +220,13 @@
 &lt;li&gt;✅ 因为数据可信，团队终于敢把日消耗从50万往100万扩了&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/ua-growth-diagnostic/&#34;&gt;UA买量增长数据诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/ua-growth-diagnostic/&#34;&gt;UA买量增长数据诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>案例：策略产能，投放团队的第二增长曲线</title>
-      <link>http://localhost:1313/work/strategy-capacity/</link>
+      <link>http://localhost:1314/work/strategy-capacity/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/strategy-capacity/</guid>
+      <guid>http://localhost:1314/work/strategy-capacity/</guid>
       <description>&lt;h1 id=&#34;案例策略产能投放团队的第二增长曲线&#34;&gt;案例：策略产能，投放团队的第二增长曲线&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：5人以上UA团队，人均消耗遇到天花板，招人也涨不动GMV&lt;/p&gt;
@@ -318,9 +332,9 @@
     </item>
     <item>
       <title>案例：发行平台从L0到L4，人效翻倍</title>
-      <link>http://localhost:1313/work/publishing-platform-l1-l4/</link>
+      <link>http://localhost:1314/work/publishing-platform-l1-l4/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/publishing-platform-l1-l4/</guid>
+      <guid>http://localhost:1314/work/publishing-platform-l1-l4/</guid>
       <description>&lt;h1 id=&#34;案例发行平台从l0到l4人效翻倍&#34;&gt;案例：发行平台从L0到L4，人效翻倍&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部出海休闲游戏发行商，15人优化师团队，月消耗数百万美金&lt;/p&gt;
@@ -418,13 +432,13 @@
 &lt;li&gt;✅ &lt;strong&gt;团队信心&lt;/strong&gt;：每层上线都有ROI，管理层愿意持续投入，平台越做越顺&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/publishing-platform/&#34;&gt;智能发行平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/publishing-platform/&#34;&gt;智能发行平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>案例：千级并发实验，从互斥桶到重叠框架</title>
-      <link>http://localhost:1313/work/experiment-platform/</link>
+      <link>http://localhost:1314/work/experiment-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/experiment-platform/</guid>
+      <guid>http://localhost:1314/work/experiment-platform/</guid>
       <description>&lt;h1 id=&#34;案例千级并发实验从互斥桶到重叠框架&#34;&gt;案例：千级并发实验，从互斥桶到重叠框架&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部出海休闲游戏，MAU亿级，产品/算法/商业化团队并行做实验&lt;/p&gt;
@@ -512,13 +526,13 @@
 &lt;li&gt;✅ 创意产能提升，实验数量上来了，产品迭代速度明显加快&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/experiment-platform/&#34;&gt;实验平台搭建与诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/experiment-platform/&#34;&gt;实验平台搭建与诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>实验平台搭建与诊断冲刺</title>
-      <link>http://localhost:1313/services/experiment-platform/</link>
+      <link>http://localhost:1314/services/experiment-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/experiment-platform/</guid>
+      <guid>http://localhost:1314/services/experiment-platform/</guid>
       <description>&lt;h1 id=&#34;实验平台搭建与诊断冲刺&#34;&gt;实验平台搭建与诊断冲刺&lt;/h1&gt;
 &lt;p&gt;2周内，把你的A/B实验从&amp;quot;看看数据&amp;quot;变成&amp;quot;支撑AI决策的可信反馈闭环&amp;quot;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的贝叶斯系统。&lt;/strong&gt;&lt;/p&gt;
@@ -624,9 +638,9 @@
     </item>
     <item>
       <title>智能发行平台建设咨询</title>
-      <link>http://localhost:1313/services/publishing-platform/</link>
+      <link>http://localhost:1314/services/publishing-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/publishing-platform/</guid>
+      <guid>http://localhost:1314/services/publishing-platform/</guid>
       <description>&lt;h1 id=&#34;智能发行平台建设咨询&#34;&gt;智能发行平台建设咨询&lt;/h1&gt;
 &lt;p&gt;4周内，把发行团队从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能增长体系。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;优秀的优化师把时间花在决策上，不是每天切8个后台粘数。&lt;/strong&gt;&lt;/p&gt;
@@ -690,101 +704,88 @@
     </item>
     <item>
       <title>竞对靠实验跑出了增长，为什么我们不行？</title>
-      <link>http://localhost:1313/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</link>
+      <link>http://localhost:1314/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</guid>
+      <guid>http://localhost:1314/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</guid>
       <description>同样在做 AB 测试，别人靠它持续迭代、增长一路向上，我们的实验却结果不可靠、推全就反转。问题往往不在平台，而在你没建之前就该想清楚的那几件事。</description>
     </item>
     <item>
       <title>出海休闲游戏小团队，如何建立第一套增长系统？</title>
-      <link>http://localhost:1313/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</link>
+      <link>http://localhost:1314/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Mon, 15 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</guid>
+      <guid>http://localhost:1314/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</guid>
       <description>小 studio 的增长起点不只是买量，而是一套能让产品、买量、商业化持续互相校准的实验增长系统。</description>
     </item>
     <item>
       <title>Meta 商业化大变革：从 Marketing API 到 Agentic Ads——未来的广告买量是 A2A 架构</title>
-      <link>http://localhost:1313/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</link>
+      <link>http://localhost:1314/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</link>
       <pubDate>Mon, 01 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</guid>
+      <guid>http://localhost:1314/posts/meta-%E5%95%86%E4%B8%9A%E5%8C%96%E5%A4%A7%E5%8F%98%E9%9D%A9%E4%BB%8E-marketing-api-%E5%88%B0-agentic-ads%E6%9C%AA%E6%9D%A5%E7%9A%84%E5%B9%BF%E5%91%8A%E4%B9%B0%E9%87%8F%E6%98%AF-a2a-%E6%9E%B6%E6%9E%84/</guid>
       <description>从 Meta 广告平台的 20 年演进，看 Marketing API 为什么从 v1 一路走到 v25，以及广告主侧的 Ad Agent 为什么会越来越重要。</description>
     </item>
     <item>
       <title>企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗</title>
-      <link>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</link>
+      <link>http://localhost:1314/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</link>
       <pubDate>Fri, 29 May 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</guid>
+      <guid>http://localhost:1314/posts/%E4%BC%81%E4%B8%9A-ai-agent-%E8%90%BD%E5%9C%B0%E6%8C%87%E5%8D%97%E8%B7%A8%E8%B6%8A%E4%BB%8E%E6%A8%A1%E5%9E%8B%E5%88%B0%E4%B8%9A%E5%8A%A1%E7%9A%84-7-%E5%B1%82%E6%BC%8F%E6%96%97/</guid>
       <description>从最强的模型到最终的业务指标，中间隔着至少 7 层漏斗。用 Ad Agent 实战案例，系统讲解 AI 应用交付的漏斗模型、技术选型、实施路径与不同规模企业的最佳实践。</description>
     </item>
     <item>
       <title>企业级 AI 应用落地：从 FOMO 到真正的业务增长</title>
-      <link>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</link>
+      <link>http://localhost:1314/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</link>
       <pubDate>Thu, 14 May 2026 15:10:00 +0800</pubDate>
-      <guid>http://localhost:1313/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</guid>
+      <guid>http://localhost:1314/posts/%E4%BC%81%E4%B8%9A%E7%BA%A7-ai-%E5%BA%94%E7%94%A8%E8%90%BD%E5%9C%B0%E4%BB%8E-fomo-%E5%88%B0%E7%9C%9F%E6%AD%A3%E7%9A%84%E4%B8%9A%E5%8A%A1%E5%A2%9E%E9%95%BF/</guid>
       <description>AI 带来的个人效能提升有目共睹，但企业级落地却面临集体 FOMO。本文从红杉资本、OpenAI、神策数据等行业先锋的视角，解读企业 AI 应用的真正路径。</description>
     </item>
     <item>
       <title>关于我</title>
-      <link>http://localhost:1313/about/</link>
+      <link>http://localhost:1314/about/</link>
       <pubDate>Thu, 07 May 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/about/</guid>
+      <guid>http://localhost:1314/about/</guid>
       <description>&lt;h1 id=&#34;关于展博&#34;&gt;关于展博&lt;/h1&gt;
-&lt;p&gt;你好，我是何赞，花名展博。我的当前定位是 &lt;strong&gt;Data &amp;amp; AI 独立咨询顾问&lt;/strong&gt;，专注于出海游戏增长、数据产品、买量平台、A/B 实验和 AI Agent 增长系统。&lt;/p&gt;
-&lt;p&gt;Zhanbo Growth Lab 是我的个人增长实验室：一方面沉淀我在数据产品和增长平台上的方法论，另一方面为出海游戏 Studio 和增长团队提供咨询服务。&lt;/p&gt;
-&lt;h2 id=&#34;我擅长什么&#34;&gt;我擅长什么&lt;/h2&gt;
-&lt;h3 id=&#34;数据产品与增长平台&#34;&gt;数据产品与增长平台&lt;/h3&gt;
-&lt;p&gt;我长期关注从数据采集、数据处理到数据应用的完整闭环，尤其擅长把复杂业务问题拆成可落地的数据产品、平台模块和指标体系。&lt;/p&gt;
-&lt;p&gt;典型场景包括：&lt;/p&gt;
+&lt;p&gt;你好，我是何赞，花名展博。&lt;strong&gt;Data &amp;amp; AI 独立咨询顾问&lt;/strong&gt;，专注于出海游戏增长、数据产品、买量平台、A/B 实验，以及企业级 Agentic Ad 的落地。&lt;/p&gt;
+&lt;p&gt;Zhanbo Growth Lab 是我的个人增长实验室：沉淀方法论 + 为出海游戏 Studio 和增长团队提供 &lt;a href=&#34;http://localhost:1314/services/&#34;&gt;诊断 / PoC / 平台共建&lt;/a&gt; 三层咨询。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;结构化能力画像&#34;&gt;结构化能力画像&lt;/h2&gt;
+&lt;p&gt;面向 B2B 合作，我把能力按客户判断维度拆开，方便你快速对齐：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;服务与实践领域&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;UA 买量 ROI、CPI、ROAS、LTV、留存和广告变现分析&lt;/li&gt;
-&lt;li&gt;AppsFlyer / MMP 归因链路、SKAN、事件回传和 BI 口径治理&lt;/li&gt;
-&lt;li&gt;发行/投放平台建设：ROI360、素材管理、批量创编、账户财务、策略引擎&lt;/li&gt;
-&lt;li&gt;A/B 实验平台：流量分层、实验管理、统计分析、指标体系和实验文化&lt;/li&gt;
-&lt;li&gt;AI Agent 在增长场景中的落地：UA Monitor、Ad Agent、Agent-ready Measurement&lt;/li&gt;
+&lt;li&gt;实验平台、增长数据、出海发行、广告技术、企业 Agent&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;咨询与平台建设&#34;&gt;咨询与平台建设&lt;/h3&gt;
-&lt;p&gt;我的工作方式不是只给 PPT，而是把业务问题拆成：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;典型业务环境&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;出海休闲/中重度游戏、多市场买量&lt;/li&gt;
+&lt;li&gt;内容 / 电商 / 平台型业务的增长与实验&lt;/li&gt;
+&lt;li&gt;从 10 万美金/日到百万美金/日消耗规模的团队&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;曾参与的能力建设类型&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;正交流量框架、实验治理、统计分析引擎&lt;/li&gt;
+&lt;li&gt;营销数据底座、指标语义层、ROI360&lt;/li&gt;
+&lt;li&gt;投放决策系统、素材智能、批量创编、策略引擎&lt;/li&gt;
+&lt;li&gt;Ad Agent：Schema 居中、分级授权、可审计执行&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;方法论风格&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;先诊断、后试点；先可观测、后自动化；先受控执行、再逐步放权&lt;/li&gt;
+&lt;li&gt;共建 &amp;gt; 外包：把方法沉淀进客户团队&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;合作边界&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;适合联合建设、方法论输出、架构与治理评审&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不&lt;/strong&gt;承诺&amp;quot;无数据基础条件下的全自动增长&amp;quot;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;不&lt;/strong&gt;做纯广告投放代理、素材制作外包&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;稀缺组合&#34;&gt;稀缺组合&lt;/h2&gt;
+&lt;p&gt;我不是泛 AI 顾问，也不是单一实验或投放工具专家。差异化来自四条能力线的交叉：&lt;/p&gt;
 &lt;ol&gt;
-&lt;li&gt;现状诊断：数据是否可信，瓶颈在哪里&lt;/li&gt;
-&lt;li&gt;系统设计：平台能力如何分层，MVP 做什么，不做什么&lt;/li&gt;
-&lt;li&gt;路线规划：30/60/90 天如何推进，什么是 Quick Win&lt;/li&gt;
-&lt;li&gt;组织共识：管理层、UA、BI、研发、产品如何对齐&lt;/li&gt;
-&lt;li&gt;复用资产：指标口径、诊断清单、模板、脚本、playbook&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;实验科学&lt;/strong&gt; — 因果验证、流量分层、指标治理&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;增长数据平台&lt;/strong&gt; — MMP / SKAN / 归因 / 语义层 / ROI360&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;出海游戏 &amp;amp; 广告投放&lt;/strong&gt; — 多市场买量、素材生命周期、批量创编&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;企业级 Agentic Ad&lt;/strong&gt; — Schema 居中、分级授权、可审计执行、独立验证&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&#34;经历背景&#34;&gt;经历背景&lt;/h2&gt;
-&lt;p&gt;我曾在 IBM、TalkingData、滴滴、快手、Shopee、出海游戏等不同阶段和行业中做过咨询、数据分析、数据产品和算法平台相关工作。&lt;/p&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;阶段&lt;/th&gt;
-          &lt;th&gt;关键词&lt;/th&gt;
-          &lt;th&gt;经验&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;IT / 数据咨询&lt;/td&gt;
-          &lt;td&gt;IBM、TalkingData&lt;/td&gt;
-          &lt;td&gt;企业信息化、数据咨询、客户交付&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;出行与内容&lt;/td&gt;
-          &lt;td&gt;滴滴、快手&lt;/td&gt;
-          &lt;td&gt;数据分析、A/B 实验平台、推荐/搜索/广告相关数据产品&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;电商与算法平台&lt;/td&gt;
-          &lt;td&gt;Shopee / SEA&lt;/td&gt;
-          &lt;td&gt;电商智能算法平台，多模态算法、标注、机器翻译、CV、AIGC 等场景&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;出海游戏增长&lt;/td&gt;
-          &lt;td&gt;游戏发行与买量平台&lt;/td&gt;
-          &lt;td&gt;UA 数据、发行平台、归因体系、素材智能、策略自动化、Ad Agent&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;p&gt;在快手时期，我也参与过实验方法论的内部推广，曾作为内部培训师输出实验平台和数据产品相关内容。&lt;/p&gt;</description>
+&lt;p&gt;方法论沉淀在 &lt;a href=&#34;http://localhost:1314/posts/&#34;&gt;文章&lt;/a&gt; 中的《企业级 Agent 建设实践》《极致 AB 实验的前置》《出海休闲游戏增长系统》等长文。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

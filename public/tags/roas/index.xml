@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>ROAS on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-    <link>http://localhost:1313/tags/roas/</link>
+    <link>http://localhost:1314/tags/roas/</link>
     <description>Recent content in ROAS on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
     <image>
       <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-      <url>http://localhost:1313/images/og-default.svg</url>
-      <link>http://localhost:1313/images/og-default.svg</link>
+      <url>http://localhost:1314/images/og-default.svg</url>
+      <link>http://localhost:1314/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/roas/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/roas/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>UA买量增长数据诊断冲刺</title>
-      <link>http://localhost:1313/services/ua-growth-diagnostic/</link>
+      <link>http://localhost:1314/services/ua-growth-diagnostic/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/ua-growth-diagnostic/</guid>
+      <guid>http://localhost:1314/services/ua-growth-diagnostic/</guid>
       <description>&lt;h1 id=&#34;ua买量增长数据诊断冲刺&#34;&gt;UA买量增长数据诊断冲刺&lt;/h1&gt;
 &lt;p&gt;2周内，把买量从&amp;quot;去后台看数&amp;quot;升级为&amp;quot;数据可信 + 效率可测 + 归因清晰 + 决策可复现&amp;quot;的增长系统。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;90%的买量问题，不是优化师不够努力，而是数据本身就不全面、不可信。&lt;/strong&gt;&lt;/p&gt;

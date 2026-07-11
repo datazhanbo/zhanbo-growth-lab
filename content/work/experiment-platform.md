@@ -80,7 +80,7 @@ service: "/services/experiment-platform/"
 
 👉 查看完整服务介绍：[实验平台搭建与诊断冲刺](/services/experiment-platform/)
 
-**这个案例适合你吗？** 如果你也遇到"实验排队、结果不准、团队吵架"的问题，加我微信聊聊：`growth_zhanbo`
+**这个案例适合你吗？** 如果你也遇到"实验排队、结果不准、团队吵架"的问题，加我微信聊聊：`zanhe1984`
 
 ---
 

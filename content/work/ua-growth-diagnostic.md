@@ -74,7 +74,7 @@ service: "/services/ua-growth-diagnostic/"
 
 👉 查看完整服务介绍：[UA买量增长数据诊断冲刺](/services/ua-growth-diagnostic/)
 
-**这个案例适合你吗？** 如果你也遇到"数对不上、决策不敢拍"的问题，加我微信聊聊：`growth_zhanbo`
+**这个案例适合你吗？** 如果你也遇到"数对不上、决策不敢拍"的问题，加我微信聊聊：`zanhe1984`
 
 ---
 

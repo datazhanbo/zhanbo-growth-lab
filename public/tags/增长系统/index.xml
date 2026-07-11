@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>增长系统 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-    <link>http://localhost:1313/tags/%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</link>
+    <link>http://localhost:1314/tags/%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</link>
     <description>Recent content in 增长系统 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
     <image>
       <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-      <url>http://localhost:1313/images/og-default.svg</url>
-      <link>http://localhost:1313/images/og-default.svg</link>
+      <url>http://localhost:1314/images/og-default.svg</url>
+      <link>http://localhost:1314/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>实验平台搭建与诊断冲刺</title>
-      <link>http://localhost:1313/services/experiment-platform/</link>
+      <link>http://localhost:1314/services/experiment-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/experiment-platform/</guid>
+      <guid>http://localhost:1314/services/experiment-platform/</guid>
       <description>&lt;h1 id=&#34;实验平台搭建与诊断冲刺&#34;&gt;实验平台搭建与诊断冲刺&lt;/h1&gt;
 &lt;p&gt;2周内，把你的A/B实验从&amp;quot;看看数据&amp;quot;变成&amp;quot;支撑AI决策的可信反馈闭环&amp;quot;。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的贝叶斯系统。&lt;/strong&gt;&lt;/p&gt;

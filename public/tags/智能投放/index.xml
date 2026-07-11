@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>智能投放 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-    <link>http://localhost:1313/tags/%E6%99%BA%E8%83%BD%E6%8A%95%E6%94%BE/</link>
+    <link>http://localhost:1314/tags/%E6%99%BA%E8%83%BD%E6%8A%95%E6%94%BE/</link>
     <description>Recent content in 智能投放 on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
     <image>
       <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
-      <url>http://localhost:1313/images/og-default.svg</url>
-      <link>http://localhost:1313/images/og-default.svg</link>
+      <url>http://localhost:1314/images/og-default.svg</url>
+      <link>http://localhost:1314/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/%E6%99%BA%E8%83%BD%E6%8A%95%E6%94%BE/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/tags/%E6%99%BA%E8%83%BD%E6%8A%95%E6%94%BE/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>案例：发行平台从L0到L4，人效翻倍</title>
-      <link>http://localhost:1313/work/publishing-platform-l1-l4/</link>
+      <link>http://localhost:1314/work/publishing-platform-l1-l4/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/work/publishing-platform-l1-l4/</guid>
+      <guid>http://localhost:1314/work/publishing-platform-l1-l4/</guid>
       <description>&lt;h1 id=&#34;案例发行平台从l0到l4人效翻倍&#34;&gt;案例：发行平台从L0到L4，人效翻倍&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部出海休闲游戏发行商，15人优化师团队，月消耗数百万美金&lt;/p&gt;
@@ -115,13 +115,13 @@
 &lt;li&gt;✅ &lt;strong&gt;团队信心&lt;/strong&gt;：每层上线都有ROI，管理层愿意持续投入，平台越做越顺&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/publishing-platform/&#34;&gt;智能发行平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/publishing-platform/&#34;&gt;智能发行平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
       <title>智能发行平台建设咨询</title>
-      <link>http://localhost:1313/services/publishing-platform/</link>
+      <link>http://localhost:1314/services/publishing-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/services/publishing-platform/</guid>
+      <guid>http://localhost:1314/services/publishing-platform/</guid>
       <description>&lt;h1 id=&#34;智能发行平台建设咨询&#34;&gt;智能发行平台建设咨询&lt;/h1&gt;
 &lt;p&gt;4周内，把发行团队从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能增长体系。&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;优秀的优化师把时间花在决策上，不是每天切8个后台粘数。&lt;/strong&gt;&lt;/p&gt;
