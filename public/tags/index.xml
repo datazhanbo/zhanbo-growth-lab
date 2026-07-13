@@ -1,20 +1,62 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Tags on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+    <title>Tags on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
     <link>http://localhost:1314/tags/</link>
-    <description>Recent content in Tags on 展博增长实验室 | 出海游戏增长、AB实验与买量咨询</description>
+    <description>Recent content in Tags on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
     <image>
-      <title>展博增长实验室 | 出海游戏增长、AB实验与买量咨询</title>
+      <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
       <url>http://localhost:1314/images/og-default.svg</url>
       <link>http://localhost:1314/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
-    <lastBuildDate>Sat, 11 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 13 Jul 2026 00:00:00 +0800</lastBuildDate>
     <atom:link href="http://localhost:1314/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Ad Agent</title>
+      <title>Abtest</title>
+      <link>http://localhost:1314/tags/abtest/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/tags/abtest/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Consulting</title>
+      <link>http://localhost:1314/tags/consulting/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/tags/consulting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>交付</title>
+      <link>http://localhost:1314/tags/%E4%BA%A4%E4%BB%98/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/tags/%E4%BA%A4%E4%BB%98/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>实验平台</title>
+      <link>http://localhost:1314/tags/%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/tags/%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>选型</title>
+      <link>http://localhost:1314/tags/%E9%80%89%E5%9E%8B/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/tags/%E9%80%89%E5%9E%8B/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>咨询顾问</title>
+      <link>http://localhost:1314/tags/%E5%92%A8%E8%AF%A2%E9%A1%BE%E9%97%AE/</link>
+      <pubDate>Mon, 13 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1314/tags/%E5%92%A8%E8%AF%A2%E9%A1%BE%E9%97%AE/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Ad-Agent</title>
       <link>http://localhost:1314/tags/ad-agent/</link>
       <pubDate>Sat, 11 Jul 2026 00:00:00 +0800</pubDate>
       <guid>http://localhost:1314/tags/ad-agent/</guid>
@@ -165,13 +207,6 @@
       <link>http://localhost:1314/tags/%E4%BA%BA%E6%95%88%E6%8F%90%E5%8D%87/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
       <guid>http://localhost:1314/tags/%E4%BA%BA%E6%95%88%E6%8F%90%E5%8D%87/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>实验平台</title>
-      <link>http://localhost:1314/tags/%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0/</link>
-      <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/tags/%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0/</guid>
       <description></description>
     </item>
     <item>

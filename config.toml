@@ -1,5 +1,5 @@
 baseURL = "https://abtest.chat/"
-title = "展博增长实验室 | 出海游戏增长、AB实验与买量咨询"
+title = "展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh"
 theme = "PaperMod"
@@ -73,8 +73,8 @@ canonifyURLs = false
 # 站点参数
 [params]
   author = "何赞"
-  description = "展博增长实验室专注出海游戏增长咨询，提供UA买量诊断、AB实验体系、商业化增长、发行投放平台和AI Agent增长系统建设服务。"
-  keywords = ["出海游戏增长", "UA买量", "AB测试", "A/B实验", "增长咨询", "买量诊断", "商业化增长", "投放平台", "AI Agent", "AppsFlyer", "ROAS", "LTV"]
+  description = "展博增长实验室：面向出海游戏、应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建咨询。"
+  keywords = ["实验体系", "AB 实验", "营销数据平台", "投放智能化", "企业级 Agent", "Agentic Ad", "增长咨询", "出海增长", "游戏增长", "应用增长", "电商增长", "ROI 归因", "MMP"]
   images = ["/images/og-default.svg"]
 
   # PaperMod 主题配置
@@ -103,7 +103,7 @@ canonifyURLs = false
 # 首页配置
 [homeInfoParams]
   Title = "展博增长实验室"
-  Content = "面向出海游戏 Studio 和增长团队，提供 UA 买量诊断、A/B 实验体系、商业化增长、发行投放平台和 AI Agent 增长系统咨询。"
+  Content = "面向出海游戏、应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建四类咨询服务。"
 
 # 社交链接
 socialIcons = [
