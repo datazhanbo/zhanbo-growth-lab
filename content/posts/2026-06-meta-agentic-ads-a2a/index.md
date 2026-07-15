@@ -2,7 +2,7 @@
 title: "Meta 商业化大变革：从 Marketing API 到 Agentic Ads——未来的广告买量是 A2A 架构"
 date: 2026-06-01T00:00:00+08:00
 description: "从 Meta 广告平台的 20 年演进，看 Marketing API 为什么从 v1 一路走到 v25，以及广告主侧的 Ad Agent 为什么会越来越重要。"
-tags: ["Meta", "Marketing API", "Agentic Ads", "Advantage+", "Ad Agent", "AI Agent", "A2A", "买量", "出海买量"]
+tags: ["Meta", "Marketing API", "Agentic Ads", "Advantage+", "Ad Agent", "AI Agent", "A2A"]
 categories: ["行业观察"]
 draft: false
 showToc: true
@@ -28,6 +28,8 @@ cover:
 ---
 
 > 从 Meta 广告平台的 20 年演进，看 Marketing API 为什么从 v1 一路走到 v25，以及广告主侧的 Ad Agent 为什么会越来越重要。
+
+> **声明**：本文为独立行业观察，基于公开资料整理，不代表任何雇主或客户观点；本工作室不承接游戏（含手游 / 休闲 / 中重度）行业相关咨询。
 
 ---
 
@@ -107,7 +109,7 @@ Ad：我要给用户看什么素材
 
 这一步非常关键。
 
-广告主不可能永远只在 Ads Manager 里操作。大客户、代理商、游戏发行团队、电商团队，都需要批量创建 campaign、同步素材、拉取报表、做归因分析、做预算管理。
+广告主不可能永远只在 Ads Manager 里操作。大客户、代理商、应用发行团队、电商团队，都需要批量创建 campaign、同步素材、拉取报表、做归因分析、做预算管理。
 
 Marketing API 让这些能力从 UI 后台走向系统集成。
 
@@ -227,7 +229,7 @@ Marketing API 的版本变化，可以用一句话概括：**从暴露操作能�
 
 广告主和第三方工具拥有很高的控制权。你可以用 API 精确创建一个 ad set，指定兴趣、年龄、地区、版位、预算、出价方式，再把素材挂上去。
 
-这对代理商和游戏发行团队非常友好，因为它把人工后台操作自动化了。
+这对代理商和应用发行团队非常友好，因为它把人工后台操作自动化了。
 
 ### 2. 中期：API 变成增长平台的基础设施
 
@@ -244,7 +246,7 @@ Marketing API 的版本变化，可以用一句话概括：**从暴露操作能�
 
 这时广告主侧开始形成自己的"发行平台"。
 
-尤其是游戏和电商行业，团队会把 Meta、Google、TikTok、AppLovin、Unity 的投放数据汇总起来，在内部系统里统一看 ROI、素材表现、预算消耗和回收周期。
+尤其是应用和电商行业，团队会把 Meta、Google、TikTok、AppLovin、Unity 的投放数据汇总起来，在内部系统里统一看 ROI、素材表现、预算消耗和回收周期。
 
 这也是 Ad Agent 的土壤：广告主真正需要的不是某一个媒体后台，而是一个跨媒体的本地增长操作系统。
 
@@ -374,7 +376,7 @@ AppLovin、Unity Ads 这类平台的版本压力，对广告主来说相对小�
 | Google | keyword、出价、广告组 | Performance Max / AI Max | 搜索意图仍重要，但跨版位自动化增强 |
 | TikTok | 素材、人群、出价 | Creative automation / Smart+ | 创意反馈成为优化核心 |
 | AppLovin | network bid / placement | 算法托管投放 | 广告主更关注目标和预算边界 |
-| Unity | 游戏内广告网络和变现 | 自动出价与聚合优化 | SDK 和 network 稳定性更重要 |
+| Unity | 应用内广告网络和变现 | 自动出价与聚合优化 | SDK 和 network 稳定性更重要 |
 
 这背后有一个大的行业变化：
 
@@ -403,7 +405,7 @@ AppLovin、Unity Ads 这类平台的版本压力，对广告主来说相对小�
 未来一定会有两类 Agent：
 
 1. **平台侧 Agent**：Meta / Google / TikTok 内置在广告后台里的 Agent
-2. **广告主侧 Agent**：品牌、游戏发行、电商团队自己掌握的本地聚合 Agent
+2. **广告主侧 Agent**：品牌、应用发行、电商团队自己掌握的本地聚合 Agent
 
 两者不是替代关系，而是权力边界不同。
 
@@ -586,7 +588,7 @@ Marketing API 从 v1 到 v25，也可以浓缩成一条线：
 
 ## 延伸阅读
 
-- [钛动开了 5 年户，除了充钱没用过任何产品——如何自建 inhouse 投放平台]({{< ref "posts/2026-07-04-agentic-ua-inhouse-ad-platform" >}})——同一趋势下代投 / SaaS / inhouse 三种路径的终局判断。
+- [从钛动招股书看 Agentic UA 时代的三种终局——代投、SaaS、inhouse]({{< ref "posts/2026-07-04-agentic-ua-inhouse-ad-platform" >}})——同一趋势下代投 / SaaS / inhouse 三种路径的终局判断。
 - [企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗]({{< ref "posts/2026-05-enterprise-ai-agent-7-layer-funnel" >}})——Ad Agent 的 Intent → Schema → Adapter 分层设计。
 - [企业级 AI 应用落地：从 FOMO 到真正的业务增长]({{< ref "posts/2026-05-14-how-to-implement-ai-native" >}})——Agentic 化背后的商业模型演变。
 

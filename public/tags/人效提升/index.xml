@@ -2,39 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>人效提升 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-    <link>http://localhost:1314/tags/%E4%BA%BA%E6%95%88%E6%8F%90%E5%8D%87/</link>
+    <link>http://localhost:1313/tags/%E4%BA%BA%E6%95%88%E6%8F%90%E5%8D%87/</link>
     <description>Recent content in 人效提升 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
     <image>
       <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-      <url>http://localhost:1314/images/og-default.svg</url>
-      <link>http://localhost:1314/images/og-default.svg</link>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/%E4%BA%BA%E6%95%88%E6%8F%90%E5%8D%87/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E4%BA%BA%E6%95%88%E6%8F%90%E5%8D%87/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>案例：策略产能，投放团队的第二增长曲线</title>
-      <link>http://localhost:1314/work/strategy-capacity/</link>
+      <title>案例：策略产能，增长团队的第二增长曲线</title>
+      <link>http://localhost:1313/work/strategy-capacity/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/work/strategy-capacity/</guid>
-      <description>&lt;h1 id=&#34;案例策略产能投放团队的第二增长曲线&#34;&gt;案例：策略产能，投放团队的第二增长曲线&lt;/h1&gt;
+      <guid>http://localhost:1313/work/strategy-capacity/</guid>
+      <description>&lt;h1 id=&#34;案例策略产能增长团队的第二增长曲线&#34;&gt;案例：策略产能，增长团队的第二增长曲线&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：5人以上UA团队，人均消耗遇到天花板，招人也涨不动GMV&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;核心洞察&lt;/strong&gt;：大部分投放团队的策略时间占比不到20%——80%的时间花在了操作上&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：2周诊断 + 3个月体系落地&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：5 人以上增长团队，人均产能遇到天花板，招人也涨不动业务规模&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心洞察&lt;/strong&gt;：大部分增长团队的策略时间占比不到 20%——80% 的时间花在了操作上&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：2 周诊断 + 3 个月体系落地&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本案例已完全脱敏，不指向任何特定客户或行业；服务范围不含游戏（含手游 / 休闲 / 中重度）行业。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;什么是策略产能&#34;&gt;什么是策略产能&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;策略产能 = 投放团队把数据、经验和判断转化为有效增长动作的能力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;它不等于加班时长，也不等于campaign数量——很多团队看起来很忙，但忙的都是&amp;quot;数据搬运&amp;quot;，不是&amp;quot;策略判断&amp;quot;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;策略产能 = 增长团队把数据、经验和判断转化为有效增长动作的能力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;它不等于加班时长，也不等于 campaign 数量——很多团队看起来很忙，但忙的都是&amp;quot;数据搬运&amp;quot;，不是&amp;quot;策略判断&amp;quot;。&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th&gt;团队类型&lt;/th&gt;
           &lt;th&gt;操作时间占比&lt;/th&gt;
           &lt;th&gt;策略时间占比&lt;/th&gt;
-          &lt;th&gt;人均月消耗天花板&lt;/th&gt;
+          &lt;th&gt;人均产能相对水位&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -42,19 +45,19 @@
           &lt;td&gt;&lt;strong&gt;低效团队&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;80%&lt;/td&gt;
           &lt;td&gt;20%&lt;/td&gt;
-          &lt;td&gt;5万美金&lt;/td&gt;
+          &lt;td&gt;基线&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;普通团队&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;50%&lt;/td&gt;
           &lt;td&gt;50%&lt;/td&gt;
-          &lt;td&gt;15万美金&lt;/td&gt;
+          &lt;td&gt;3× 基线&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;高效团队&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;20%&lt;/td&gt;
           &lt;td&gt;80%&lt;/td&gt;
-          &lt;td&gt;50万美金 +&lt;/td&gt;
+          &lt;td&gt;10× 基线以上&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -62,50 +65,50 @@
 &lt;h2 id=&#34;问题诊断你的团队卡在哪了&#34;&gt;问题诊断：你的团队卡在哪了？&lt;/h2&gt;
 &lt;h3 id=&#34;第一层操作瓶颈&#34;&gt;第一层：操作瓶颈&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;优化师每天切5-8个后台，手动粘数做报表&lt;/li&gt;
-&lt;li&gt;批量创建campaign要一个一个填&lt;/li&gt;
+&lt;li&gt;业务方每天切 5 - 8 个后台，手动粘数做报表&lt;/li&gt;
+&lt;li&gt;批量创建 campaign 要一个一个填&lt;/li&gt;
 &lt;li&gt;素材上传、打标、跟踪全靠人工&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：招再多优化师，人效也上不去，人均消耗卡在10万美金&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：招再多人，人效也上不去，人均产能长期卡在低水位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;第二层信号瓶颈&#34;&gt;第二层：信号瓶颈&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;没有统一的红绿看板，哪个campaign该加该减全凭感觉&lt;/li&gt;
-&lt;li&gt;异常发现慢，等发现跑崩了，几万美金已经烧没了&lt;/li&gt;
+&lt;li&gt;没有统一的红绿看板，哪个 campaign 该加该减全凭感觉&lt;/li&gt;
+&lt;li&gt;异常发现慢，等发现跑崩了，预算已经烧没了&lt;/li&gt;
 &lt;li&gt;素材疲劳全靠&amp;quot;感觉这个素材跑了挺久了&amp;quot;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：策略判断不准，试错成本高，ROI忽高忽低&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：策略判断不准，试错成本高，ROI 忽高忽低&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;第三层策略瓶颈&#34;&gt;第三层：策略瓶颈&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;优秀优化师的经验存在脑子里，人走了经验就没了&lt;/li&gt;
-&lt;li&gt;新人上手要3个月，全靠师傅带&lt;/li&gt;
-&lt;li&gt;动作不复盘：调了价、换了素材，有没有效不知道&lt;/li&gt;
-&lt;li&gt;没有可复用的策略模板，每次上新游戏都从零开始&lt;/li&gt;
+&lt;li&gt;资深专家的经验存在脑子里，人走了经验就没了&lt;/li&gt;
+&lt;li&gt;新人上手要 3 个月，全靠师傅带&lt;/li&gt;
+&lt;li&gt;动作不复盘：调了预算、换了素材，有没有效不知道&lt;/li&gt;
+&lt;li&gt;没有可复用的策略模板，每次新方向都从零开始&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：团队规模越大，管理成本越高，增长遇到天花板&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;我们的提升方案&#34;&gt;我们的提升方案&lt;/h2&gt;
-&lt;h3 id=&#34;第一步减操作把操作时间从80降到20&#34;&gt;第一步：减操作（把操作时间从80%降到20%）&lt;/h3&gt;
+&lt;h3 id=&#34;第一步减操作把操作时间从-80-降到-20&#34;&gt;第一步：减操作（把操作时间从 80% 降到 20%）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;统一数据入仓 + ROI360看板：不用再切后台粘数&lt;/li&gt;
-&lt;li&gt;跨媒体批量创编工具：模板化创建，一次填好，多平台同步&lt;/li&gt;
+&lt;li&gt;统一数据入仓 + ROI360 看板：不用再切后台粘数&lt;/li&gt;
+&lt;li&gt;跨渠道批量创编工具：模板化创建，一次填好，多平台同步&lt;/li&gt;
 &lt;li&gt;自动命名规范 + 维度管理：告别&amp;quot;campaign_123_final_final&amp;quot;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：每人每周多出3天时间做策略&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：每人每周多出 3 天时间做策略&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第二步推信号把策略判断的信噪比提升10倍&#34;&gt;第二步：推信号（把策略判断的信噪比提升10倍）&lt;/h3&gt;
+&lt;h3 id=&#34;第二步推信号把策略判断的信噪比提升-10-倍&#34;&gt;第二步：推信号（把策略判断的信噪比提升 10 倍）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;红绿看板：每个campaign自动打分，红的停，绿的加&lt;/li&gt;
-&lt;li&gt;异常预警：分钟级监控，ROI掉了、CPI涨了自动告警&lt;/li&gt;
+&lt;li&gt;红绿看板：每个 campaign 自动打分，红的停，绿的加&lt;/li&gt;
+&lt;li&gt;异常预警：分钟级监控，ROI 掉了、成本涨了自动告警&lt;/li&gt;
 &lt;li&gt;素材疲劳检测：曝光频次、转化率衰减自动提示&lt;/li&gt;
-&lt;li&gt;机会清单：被低估的GEO、素材、定向自动推荐&lt;/li&gt;
+&lt;li&gt;机会清单：被低估的场景、素材、定向自动推荐&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：策略判断从&amp;quot;凭感觉&amp;quot;变成&amp;quot;看信号&amp;quot;，决策准确率提升&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;第三步沉策略把个人经验变成团队资产&#34;&gt;第三步：沉策略（把个人经验变成团队资产）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Action Tracking机制：每个投放动作都有&amp;quot;动作前→动作后→预期→结果&amp;quot;的闭环&lt;/li&gt;
-&lt;li&gt;策略模板库：优秀的出价、定向、素材组合沉淀成模板，新人拿来就能用&lt;/li&gt;
+&lt;li&gt;Action Tracking 机制：每个业务动作都有&amp;quot;动作前 → 动作后 → 预期 → 结果&amp;quot;的闭环&lt;/li&gt;
+&lt;li&gt;策略模板库：优秀的预算、定向、素材组合沉淀成模板，新人拿来就能用&lt;/li&gt;
 &lt;li&gt;动作审计日志：什么人、什么时候、做了什么动作、效果如何，全记录&lt;/li&gt;
-&lt;li&gt;规则引擎 + Agent建议：把成熟的策略变成自动规则，AI辅助决策&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：新人上手从3个月缩短到2周，团队经验不随人走&lt;/li&gt;
+&lt;li&gt;规则引擎 + Agent 建议：把成熟的策略变成自动规则，AI 辅助决策&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：新人上手从 3 个月缩短到 2 周，团队经验不随人走&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;交付清单&#34;&gt;交付清单&lt;/h2&gt;
@@ -113,28 +116,31 @@
 &lt;li&gt;📊 《策略产能诊断报告 + 团队现状评分》&lt;/li&gt;
 &lt;li&gt;⚙️ 《减操作工具清单 + 优先级落地路线图》&lt;/li&gt;
 &lt;li&gt;🚥 《红绿看板设计 + 异常告警阈值清单》&lt;/li&gt;
-&lt;li&gt;📋 《Action Tracking机制 + 复盘SOP》&lt;/li&gt;
+&lt;li&gt;📋 《Action Tracking 机制 + 复盘 SOP》&lt;/li&gt;
 &lt;li&gt;🧩 《策略模板库框架 + 运营方案》&lt;/li&gt;
-&lt;li&gt;🗺️ 《3个月策略产能提升路线图》&lt;/li&gt;
+&lt;li&gt;🗺️ 《3 个月策略产能提升路线图》&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
-&lt;p&gt;我们服务过的团队，3个月内普遍能拿到这些结果：&lt;/p&gt;</description>
+&lt;p&gt;我们服务过的团队，3 个月内普遍能拿到这些结果：&lt;/p&gt;</description>
     </item>
     <item>
-      <title>案例：发行平台从L0到L4，人效翻倍</title>
-      <link>http://localhost:1314/work/publishing-platform-l1-l4/</link>
+      <title>案例：增长平台从 L0 到 L4，人效翻倍</title>
+      <link>http://localhost:1313/work/publishing-platform-l1-l4/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/work/publishing-platform-l1-l4/</guid>
-      <description>&lt;h1 id=&#34;案例发行平台从l0到l4人效翻倍&#34;&gt;案例：发行平台从L0到L4，人效翻倍&lt;/h1&gt;
+      <guid>http://localhost:1313/work/publishing-platform-l1-l4/</guid>
+      <description>&lt;h1 id=&#34;案例增长平台从-l0-到-l4人效翻倍&#34;&gt;案例：增长平台从 L0 到 L4，人效翻倍&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部出海休闲游戏发行商，15人优化师团队，月消耗数百万美金&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;核心痛点&lt;/strong&gt;：优化师80%时间花在粘数上，BI做了上百张报表没人用，想上AI但没基础&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：4周蓝图设计 + 6个月实施陪跑&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：中大型增长团队，多产品线并行，规模化增长诉求明确&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心痛点&lt;/strong&gt;：业务方 80% 时间花在粘数上，BI 做了上百张报表没人用，想上 AI 但没基础&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：4 周蓝图设计 + 6 个月实施陪跑&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本案例已完全脱敏，不指向任何特定客户或行业；服务范围不含游戏（含手游 / 休闲 / 中重度）行业。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;问题诊断&#34;&gt;问题诊断&lt;/h2&gt;
-&lt;p&gt;团队处于典型的&lt;strong&gt;L0混沌状态&lt;/strong&gt;——有数据，但没体系；有人，但没人效；想做AI，但连地基都没有：&lt;/p&gt;
+&lt;p&gt;团队处于典型的 &lt;strong&gt;L0 混沌状态&lt;/strong&gt;——有数据，但没体系；有人，但没人效；想做 AI，但连地基都没有：&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -146,116 +152,119 @@
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;数据层&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;媒体、MMP、变现数据各在各的后台，没有统一数仓&lt;/td&gt;
-          &lt;td&gt;优化师每天切8个后台，手动粘Excel&lt;/td&gt;
+          &lt;td&gt;各业务系统、归因、变现数据各在各的后台，没有统一数仓&lt;/td&gt;
+          &lt;td&gt;业务方每天切多个后台，手动粘 Excel&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;工具层&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;除了BI报表，啥工具都没有&lt;/td&gt;
-          &lt;td&gt;批量创编、素材管理、对账全靠人工&lt;/td&gt;
+          &lt;td&gt;除了 BI 报表，啥工具都没有&lt;/td&gt;
+          &lt;td&gt;批量创编、内容 / 素材管理、对账全靠人工&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;策略层&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;全靠优化师个人经验，没有统一策略语言&lt;/td&gt;
-          &lt;td&gt;新人上手要3个月，老人走了经验就没了&lt;/td&gt;
+          &lt;td&gt;全靠个人经验，没有统一策略语言&lt;/td&gt;
+          &lt;td&gt;新人上手要 3 个月，老人走了经验就没了&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;自动化层&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;想上AI Agent，但连基础的数据打通都没做好&lt;/td&gt;
-          &lt;td&gt;AI变成PPT概念，落不了地&lt;/td&gt;
+          &lt;td&gt;想上 AI Agent，但连基础的数据打通都没做好&lt;/td&gt;
+          &lt;td&gt;AI 变成 PPT 概念，落不了地&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
-&lt;p&gt;&lt;strong&gt;核心判断&lt;/strong&gt;：不能一上来就做L5 Agent——必须从L1开始，一层一层打基础，每层都要有明确的业务价值，用Quick Win换长期建设空间。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心判断&lt;/strong&gt;：不能一上来就做 L5 Agent——必须从 L1 开始，一层一层打基础，每层都要有明确的业务价值，用 Quick Win 换长期建设空间。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;我们的方案&#34;&gt;我们的方案&lt;/h2&gt;
 &lt;p&gt;不是&amp;quot;一步到位做个大平台&amp;quot;，而是&lt;strong&gt;分层落地，每层上线都能看到效果&lt;/strong&gt;：&lt;/p&gt;
-&lt;h3 id=&#34;l1-信息可见第1-2个月&#34;&gt;L1 信息可见（第1-2个月）&lt;/h3&gt;
+&lt;h3 id=&#34;l1-信息可见第-1---2-个月&#34;&gt;L1 信息可见（第 1 - 2 个月）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;数据先行：把零散的媒体、MMP、变现数据全部入仓&lt;/li&gt;
-&lt;li&gt;统一ROI360看板：一张表看所有产品、渠道、campaign的健康度&lt;/li&gt;
-&lt;li&gt;价值：优化师不用切后台了，看数效率提升50%&lt;/li&gt;
+&lt;li&gt;数据先行：把零散的业务、归因、变现数据全部入仓&lt;/li&gt;
+&lt;li&gt;统一 ROI360 看板：一张表看所有产品、渠道、campaign 的健康度&lt;/li&gt;
+&lt;li&gt;价值：业务方不用切后台了，看数效率提升 50%&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;l2-数据整合第3个月&#34;&gt;L2 数据整合（第3个月）&lt;/h3&gt;
+&lt;h3 id=&#34;l2-数据整合第-3-个月&#34;&gt;L2 数据整合（第 3 个月）&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;ODS-DWD-DWS-ADS 四层数仓架构搭建&lt;/li&gt;
 &lt;li&gt;统一指标合同：所有口径全员对齐，文档化&lt;/li&gt;
-&lt;li&gt;SKAN、归因、变现收入全链路打通&lt;/li&gt;
+&lt;li&gt;归因、变现收入全链路打通&lt;/li&gt;
 &lt;li&gt;价值：数据不再打架，所有人看同一套数&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;l3-效率工具第4-5个月&#34;&gt;L3 效率工具（第4-5个月）&lt;/h3&gt;
+&lt;h3 id=&#34;l3-效率工具第-4---5-个月&#34;&gt;L3 效率工具（第 4 - 5 个月）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;跨媒体批量创编工具：一次创建，多平台同步&lt;/li&gt;
+&lt;li&gt;跨渠道批量创编工具：一次创建，多平台同步&lt;/li&gt;
 &lt;li&gt;统一素材库：素材上传、打标、效果归因、疲劳检测&lt;/li&gt;
-&lt;li&gt;账户财务对账：投放数据和财务数据自动对齐&lt;/li&gt;
-&lt;li&gt;价值：优化师和设计师人效再提升30%&lt;/li&gt;
+&lt;li&gt;账户财务对账：业务数据和财务数据自动对齐&lt;/li&gt;
+&lt;li&gt;价值：业务方和创作端人效再提升 30%&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;l4-策略辅助第6个月&#34;&gt;L4 策略辅助（第6个月）&lt;/h3&gt;
+&lt;h3 id=&#34;l4-策略辅助第-6-个月&#34;&gt;L4 策略辅助（第 6 个月）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;红绿看板：campaign健康度自动评分，红的停，绿的加&lt;/li&gt;
+&lt;li&gt;红绿看板：campaign 健康度自动评分，红的停，绿的加&lt;/li&gt;
 &lt;li&gt;异常预警：分钟级监控，异常自动告警&lt;/li&gt;
-&lt;li&gt;策略实验：&amp;ldquo;出价、点位、素材、人群&amp;quot;四大抓手的A/B测试框架&lt;/li&gt;
+&lt;li&gt;策略实验：核心业务抓手的 A/B 测试框架&lt;/li&gt;
 &lt;li&gt;价值：问题发现从天级缩短到分钟级，策略迭代速度翻倍&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;l5-agent自动化规划中&#34;&gt;L5 Agent自动化（规划中）&lt;/h3&gt;
+&lt;h3 id=&#34;l5-agent-自动化规划中&#34;&gt;L5 Agent 自动化（规划中）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;UA Monitor + Ad Agent 双轮驱动&lt;/li&gt;
+&lt;li&gt;增长 Monitor + 决策 Agent 双轮驱动&lt;/li&gt;
 &lt;li&gt;对话式盯盘，自然语言干预&lt;/li&gt;
-&lt;li&gt;80%日常操作自动化&lt;/li&gt;
+&lt;li&gt;80% 日常操作自动化&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;交付清单&#34;&gt;交付清单&lt;/h2&gt;
 &lt;ol&gt;
-&lt;li&gt;🏗️ 《发行平台L1-L5能力分层蓝图》&lt;/li&gt;
+&lt;li&gt;🏗️ 《增长平台 L1-L5 能力分层蓝图》&lt;/li&gt;
 &lt;li&gt;📊 《统一数仓架构 + 指标合同规范》&lt;/li&gt;
-&lt;li&gt;🎨 《素材智能管理系统产品方案》&lt;/li&gt;
-&lt;li&gt;⚙️ 《跨媒体批量创编工具设计》&lt;/li&gt;
-&lt;li&gt;🚥 《campaign红绿看板 + 异常预警体系》&lt;/li&gt;
-&lt;li&gt;🗺️ 《6个月分阶段实施路线图》&lt;/li&gt;
+&lt;li&gt;🎨 《内容 / 素材智能管理系统产品方案》&lt;/li&gt;
+&lt;li&gt;⚙️ 《跨渠道批量创编工具设计》&lt;/li&gt;
+&lt;li&gt;🚥 《campaign 红绿看板 + 异常预警体系》&lt;/li&gt;
+&lt;li&gt;🗺️ 《6 个月分阶段实施路线图》&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;✅ &lt;strong&gt;L1上线&lt;/strong&gt;：优化师不用切后台了，看数时间减少50%&lt;/li&gt;
-&lt;li&gt;✅ &lt;strong&gt;L2上线&lt;/strong&gt;：数据口径统一，&amp;ldquo;老板和团队对不上数&amp;quot;的问题彻底解决&lt;/li&gt;
-&lt;li&gt;✅ &lt;strong&gt;L3上线&lt;/strong&gt;：人均管理campaign数量从30个提升到80个，人效翻倍&lt;/li&gt;
-&lt;li&gt;✅ &lt;strong&gt;L4上线&lt;/strong&gt;：异常发现从天级缩短到分钟级，预算浪费减少20%&lt;/li&gt;
-&lt;li&gt;✅ &lt;strong&gt;团队信心&lt;/strong&gt;：每层上线都有ROI，管理层愿意持续投入，平台越做越顺&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;L1 上线&lt;/strong&gt;：业务方不用切后台了，看数时间减少 50%&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;L2 上线&lt;/strong&gt;：数据口径统一，&amp;ldquo;管理层和团队对不上数&amp;quot;的问题彻底解决&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;L3 上线&lt;/strong&gt;：人均管理产能明显提升，人效翻倍&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;L4 上线&lt;/strong&gt;：异常发现从天级缩短到分钟级，预算浪费显著下降&lt;/li&gt;
+&lt;li&gt;✅ &lt;strong&gt;团队信心&lt;/strong&gt;：每层上线都有 ROI，管理层愿意持续投入，平台越做越顺&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/publishing-platform/&#34;&gt;智能发行平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/publishing-platform/&#34;&gt;增长平台建设咨询&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     <item>
-      <title>智能发行平台建设咨询</title>
-      <link>http://localhost:1314/services/publishing-platform/</link>
+      <title>增长平台建设咨询</title>
+      <link>http://localhost:1313/services/publishing-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/services/publishing-platform/</guid>
-      <description>&lt;h1 id=&#34;智能发行平台建设咨询&#34;&gt;智能发行平台建设咨询&lt;/h1&gt;
-&lt;p&gt;4周内，把发行团队从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能增长体系。&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;优秀的优化师把时间花在决策上，不是每天切8个后台粘数。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;当你的优化师一半时间在做&amp;quot;数据搬运工&amp;quot;，设计师和投放协作要靠Excel/飞书文件夹，财务对账要翻3个系统——你缺的不是人，是平台。&lt;/p&gt;
+      <guid>http://localhost:1313/services/publishing-platform/</guid>
+      <description>&lt;h1 id=&#34;增长平台建设咨询&#34;&gt;增长平台建设咨询&lt;/h1&gt;
+&lt;p&gt;4 周内，把增长团队从「多后台人工看数 + 手工操作」升级为「统一数据底座 + 策略辅助 + AI Agent」的智能增长体系。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;服务范围&lt;/strong&gt;：面向 &lt;strong&gt;内容、电商、SaaS 与平台型业务&lt;/strong&gt;，不承接游戏行业相关咨询。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;优秀的业务专家把时间花在决策上，不是每天切多个后台粘数。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;当你的业务方一半时间在做&amp;quot;数据搬运工&amp;quot;，跨职能协作要靠 Excel / 飞书文件夹，财务对账要翻多个系统——你缺的不是人，是平台。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;适合谁&#34;&gt;适合谁&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;本服务特别适合：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;🎮 中大型出海游戏发行商：3款以上产品并行，月消耗百万美金级&lt;/li&gt;
-&lt;li&gt;👥 5人以上 UA 团队：优化师人均管理后台超过5个，人效瓶颈明显&lt;/li&gt;
-&lt;li&gt;🛠️ 已有技术团队但缺产品架构：BI做了很多报表但没人用，系统越做越乱&lt;/li&gt;
+&lt;li&gt;🚀 中大型增长团队：多产品线并行，规模化增长诉求明确&lt;/li&gt;
+&lt;li&gt;👥 5 人以上增长团队：业务方人均管理后台超过 5 个，人效瓶颈明显&lt;/li&gt;
+&lt;li&gt;🛠️ 已有技术团队但缺产品架构：BI 做了很多报表但没人用，系统越做越乱&lt;/li&gt;
 &lt;li&gt;🤖 想上 AI Agent 但缺基础底座：不知道从哪里开始智能化转型&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;典型场景：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;优化师每天切 5-8 个平台后台，数据割裂，看数效率极低&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;业务方每天切 5 - 8 个平台后台，数据割裂，看数效率极低&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;老 BI 累计了上百张报表，没有统一模型，没人知道该信哪张&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;素材管理全靠人工上传打标，设计和投放协作成本高到离谱&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;想上 AI 自动投放，但连基础的数据打通都没做好&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;内容 / 素材管理全靠人工上传打标，跨职能协作成本高到离谱&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;想上 AI 做自动化决策，但连基础的数据打通都没做好&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;服务周期&#34;&gt;服务周期&lt;/h2&gt;
-&lt;p&gt;🕒 &lt;strong&gt;4周蓝图设计 + 12周实施陪跑（可选）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🕒 &lt;strong&gt;4 周蓝图设计 + 12 周实施陪跑（可选）&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&#34;发行平台能力分层模型&#34;&gt;发行平台能力分层模型&lt;/h2&gt;
-&lt;p&gt;我们不做&amp;quot;一步到位&amp;quot;的空中楼阁——&lt;strong&gt;从L1到L4，每层都有明确的业务价值&lt;/strong&gt;：&lt;/p&gt;
+&lt;h2 id=&#34;增长平台能力分层模型&#34;&gt;增长平台能力分层模型&lt;/h2&gt;
+&lt;p&gt;我们不做&amp;quot;一步到位&amp;quot;的空中楼阁——&lt;strong&gt;从 L1 到 L4，每层都有明确的业务价值&lt;/strong&gt;：&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
@@ -267,7 +276,7 @@
   &lt;tbody&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;L1 数据基建&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;统一数仓、ROI360 看板、素材效果、营销效果&lt;/td&gt;
+          &lt;td&gt;统一数仓、ROI360 看板、内容 / 渠道效果、增长效果&lt;/td&gt;
           &lt;td&gt;数据打通，看数效率提升 50%&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
@@ -277,12 +286,12 @@
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;L3 操作工具&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;跨媒体批量创编、素材库、账户财务对账&lt;/td&gt;
-          &lt;td&gt;优化师和设计师人效提升 30%&lt;/td&gt;
+          &lt;td&gt;跨渠道批量创编、内容 / 素材库、账户财务对账&lt;/td&gt;
+          &lt;td&gt;业务方与创作端人效提升 30%&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;L4 AI Agent&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;UA Monitor + Ad Agent 双轮驱动&lt;/td&gt;
+          &lt;td&gt;增长 Monitor + 决策 Agent 双轮驱动&lt;/td&gt;
           &lt;td&gt;80% 日常监控、分析、建议自动化&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;

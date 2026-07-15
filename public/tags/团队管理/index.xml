@@ -2,39 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>团队管理 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-    <link>http://localhost:1314/tags/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/</link>
+    <link>http://localhost:1313/tags/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/</link>
     <description>Recent content in 团队管理 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
     <image>
       <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-      <url>http://localhost:1314/images/og-default.svg</url>
-      <link>http://localhost:1314/images/og-default.svg</link>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%9B%A2%E9%98%9F%E7%AE%A1%E7%90%86/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>案例：策略产能，投放团队的第二增长曲线</title>
-      <link>http://localhost:1314/work/strategy-capacity/</link>
+      <title>案例：策略产能，增长团队的第二增长曲线</title>
+      <link>http://localhost:1313/work/strategy-capacity/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/work/strategy-capacity/</guid>
-      <description>&lt;h1 id=&#34;案例策略产能投放团队的第二增长曲线&#34;&gt;案例：策略产能，投放团队的第二增长曲线&lt;/h1&gt;
+      <guid>http://localhost:1313/work/strategy-capacity/</guid>
+      <description>&lt;h1 id=&#34;案例策略产能增长团队的第二增长曲线&#34;&gt;案例：策略产能，增长团队的第二增长曲线&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：5人以上UA团队，人均消耗遇到天花板，招人也涨不动GMV&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;核心洞察&lt;/strong&gt;：大部分投放团队的策略时间占比不到20%——80%的时间花在了操作上&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：2周诊断 + 3个月体系落地&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;适用场景&lt;/strong&gt;：5 人以上增长团队，人均产能遇到天花板，招人也涨不动业务规模&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心洞察&lt;/strong&gt;：大部分增长团队的策略时间占比不到 20%——80% 的时间花在了操作上&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：2 周诊断 + 3 个月体系落地&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本案例已完全脱敏，不指向任何特定客户或行业；服务范围不含游戏（含手游 / 休闲 / 中重度）行业。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;什么是策略产能&#34;&gt;什么是策略产能&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;策略产能 = 投放团队把数据、经验和判断转化为有效增长动作的能力。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;它不等于加班时长，也不等于campaign数量——很多团队看起来很忙，但忙的都是&amp;quot;数据搬运&amp;quot;，不是&amp;quot;策略判断&amp;quot;。&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;策略产能 = 增长团队把数据、经验和判断转化为有效增长动作的能力。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;它不等于加班时长，也不等于 campaign 数量——很多团队看起来很忙，但忙的都是&amp;quot;数据搬运&amp;quot;，不是&amp;quot;策略判断&amp;quot;。&lt;/p&gt;
 &lt;table&gt;
   &lt;thead&gt;
       &lt;tr&gt;
           &lt;th&gt;团队类型&lt;/th&gt;
           &lt;th&gt;操作时间占比&lt;/th&gt;
           &lt;th&gt;策略时间占比&lt;/th&gt;
-          &lt;th&gt;人均月消耗天花板&lt;/th&gt;
+          &lt;th&gt;人均产能相对水位&lt;/th&gt;
       &lt;/tr&gt;
   &lt;/thead&gt;
   &lt;tbody&gt;
@@ -42,19 +45,19 @@
           &lt;td&gt;&lt;strong&gt;低效团队&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;80%&lt;/td&gt;
           &lt;td&gt;20%&lt;/td&gt;
-          &lt;td&gt;5万美金&lt;/td&gt;
+          &lt;td&gt;基线&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;普通团队&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;50%&lt;/td&gt;
           &lt;td&gt;50%&lt;/td&gt;
-          &lt;td&gt;15万美金&lt;/td&gt;
+          &lt;td&gt;3× 基线&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;高效团队&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;20%&lt;/td&gt;
           &lt;td&gt;80%&lt;/td&gt;
-          &lt;td&gt;50万美金 +&lt;/td&gt;
+          &lt;td&gt;10× 基线以上&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;
@@ -62,50 +65,50 @@
 &lt;h2 id=&#34;问题诊断你的团队卡在哪了&#34;&gt;问题诊断：你的团队卡在哪了？&lt;/h2&gt;
 &lt;h3 id=&#34;第一层操作瓶颈&#34;&gt;第一层：操作瓶颈&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;优化师每天切5-8个后台，手动粘数做报表&lt;/li&gt;
-&lt;li&gt;批量创建campaign要一个一个填&lt;/li&gt;
+&lt;li&gt;业务方每天切 5 - 8 个后台，手动粘数做报表&lt;/li&gt;
+&lt;li&gt;批量创建 campaign 要一个一个填&lt;/li&gt;
 &lt;li&gt;素材上传、打标、跟踪全靠人工&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：招再多优化师，人效也上不去，人均消耗卡在10万美金&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：招再多人，人效也上不去，人均产能长期卡在低水位&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;第二层信号瓶颈&#34;&gt;第二层：信号瓶颈&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;没有统一的红绿看板，哪个campaign该加该减全凭感觉&lt;/li&gt;
-&lt;li&gt;异常发现慢，等发现跑崩了，几万美金已经烧没了&lt;/li&gt;
+&lt;li&gt;没有统一的红绿看板，哪个 campaign 该加该减全凭感觉&lt;/li&gt;
+&lt;li&gt;异常发现慢，等发现跑崩了，预算已经烧没了&lt;/li&gt;
 &lt;li&gt;素材疲劳全靠&amp;quot;感觉这个素材跑了挺久了&amp;quot;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：策略判断不准，试错成本高，ROI忽高忽低&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：策略判断不准，试错成本高，ROI 忽高忽低&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;第三层策略瓶颈&#34;&gt;第三层：策略瓶颈&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;优秀优化师的经验存在脑子里，人走了经验就没了&lt;/li&gt;
-&lt;li&gt;新人上手要3个月，全靠师傅带&lt;/li&gt;
-&lt;li&gt;动作不复盘：调了价、换了素材，有没有效不知道&lt;/li&gt;
-&lt;li&gt;没有可复用的策略模板，每次上新游戏都从零开始&lt;/li&gt;
+&lt;li&gt;资深专家的经验存在脑子里，人走了经验就没了&lt;/li&gt;
+&lt;li&gt;新人上手要 3 个月，全靠师傅带&lt;/li&gt;
+&lt;li&gt;动作不复盘：调了预算、换了素材，有没有效不知道&lt;/li&gt;
+&lt;li&gt;没有可复用的策略模板，每次新方向都从零开始&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;结果&lt;/strong&gt;：团队规模越大，管理成本越高，增长遇到天花板&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;我们的提升方案&#34;&gt;我们的提升方案&lt;/h2&gt;
-&lt;h3 id=&#34;第一步减操作把操作时间从80降到20&#34;&gt;第一步：减操作（把操作时间从80%降到20%）&lt;/h3&gt;
+&lt;h3 id=&#34;第一步减操作把操作时间从-80-降到-20&#34;&gt;第一步：减操作（把操作时间从 80% 降到 20%）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;统一数据入仓 + ROI360看板：不用再切后台粘数&lt;/li&gt;
-&lt;li&gt;跨媒体批量创编工具：模板化创建，一次填好，多平台同步&lt;/li&gt;
+&lt;li&gt;统一数据入仓 + ROI360 看板：不用再切后台粘数&lt;/li&gt;
+&lt;li&gt;跨渠道批量创编工具：模板化创建，一次填好，多平台同步&lt;/li&gt;
 &lt;li&gt;自动命名规范 + 维度管理：告别&amp;quot;campaign_123_final_final&amp;quot;&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：每人每周多出3天时间做策略&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：每人每周多出 3 天时间做策略&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&#34;第二步推信号把策略判断的信噪比提升10倍&#34;&gt;第二步：推信号（把策略判断的信噪比提升10倍）&lt;/h3&gt;
+&lt;h3 id=&#34;第二步推信号把策略判断的信噪比提升-10-倍&#34;&gt;第二步：推信号（把策略判断的信噪比提升 10 倍）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;红绿看板：每个campaign自动打分，红的停，绿的加&lt;/li&gt;
-&lt;li&gt;异常预警：分钟级监控，ROI掉了、CPI涨了自动告警&lt;/li&gt;
+&lt;li&gt;红绿看板：每个 campaign 自动打分，红的停，绿的加&lt;/li&gt;
+&lt;li&gt;异常预警：分钟级监控，ROI 掉了、成本涨了自动告警&lt;/li&gt;
 &lt;li&gt;素材疲劳检测：曝光频次、转化率衰减自动提示&lt;/li&gt;
-&lt;li&gt;机会清单：被低估的GEO、素材、定向自动推荐&lt;/li&gt;
+&lt;li&gt;机会清单：被低估的场景、素材、定向自动推荐&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：策略判断从&amp;quot;凭感觉&amp;quot;变成&amp;quot;看信号&amp;quot;，决策准确率提升&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;第三步沉策略把个人经验变成团队资产&#34;&gt;第三步：沉策略（把个人经验变成团队资产）&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;Action Tracking机制：每个投放动作都有&amp;quot;动作前→动作后→预期→结果&amp;quot;的闭环&lt;/li&gt;
-&lt;li&gt;策略模板库：优秀的出价、定向、素材组合沉淀成模板，新人拿来就能用&lt;/li&gt;
+&lt;li&gt;Action Tracking 机制：每个业务动作都有&amp;quot;动作前 → 动作后 → 预期 → 结果&amp;quot;的闭环&lt;/li&gt;
+&lt;li&gt;策略模板库：优秀的预算、定向、素材组合沉淀成模板，新人拿来就能用&lt;/li&gt;
 &lt;li&gt;动作审计日志：什么人、什么时候、做了什么动作、效果如何，全记录&lt;/li&gt;
-&lt;li&gt;规则引擎 + Agent建议：把成熟的策略变成自动规则，AI辅助决策&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：新人上手从3个月缩短到2周，团队经验不随人走&lt;/li&gt;
+&lt;li&gt;规则引擎 + Agent 建议：把成熟的策略变成自动规则，AI 辅助决策&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;价值&lt;/strong&gt;：新人上手从 3 个月缩短到 2 周，团队经验不随人走&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;交付清单&#34;&gt;交付清单&lt;/h2&gt;
@@ -113,13 +116,13 @@
 &lt;li&gt;📊 《策略产能诊断报告 + 团队现状评分》&lt;/li&gt;
 &lt;li&gt;⚙️ 《减操作工具清单 + 优先级落地路线图》&lt;/li&gt;
 &lt;li&gt;🚥 《红绿看板设计 + 异常告警阈值清单》&lt;/li&gt;
-&lt;li&gt;📋 《Action Tracking机制 + 复盘SOP》&lt;/li&gt;
+&lt;li&gt;📋 《Action Tracking 机制 + 复盘 SOP》&lt;/li&gt;
 &lt;li&gt;🧩 《策略模板库框架 + 运营方案》&lt;/li&gt;
-&lt;li&gt;🗺️ 《3个月策略产能提升路线图》&lt;/li&gt;
+&lt;li&gt;🗺️ 《3 个月策略产能提升路线图》&lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;结果&#34;&gt;结果&lt;/h2&gt;
-&lt;p&gt;我们服务过的团队，3个月内普遍能拿到这些结果：&lt;/p&gt;</description>
+&lt;p&gt;我们服务过的团队，3 个月内普遍能拿到这些结果：&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

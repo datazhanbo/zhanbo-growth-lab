@@ -2,27 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>流量架构 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-    <link>http://localhost:1314/tags/%E6%B5%81%E9%87%8F%E6%9E%B6%E6%9E%84/</link>
+    <link>http://localhost:1313/tags/%E6%B5%81%E9%87%8F%E6%9E%B6%E6%9E%84/</link>
     <description>Recent content in 流量架构 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
     <image>
       <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-      <url>http://localhost:1314/images/og-default.svg</url>
-      <link>http://localhost:1314/images/og-default.svg</link>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/%E6%B5%81%E9%87%8F%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E6%B5%81%E9%87%8F%E6%9E%B6%E6%9E%84/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>案例：千级并发实验，从互斥桶到重叠框架</title>
-      <link>http://localhost:1314/work/experiment-platform/</link>
+      <link>http://localhost:1313/work/experiment-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/work/experiment-platform/</guid>
+      <guid>http://localhost:1313/work/experiment-platform/</guid>
       <description>&lt;h1 id=&#34;案例千级并发实验从互斥桶到重叠框架&#34;&gt;案例：千级并发实验，从互斥桶到重叠框架&lt;/h1&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部出海休闲游戏，MAU亿级，产品/算法/商业化团队并行做实验&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;核心痛点&lt;/strong&gt;：用互斥桶模型，流量不够用，实验排期要等1个月；而且实验结果经常互相污染&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：2周诊断 + 3个月架构升级陪跑&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;客户画像&lt;/strong&gt;：头部内容平台，MAU 亿级，产品 / 算法 / 商业化团队并行做实验&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;核心痛点&lt;/strong&gt;：用互斥桶模型，流量不够用，实验排期要等 1 个月；而且实验结果经常互相污染&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;服务周期&lt;/strong&gt;：2 周诊断 + 3 个月架构升级陪跑&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;本案例已完全脱敏，不指向任何特定客户或行业；服务范围不含游戏（含手游 / 休闲 / 中重度）行业。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;问题诊断&#34;&gt;问题诊断&lt;/h2&gt;
@@ -70,7 +73,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;第二步特性拆分与治理&#34;&gt;第二步：特性拆分与治理&lt;/h3&gt;
 &lt;ul&gt;
-&lt;li&gt;打通游戏引擎研发（特性 feature）→ 发版（bundle）→ 实验（experiment）管线&lt;/li&gt;
+&lt;li&gt;打通业务研发（特性 feature）→ 发版（bundle）→ 实验（experiment）管线&lt;/li&gt;
 &lt;li&gt;正交特性拆分标准，提升流量同质性&lt;/li&gt;
 &lt;li&gt;实验治理SOP：什么能开实验、什么不能、谁来审核&lt;/li&gt;
 &lt;/ul&gt;
@@ -105,7 +108,7 @@
 &lt;li&gt;✅ 创意产能提升，实验数量上来了，产品迭代速度明显加快&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1314/services/experiment-platform/&#34;&gt;实验平台搭建与诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
+&lt;p&gt;👉 查看完整服务介绍：&lt;a href=&#34;http://localhost:1313/services/experiment-platform/&#34;&gt;实验平台搭建与诊断冲刺&lt;/a&gt;&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

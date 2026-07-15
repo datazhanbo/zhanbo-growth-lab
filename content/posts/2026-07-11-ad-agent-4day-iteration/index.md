@@ -2,8 +2,8 @@
 title: "AD Agent 开发实录和版本迭代——4 天从两个 Skill 到一个能自治的投放大脑"
 date: 2026-07-11T00:00:00+08:00
 description: "4 天、10 个版本、5 个 Phase：从 Cursor 里的两个 Skill，到能自治的 SmartUA ad-agent。附 5 道就绪度自测和 90 天路线图诊断。"
-keywords: ["Ad Agent", "Agentic UA", "SmartUA", "vibe coding", "出海买量", "投放自动化", "ReAct", "Human in the loop", "Ark 推理"]
-tags: ["ad-agent", "agentic", "vibe-coding", "smartua", "ua", "出海买量"]
+keywords: ["Ad Agent", "Agentic UA", "vibe coding", "投放自动化", "ReAct", "Human in the loop", "Ark 推理"]
+tags: ["ad-agent", "agentic", "vibe-coding", "企业 Agent", "决策工作流"]
 categories: ["实战笔记"]
 draft: false
 showToc: true
@@ -32,6 +32,8 @@ cover:
 
 作者：zhanbo · 2026-07-11
 
+> **声明**：本文为个人业余时间的独立技术实践与方法论记录，全部代码、Skill、Prompt 均基于公开资料与个人环境搭建，不涉及任何雇主或客户的内部系统、数据、账户或商业秘密；本工作室不承接游戏（含手游 / 休闲 / 中重度）行业相关咨询。
+
 ---
 
 ## tl;dr
@@ -46,7 +48,7 @@ cover:
 
 先说业务，再说 agent，不然一切都是空的。
 
-出海买量团队里，优化师的日常长这样：
+获客投放团队里，优化师的日常长这样：
 
 - 早上打开 Meta / Google / TikTok 三个后台，各抄一遍昨日 spend / installs / ROAS
 - 打开归因平台（AppsFlyer / Adjust）再抄一遍 D1 / D7 ROI
@@ -207,7 +209,7 @@ Phase 4 收口成"主动式自治"：APScheduler 起一个后台 scheduler，每
 4. **审批要做成一键**——人在环不是负担，是学习信号
 5. **记忆和策略要落盘**——不然你天天在训"新员工"
 
-我在过去两个月做了几家出海游戏 / 工具 App 的 ad-agent 咨询——从 mini 诊断到搭建 MVP。有些团队原本卡在"要不要买某个 SaaS"，聊完发现真正卡的是**数据口径没统一**——买什么工具都没救。
+我在过去两个月做了几家工具 App / 非游戏业务的 ad-agent 咨询——从 mini 诊断到搭建 MVP。有些团队原本卡在"要不要买某个 SaaS"，聊完发现真正卡的是**数据口径没统一**——买什么工具都没救。
 
 ---
 
@@ -228,7 +230,7 @@ Phase 4 收口成"主动式自治"：APScheduler 起一个后台 scheduler，每
 
 ## 免费 Ad-Agent 就绪度诊断（限 2 家 · 本月截止）
 
-适合谁：$50k–500k / 月投放的出海休闲游戏 / 工具 App / 中小 studio，有优化师、有 BI、但还没有系统性的 agent 工程
+适合谁：$50k–500k / 月投放的工具 App / 中小团队，有优化师、有 BI、但还没有系统性的 agent 工程
 
 交付什么：
 
@@ -238,7 +240,9 @@ Phase 4 收口成"主动式自治"：APScheduler 起一个后台 scheduler，每
 
 方式：只读授权 + 14 天交付。
 
-联系方式：邮件 **zanhe@139.com** 或加微信 **zanhe1984**，主题写 "ad-agent 就绪度 + 团队规模 + 现在的痛点"，本月截止。
+联系方式：邮件 **zanhe@139.com** 或扫码加微信，主题写 "ad-agent 就绪度 + 团队规模 + 现在的痛点"，本月截止。
+
+<img src="/images/wechat-qr.jpg" alt="展博微信二维码" width="240">
 
 ---
 

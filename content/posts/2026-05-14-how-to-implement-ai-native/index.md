@@ -167,4 +167,4 @@ License   AI Worker   按价值定价
 
 - [企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗]({{< ref "posts/2026-05-enterprise-ai-agent-7-layer-funnel" >}})——把"AI Native 该怎么落地"从战略层进一步拆到工程层的 7 层漏斗。
 - [Meta 商业化大变革：从 Marketing API 到 Agentic Ads]({{< ref "posts/2026-06-meta-agentic-ads-a2a" >}})——从最典型的商业化场景（广告买量）看 Agent 化的行业趋势。
-- [钛动开了 5 年户，除了充钱没用过任何产品——如何自建 inhouse 投放平台]({{< ref "posts/2026-07-04-agentic-ua-inhouse-ad-platform" >}})——AI 冲击下代投 / SaaS / inhouse 三种路径的终局判断。
+- [从钛动招股书看 Agentic UA 时代的三种终局——代投、SaaS、inhouse]({{< ref "posts/2026-07-04-agentic-ua-inhouse-ad-platform" >}})——AI 冲击下代投 / SaaS / inhouse 三种路径的终局判断。

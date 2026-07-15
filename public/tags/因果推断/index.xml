@@ -2,44 +2,47 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>因果推断 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-    <link>http://localhost:1314/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/</link>
+    <link>http://localhost:1313/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/</link>
     <description>Recent content in 因果推断 on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
     <image>
       <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-      <url>http://localhost:1314/images/og-default.svg</url>
-      <link>http://localhost:1314/images/og-default.svg</link>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Fri, 26 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/%E5%9B%A0%E6%9E%9C%E6%8E%A8%E6%96%AD/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>实验平台搭建与诊断冲刺</title>
-      <link>http://localhost:1314/services/experiment-platform/</link>
+      <link>http://localhost:1313/services/experiment-platform/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/services/experiment-platform/</guid>
+      <guid>http://localhost:1313/services/experiment-platform/</guid>
       <description>&lt;h1 id=&#34;实验平台搭建与诊断冲刺&#34;&gt;实验平台搭建与诊断冲刺&lt;/h1&gt;
-&lt;p&gt;2周内，把你的A/B实验从&amp;quot;看看数据&amp;quot;变成&amp;quot;支撑AI决策的可信反馈闭环&amp;quot;。&lt;/p&gt;
+&lt;p&gt;2 周内，把你的 A/B 实验从&amp;quot;看看数据&amp;quot;变成&amp;quot;支撑 AI 决策的可信反馈闭环&amp;quot;。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;服务范围&lt;/strong&gt;：面向 &lt;strong&gt;内容、电商、SaaS 与平台型业务&lt;/strong&gt;，不承接游戏行业相关咨询。&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;p&gt;&lt;strong&gt;A/B 实验不是一个按钮，也不是一个报表，而是一套让产品、算法、运营和增长团队能持续学习的贝叶斯系统。&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;尤其关注 &lt;strong&gt;AI / Agent 决策是否具备可信反馈闭环&lt;/strong&gt; —— 这是下一个十年增长团队的核心基础设施。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;适合谁&#34;&gt;适合谁&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;本服务特别适合：&lt;/strong&gt;&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;🎮 出海游戏发行商的产品/增长/算法团队&lt;/li&gt;
-&lt;li&gt;📈 日均DAU 10万+，正在遇到实验规模瓶颈的团队&lt;/li&gt;
-&lt;li&gt;🤖 准备引入AI Agent决策，但缺乏可信测量体系的团队&lt;/li&gt;
+&lt;li&gt;📈 内容 / 电商 / SaaS 的产品 / 增长 / 算法团队&lt;/li&gt;
+&lt;li&gt;🔬 日均 DAU 10 万+，正在遇到实验规模瓶颈的团队&lt;/li&gt;
+&lt;li&gt;🤖 准备引入 AI Agent 决策，但缺乏可信测量体系的团队&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;strong&gt;典型场景：&lt;/strong&gt;&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&amp;ldquo;我们的实验结果经常互相矛盾，产品和数据团队吵个不停&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;分流好像有问题，同一个用户进多个组，数据根本不敢信&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;想上AI做自动决策，但连A/B实验的基线都没打牢&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;&amp;ldquo;想上 AI 做自动决策，但连 A/B 实验的基线都没打牢&amp;rdquo;&lt;/p&gt;
 &lt;p&gt;&amp;ldquo;实验做了不少，但真正推动产品前进的没几个&amp;rdquo;&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;服务周期&#34;&gt;服务周期&lt;/h2&gt;
-&lt;p&gt;🕒 &lt;strong&gt;2周密集诊断 + 4周陪跑实施（可选）&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;🕒 &lt;strong&gt;2 周密集诊断 + 4 周陪跑实施（可选）&lt;/strong&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;六维诊断框架&#34;&gt;六维诊断框架&lt;/h2&gt;
 &lt;p&gt;我提供实验平台与增长测量体系的诊断、设计和实施陪跑，覆盖六个核心模块：&lt;/p&gt;
@@ -98,7 +101,7 @@
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;用户体验优化&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;持续优化产品手感与体验&lt;/td&gt;
-          &lt;td&gt;时长、留存、GMV/局数/得分&lt;/td&gt;
+          &lt;td&gt;时长、留存、GMV / 完成率&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;产品特性探索&lt;/strong&gt;&lt;/td&gt;
@@ -106,14 +109,14 @@
           &lt;td&gt;用户需求满足度、功能渗透率&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;买量与营销效率&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;产品内与媒体侧双向优化&lt;/td&gt;
-          &lt;td&gt;ROI、素材生命周期、获客成本&lt;/td&gt;
+          &lt;td&gt;&lt;strong&gt;增长与运营效率&lt;/strong&gt;&lt;/td&gt;
+          &lt;td&gt;产品内与渠道侧双向优化&lt;/td&gt;
+          &lt;td&gt;ROI、渠道生命周期、获客成本&lt;/td&gt;
       &lt;/tr&gt;
       &lt;tr&gt;
           &lt;td&gt;&lt;strong&gt;商业化收益&lt;/strong&gt;&lt;/td&gt;
           &lt;td&gt;平衡用户体验与变现效率&lt;/td&gt;
-          &lt;td&gt;eCPM、LTV、付费深度&lt;/td&gt;
+          &lt;td&gt;ARPU、LTV、付费深度&lt;/td&gt;
       &lt;/tr&gt;
   &lt;/tbody&gt;
 &lt;/table&gt;

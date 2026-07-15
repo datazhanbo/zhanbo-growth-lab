@@ -134,7 +134,7 @@ L7 模型能力层：底层 API（GPT-4o / Claude / Gemini）
 
 ## 二、实战案例：Ad Agent 的 7 层设计
 
-以 **app / shopping 出海广告投放** 场景为例，完整演示漏斗模型的应用。
+以 **app / shopping 广告投放** 场景为例，完整演示漏斗模型的应用。
 
 ### 2.1 L1 业务指标层（Starting Point！）
 
@@ -1065,7 +1065,7 @@ docker-compose -f docker-compose.dev.yml up -d
 
 - [企业级 AI 应用落地：从 FOMO 到真正的业务增长]({{< ref "posts/2026-05-14-how-to-implement-ai-native" >}})——本文 7 层漏斗对应的商业战略层。
 - [Meta 商业化大变革：从 Marketing API 到 Agentic Ads]({{< ref "posts/2026-06-meta-agentic-ads-a2a" >}})——Ad Agent 需要一层稳定的 Adapter，理由在这里。
-- [钛动开了 5 年户，除了充钱没用过任何产品——如何自建 inhouse 投放平台]({{< ref "posts/2026-07-04-agentic-ua-inhouse-ad-platform" >}})——把 7 层漏斗方法论用到国内出海买量的具体行业判断。
+- [从钛动招股书看 Agentic UA 时代的三种终局——代投、SaaS、inhouse]({{< ref "posts/2026-07-04-agentic-ua-inhouse-ad-platform" >}})——把 7 层漏斗方法论用到国内出海买量的具体行业判断。
 
 ---
 

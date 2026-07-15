@@ -56,11 +56,6 @@ canonifyURLs = false
     weight = 30
 
   [[menu.main]]
-    name = "诊断"
-    url = "/diagnostic/"
-    weight = 35
-
-  [[menu.main]]
     name = "文章"
     url = "/posts/"
     weight = 40
@@ -73,8 +68,8 @@ canonifyURLs = false
 # 站点参数
 [params]
   author = "何赞"
-  description = "展博增长实验室：面向出海游戏、应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建咨询。"
-  keywords = ["实验体系", "AB 实验", "营销数据平台", "投放智能化", "企业级 Agent", "Agentic Ad", "增长咨询", "出海增长", "游戏增长", "应用增长", "电商增长", "ROI 归因", "MMP"]
+  description = "展博增长实验室：面向应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建咨询。"
+  keywords = ["实验体系", "AB 实验", "营销数据平台", "投放智能化", "企业级 Agent", "Agentic Ad", "增长咨询", "应用增长", "电商增长", "ROI 归因", "MMP"]
   images = ["/images/og-default.svg"]
 
   # PaperMod 主题配置
@@ -103,7 +98,7 @@ canonifyURLs = false
 # 首页配置
 [homeInfoParams]
   Title = "展博增长实验室"
-  Content = "面向出海游戏、应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建四类咨询服务。"
+  Content = "面向应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建四类咨询服务。"
 
 # 社交链接
 socialIcons = [

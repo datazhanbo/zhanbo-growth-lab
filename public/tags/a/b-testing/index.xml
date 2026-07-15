@@ -2,37 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>A/B Testing on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-    <link>http://localhost:1314/tags/a/b-testing/</link>
+    <link>http://localhost:1313/tags/a/b-testing/</link>
     <description>Recent content in A/B Testing on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
     <image>
       <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
-      <url>http://localhost:1314/images/og-default.svg</url>
-      <link>http://localhost:1314/images/og-default.svg</link>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
     </image>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <lastBuildDate>Mon, 22 Jun 2026 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1314/tags/a/b-testing/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/a/b-testing/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>实验即增长：我的产品正式发布</title>
-      <link>http://localhost:1314/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link>
+      <link>http://localhost:1313/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</link>
       <pubDate>Mon, 08 Jun 2026 10:45:00 +0800</pubDate>
-      <guid>http://localhost:1314/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid>
+      <guid>http://localhost:1313/posts/%E5%AE%9E%E9%AA%8C%E5%8D%B3%E5%A2%9E%E9%95%BF%E6%88%91%E7%9A%84%E4%BA%A7%E5%93%81%E6%AD%A3%E5%BC%8F%E5%8F%91%E5%B8%83/</guid>
       <description>增长不是一次灵感，也不是某个爆款素材、某个新渠道、某个产品改版带来的偶然结果。真正可持续的增长，来自一套能够不断提出假设、验证假设、沉淀结论、再继续迭代的实验体系。</description>
     </item>
     <item>
       <title>竞对靠实验跑出了增长，为什么我们不行？</title>
-      <link>http://localhost:1314/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</link>
+      <link>http://localhost:1313/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</link>
       <pubDate>Mon, 22 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</guid>
+      <guid>http://localhost:1313/posts/%E7%AB%9E%E5%AF%B9%E9%9D%A0%E5%AE%9E%E9%AA%8C%E8%B7%91%E5%87%BA%E4%BA%86%E5%A2%9E%E9%95%BF%E4%B8%BA%E4%BB%80%E4%B9%88%E6%88%91%E4%BB%AC%E4%B8%8D%E8%A1%8C/</guid>
       <description>同样在做 AB 测试，别人靠它持续迭代、增长一路向上，我们的实验却结果不可靠、推全就反转。问题往往不在平台，而在你没建之前就该想清楚的那几件事。</description>
-    </item>
-    <item>
-      <title>出海休闲游戏小团队，如何建立第一套增长系统？</title>
-      <link>http://localhost:1314/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</link>
-      <pubDate>Mon, 15 Jun 2026 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1314/posts/%E5%87%BA%E6%B5%B7%E4%BC%91%E9%97%B2%E6%B8%B8%E6%88%8F%E5%B0%8F%E5%9B%A2%E9%98%9F%E5%A6%82%E4%BD%95%E5%BB%BA%E7%AB%8B%E7%AC%AC%E4%B8%80%E5%A5%97%E5%A2%9E%E9%95%BF%E7%B3%BB%E7%BB%9F/</guid>
-      <description>小 studio 的增长起点不只是买量，而是一套能让产品、买量、商业化持续互相校准的实验增长系统。</description>
     </item>
   </channel>
 </rss>
