@@ -163,6 +163,8 @@ categories: ["增长服务"]
 
 ## 下一步
 
+**如果你的重点在付费投放侧**——UA、多媒体渠道、MMP、SKAN / user-level 数据割裂——建议直接看 [Inhouse UA 数据底座与 UA-Monitor 建设](/services/inhouse-ua-monitor/),是本服务的投放侧垂直落地版本。
+
 ---
 
 *© 2026 展博增长实验室 | AB 实验与增长咨询*

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Bias-Reduction on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
+    <link>http://localhost:1313/tags/bias-reduction/</link>
+    <description>Recent content in Bias-Reduction on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
+    <image>
+      <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 15 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/bias-reduction/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>三个 Studio,三种实验红利:广度、深度、精度对应的三类增长瓶颈</title>
+      <link>http://localhost:1313/posts/%E4%B8%89%E4%B8%AA-studio%E4%B8%89%E7%A7%8D%E5%AE%9E%E9%AA%8C%E7%BA%A2%E5%88%A9%E5%B9%BF%E5%BA%A6%E6%B7%B1%E5%BA%A6%E7%B2%BE%E5%BA%A6%E5%AF%B9%E5%BA%94%E7%9A%84%E4%B8%89%E7%B1%BB%E5%A2%9E%E9%95%BF%E7%93%B6%E9%A2%88/</link>
+      <pubDate>Wed, 15 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/%E4%B8%89%E4%B8%AA-studio%E4%B8%89%E7%A7%8D%E5%AE%9E%E9%AA%8C%E7%BA%A2%E5%88%A9%E5%B9%BF%E5%BA%A6%E6%B7%B1%E5%BA%A6%E7%B2%BE%E5%BA%A6%E5%AF%B9%E5%BA%94%E7%9A%84%E4%B8%89%E7%B1%BB%E5%A2%9E%E9%95%BF%E7%93%B6%E9%A2%88/</guid>
+      <description>近距离参与三个出海 Studio 的实验平台建设复盘。他们从实验里拿到的,不是某一次优化,而是把不确定性变成可复利增长的组织能力。广度、深度、精度——三类实验红利对应三类增长瓶颈:验证太慢、流量不够、结论不可信。</description>
+    </item>
+  </channel>
+</rss>

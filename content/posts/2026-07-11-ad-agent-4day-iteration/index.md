@@ -248,8 +248,8 @@ Phase 4 收口成"主动式自治"：APScheduler 起一个后台 scheduler，每
 
 ## 延伸阅读
 
-- [Agentic UA 冲击下的代投代理和投手们](/posts/2026-07-04-agentic-ua-inhouse-ad-platform/) —— 代投团队为什么被 agent 挤压
-- [企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗](/posts/2026-05-enterprise-ai-agent-7-layer-funnel/) —— agent 落地的通用漏斗
-- [Meta 商业化演进与 Agentic Ads —— 未来的广告买量是 A2A 架构](/posts/2026-06-meta-agentic-ads-a2a/) —— 未来广告 A2A 架构下的 ad-agent 定位
+- [从钛动招股书看 Agentic UA 时代的三种终局——代投、SaaS、inhouse](/posts/从钛动招股书看-agentic-ua-时代的三种终局代投saasinhouse/) —— 代投团队为什么被 agent 挤压
+- [企业 AI Agent 落地指南：跨越从模型到业务的 7 层漏斗](/posts/企业-ai-agent-落地指南跨越从模型到业务的-7-层漏斗/) —— agent 落地的通用漏斗
+- [Meta 商业化大变革：从 Marketing API 到 Agentic Ads——未来的广告买量是 A2A 架构](/posts/meta-商业化大变革从-marketing-api-到-agentic-ads未来的广告买量是-a2a-架构/) —— 未来广告 A2A 架构下的 ad-agent 定位
 
 *—— 本文对应 SmartUA v0.1 → v1.7 的完整迭代，源自 4 天真实 vibe coding 记录*

@@ -136,6 +136,7 @@ comments: false
 | [增长数据诊断](/services/ua-growth-diagnostic/) | ROI、归因、看板口径争议大的团队 | 1 – 2 周 | 诊断报告、问题清单、Quick Win、路线图 |
 | [增长平台建设咨询](/services/publishing-platform/) | 希望从多后台手工操作升级为统一增长平台的团队 | 4 – 12 周 | 平台蓝图、能力分层、PRD / 架构方案、实施陪跑 |
 | [A/B 实验与增长体系](/services/experiment-platform/) | 希望用实验驱动产品、商业化、增长效率的团队 | 2 – 6 周 | 实验成熟度评估、统计方案、指标体系、治理流程 |
+| [Inhouse UA 数据底座与 UA-Monitor](/services/inhouse-ua-monitor/) | 出海付费投放团队,想在 Agentic UA 时代把数据主权握回自己手里 | 8 – 12 周(Phase 1) | 数据归集管线、fact/dim/agg 底座、通用 ROI 报表、盯盘规则引擎、Action List 闭环 |
 
 ---
 

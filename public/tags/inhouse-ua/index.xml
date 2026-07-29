@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Inhouse UA on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
+    <link>http://localhost:1313/tags/inhouse-ua/</link>
+    <description>Recent content in Inhouse UA on 展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</description>
+    <image>
+      <title>展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent</title>
+      <url>http://localhost:1313/images/og-default.svg</url>
+      <link>http://localhost:1313/images/og-default.svg</link>
+    </image>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Wed, 29 Jul 2026 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/inhouse-ua/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Inhouse UA 数据底座与 UA-Monitor 建设</title>
+      <link>http://localhost:1313/services/inhouse-ua-monitor/</link>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/services/inhouse-ua-monitor/</guid>
+      <description>&lt;h1 id=&#34;inhouse-ua-数据底座与-ua-monitor-建设&#34;&gt;Inhouse UA 数据底座与 UA-Monitor 建设&lt;/h1&gt;
+&lt;p&gt;8-12 周内,把付费投放从&amp;quot;多后台切换 + 三套数据打架&amp;quot;升级为「Inhouse 数据底座 + 通用 ROI 报表 + 盯盘规则引擎 + 优化师 Action List 闭环」的可信增长体系。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;服务范围&lt;/strong&gt;:面向 &lt;strong&gt;内容、电商、SaaS 与平台型业务&lt;/strong&gt; 的出海付费投放团队,&lt;strong&gt;不承接游戏(含手游 / 休闲 / 中重度)行业&lt;/strong&gt;。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Agentic UA 时代,微操价值在快速贬值,数据主权价值在快速升值。&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Meta Advantage+ / Google PMax / TikTok Smart+ 已经吃掉了投手 80% 的手动优化空间;与此同时,MMP 从归因工具向数据产品公司演化,任何&amp;quot;部分回传&amp;quot;都在造成数据割裂,任何&amp;quot;全部回传&amp;quot;都在稀释你的议价权。&lt;strong&gt;下一步只有一条路:把数据主权握回自己手里。&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;适合谁&#34;&gt;适合谁&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;本服务特别适合:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;🌍 出海内容 / 电商 / SaaS / 平台型业务的付费投放团队&lt;/li&gt;
+&lt;li&gt;💰 月消耗 $10 万 - $500 万区间&lt;/li&gt;
+&lt;li&gt;📊 有稳定投放、有 UA 团队,但数据能力薄弱&lt;/li&gt;
+&lt;li&gt;🤖 中长期看重数据资产 + 想在 Agentic UA 时代保持议价权&lt;/li&gt;
+&lt;li&gt;🛡️ 对 MMP 数据依赖度评估存在焦虑,担心数据主权流失&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;不适合:&lt;/strong&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>UA 从微操进入策略和创意时代,Inhouse 是买方的最优解</title>
+      <link>http://localhost:1313/posts/ua-%E4%BB%8E%E5%BE%AE%E6%93%8D%E8%BF%9B%E5%85%A5%E7%AD%96%E7%95%A5%E5%92%8C%E5%88%9B%E6%84%8F%E6%97%B6%E4%BB%A3inhouse-%E6%98%AF%E4%B9%B0%E6%96%B9%E7%9A%84%E6%9C%80%E4%BC%98%E8%A7%A3/</link>
+      <pubDate>Wed, 29 Jul 2026 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/posts/ua-%E4%BB%8E%E5%BE%AE%E6%93%8D%E8%BF%9B%E5%85%A5%E7%AD%96%E7%95%A5%E5%92%8C%E5%88%9B%E6%84%8F%E6%97%B6%E4%BB%A3inhouse-%E6%98%AF%E4%B9%B0%E6%96%B9%E7%9A%84%E6%9C%80%E4%BC%98%E8%A7%A3/</guid>
+      <description>广告平台一键投放成为默认,MMP 从归因工具向数据产品公司演化,代投/代理/SaaS 三种模式同时被冲击。Agentic UA 时代,把数据主权握回自己手里,Inhouse UA 数据底座是买方的最优解。</description>
+    </item>
+  </channel>
+</rss>
