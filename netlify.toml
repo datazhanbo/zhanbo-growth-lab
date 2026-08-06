@@ -48,6 +48,36 @@
   status = 301
   force = true
 
+# 编码变体（兼容 Netlify 对编码路径的匹配）
+[[redirects]]
+  from = "/index.php/2025/06/29/duolingo%E7%9A%84%E6%B8%B8%E6%88%8F%E5%8C%96%E8%AE%BE%E8%AE%A1"
+  to = "/posts/duolingo的游戏化设计/"
+  status = 301
+  force = true
+# 编码变体（兼容 Netlify 对编码路径的匹配）
+[[redirects]]
+  from = "/index.php/2025/07/05/%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0%E6%B5%81%E9%87%8F%E6%A1%86%E6%9E%B6%E7%9A%84%E8%AE%BE%E8%AE%A1"
+  to = "/posts/实验平台流量框架的设计/"
+  status = 301
+  force = true
+# 编码变体（兼容 Netlify 对编码路径的匹配）
+[[redirects]]
+  from = "/index.php/2025/06/27/%E6%97%B6%E9%9A%9415%E5%B9%B4%E5%86%8D%E8%AF%BB%E3%80%8A%E5%92%A8%E8%AF%A2%E7%9A%84%E5%A5%A5%E7%A7%98%E3%80%8B"
+  to = "/posts/时隔15年再读咨询的奥秘/"
+  status = 301
+  force = true
+# 编码变体（兼容 Netlify 对编码路径的匹配）
+[[redirects]]
+  from = "/index.php/2025/06/26/ab%E5%AE%9E%E9%AA%8C%E4%BB%8B%E7%BB%8D"
+  to = "/posts/ab实验介绍/"
+  status = 301
+  force = true
+# 编码变体（兼容 Netlify 对编码路径的匹配）
+[[redirects]]
+  from = "/index.php/2025/06/27/ab%E5%AE%9E%E9%AA%8C%E5%B9%B3%E5%8F%B0%E5%8A%9F%E8%83%BD%E5%88%97%E8%A1%A8"
+  to = "/posts/ab实验平台功能列表/"
+  status = 301
+  force = true
 [[redirects]]
   from = "/*"
   to = "/404.html"
