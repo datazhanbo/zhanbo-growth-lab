@@ -13,24 +13,38 @@
   to = "/admin/"
   status = 200
 
-# --- 旧 WordPress 死链 301 重定向（2026-08-06 修复） ---
+# --- 旧 WordPress 死链 301 重定向（2026-08-06 初建，2026-08-07 改指真实恢复文章） ---
 # 来源：abtest.chat 换 Hugo 前为 WordPress（/index.php/年/月/日/slug），
-# 旧链接被外链/搜索引擎持续指向，触发下方 /* 兜底 404。301 到主题相关现有文章，保留 SEO 权重。
+# 旧链接被外链/搜索引擎持续指向，触发下方 /* 兜底 404。301 到已恢复的对应原文，保留 SEO 权重。
+# 注：2026-08-07 仅发布 5 篇非竞业文；含"出海休闲游戏/发行"的 3 篇（极致ab实验的前置/
+# 我经历的行业和趋势/游戏机制和数据驱动）延至 2026-11 竞业解除后发，故无对应 301。
 [[redirects]]
   from = "/index.php/2025/06/29/duolingo的游戏化设计"
-  to = "/posts/"
+  to = "/posts/duolingo的游戏化设计/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/index.php/2025/07/05/实验平台流量框架的设计"
-  to = "/posts/2026-06-22-experiment-platform-diagnosis/"
+  to = "/posts/实验平台流量框架的设计/"
   status = 301
   force = true
 
 [[redirects]]
   from = "/index.php/2025/06/27/时隔15年再读《咨询的奥秘》"
-  to = "/posts/2026-07-13-selection-vs-delivery/"
+  to = "/posts/时隔15年再读咨询的奥秘/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.php/2025/06/26/ab实验介绍"
+  to = "/posts/ab实验介绍/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.php/2025/06/27/ab实验平台功能列表"
+  to = "/posts/ab实验平台功能列表/"
   status = 301
   force = true
 

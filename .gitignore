@@ -1,0 +1,8 @@
+# Hugo 构建产物（由 Netlify 从源码生成，不入库）
+/public/
+/resources/
+# macOS 元数据
+.DS_Store
+# 本地预览/hugo 缓存
+.hugo_build.lock
+*.log
