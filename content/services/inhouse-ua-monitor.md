@@ -1,6 +1,8 @@
 ---
 title: "Inhouse UA 数据底座与 UA-Monitor 建设"
 date: 2026-07-29T00:00:00+08:00
+description: "8-12 周内把付费投放从「多后台切换+三套数据打架」升级为 Inhouse 数据底座+通用 ROI 报表+盯盘规则引擎的可靠增长体系。面向应用、电商、SaaS 的出海付费投放团队。服务范围不含游戏行业。"
+keywords: ["Inhouse UA", "UA 数据底座", "UA-Monitor", "Agentic UA", "买量投放", "数据主权", "归因模型", "ROI 归因", "出海投放", "展博增长实验室"]
 draft: false
 comments: false
 tags: ["Inhouse UA", "UA 数据底座", "UA-Monitor", "Agentic UA", "买量投放", "数据主权"]

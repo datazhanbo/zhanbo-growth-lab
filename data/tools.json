@@ -1,0 +1,269 @@
+{
+  "A": {
+    "label": "AB 实验 / 统计",
+    "tools": [
+      {
+        "name": "Statsig",
+        "cat": "实验 · Feature Flag · 产品分析",
+        "desc": "实验 + Feature Flag + 产品分析一体化，统计引擎强，适合想从单点 A/B 升级到「实验即基础设施」的团队。",
+        "url": "https://statsig.com/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "合作伙伴 / 代理计划",
+          "type": "申请制",
+          "rate": "需联系 partner，非自助",
+          "apply": "联系 partner 团队"
+        }
+      },
+      {
+        "name": "GrowthBook",
+        "cat": "开源实验平台 · 可自托管",
+        "desc": "开源实验平台，可自托管 + Cloud 双形态。数据主权友好，技术型团队可零成本起步，再按需上云。",
+        "url": "https://www.growthbook.io/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "无公开现金联盟",
+          "type": "无现金",
+          "rate": "开源，可推荐",
+          "apply": "无"
+        }
+      },
+      {
+        "name": "Convert.com",
+        "cat": "A/B 测试 · 统计严谨",
+        "desc": "强调统计严谨（先验功率、显著性控制）的 A/B 测试工具，和实验方法论叙事最贴。",
+        "url": "https://www.convert.com/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "Affiliate program",
+          "type": "申请制 / 注册",
+          "rate": "订阅 recurring，注册后看比例",
+          "apply": "官网 affiliate 入口"
+        }
+      },
+      {
+        "name": "PostHog",
+        "cat": "产品分析 · 实验 · Session Replay",
+        "desc": "产品分析 + 实验 + 录屏的开源系平台，适合早期团队全栈观测。",
+        "url": "https://posthog.com/",
+        "visible": false,
+        "tier": "T2",
+        "affiliate": {
+          "program": "推荐返积分",
+          "type": "无现金",
+          "rate": "推荐返积分（非现金）",
+          "apply": "账户内 referral"
+        }
+      },
+      {
+        "name": "pvalue.net",
+        "cat": "免费统计工作台",
+        "desc": "免费的先验 / 功效 / 样本量计算工作台，写实验方案时随手算一下，避免「样本量不够就开跑」的常见坑。",
+        "url": "https://pvalue.net/",
+        "visible": false,
+        "tier": "T2",
+        "affiliate": {
+          "program": "无",
+          "type": "无现金",
+          "rate": "免费工具，资源推荐",
+          "apply": "无"
+        }
+      }
+    ]
+  },
+  "B": {
+    "label": "UA / 归因 / MMP / 媒体",
+    "tools": [
+      {
+        "name": "AppsFlyer",
+        "cat": "MMP · 移动归因",
+        "desc": "领先的移动归因与营销衡量平台，是 UA / 归因方向的刚需工具。",
+        "url": "https://www.appsflyer.com/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "Partner Program",
+          "type": "申请制",
+          "rate": "Success Fee 推荐返佣",
+          "apply": "Partner 申请"
+        }
+      },
+      {
+        "name": "Adjust",
+        "cat": "MMP · 防作弊（AppLovin）",
+        "desc": "MMP + 防作弊，AppLovin 旗下，适合做归因合规的团队。",
+        "url": "https://www.adjust.com/",
+        "visible": false,
+        "tier": "T2",
+        "affiliate": {
+          "program": "Adjust Partners",
+          "type": "申请制",
+          "rate": "代理 / 服务伙伴，含返佣",
+          "apply": "Partner 申请"
+        }
+      },
+      {
+        "name": "Branch",
+        "cat": "深度链接 · 归因",
+        "desc": "深度链接 + 跨渠道归因，对拉新裂变、邀请裂变场景很关键。",
+        "url": "https://branch.io/",
+        "visible": false,
+        "tier": "T2",
+        "affiliate": {
+          "program": "Partner Program",
+          "type": "申请制",
+          "rate": "伙伴计划",
+          "apply": "Partner 申请"
+        }
+      },
+      {
+        "name": "Moloco",
+        "cat": "ML 广告 · DSP · 增量",
+        "desc": "机器学习驱动的广告平台，强在增量测量与结构化实验，适合规模化买量。",
+        "url": "https://www.moloco.com/",
+        "visible": false,
+        "tier": "T2",
+        "affiliate": {
+          "program": "Demand Partner / 共同销售",
+          "type": "申请制",
+          "rate": "需资质，共同销售",
+          "apply": "资质审核"
+        }
+      },
+      {
+        "name": "巨量引擎 / 腾讯广告",
+        "cat": "国内媒体 · 代理",
+        "desc": "国内主流效果媒体，是国内增长团队的直接投放入口。",
+        "url": "https://www.oceanengine.com/",
+        "visible": false,
+        "tier": "T3",
+        "affiliate": {
+          "program": "代理商返点",
+          "type": "国内",
+          "rate": "代理资质返点",
+          "apply": "需代理资质"
+        }
+      }
+    ]
+  },
+  "C": {
+    "label": "Martech / 分析 / 自动化",
+    "tools": [
+      {
+        "name": "Klaviyo",
+        "cat": "邮件 / SMS 营销自动化",
+        "desc": "电商向的邮件 + SMS 营销自动化，产品分析强，电商增长强相关。",
+        "url": "https://www.klaviyo.com/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "Partner Program",
+          "type": "申请制",
+          "rate": "最高 20% recurring + 奖金",
+          "apply": "Partner 申请"
+        }
+      },
+      {
+        "name": "Make",
+        "cat": "可视化自动化（no-code）",
+        "desc": "可视化工作流自动化，增长团队的「自动化刚需」，内容也好写。",
+        "url": "https://www.make.com/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "Affiliate",
+          "type": "自助",
+          "rate": "35% / 12 个月（Wise 支付）",
+          "apply": "官网自助注册"
+        }
+      },
+      {
+        "name": "n8n",
+        "cat": "工作流自动化 · 可自托管",
+        "desc": "自托管友好的工作流自动化，契合「数据主权」叙事。",
+        "url": "https://n8n.io/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "Affiliate",
+          "type": "自助",
+          "rate": "30% / 12 个月（PayPal）",
+          "apply": "官网自助注册"
+        }
+      },
+      {
+        "name": "Shopify",
+        "cat": "电商 SaaS",
+        "desc": "独立站标配，电商增长方向直接可用。",
+        "url": "https://www.shopify.com/",
+        "visible": true,
+        "tier": "T1",
+        "affiliate": {
+          "program": "Affiliate",
+          "type": "自助",
+          "rate": "一次性 bounty（~$150/referral，via Impact）",
+          "apply": "Impact 入驻"
+        }
+      },
+      {
+        "name": "HubSpot",
+        "cat": "CRM · 营销 · 销售",
+        "desc": "一体化 CRM + 营销 + 销售平台，适合做 inbound 增长的团队。",
+        "url": "https://www.hubspot.com/",
+        "visible": false,
+        "tier": "T2",
+        "affiliate": {
+          "program": "Solutions Partner",
+          "type": "申请制",
+          "rate": "分层 recurring 佣金（需认证）",
+          "apply": "认证 + 审核"
+        }
+      },
+      {
+        "name": "Amplitude",
+        "cat": "产品分析",
+        "desc": "主流产品分析平台，行为 cohort + 漏斗强，适合做数据咨询 / 实施交付的团队。",
+        "url": "https://amplitude.com/",
+        "visible": false,
+        "tier": "T2",
+        "affiliate": {
+          "program": "Partner Program",
+          "type": "申请制",
+          "rate": "伙伴计划",
+          "apply": "Partner 申请"
+        }
+      },
+      {
+        "name": "Webflow",
+        "cat": "可视化建站",
+        "desc": "无代码建站，设计师友好，适合落地页 / 独立站场景。",
+        "url": "https://webflow.com/",
+        "visible": false,
+        "tier": "T3",
+        "affiliate": {
+          "program": "Affiliate",
+          "type": "自助 / 申请",
+          "rate": "~30% / 12 个月",
+          "apply": "官网 affiliate 入口"
+        }
+      },
+      {
+        "name": "Framer",
+        "cat": "设计驱动建站",
+        "desc": "设计即代码的建站工具，适合快速做营销页 / 落地页。",
+        "url": "https://www.framer.com/",
+        "visible": false,
+        "tier": "T3",
+        "affiliate": {
+          "program": "Affiliate",
+          "type": "自助",
+          "rate": "recurring 返佣",
+          "apply": "官网 affiliate 入口"
+        }
+      }
+    ]
+  }
+}

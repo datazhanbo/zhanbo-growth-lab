@@ -4,6 +4,7 @@ date: 2026-05-29T00:00:00+08:00
 description: "从最强的模型到最终的业务指标，中间隔着至少 7 层漏斗。用 Ad Agent 实战案例，系统讲解 AI 应用交付的漏斗模型、技术选型、实施路径与不同规模企业的最佳实践。"
 tags: ["AI Agent", "企业级 AI", "LangGraph", "Claude Code", "Ad Agent", "架构设计", "买量"]
 categories: ["AI 工程"]
+keywords: ["AI Agent落地", "Agent架构", "LangGraph", "Claude Code", "Ad Agent", "7层漏斗", "企业级AI", "Agentic投放", "AI应用交付", "展博增长实验室"]
 draft: false
 showToc: true
 TocOpen: false

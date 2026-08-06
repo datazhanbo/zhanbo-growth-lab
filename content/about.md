@@ -1,6 +1,8 @@
 ---
-title: "关于我"
+title: "关于展博 — 独立增长科学顾问 | Data & AI 咨询"
 date: 2026-05-07T00:00:00+08:00
+description: "展博（何赞），独立增长科学顾问，专注应用、电商、SaaS 与平台型业务的AB实验体系、营销数据平台、Agentic投放智能化与企业级Agent共建咨询。前快手/Shopee数据产品负责人，AB实验平台与广告技术交叉领域12年。"
+keywords: ["展博", "何赞", "独立增长顾问", "增长科学顾问", "Data & AI 咨询", "AB实验", "数据产品", "广告技术"]
 draft: false
 comments: false
 ---

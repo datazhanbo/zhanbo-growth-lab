@@ -4,6 +4,7 @@ date: 2026-07-04T00:00:00+08:00
 description: "钛动 IPO 是一个节点，不是终点。Agentic UA 冲击下代投、SaaS、inhouse 三种路径的终局判断。"
 tags: ["Agentic UA", "inhouse 自建", "martech", "SaaS", "Ad Agent", "行业观察"]
 categories: ["行业观察"]
+keywords: ["Agentic UA", "inhouse UA", "钛动", "martech", "SaaS", "代投", "自建UA", "Agentic投放", "智能买量", "展博增长实验室"]
 draft: false
 showToc: true
 TocOpen: false

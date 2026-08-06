@@ -18,68 +18,7 @@
       <link>http://localhost:1313/services/ua-growth-diagnostic/</link>
       <pubDate>Fri, 26 Jun 2026 00:00:00 +0800</pubDate>
       <guid>http://localhost:1313/services/ua-growth-diagnostic/</guid>
-      <description>&lt;h1 id=&#34;增长数据诊断冲刺&#34;&gt;增长数据诊断冲刺&lt;/h1&gt;
-&lt;p&gt;2 周内，把你的增长数据从&amp;quot;去后台看数&amp;quot;升级为&amp;quot;数据可信 + 效率可测 + 归因清晰 + 决策可复现&amp;quot;的增长系统。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;服务范围&lt;/strong&gt;：面向 &lt;strong&gt;内容、电商、SaaS 与平台型业务&lt;/strong&gt;，不承接游戏行业相关咨询。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;&lt;strong&gt;90% 的增长决策问题，不是团队不够努力，而是数据本身就不全面、不可信。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;ROI 算不准、归因有坑、老板和团队对不上数——这些根本不是&amp;quot;再招两个人&amp;quot;能解决的问题。&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;适合谁&#34;&gt;适合谁&lt;/h2&gt;
-&lt;p&gt;&lt;strong&gt;本服务特别适合：&lt;/strong&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;🚀 成长期内容 / 电商 / SaaS 团队：数据散、ROI 不稳、扩量困难&lt;/li&gt;
-&lt;li&gt;📊 中小型增长团队：业务方依赖后台和经验，缺统一看板&lt;/li&gt;
-&lt;li&gt;📈 已有自研 BI 的成熟团队：老板、业务、BI 对 ROI 口径争议大&lt;/li&gt;
-&lt;li&gt;🎯 准备规模化增长投入的新项目：需要确认数据、事件、归因和看板基础是否可靠&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;strong&gt;典型场景：&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;业务后台、数据平台、BI 三套数据，ROI 差 30%，不知道信谁&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;钱花出去了，但不知道哪条渠道 / 哪个动作真正带来价值&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;归因链路一升级，老经验就不管用&amp;rdquo;&lt;/p&gt;
-&lt;p&gt;&amp;ldquo;业务同学每天盯多个后台，人效极低，还经常漏异常&amp;rdquo;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;服务周期&#34;&gt;服务周期&lt;/h2&gt;
-&lt;p&gt;🕒 &lt;strong&gt;2 周数据诊断 + 4 周落地陪跑（可选）&lt;/strong&gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;我们要回答的四个核心问题&#34;&gt;我们要回答的四个核心问题&lt;/h2&gt;
-&lt;table&gt;
-  &lt;thead&gt;
-      &lt;tr&gt;
-          &lt;th&gt;问题&lt;/th&gt;
-          &lt;th&gt;本质&lt;/th&gt;
-          &lt;th&gt;为什么重要&lt;/th&gt;
-      &lt;/tr&gt;
-  &lt;/thead&gt;
-  &lt;tbody&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;数据准不准&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;可信度基线&lt;/td&gt;
-          &lt;td&gt;数据错了，所有决策都是错的&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;钱花得好不好&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;效率诊断&lt;/td&gt;
-          &lt;td&gt;找到预算浪费，释放 20 - 30% 的增长空间&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;归因链路有没有坑&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;基础建设&lt;/td&gt;
-          &lt;td&gt;事件、归因、上报、聚合环环相扣，一个环节错全错&lt;/td&gt;
-      &lt;/tr&gt;
-      &lt;tr&gt;
-          &lt;td&gt;&lt;strong&gt;团队能否持续决策&lt;/strong&gt;&lt;/td&gt;
-          &lt;td&gt;组织能力&lt;/td&gt;
-          &lt;td&gt;从&amp;quot;人盯数&amp;quot;变成&amp;quot;数找人&amp;quot;&lt;/td&gt;
-      &lt;/tr&gt;
-  &lt;/tbody&gt;
-&lt;/table&gt;
-&lt;hr&gt;
-&lt;h2 id=&#34;诊断范围全覆盖&#34;&gt;诊断范围全覆盖&lt;/h2&gt;
-&lt;p&gt;不只是看某个后台的数据，而是&lt;strong&gt;全链路端到端扫描&lt;/strong&gt;：&lt;/p&gt;</description>
+      <description>2 周内把你的增长数据从「去后台看数」升级为数据可信、效率可测、归因清晰、决策可复现的增长系统。覆盖数据口径对齐、ROI归因模型、指标治理、增长健康度评估。面向应用、电商与 SaaS 的增长数据团队。</description>
     </item>
   </channel>
 </rss>

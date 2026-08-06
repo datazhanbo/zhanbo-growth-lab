@@ -4,6 +4,7 @@ date: 2026-05-14T15:10:00+08:00
 description: "AI 带来的个人效能提升有目共睹，但企业级落地却面临集体 FOMO。本文从红杉资本、OpenAI、神策数据等行业先锋的视角，解读企业 AI 应用的真正路径。"
 tags: ["AI Native", "企业级 AI", "AI Agent", "咨询", "Sequoia"]
 categories: ["AI 工程"]
+keywords: ["AI Agent", "企业级AI落地", "AI应用", "生成式AI", "Sequoia", "红杉资本", "企业AI转型", "展博增长实验室"]
 draft: false
 showToc: true
 TocOpen: false

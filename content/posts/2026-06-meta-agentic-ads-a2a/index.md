@@ -4,6 +4,7 @@ date: 2026-06-01T00:00:00+08:00
 description: "从 Meta 广告平台的 20 年演进，看 Marketing API 为什么从 v1 一路走到 v25，以及广告主侧的 Ad Agent 为什么会越来越重要。"
 tags: ["Meta", "Marketing API", "Agentic Ads", "Advantage+", "Ad Agent", "AI Agent", "A2A"]
 categories: ["行业观察"]
+keywords: ["Meta", "Marketing API", "Agentic Ads", "Advantage+", "Ad Agent", "A2A架构", "智能投放", "广告平台", "Agentic Ad", "展博增长实验室"]
 draft: false
 showToc: true
 TocOpen: false

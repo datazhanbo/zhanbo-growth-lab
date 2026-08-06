@@ -17,7 +17,7 @@ paginatePath = "page"
 
 # 让所有section都支持taxonomy
 [params.taxonomies]
-  includeSections = ["posts", "work", "services"]
+  includeSections = ["posts", "work", "services", "tools"]
 
 # 永久链接
 [permalinks]
@@ -67,9 +67,9 @@ canonifyURLs = false
 
 # 站点参数
 [params]
-  author = "何赞"
-  description = "展博增长实验室：面向应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建咨询。"
-  keywords = ["实验体系", "AB 实验", "营销数据平台", "投放智能化", "企业级 Agent", "Agentic Ad", "增长咨询", "应用增长", "电商增长", "ROI 归因", "MMP"]
+  author = "展博"
+  description = "展博（何赞），独立增长科学顾问。面向应用、电商、SaaS 与平台型业务，提供AB实验体系搭建、营销数据平台建设、Agentic投放智能化与企业级Agent共建咨询。从数据诊断到平台交付，让增长决策可复现、可审计、可规模化。"
+  keywords = ["增长科学顾问", "独立增长顾问", "AB实验咨询", "实验体系搭建", "营销数据平台", "投放智能化", "Agentic投放", "企业级Agent", "增长数据诊断", "Data & AI 咨询", "Agentic Ad", "展博增长实验室"]
   images = ["/images/og-default.svg"]
 
   # PaperMod 主题配置
@@ -90,10 +90,28 @@ canonifyURLs = false
 
 [params.schema]
   publisherType = "Person"
-  sameAs = ["https://github.com/datazhanbo"]
+  sameAs = ["https://github.com/datazhanbo", "https://abtest.chat", "https://abtest.chat/about/"]
 
 [params.analytics.google]
   id = "G-H31QEMFKYD"
+
+# 百度统计（国内流量必备）：去 https://tongji.baidu.com 注册后填入 hm.js 后的 ID
+[params.analytics.baidu]
+  id = "d5c338c18aa556f0d3305ec6a4386a44"
+
+# Microsoft Clarity（行为分析 + Bing/Copilot 信号）：去 https://clarity.microsoft.com 注册后填入项目 ID
+[params.analytics.clarity]
+  id = "xy22jyul9t"
+
+# 站点所有权校验 meta tag：百度资源平台 / GSC / Bing Webmaster 通用接入位
+[params.verification]
+  baidu = "codeva-1SwceJddqc"   # 百度资源平台 HTML 标签验证的 code（点「HTML标签验证」后获得）
+  google = ""  # Google Search Console HTML 标签验证的 content
+  bing = ""    # Bing Webmaster Tools 的 msvalidate.01
+
+[author]
+  name = "展博"
+  github = "datazhanbo"
 
 # 首页配置
 [homeInfoParams]
@@ -126,8 +144,3 @@ socialIcons = [
 [outputs]
   home = ["HTML", "RSS", "JSON"]
 
-# 作者配置
-[author]
-  name = "zhanbo"
-  email = ""
-  github = "datazhanbo"
