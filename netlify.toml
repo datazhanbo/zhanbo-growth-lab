@@ -13,6 +13,27 @@
   to = "/admin/"
   status = 200
 
+# --- 旧 WordPress 死链 301 重定向（2026-08-06 修复） ---
+# 来源：abtest.chat 换 Hugo 前为 WordPress（/index.php/年/月/日/slug），
+# 旧链接被外链/搜索引擎持续指向，触发下方 /* 兜底 404。301 到主题相关现有文章，保留 SEO 权重。
+[[redirects]]
+  from = "/index.php/2025/06/29/duolingo的游戏化设计"
+  to = "/posts/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.php/2025/07/05/实验平台流量框架的设计"
+  to = "/posts/2026-06-22-experiment-platform-diagnosis/"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "/index.php/2025/06/27/时隔15年再读《咨询的奥秘》"
+  to = "/posts/2026-07-13-selection-vs-delivery/"
+  status = 301
+  force = true
+
 [[redirects]]
   from = "/*"
   to = "/404.html"
