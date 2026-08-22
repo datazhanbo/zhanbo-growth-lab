@@ -526,11 +526,11 @@ function renderVerdict(d) {
   html += '<h4>🔁 帮 benchmark 更准 · 也帮你自己下次判得更准</h4>';
   html += '<p>如果你已经做过一次对账（平台 ROAS vs GA4 / 后端 / MMP 真实收入），把两个数提交一下。每条真实数据都会让 ' + businessName + ' × ' + platformName + ' 这个切片的区间收紧。</p>';
   html += '<div class="cu-grid2" style="margin-bottom:10px;">';
-  html += '<input type="number" step="0.1" class="cu-input" id="cu-reported" placeholder="平台自报 ROAS" value="' + d.input.roas + '" />';
-  html += '<input type="number" step="0.1" class="cu-input" id="cu-verified" placeholder="对账后真实 ROAS" />';
+  html += '<input type="number" step="0.1" class="cu-input" id="cu-reported" placeholder="平台自报 ROAS" value="' + d.input.roas + '" style="width:100%;" />';
+  html += '<input type="number" step="0.1" class="cu-input" id="cu-verified" placeholder="对账后真实 ROAS" style="width:100%;" />';
   html += '</div>';
-  html += '<input type="email" class="cu-input" id="cu-email" placeholder="邮箱（选填，区间更新后通知你）" style="margin-bottom:10px;" />';
-  html += '<button class="cu-btn cu-btn-outline" onclick="submitRoas()">提交我的对账数据</button>';
+  html += '<input type="email" class="cu-input" id="cu-email" placeholder="邮箱（选填，区间更新后通知你）" style="margin-bottom:10px; width:100%;" />';
+  html += '<button class="cu-btn cu-btn-outline" onclick="submitRoas()" style="width:100%;">提交我的对账数据</button>';
   html += '<div id="cu-submit-result" style="margin-top:10px; font-size:13px;"></div>';
   html += '</div>';
 

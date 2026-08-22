@@ -65,10 +65,10 @@ function verdict(roas, infl, ind) {
 
 function oneAction(level, platform, business) {
   const actions = {
-    red_below: '今天就做：拉 GA4 / 后端真实收入和广告后台报的转化对一下，差多少；同时用客单价×毛利率倒推你的真实保本 ROAS，不要用行业平均值。',
-    red_above: '今天就做：用 14 天窗口拉「广告点击后自然转化」占比——平台把这部分算作了广告功劳；如果有条件，启动一个 1 周的 geo holdout 或 PSA  ghost ad 增量测试。',
-    yellow: '今天就做：先不要动预算。用 14 天数据拉平台 ROAS vs GA4 ROAS 的差异区间，同时算清单位经济；等数据跨过保本或跨过虚高阈值再决策。',
-    green: '今天就做：把这个数按周维度对账一次，确认平台 ROAS 和真实收入差异稳定；如果差异持续 <20%，可以在同一受众/素材上小步加预算（每次 +20%）。',
+    red_below: '拉 GA4 / 后端真实收入和广告后台报的转化对一下，差多少；同时用客单价×毛利率倒推你的真实保本 ROAS，不要用行业平均值。',
+    red_above: '用 14 天窗口拉「广告点击后自然转化」占比——平台把这部分算作了广告功劳；如果有条件，启动一个 1 周的 geo holdout 或 PSA ghost ad 增量测试。',
+    yellow: '先不要动预算。用 14 天数据拉平台 ROAS vs GA4 ROAS 的差异区间，同时算清单位经济；等数据跨过保本或跨过虚高阈值再决策。',
+    green: '把这个数按周维度对账一次，确认平台 ROAS 和真实收入差异稳定；如果差异持续 <20%，可以在同一受众/素材上小步加预算（每次 +20%）。',
   };
   return actions[level] || actions.yellow;
 }
