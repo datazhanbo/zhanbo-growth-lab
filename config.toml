@@ -46,30 +46,35 @@ canonifyURLs = false
     weight = 10
 
   [[menu.main]]
+    name = "工具"
+    url = "/tools/"
+    weight = 20
+
+  [[menu.main]]
     name = "服务"
     url = "/services/"
-    weight = 20
+    weight = 30
 
   [[menu.main]]
     name = "案例"
     url = "/work/"
-    weight = 30
+    weight = 40
 
   [[menu.main]]
     name = "文章"
     url = "/posts/"
-    weight = 40
+    weight = 50
 
   [[menu.main]]
     name = "关于"
     url = "/about/"
-    weight = 50
+    weight = 60
 
 # 站点参数
 [params]
   author = "展博"
-  description = "展博（何赞），独立增长科学顾问。面向应用、电商、SaaS 与平台型业务，提供AB实验体系搭建、营销数据平台建设、Agentic投放智能化与企业级Agent共建咨询。从数据诊断到平台交付，让增长决策可复现、可审计、可规模化。"
-  keywords = ["增长科学顾问", "独立增长顾问", "AB实验咨询", "实验体系搭建", "营销数据平台", "投放智能化", "Agentic投放", "企业级Agent", "增长数据诊断", "Data & AI 咨询", "Agentic Ad", "展博增长实验室"]
+  description = "展博（何赞），独立增长咨询顾问。面向应用、电商、SaaS 与平台型业务，提供AB实验体系搭建、营销数据平台建设、Agentic投放智能化与企业级Agent共建咨询。从数据诊断到平台交付，让增长决策可复现、可审计、可规模化。"
+  keywords = ["增长咨询顾问", "独立增长咨询顾问", "AB实验咨询", "实验体系搭建", "营销数据平台", "投放智能化", "Agentic投放", "企业级Agent", "增长数据诊断", "Data & AI 咨询", "Agentic Ad", "展博增长实验室"]
   images = ["/images/og-default.svg"]
 
   # PaperMod 主题配置

@@ -97,7 +97,7 @@
     "@type": "Person",
     "name": {{ ($.Params.author | default site.Params.author) | jsonify }},
     "url": {{ (printf "%sabout/" site.Home.Permalink) | jsonify }},
-    "jobTitle": "增长科学顾问",
+    "jobTitle": "增长咨询顾问",
     "knowsAbout": ["AB 实验体系", "营销数据平台", "投放智能化", "企业级 Agent"],
     "sameAs": [
       {{- range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}

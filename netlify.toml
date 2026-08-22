@@ -1,12 +1,47 @@
 [build]
   publish = "public"
   command = "hugo --gc --minify"
+  functions = "netlify/functions"
 
 [build.environment]
   HUGO_VERSION = "0.161.1"
   HUGO_EXTENDED = "true"
   HUGO_ENV = "production"
   TZ = "Asia/Shanghai"
+
+# /api/checkup — 数据可信度快检 serverless 判决（benchmark 数据不暴露到前端）
+[[redirects]]
+  from = "/api/checkup"
+  to = "/.netlify/functions/checkup"
+  status = 200
+  force = true
+
+# /api/submit-roas — 客户提交真实对账数据，进入 benchmark 审核队列
+[[redirects]]
+  from = "/api/submit-roas"
+  to = "/.netlify/functions/submit-roas"
+  status = 200
+  force = true
+
+# /api/benchmark-catalog — 方向/category/channel 键与标签（不含指标数据）
+[[redirects]]
+  from = "/api/benchmark-catalog"
+  to = "/.netlify/functions/benchmark-catalog"
+  status = 200
+  force = true
+
+# /api/benchmark-slice — 单个 direction+category 切片的指标基线与时序
+[[redirects]]
+  from = "/api/benchmark-slice"
+  to = "/.netlify/functions/benchmark-slice"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/api/*"
+  [headers.values]
+    Cache-Control = "no-store"
+    X-Robots-Tag = "noindex"
 
 [[redirects]]
   from = "/admin"

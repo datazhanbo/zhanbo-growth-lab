@@ -1,8 +1,8 @@
 ---
-title: "展博增长实验室 — 独立增长科学顾问 | AB实验·数据平台·投放智能化·企业级Agent"
+title: "展博增长实验室 — 独立增长咨询顾问 | AB实验·数据平台·投放智能化·企业级Agent"
 date: 2026-05-07T00:00:00+08:00
-description: "独立增长科学顾问展博，面向应用、电商与 SaaS 业务，提供AB实验体系搭建、营销数据平台建设、Agentic投放智能化与企业级Agent共建的端到端咨询服务。从数据诊断到平台交付，让增长决策可复现、可审计、可规模化。"
-keywords: ["增长科学顾问", "独立增长顾问", "AB实验咨询", "实验体系搭建", "营销数据平台", "投放智能化", "Agentic广告", "企业级Agent", "增长数据诊断", "Data & AI 咨询", "展博增长实验室"]
+description: "独立增长咨询顾问展博，面向应用、电商与 SaaS 业务，提供AB实验体系搭建、营销数据平台建设、Agentic投放智能化与企业级Agent共建的端到端咨询服务。从数据诊断到平台交付，让增长决策可复现、可审计、可规模化。"
+keywords: ["增长咨询顾问", "独立增长咨询顾问", "AB实验咨询", "实验体系搭建", "营销数据平台", "投放智能化", "Agentic广告", "企业级Agent", "增长数据诊断", "Data & AI 咨询", "展博增长实验室"]
 draft: false
 ---
 
@@ -17,6 +17,21 @@ draft: false
 <p>
   <a href="/services/">查看服务与交付方式</a>&nbsp;&nbsp;·&nbsp;&nbsp;
   <a href="/work/">查看典型案例</a>
+</p>
+
+---
+
+## 🔥 新工具：广告数据可信度快检
+
+30 秒，选业务方向、品类、渠道，看到 **ROAS / CPI / CPM / CTR / CVR / 留存 / LTV** 的行业基线与近 4 个季度趋势；再输入你广告后台的 ROAS，立即拿到判决：这个数能不能用来加预算。
+
+- 不登录、不给账户权限、不收集公司信息
+- DTC / App / Game 三个方向，覆盖主流品类与 Meta · Google · TikTok · ASA 渠道
+- Benchmark 切片只在服务端按输入返回，完整字典不下发
+
+<p style="margin: 18px 0 6px;">
+  <a href="/tools/checkup/" style="display:inline-block; padding:12px 24px; background:#22d3ee; color:#07233a; border-radius:8px; font-weight:700; text-decoration:none;">立即检测我的广告数据 →</a>
+  &nbsp;&nbsp;<a href="/tools/" style="color:#22d3ee;">查看全部工具</a>
 </p>
 
 ---
