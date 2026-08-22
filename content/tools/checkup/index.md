@@ -14,6 +14,8 @@ show_breadcrumbs: false
   <input name="platform" />
   <input name="business" />
   <input name="budget_tier" />
+  <input name="os" />
+  <input name="geo_tier" />
   <input name="reported_roas" />
   <input name="verified_roas" />
   <input name="inflation_ratio" />
@@ -27,6 +29,8 @@ show_breadcrumbs: false
   <input name="platform" />
   <input name="business" />
   <input name="budget_tier" />
+  <input name="os" />
+  <input name="geo_tier" />
   <input name="reported_roas" />
   <input name="email" />
   <input name="wechat_id" />
@@ -39,6 +43,8 @@ show_breadcrumbs: false
   <input name="platform" />
   <input name="business" />
   <input name="budget_tier" />
+  <input name="os" />
+  <input name="geo_tier" />
   <input name="reported_roas" />
   <input name="email" />
   <input name="wechat_id" />
@@ -158,7 +164,7 @@ show_breadcrumbs: false
 <div class="cu-wrap">
 
 <h1>你的广告数到底在行业哪个位置？</h1>
-<div class="cu-sub">第一步：按方向 → 品类 → 渠道，查看 ROAS / CPI / CPM / CTR / CVR / 留存 / LTV 的当前基线与近 4 个季度趋势。第二步：输入你后台的 ROAS，30 秒拿到数据可信度判决。</div>
+<div class="cu-sub">第一步：按方向 → 品类 → 平台（iOS / Android / Web）与地理分级（T1/T2/T3）→ 渠道，查看 ROAS / CPI / CPM / CTR / CVR / 留存 / LTV 的当前基线与近 4 个季度趋势。第二步：输入你后台的 ROAS，30 秒拿到数据可信度判决。</div>
 
 <div class="cu-card">
 <div class="cu-step">STEP 1 / 3</div>
@@ -175,6 +181,8 @@ show_breadcrumbs: false
 <div class="cu-card cu-hidden" id="cu-slice-card">
 <div class="cu-step">STEP 3 / 3</div>
 <div class="cu-label" id="cu-slice-title">营销指标基线</div>
+<div class="cu-field-label" id="cu-segment-label" style="margin-bottom:6px;">平台 × 地域切片</div>
+<div class="cu-chips" id="cu-segments" style="margin-bottom:14px;"></div>
 <div class="cu-tabs" id="cu-channels"></div>
 <div id="cu-slice-body"><div class="cu-loading">正在拉取该品类的 benchmark 切片...</div></div>
 <div class="cu-disclaimer-line" id="cu-slice-disclaimer"></div>
@@ -219,7 +227,13 @@ show_breadcrumbs: false
 </div>
 </div>
 <div>
-<div class="cu-field-label">平台后台 ROAS</div>
+<div class="cu-field-label">操作系统 / 端</div>
+<div class="cu-chips" id="cu-os">
+<div class="cu-chip" data-val="ios">iOS</div>
+<div class="cu-chip" data-val="android">Android</div>
+<div class="cu-chip" data-val="web">Web</div>
+</div>
+<div class="cu-field-label" style="margin-top:14px;">平台后台 ROAS</div>
 <input type="number" step="0.1" min="0.1" max="50" class="cu-input" id="cu-roas" placeholder="例如 3.2" style="width:100%;" />
 </div>
 </div>
@@ -229,7 +243,7 @@ show_breadcrumbs: false
 </div>
 
 <div class="cu-footer-note">
-本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，不代表统计验证的行业均值；正通过真实用户提交持续校准。所有数据按 $5k–$100k 月预算档位归一化。本工作室聚焦内容、电商、SaaS 与平台型业务；不承接游戏（含手游/休闲/中重度）行业相关咨询——游戏类型仅作为基准标签，不销售对应服务。问题反馈：zanhe@139.com。
+本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，按 iOS/Android/Web 与 T1/T2/T3 地理分级切片；不代表统计验证的行业均值，正通过真实用户提交持续校准。T2、T3 iOS 等公开数据稀疏的格子暂未铺种子，等待用户提交飞轮收紧。所有数据按 $5k–$100k 月预算档位归一化。本工作室聚焦内容、电商、SaaS 与平台型业务；不承接游戏（含手游/休闲/中重度）行业相关咨询——游戏类型仅作为基准标签，不销售对应服务。问题反馈：zanhe@139.com。
 </div>
 
 </div>
@@ -272,11 +286,13 @@ const state = {
   catalog: null,
   direction: null,
   category: null,
+  segment: null,
   channel: null,
   slice: null,
   platform: null,
   business: null,
   budgetTier: null,
+  os: null,
   roas: null,
 };
 
@@ -311,6 +327,7 @@ function renderDirections() {
 function selectDirection(key) {
   state.direction = key;
   state.category = null;
+  state.segment = null;
   state.channel = null;
   state.slice = null;
   document.querySelectorAll('#cu-directions .cu-dir').forEach(el => {
@@ -333,23 +350,57 @@ function renderCategories() {
   });
 }
 
-async function selectCategory(key) {
+function selectCategory(key) {
   state.category = key;
+  state.segment = null;
+  state.channel = null;
   state.slice = null;
   document.querySelectorAll('#cu-categories .cu-chip').forEach(el => {
     el.classList.toggle('on', el.dataset.key === key);
   });
   const card = document.getElementById('cu-slice-card');
   card.classList.remove('cu-hidden');
-  document.getElementById('cu-slice-body').innerHTML = '<div class="cu-loading">正在拉取该品类的 benchmark 切片...</div>';
+  document.getElementById('cu-slice-body').innerHTML = '<div class="cu-loading">选择切片后加载指标...</div>';
   document.getElementById('cu-channels').innerHTML = '';
   document.getElementById('cu-slice-disclaimer').textContent = '';
+  document.getElementById('cu-slice-title').textContent = '营销指标基线';
+  renderSegments();
+  document.getElementById('cu-slice-card').scrollIntoView({behavior:'smooth', block:'center'});
+}
+
+function renderSegments() {
+  const cat = state.catalog.directions[state.direction].categories[state.category];
+  const segs = cat.segments || {};
+  const root = document.getElementById('cu-segments');
+  root.innerHTML = Object.entries(segs).map(([k, s]) =>
+    '<div class="cu-chip" data-key="' + k + '">' + s.label + '</div>'
+  ).join('');
+  root.querySelectorAll('.cu-chip').forEach(el => {
+    el.addEventListener('click', () => selectSegment(el.dataset.key));
+  });
+  const firstKey = Object.keys(segs)[0];
+  if (firstKey) selectSegment(firstKey);
+}
+
+async function selectSegment(segKey) {
+  state.segment = segKey;
+  state.channel = null;
+  state.slice = null;
+  document.querySelectorAll('#cu-segments .cu-chip').forEach(el => {
+    el.classList.toggle('on', el.dataset.key === segKey);
+  });
+  document.getElementById('cu-channels').innerHTML = '';
+  document.getElementById('cu-slice-body').innerHTML = '<div class="cu-loading">正在拉取该切片的 benchmark...</div>';
+  document.getElementById('cu-slice-disclaimer').textContent = '';
+
+  const segMeta = state.catalog.directions[state.direction].categories[state.category].segments[segKey];
+  syncOsFromSegment(segMeta);
 
   try {
     const resp = await fetch('/api/benchmark-slice', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ direction: state.direction, category: key }),
+      body: JSON.stringify({ direction: state.direction, category: state.category, segment: segKey }),
     });
     if (!resp.ok) throw new Error('http_' + resp.status);
     state.slice = await resp.json();
@@ -361,10 +412,21 @@ async function selectCategory(key) {
   }
 }
 
+function syncOsFromSegment(segMeta) {
+  if (!segMeta) return;
+  const osKey = segMeta.os;
+  if (!osKey) return;
+  state.os = osKey;
+  document.querySelectorAll('#cu-os .cu-chip').forEach(c => {
+    c.classList.toggle('on', c.dataset.val === osKey);
+  });
+  maybeEnable();
+}
+
 function renderSlice() {
   const s = state.slice;
   document.getElementById('cu-slice-title').textContent =
-    s.direction.label + ' · ' + s.category.label + ' · 营销指标基线（近 4 个季度）';
+    s.direction.label + ' · ' + s.category.label + ' · ' + s.segment.label + ' · 营销指标基线（近 4 个季度）';
   document.getElementById('cu-slice-disclaimer').textContent = s.disclaimer || '';
 
   const tabs = document.getElementById('cu-channels');
@@ -466,14 +528,36 @@ function bindChips(containerId, key) {
 bindChips('cu-platform', 'platform');
 bindChips('cu-business', 'business');
 bindChips('cu-budget', 'budgetTier');
+bindChips('cu-os', 'os');
 document.getElementById('cu-roas').addEventListener('input', (e) => {
   const v = parseFloat(e.target.value);
   state.roas = Number.isFinite(v) && v > 0 ? v : null;
   maybeEnable();
 });
 function maybeEnable() {
-  document.getElementById('cu-go').disabled = !(state.platform && state.business && state.budgetTier && state.roas);
+  document.getElementById('cu-go').disabled = !(state.platform && state.business && state.budgetTier && state.os && state.roas);
 }
+
+function defaultOsForBusiness(b) {
+  if (b && b.indexOf('dtc_') === 0) return 'web';
+  return 'ios';
+}
+
+document.querySelectorAll('#cu-business .cu-chip').forEach(chip => {
+  chip.addEventListener('click', () => {
+    const b = chip.dataset.val;
+    const want = defaultOsForBusiness(b);
+    const isDtc = b.indexOf('dtc_') === 0;
+    // 自动切换：未选过时；或从 DTC 切到非 DTC（web→ios）；或从非 DTC 切到 DTC（→web）
+    if (!state.os || (isDtc && state.os !== 'web') || (!isDtc && state.os === 'web')) {
+      state.os = want;
+      document.querySelectorAll('#cu-os .cu-chip').forEach(c => {
+        c.classList.toggle('on', c.dataset.val === want);
+      });
+      maybeEnable();
+    }
+  });
+});
 
 async function runCheckup() {
   const result = document.getElementById('cu-result');
@@ -484,7 +568,7 @@ async function runCheckup() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         platform: state.platform, business: state.business,
-        budgetTier: state.budgetTier, roas: state.roas,
+        budgetTier: state.budgetTier, os: state.os, roas: state.roas,
       }),
     });
     if (!resp.ok) throw new Error('http_' + resp.status);
@@ -514,8 +598,12 @@ function renderVerdict(d) {
   html += '<p style="margin:6px 0 0; color: var(--cu-muted); font-size:12px;">中位数估计 ' + d.estimated_real_roas.median + '。真实值还受受众、素材、转化回传配置影响——这只是「不要按平台数加预算」的第一道防线。</p>';
   html += '</div>';
 
+  const osLabel = d.slice.os && d.slice.os.label ? d.slice.os.label : d.input.os;
+  const attTag = d.slice.inflation.att_uplift_applied
+    ? ' <span style="display:inline-block; margin-left:6px; padding:1px 8px; border-radius:999px; font-size:11px; background:rgba(245,158,11,0.18); color: var(--cu-amber);">iOS ATT uplift 已计入</span>'
+    : '';
   html += '<div class="cu-row3">';
-  html += '<div class="cu-row-item"><div class="k">' + platformName + ' 归因膨胀</div><div class="v">' + d.slice.inflation.min.toFixed(1) + '× – ' + d.slice.inflation.max.toFixed(1) + '×</div><div class="n">' + d.slice.inflation.note + '</div></div>';
+  html += '<div class="cu-row-item"><div class="k">' + platformName + ' · ' + osLabel + ' 归因膨胀' + attTag + '</div><div class="v">' + d.slice.inflation.min.toFixed(2) + '× – ' + d.slice.inflation.max.toFixed(2) + '×</div><div class="n">' + (d.slice.inflation.note || '') + '</div></div>';
   html += '<div class="cu-row-item"><div class="k">' + businessName + ' 保本 ROAS</div><div class="v">' + d.slice.industry.min + ' – ' + d.slice.industry.max + '</div><div class="n">' + d.slice.industry.note + '</div></div>';
   html += '<div class="cu-row-item"><div class="k">$' + d.input.budgetTier + ' 信号稳定</div><div class="v">' + d.slice.stability.days_to_stable + '</div><div class="n">' + d.slice.stability.note + '</div></div>';
   html += '</div>';
@@ -540,13 +628,14 @@ function renderVerdict(d) {
   html += '<div style="font-size:13px; color: var(--cu-muted);">完整对账报告</div>';
   html += '<div class="cu-price">¥99<small> / 首发周 ¥49</small></div>';
   html += '<div style="font-size:13px; color: var(--cu-muted); margin-bottom:14px;">你提交 7-14 天平台数 + GA4/后端数，48 小时返回：三源对账模板、差异区间归因、保本 ROAS 倒推、未来 30 天加/砍预算决策树。</div>';
-  html += '<button class="cu-btn" style="width:100%;" onclick="openReportModal(' + "'" + d.input.platform + "','" + d.input.business + "','" + d.input.budgetTier + "'," + d.input.roas + ')">邮件获取 · ¥49</button>';
+  const geoTier = currentGeoTier();
+  html += '<button class="cu-btn" style="width:100%;" onclick="openReportModal(' + "'" + d.input.platform + "','" + d.input.business + "','" + d.input.budgetTier + "','" + d.input.os + "','" + geoTier + "'," + d.input.roas + ')">邮件获取 · ¥49</button>';
   html += '</div>';
   html += '<div class="cu-price-card" style="border-color: var(--cu-amber);">';
   html += '<div style="font-size:13px; color: var(--cu-amber);">1v1 对账 walkthrough</div>';
   html += '<div class="cu-price">¥999<small> / 30 分钟</small></div>';
   html += '<div style="font-size:13px; color: var(--cu-muted); margin-bottom:14px;">带你拉一次真实数据、当场对账、给 go/kill 判断。适合今晚就要决定加不加预算的团队。</div>';
-  html += '<button class="cu-btn" style="width:100%; background: var(--cu-amber); color:#2a1a00;" onclick="openWalkthroughModal(\'' + d.input.platform + "','" + d.input.business + "','" + d.input.budgetTier + "'," + d.input.roas + ')">留言预约沟通</button>';
+  html += '<button class="cu-btn" style="width:100%; background: var(--cu-amber); color:#2a1a00;" onclick="openWalkthroughModal(\'' + d.input.platform + "','" + d.input.business + "','" + d.input.budgetTier + "','" + d.input.os + "','" + geoTier + "'," + d.input.roas + ')">留言预约沟通</button>';
   html += '</div>';
   html += '</div>';
 
@@ -555,8 +644,8 @@ function renderVerdict(d) {
 
 let orderContext = null;
 
-function openReportModal(platform, business, budgetTier, roas) {
-  orderContext = { platform, business, budgetTier, roas };
+function openReportModal(platform, business, budgetTier, os, geoTier, roas) {
+  orderContext = { platform, business, budgetTier, os, geoTier, roas };
   document.getElementById('cu-order-email').value = '';
   document.getElementById('cu-order-wechat').value = '';
   document.getElementById('cu-order-note').value = '';
@@ -591,6 +680,8 @@ async function submitReportOrder() {
     'platform': orderContext?.platform || '',
     'business': orderContext?.business || '',
     'budget_tier': orderContext?.budgetTier || '',
+    'os': orderContext?.os || '',
+    'geo_tier': orderContext?.geoTier || '',
     'reported_roas': orderContext?.roas != null ? String(orderContext.roas) : '',
     'email': email,
     'wechat_id': wechat,
@@ -613,8 +704,8 @@ async function submitReportOrder() {
 
 let wtContext = null;
 
-function openWalkthroughModal(platform, business, budgetTier, roas) {
-  wtContext = { platform, business, budgetTier, roas };
+function openWalkthroughModal(platform, business, budgetTier, os, geoTier, roas) {
+  wtContext = { platform, business, budgetTier, os, geoTier, roas };
   document.getElementById('cu-wt-email').value = '';
   document.getElementById('cu-wt-wechat').value = '';
   document.getElementById('cu-wt-time').value = '';
@@ -646,6 +737,8 @@ async function submitWalkthrough() {
     'platform': wtContext?.platform || '',
     'business': wtContext?.business || '',
     'budget_tier': wtContext?.budgetTier || '',
+    'os': wtContext?.os || '',
+    'geo_tier': wtContext?.geoTier || '',
     'reported_roas': wtContext?.roas != null ? String(wtContext.roas) : '',
     'email': email,
     'wechat_id': wechat,
@@ -666,6 +759,18 @@ async function submitWalkthrough() {
   }
 }
 
+function currentGeoTier() {
+  if (state.direction && state.category && state.segment) {
+    const seg = state.catalog
+      && state.catalog.directions[state.direction]
+      && state.catalog.directions[state.direction].categories[state.category]
+      && state.catalog.directions[state.direction].categories[state.category].segments[state.segment];
+    if (seg && seg.geo) return seg.geo;
+  }
+  if (state.os === 'web') return 'cross';
+  return 't1';
+}
+
 async function submitRoas() {
   const reported = parseFloat(document.getElementById('cu-reported').value);
   const verified = parseFloat(document.getElementById('cu-verified').value);
@@ -682,6 +787,7 @@ async function submitRoas() {
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
         platform: state.platform, business: state.business, budgetTier: state.budgetTier,
+        os: state.os || 'ios', geoTier: currentGeoTier(),
         reportedRoas: reported, verifiedRoas: verified, email,
       }),
     });

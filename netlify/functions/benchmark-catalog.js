@@ -1,4 +1,4 @@
-// /api/benchmark-catalog — 只下发方向 / category / channel 的键与标签
+// /api/benchmark-catalog — 只下发方向 / category / segment / channel 的键与标签
 // 不含任何指标数据；指标数据走 /api/benchmark-slice 逐切片取。
 
 const benchmarks = require('./data/benchmarks.json');
@@ -18,10 +18,17 @@ exports.handler = async (event) => {
   for (const [dKey, d] of Object.entries(benchmarks.baselines)) {
     const categories = {};
     for (const [cKey, c] of Object.entries(d.categories)) {
-      categories[cKey] = {
-        label: c.label,
-        channels: Object.keys(c.channels).map(k => ({ key: k, label: benchmarks.channel_labels[k] || k })),
-      };
+      const segments = {};
+      for (const [sKey, s] of Object.entries(c.segments || {})) {
+        segments[sKey] = {
+          key: sKey,
+          label: s.label,
+          geo: s.geo,
+          os: s.os,
+          channels: Object.keys(s.channels).map(k => ({ key: k, label: benchmarks.channel_labels[k] || k })),
+        };
+      }
+      categories[cKey] = { label: c.label, segments };
     }
     directions[dKey] = { label: d.label, disclaimer: d.disclaimer || '', categories };
   }
@@ -31,6 +38,9 @@ exports.handler = async (event) => {
     headers: CORS_HEADERS,
     body: JSON.stringify({
       directions,
+      geo_tiers: benchmarks.geo_tiers,
+      os_platforms: benchmarks.os_platforms,
+      channel_labels: benchmarks.channel_labels,
       benchmark_meta: {
         version: benchmarks.meta.version,
         updated: benchmarks.meta.updated,

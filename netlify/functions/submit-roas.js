@@ -12,6 +12,8 @@ const CORS_HEADERS = {
 const PLATFORMS = new Set(['meta','google','tiktok','meta_google','multi']);
 const BUSINESSES = new Set(['dtc_shopify','dtc_amazon','subscription_app','ai_tool','game_hypercasual','game_hybridcasual']);
 const BUDGETS = new Set(['<5k','5k-30k','30k-100k','100k+']);
+const OS_OPTIONS = new Set(['ios','android','web']);
+const GEO_TIERS = new Set(['t1','t2','t3','cross']);
 
 exports.handler = async (event) => {
   if (event.httpMethod === 'OPTIONS') return { statusCode: 204, headers: CORS_HEADERS, body: '' };
@@ -23,11 +25,16 @@ exports.handler = async (event) => {
   const platform = body.platform;
   const business = body.business;
   const budgetTier = body.budgetTier;
+  const os = OS_OPTIONS.has(body.os) ? body.os : null;
+  const geoTier = GEO_TIERS.has(body.geoTier) ? body.geoTier : null;
   const reportedRoas = Number(body.reportedRoas);
   const verifiedRoas = Number(body.verifiedRoas);
 
   if (!PLATFORMS.has(platform) || !BUSINESSES.has(business) || !BUDGETS.has(budgetTier)) {
     return { statusCode:400, headers:CORS_HEADERS, body:JSON.stringify({error:'bad_enum'}) };
+  }
+  if (!os || !geoTier) {
+    return { statusCode:400, headers:CORS_HEADERS, body:JSON.stringify({error:'bad_segment'}) };
   }
   if (!Number.isFinite(reportedRoas) || reportedRoas <= 0 || reportedRoas > 100) {
     return { statusCode:400, headers:CORS_HEADERS, body:JSON.stringify({error:'bad_reported'}) };
@@ -47,6 +54,8 @@ exports.handler = async (event) => {
     'platform': platform,
     'business': business,
     'budget_tier': budgetTier,
+    'os': os,
+    'geo_tier': geoTier,
     'reported_roas': String(reportedRoas),
     'verified_roas': String(verifiedRoas),
     'inflation_ratio': inflation.toFixed(3),

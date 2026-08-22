@@ -1,6 +1,6 @@
-// /api/benchmark-slice — 只返回所选 direction / category / channel 的那个切片
-// 输入：{ direction, category, channel? }
-// 输出：labels + 该 category 下全部 channel 的指标当前值与季度序列
+// /api/benchmark-slice — 只返回所选 direction / category / segment 的切片
+// 输入：{ direction, category, segment }
+// 输出：labels + 该 segment 下全部 channel 的指标当前值与季度序列
 // 完整字典不下发；前端只能通过具体切片拼装浏览。
 
 const benchmarks = require('./data/benchmarks.json');
@@ -25,6 +25,7 @@ exports.handler = async (event) => {
 
   const direction = body.direction;
   const category = body.category;
+  const segment = body.segment;
   if (!DIRECTIONS.has(direction)) {
     return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'bad_direction' }) };
   }
@@ -33,10 +34,13 @@ exports.handler = async (event) => {
     return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'bad_category' }) };
   }
   const cat = dir.categories[category];
+  if (!segment || !cat.segments || !cat.segments[segment]) {
+    return { statusCode: 400, headers: CORS_HEADERS, body: JSON.stringify({ error: 'bad_segment' }) };
+  }
+  const seg = cat.segments[segment];
 
-  // 只暴露该 category 下所有 channel 的切片；不下发其他 category / 其他 direction
   const channels = {};
-  for (const [chKey, ch] of Object.entries(cat.channels)) {
+  for (const [chKey, ch] of Object.entries(seg.channels)) {
     channels[chKey] = {
       label: benchmarks.channel_labels[chKey] || chKey,
       metrics: ch.metrics,
@@ -49,6 +53,7 @@ exports.handler = async (event) => {
     body: JSON.stringify({
       direction: { key: direction, label: dir.label },
       category: { key: category, label: cat.label },
+      segment: { key: segment, label: seg.label, geo: seg.geo, os: seg.os },
       disclaimer: dir.disclaimer || '',
       channels,
       metric_labels: benchmarks.metric_labels,
