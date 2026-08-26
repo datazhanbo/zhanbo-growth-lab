@@ -1,5 +1,5 @@
 baseURL = "https://abtest.chat/"
-title = "展博增长实验室 | 实验体系、营销数据、投放智能化与企业级 Agent"
+title = "展博增长实验室 | 增长决策可信度诊断"
 languageCode = "zh-CN"
 defaultContentLanguage = "zh"
 theme = "PaperMod"
@@ -70,11 +70,16 @@ canonifyURLs = false
     url = "/about/"
     weight = 60
 
+  [[menu.main]]
+    name = "申请预沟通"
+    url = "/services/#apply"
+    weight = 70
+
 # 站点参数
 [params]
   author = "展博"
-  description = "展博（何赞），独立增长咨询顾问。面向应用、电商、SaaS 与平台型业务，提供AB实验体系搭建、营销数据平台建设、Agentic投放智能化与企业级Agent共建咨询。从数据诊断到平台交付，让增长决策可复现、可审计、可规模化。"
-  keywords = ["增长咨询顾问", "独立增长咨询顾问", "AB实验咨询", "实验体系搭建", "营销数据平台", "投放智能化", "Agentic投放", "企业级Agent", "增长数据诊断", "Data & AI 咨询", "Agentic Ad", "展博增长实验室"]
+  description = "展博（何赞），独立增长咨询顾问。两周、只读、固定范围的增长决策可信度诊断：找出影响预算、产品和 AI 判断的数据、归因、实验与流程断点，交付问题地图、30 天优先级与 90 天路线。适合内容、电商、SaaS 与消费应用团队。"
+  keywords = ["增长咨询顾问", "独立增长咨询顾问", "增长决策可信度诊断", "增长诊断", "数据可信度", "AB实验咨询", "实验体系诊断", "营销数据诊断", "企业级Agent", "Data & AI 咨询", "展博增长实验室"]
   images = ["/images/og-default.svg"]
 
   # PaperMod 主题配置
@@ -121,7 +126,7 @@ canonifyURLs = false
 # 首页配置
 [homeInfoParams]
   Title = "展博增长实验室"
-  Content = "面向应用、电商与平台型业务，提供实验体系建设、营销数据平台、投放智能化与企业级 Agent 共建四类咨询服务。"
+  Content = "两周、只读、固定范围的增长决策可信度诊断——把这套数能不能用来做决定讲清楚。"
 
 # 社交链接
 socialIcons = [

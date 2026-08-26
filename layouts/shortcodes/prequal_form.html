@@ -1,0 +1,189 @@
+{{/* 增长决策可信度诊断 — 30 分钟预沟通申请表（Netlify Forms） */}}
+{{/* 用法：{{< prequal_form >}}，可在任意 markdown 页嵌入；提交走 Netlify Forms，无第三方依赖 */}}
+<form
+  name="prequal"
+  method="POST"
+  data-netlify="true"
+  netlify-honeypot="bot-field"
+  action="/thanks/"
+  class="pq-form"
+>
+  <input type="hidden" name="form-name" value="prequal" />
+  <p class="pq-hp">
+    <label>不要填写这一栏（机器人检测）<input name="bot-field" /></label>
+  </p>
+
+  <div class="pq-row">
+    <label>
+      <span>称呼 <em>*</em></span>
+      <input type="text" name="name" required maxlength="40" placeholder="您的姓名或花名" />
+    </label>
+    <label>
+      <span>公司 / 团队 <em>*</em></span>
+      <input type="text" name="company" required maxlength="80" placeholder="公司或团队名称" />
+    </label>
+  </div>
+
+  <div class="pq-row">
+    <label>
+      <span>角色 <em>*</em></span>
+      <select name="role" required>
+        <option value="">请选择</option>
+        <option>CEO / 创始人</option>
+        <option>业务 / 事业部负责人</option>
+        <option>增长 / 市场负责人</option>
+        <option>数据 / BI 负责人</option>
+        <option>产品负责人</option>
+        <option>其他</option>
+      </select>
+    </label>
+    <label>
+      <span>业务形态 <em>*</em></span>
+      <select name="business_type" required>
+        <option value="">请选择</option>
+        <option>内容 / 媒体</option>
+        <option>电商 / DTC</option>
+        <option>SaaS / 工具</option>
+        <option>消费 App / 平台</option>
+        <option>其他</option>
+      </select>
+    </label>
+  </div>
+
+  <label>
+    <span>当前最影响决策的一个问题（原话更好）<em>*</em></span>
+    <textarea
+      name="pain"
+      required
+      rows="3"
+      maxlength="600"
+      placeholder="例如：业务后台、归因和 BI 看到的 ROAS 对不上；准备投 Agent 但数据底座不敢用；实验做了但结论没人信……"
+    ></textarea>
+  </label>
+
+  <label>
+    <span>近期触发事件</span>
+    <select name="trigger">
+      <option value="">请选择（可留空）</option>
+      <option>新市场 / 新渠道扩张</option>
+      <option>预算会 / ROI 争议</option>
+      <option>更换归因、BI 或数据架构</option>
+      <option>融资 / 董事会前需要解释增长</option>
+      <option>准备自建或采购实验平台</option>
+      <option>准备落地 AI Agent</option>
+      <option>其他</option>
+    </select>
+  </label>
+
+  <label>
+    <span>两周内可投入的对接资源 <em>*</em></span>
+    <select name="bandwidth" required>
+      <option value="">请选择</option>
+      <option>可以，3–5 位关键角色 + 每周 4–6 小时</option>
+      <option>需要协调，但能在两周内启动</option>
+      <option>暂时不确定，先聊聊</option>
+    </select>
+  </label>
+
+  <div class="pq-row">
+    <label>
+      <span>邮箱 <em>*</em></span>
+      <input type="email" name="email" required maxlength="120" placeholder="用于回复和发送会前材料" />
+    </label>
+    <label>
+      <span>微信 / 电话（可选）</span>
+      <input type="text" name="wechat" maxlength="60" placeholder="方便快速对齐时填写" />
+    </label>
+  </div>
+
+  <button type="submit" class="pq-submit">申请 30 分钟预沟通</button>
+  <p class="pq-note">
+    提交后 1 个工作日内回复。预沟通不收费、不推销；如不适合会直接告知，并可推荐更合适的伙伴。
+  </p>
+</form>
+
+<style>
+.pq-form {
+  border: 1px solid #e5e7eb;
+  border-radius: 14px;
+  padding: 20px 20px 18px;
+  background: #f9fafb;
+  margin: 18px 0 8px;
+  display: block;
+}
+.pq-hp { display: none !important; }
+.pq-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.pq-form label {
+  display: block;
+  margin: 0 0 12px;
+  font-size: .92rem;
+  color: #111827;
+}
+.pq-form label > span {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+.pq-form em { color: #dc2626; font-style: normal; }
+.pq-form input[type="text"],
+.pq-form input[type="email"],
+.pq-form select,
+.pq-form textarea {
+  width: 100%;
+  padding: 9px 11px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: .95rem;
+  font-family: inherit;
+  background: #fff;
+  color: #111827;
+  box-sizing: border-box;
+}
+.pq-form textarea { resize: vertical; }
+.pq-form input:focus,
+.pq-form select:focus,
+.pq-form textarea:focus {
+  outline: none;
+  border-color: #0891b2;
+  box-shadow: 0 0 0 3px rgba(8,145,178,.15);
+}
+.pq-submit {
+  display: inline-block;
+  width: 100%;
+  padding: 13px 22px;
+  background: #0891b2;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-top: 4px;
+  transition: background .15s ease;
+}
+.pq-submit:hover { background: #0e7490; }
+.pq-note {
+  margin: 10px 0 0;
+  font-size: .82rem;
+  color: #6b7280;
+  line-height: 1.55;
+}
+@media (max-width: 640px) {
+  .pq-row { grid-template-columns: 1fr; gap: 0; }
+}
+@media (prefers-color-scheme: dark) {
+  .pq-form { background: #111827; border-color: #374151; }
+  .pq-form label { color: #e5e7eb; }
+  .pq-form input[type="text"],
+  .pq-form input[type="email"],
+  .pq-form select,
+  .pq-form textarea {
+    background: #1f2937; color: #e5e7eb; border-color: #4b5563;
+  }
+  .pq-note { color: #9ca3af; }
+}
+</style>
