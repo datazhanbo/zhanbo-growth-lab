@@ -18,9 +18,18 @@ layout: single
   <div class="own-tool-tag">展博增长实验室 · 自研</div>
   <div class="own-tool-title">广告数据可信度快检 →</div>
   <div class="own-tool-desc">
-    30 秒，选业务方向、品类、渠道，看到 <b>ROAS / CPI / CPM / CTR / CVR / 留存 / LTV</b> 的行业基线与近 4 个季度趋势；输入你广告后台的 ROAS，立即拿到判决：这个数能不能用来加预算。不登录、不给账户权限、不收集公司信息。
+    30 秒，选业务方向、品类、渠道，看到 <b>ROAS / CPI / CPM / CTR / CVR / 留存 / LTV</b> 的行业基线与近 4 个季度趋势；输入你广告后台的 ROAS，立即拿到判决：这个数能不能用来加预算。
   </div>
   <div class="own-tool-meta">DTC / App / Game 三个方向 · Meta · Google · TikTok · ASA</div>
+</a>
+
+<a class="own-tool" href="/tools/experiment-checkup/">
+  <div class="own-tool-tag">展博增长实验室 · 自研</div>
+  <div class="own-tool-title">实验能力自检 · 5 分钟定位你的 AB 实验段位 →</div>
+  <div class="own-tool-desc">
+    15 道单选题，回答两件事：<b>你现在真的需要实验体系吗</b>（需求与变革就绪度），以及<b>你的实验能力在 L1–L4 哪一段</b>（分流 / 统计 / 指标 / 文化）。答完即时出段位、切入建议和一个脱敏案例。
+  </div>
+  <div class="own-tool-meta">需求 × 能力双轴定位 · 多层正交 / CUPED / SRM 对标 · 附棋牌游戏大厂脱敏案例</div>
 </a>
 
 ---
@@ -29,7 +38,7 @@ layout: single
 
 ---
 
-想看某款工具的实操指南，或想聊你的增长栈怎么搭？[申请 30 分钟预沟通](/services/#apply)，或在 [关于页](/about/) 找到联系方式。
+两个免费自检（[广告数据快检](/tools/checkup/) · [实验能力自检](/tools/experiment-checkup/)）是合作的第一步：提交结果即可预约 1v1 诊断或团队工作坊。想直接聊你的增长栈怎么搭？[留言预约](/services/#apply)，或在 [关于页](/about/) 找到联系方式。
 
 <style>
 .own-tool {

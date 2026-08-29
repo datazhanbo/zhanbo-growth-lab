@@ -23,7 +23,7 @@ show_breadcrumbs: false
   <textarea name="note"></textarea>
 </form>
 
-<!-- Netlify Forms: hidden form to register report-order at build time (¥49 report inquiry) -->
+<!-- Netlify Forms: hidden form to register report-order at build time -->
 <form name="report-order" netlify netlify-honeypot="bot-field" hidden>
   <input name="product" />
   <input name="platform" />
@@ -37,7 +37,7 @@ show_breadcrumbs: false
   <textarea name="note"></textarea>
 </form>
 
-<!-- Netlify Forms: hidden form for ¥999 walkthrough inquiry -->
+<!-- Netlify Forms: hidden form for walkthrough inquiry -->
 <form name="walkthrough-inquiry" netlify netlify-honeypot="bot-field" hidden>
   <input name="product" />
   <input name="platform" />
@@ -243,7 +243,7 @@ show_breadcrumbs: false
 </div>
 
 <div class="cu-footer-note">
-本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，按 iOS/Android/Web 与 T1/T2/T3 地理分级切片；不代表统计验证的行业均值，正通过真实用户提交持续校准。T2、T3 iOS 等公开数据稀疏的格子暂未铺种子，等待用户提交飞轮收紧。所有数据按 $5k–$100k 月预算档位归一化。本工作室聚焦内容、电商、SaaS 与平台型业务；不承接游戏（含手游/休闲/中重度）行业相关咨询——游戏类型仅作为基准标签，不销售对应服务。问题反馈：zanhe@139.com。
+想查的是「实验 / AB 测试能力」而不是广告投放数据？试试 <a href="/tools/experiment-checkup/" style="color: var(--cu-cyan);">实验能力自检（15 题 · 5 分钟定位段位）→</a><br/><br/>本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，按 iOS/Android/Web 与 T1/T2/T3 地理分级切片；不代表统计验证的行业均值，正通过真实用户提交持续校准。T2、T3 iOS 等公开数据稀疏的格子暂未铺种子，等待用户提交飞轮收紧。所有数据按 $5k–$100k 月预算档位归一化。本工作室聚焦内容、电商、SaaS 与平台型业务；不承接游戏（含手游/休闲/中重度）行业相关咨询——游戏类型仅作为基准标签，不销售对应服务。问题反馈：zanhe@139.com。
 </div>
 
 </div>
@@ -252,7 +252,7 @@ show_breadcrumbs: false
 <div class="cu-modal">
 <button class="cu-modal-close" onclick="closeReportModal()" aria-label="关闭">×</button>
 <h3>获取完整对账报告</h3>
-<div class="cu-sub" style="margin-bottom:16px;">首发周 ¥49（原价 ¥99）。留下邮箱和最方便的联系方式，我会在 24 小时内邮件回复你——确认需求、发送付款方式（支持微信/支付宝/对公转账）、并附上数据上传说明。48 小时内返回报告。</div>
+<div class="cu-sub" style="margin-bottom:16px;">留下邮箱和最方便的联系方式，我会在 24 小时内回复你——确认需求、沟通形式与数据上传说明。</div>
 <input type="email" class="cu-input" id="cu-order-email" placeholder="你的邮箱（用于接收报告）" style="margin-bottom:8px; width:100%;" />
 <input type="text" class="cu-input" id="cu-order-wechat" placeholder="微信号（选填，沟通更方便）" style="margin-bottom:8px; width:100%;" />
 <textarea class="cu-input" id="cu-order-note" placeholder="补充说明：你的业务/站点、最想先对哪个平台的账（选填）" style="margin-bottom:14px; width:100%; min-height:80px; font-weight:400;"></textarea>
@@ -265,7 +265,7 @@ show_breadcrumbs: false
 <div class="cu-modal">
 <button class="cu-modal-close" onclick="closeWalkthroughModal()" aria-label="关闭">×</button>
 <h3>1v1 对账 walkthrough · 预约</h3>
-<div class="cu-sub" style="margin-bottom:16px;">¥999 / 30 分钟。留下联系方式和你最想解决的问题，我会在 24 小时内回复约时间——微信或邮件均可，付款方式和会议链接再单独确认。</div>
+<div class="cu-sub" style="margin-bottom:16px;">留下联系方式和你最想解决的问题，我会在 24 小时内回复约时间——微信或邮件均可，会议链接再单独确认。</div>
 <input type="email" class="cu-input" id="cu-wt-email" placeholder="你的邮箱" style="margin-bottom:8px; width:100%;" />
 <input type="text" class="cu-input" id="cu-wt-wechat" placeholder="微信号（选填，沟通更方便）" style="margin-bottom:8px; width:100%;" />
 <input type="text" class="cu-input" id="cu-wt-time" placeholder="方便的时间段（如 工作日晚 8 点后 / 周末上午）" style="margin-bottom:8px; width:100%;" />
@@ -626,14 +626,14 @@ function renderVerdict(d) {
   html += '<div class="cu-pricing">';
   html += '<div class="cu-price-card">';
   html += '<div style="font-size:13px; color: var(--cu-muted);">完整对账报告</div>';
-  html += '<div class="cu-price">¥99<small> / 首发周 ¥49</small></div>';
-  html += '<div style="font-size:13px; color: var(--cu-muted); margin-bottom:14px;">你提交 7-14 天平台数 + GA4/后端数，48 小时返回：三源对账模板、差异区间归因、保本 ROAS 倒推、未来 30 天加/砍预算决策树。</div>';
+  html += '<div style="font-size:18px; font-weight:700; color:#fff; margin:6px 0;">三源对账 · 48 小时返回</div>';
+  html += '<div style="font-size:13px; color: var(--cu-muted); margin-bottom:14px;">你提交 7-14 天平台数 + GA4/后端数，返回：三源对账模板、差异区间归因、保本 ROAS 倒推、未来 30 天加/砍预算决策树。</div>';
   const geoTier = currentGeoTier();
-  html += '<button class="cu-btn" style="width:100%;" onclick="openReportModal(' + "'" + d.input.platform + "','" + d.input.business + "','" + d.input.budgetTier + "','" + d.input.os + "','" + geoTier + "'," + d.input.roas + ')">邮件获取 · ¥49</button>';
+  html += '<button class="cu-btn" style="width:100%;" onclick="openReportModal(' + "'" + d.input.platform + "','" + d.input.business + "','" + d.input.budgetTier + "','" + d.input.os + "','" + geoTier + "'," + d.input.roas + ')">留言获取</button>';
   html += '</div>';
   html += '<div class="cu-price-card" style="border-color: var(--cu-amber);">';
   html += '<div style="font-size:13px; color: var(--cu-amber);">1v1 对账 walkthrough</div>';
-  html += '<div class="cu-price">¥999<small> / 30 分钟</small></div>';
+  html += '<div style="font-size:18px; font-weight:700; color:#fff; margin:6px 0;">拉真实数据 · 当场对账</div>';
   html += '<div style="font-size:13px; color: var(--cu-muted); margin-bottom:14px;">带你拉一次真实数据、当场对账、给 go/kill 判断。适合今晚就要决定加不加预算的团队。</div>';
   html += '<button class="cu-btn" style="width:100%; background: var(--cu-amber); color:#2a1a00;" onclick="openWalkthroughModal(\'' + d.input.platform + "','" + d.input.business + "','" + d.input.budgetTier + "','" + d.input.os + "','" + geoTier + "'," + d.input.roas + ')">留言预约沟通</button>';
   html += '</div>';
@@ -676,7 +676,7 @@ async function submitReportOrder() {
 
   const body = new URLSearchParams({
     'form-name': 'report-order',
-    'product': '完整对账报告（首发周 ¥49）',
+    'product': '完整对账报告',
     'platform': orderContext?.platform || '',
     'business': orderContext?.business || '',
     'budget_tier': orderContext?.budgetTier || '',
@@ -695,7 +695,7 @@ async function submitReportOrder() {
       body,
     });
     if (!resp.ok) throw new Error('http_' + resp.status);
-    out.innerHTML = '<span style="color: var(--cu-green);">已收到。我会在 24 小时内通过邮件联系你，确认需求和付款方式。</span>';
+    out.innerHTML = '<span style="color: var(--cu-green);">已收到。我会在 24 小时内通过邮件联系你，确认需求和下一步。</span>';
     setTimeout(closeReportModal, 2500);
   } catch (e) {
     out.innerHTML = '<span style="color: var(--cu-red);">提交失败，请直接邮件 zanhe@139.com。</span>';
