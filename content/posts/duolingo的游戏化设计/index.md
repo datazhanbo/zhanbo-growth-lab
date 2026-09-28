@@ -1,4 +1,5 @@
 ---
+short: 4
 title: "Duolingo的游戏化设计"
 date: 2025-06-29T11:37:15+08:00
 description: "在用户增长中扮演了重要的角色，相关的文章可以阅读Lenny对Duolingo CPO的访谈 https://www.lennysnewsletter.com/p…"

@@ -67,3 +67,10 @@ var _hmt = _hmt || [];
 {{- with site.Params.verification.bing }}
 <meta name="msvalidate.01" content="{{ . }}">
 {{- end }}
+
+<style>
+.shortlink-box{margin:1.75rem 0 .25rem;display:flex;align-items:center;gap:.75rem;flex-wrap:wrap}
+.shortlink-btn{display:inline-flex;align-items:center;gap:.4rem;padding:.4rem .85rem;font-size:.9rem;line-height:1.4;color:var(--primary);background:var(--theme);border:1px solid var(--border);border-radius:6px;cursor:pointer;transition:background-color .2s ease,border-color .2s ease}
+.shortlink-btn:hover{background:var(--tertiary);border-color:var(--primary)}
+.shortlink-url{font-size:.85rem;color:var(--secondary);word-break:break-all}
+</style>

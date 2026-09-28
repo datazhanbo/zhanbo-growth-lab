@@ -1,4 +1,5 @@
 ---
+short: 14
 title: "从钛动招股书看 Agentic UA 时代的三种终局——代投、SaaS、inhouse"
 date: 2026-07-04T00:00:00+08:00
 description: "钛动 IPO 是一个节点，不是终点。Agentic UA 冲击下代投、SaaS、inhouse 三种路径的终局判断。"

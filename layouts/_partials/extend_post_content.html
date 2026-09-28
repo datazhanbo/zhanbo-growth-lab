@@ -1,0 +1,41 @@
+{{- with .Params.short }}
+{{- $shortURL := printf "%sp/%v" site.BaseURL . }}
+<div class="shortlink-box">
+  <button type="button" class="shortlink-btn" data-shorturl="{{ $shortURL }}" aria-label="复制短链">
+    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960" fill="currentColor" width="16" aria-hidden="true">
+      <path d="M360-240q-33 0-56.5-23.5T280-320v-480q0-33 23.5-56.5T360-880h360q33 0 56.5 23.5T800-800v480q0 33-23.5 56.5T720-240H360ZM200-80q-33 0-56.5-23.5T120-160v-500h80v500h440v80H200Z"/>
+    </svg>
+    <span class="shortlink-label">复制短链</span>
+  </button>
+  <span class="shortlink-url">{{ $shortURL }}</span>
+</div>
+<script>
+  (function () {
+    var btn = document.querySelector('.shortlink-btn');
+    if (!btn) return;
+    var label = btn.querySelector('.shortlink-label');
+    var url = btn.getAttribute('data-shorturl');
+    btn.addEventListener('click', function () {
+      function done() {
+        label.textContent = '已复制';
+        setTimeout(function () { label.textContent = '复制短链'; }, 1800);
+      }
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(url).then(done).catch(fallback);
+      } else {
+        fallback();
+      }
+      function fallback() {
+        var ta = document.createElement('textarea');
+        ta.value = url;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        try { document.execCommand('copy'); done(); } catch (e) {}
+        document.body.removeChild(ta);
+      }
+    });
+  })();
+</script>
+{{- end }}

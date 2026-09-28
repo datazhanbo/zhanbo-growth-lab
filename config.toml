@@ -152,5 +152,15 @@ socialIcons = [
 
 # 输出格式配置
 [outputs]
-  home = ["HTML", "RSS", "JSON"]
+  home = ["HTML", "RSS", "JSON", "REDIRECTS"]
+
+# 短链：自定义输出，构建时生成 Netlify _redirects
+[mediaTypes."text/netlify-redirects"]
+  suffixes = [""]
+
+[outputFormats.REDIRECTS]
+  mediaType = "text/netlify-redirects"
+  baseName = "_redirects"
+  isPlainText = true
+  notAlternative = true
 

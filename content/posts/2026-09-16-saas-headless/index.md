@@ -1,4 +1,5 @@
 ---
+short: 23
 title: "SaaS 进入无头时代，界面要建，数据也要拿"
 date: 2026-09-16T00:00:00+08:00
 description: "Statsig、Optimizely、PostHog 在三个月里把实验审批、flag 变更和 SDK 接入搬出后台，交给 API/MCP/OpenFeature。控制面移到客户手里，但数据重力没移——唯一事实源要攥在自己库里。"

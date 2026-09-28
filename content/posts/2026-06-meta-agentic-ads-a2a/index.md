@@ -1,4 +1,5 @@
 ---
+short: 11
 title: "Meta 商业化大变革：从 Marketing API 到 Agentic Ads——未来的广告买量是 A2A 架构"
 date: 2026-06-01T00:00:00+08:00
 description: "从 Meta 广告平台的 20 年演进，看 Marketing API 为什么从 v1 一路走到 v25，以及广告主侧的 Ad Agent 为什么会越来越重要。"

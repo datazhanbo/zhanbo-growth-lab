@@ -1,0 +1,3 @@
+{{- range where (where site.RegularPages "Section" "posts") "Params.short" "!=" nil -}}
+/p/{{ .Params.short }}	{{ .RelPermalink }}	301
+{{ end }}

@@ -1,4 +1,5 @@
 ---
+short: 25
 title: "四个广告平台一起投了 AppsFlyer，但名单里没有 AppLovin"
 date: 2026-09-18T00:00:00+08:00
 description: "Google/Meta/Unity/Moloco 集体出资供养中立测量，名单里没有 AppLovin（收购了 Adjust 又跑 AXON，裁判兼球员）。AppsFlyer 从归因爬到 Modern Marketing Cloud，吃掉的是决策层而非 trade desk。"
