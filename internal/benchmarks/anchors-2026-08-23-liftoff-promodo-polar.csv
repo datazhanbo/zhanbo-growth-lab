@@ -1,0 +1,11 @@
+metric,direction,category,segment,channel,source,source_date,min,median,max,note
+d30_roas,game,hypercasual,t1_ios,,Liftoff 2025 Casual Gaming Report via Hubapps,2025,45,47,49,iOS Casual D30 ROAS %
+d30_roas,game,hypercasual,t1_android,,Liftoff 2025 Casual Gaming Report via Hubapps,2025,14,15,16,Android Casual D30 ROAS %
+d30_roas,game,hybridcasual,t1_ios,,Liftoff 2025 Casual Gaming Report via Hubapps,2025,40,42,45,iOS Mid-core D30 ROAS solid threshold %
+d1,game,hypercasual,t1_ios,,Sensor Tower State of Mobile via Hubapps,2025-12,14.0,14.9,16.0,Top 25 casual D1 retention Dec 2025 (note: different population than pooled seed)
+roas,dtc,fashion,web_cross,google,Promodo Mobile Marketing Benchmarks 2026,2026,4.4,4.48,4.6,Apparel Google ROAS x
+roas,dtc,fashion,web_cross,meta,Promodo Mobile Marketing Benchmarks 2026,2026,2.9,2.96,3.1,Apparel Meta ROAS x
+roas,dtc,fashion,web_cross,tiktok,Promodo Mobile Marketing Benchmarks 2026,2026,1.6,1.69,1.8,Apparel TikTok ROAS x
+roas,dtc,beauty,web_cross,google,Polar Analytics Ecommerce Benchmarks 2026,2026,3.4,3.57,3.8,Beauty Google ROAS x
+roas,dtc,beauty,web_cross,meta,Polar Analytics Ecommerce Benchmarks 2026,2026,1.5,1.57,1.7,Beauty Meta ROAS x
+roas,dtc,beauty,web_cross,tiktok,Polar Analytics Ecommerce Benchmarks 2026,2026,1.3,1.36,1.5,Beauty TikTok ROAS x

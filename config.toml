@@ -6,9 +6,10 @@ theme = "PaperMod"
 enableRobotsTXT = true
 enableEmoji = true
 
-# 分页
-paginate = 10
-paginatePath = "page"
+# 分页（Hugo ≥0.128）
+[pagination]
+  pagerSize = 10
+  path = "page"
 
 # 分类系统 - 支持全站标签筛选
 [taxonomies]
