@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SmartUA · 产品导览（脱敏演示）</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚀%3C/text%3E%3C/svg%3E">
+<meta name="description" content="SmartUA 投放控制台产品导览：ROI 大盘、Campaign 详情、素材库、意图中心 Agent。界面为脱敏演示数据。">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+
+<header class="su-topbar">
+  <a class="su-brand" href="#roi"><span class="su-logo">🚀</span> SmartUA <em>产品导览</em></a>
+  <div class="su-topright">
+    <span class="su-demo-badge">脱敏演示数据 · 非真实账户</span>
+    <a class="su-home-link" href="/">abtest.chat ↗</a>
+  </div>
+</header>
+
+<main class="su-page">
+
+  <section class="su-hero">
+    <h1>一个会自己盯投放、在你批准后才动手的增长控制台</h1>
+    <p class="su-sub">
+      目标驱动 · 自主循环 · 人在环审批 · 记忆/策略自演化。下方四个模块可点击切换；
+      意图中心可直接试跑一条真实目标，看 Agent 如何拆解、请求审批、回采影响。
+    </p>
+    <div class="su-hero-actions">
+      <button class="su-btn su-btn-primary" data-su-goto="roi">开始看四个模块</button>
+      <button class="su-btn" data-su-goto="agent">直接试 Agent</button>
+    </div>
+    <ul class="su-facts">
+      <li><b>MOCK / SANDBOX / LIVE</b> 三档执行环境分档标注，动作作用在哪里一目了然</li>
+      <li><b>L0–L3 风险分级</b>，低风险自动处置，高风险只生成提案等人审批</li>
+      <li>每个写动作执行后回采 <b>2h / 24h / 7d</b> 影响，沉淀为可复用策略</li>
+    </ul>
+  </section>
+
+  <div class="su-shell">
+    <nav class="su-rail" aria-label="导览模块">
+      <button class="su-rail-item is-active" data-su-target="roi">
+        <span class="su-rail-ico">📊</span><span>投放大盘<br><em>ROI 报表</em></span>
+      </button>
+      <button class="su-rail-item" data-su-target="campaign">
+        <span class="su-rail-ico">🎯</span><span>Campaign 详情<br><em>趋势 · Ad Group</em></span>
+      </button>
+      <button class="su-rail-item" data-su-target="creatives">
+        <span class="su-rail-ico">🎬</span><span>素材库<br><em>Creative Library</em></span>
+      </button>
+      <button class="su-rail-item" data-su-target="agent">
+        <span class="su-rail-ico">🤖</span><span>意图中心<br><em>Growth Agent</em></span>
+      </button>
+    </nav>
+
+    <div class="su-stage">
+
+      <!-- ============ 1. ROI 大盘 ============ -->
+      <section class="su-panel is-active" id="roi" data-su-panel="roi">
+        <div class="su-panel-head">
+          <h2>投放大盘 · ROI 报表</h2>
+          <p>一屏回答四件事：今天花了多少、整体 ROI 涨跌、装量与活跃 Campaign 数；ROI 趋势按
+            <b>D3 / D7 / D30</b> 三条回收曲线分口径展示，不用再等 BI 出表。下方 Campaign 列表带
+            ROI D7 排序与媒体/状态筛选，异常行直接进详情或交给 Agent 优化。</p>
+          <ul class="su-bullets">
+            <li>D3/D7/D30 分口径 ROI 趋势，混用回收周期不会再误判</li>
+            <li>Campaign 行内操作：详情 / 暂停 / 一键交给 Agent 优化</li>
+            <li>右侧待处理告警与大盘同页，止损动作不跨页</li>
+          </ul>
+        </div>
+        <figure class="su-shot" data-su-lightbox>
+          <img src="img/ua-01-roi.png" alt="SmartUA 投放大盘：KPI 卡片、ROI D3/D7/D30 趋势、Campaign 列表" loading="lazy">
+          <span class="su-hotspot" style="left:34%;top:24%" data-su-title="ROI D3 / D7 / D30 三口径" data-su-body="同一批投放按回收天数分三条曲线，黄色 D30 始终高于蓝色 D3——用哪个口径判止损，取决于品类的回收结构。"></span>
+          <span class="su-hotspot" style="left:14%;top:12%" data-su-title="四个 KPI 口径固定" data-su-body="今日花费 / 整体 ROI / 安装量 / 活跃 Campaign，全部取同一事实层，跨页面不打架。"></span>
+          <span class="su-hotspot" style="left:62%;top:66%" data-su-title="行内 ROI D7 + 操作" data-su-body="ROI D7 红/黄/绿分档，行内直接暂停或点「优化」把目标交给 Agent，不用跳到别的系统。"></span>
+          <figcaption>投放大盘（脱敏演示数据，应用名 Wonder Game）</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ 2. Campaign 详情 ============ -->
+      <section class="su-panel" id="campaign" data-su-panel="campaign">
+        <div class="su-panel-head">
+          <h2>Campaign 详情</h2>
+          <p>四层模型 <b>Campaign → Ad Group → Ad → Creative</b> 逐层下钻。头部固定 ROI、花费进度、
+            CPI 与目标 CPI；趋势图把日花费柱与 ROI 线叠在同一时间轴；Ad Group 列表支持继续钻取到广告与素材，
+            优化动作始终作用在正确的层级上。</p>
+          <ul class="su-bullets">
+            <li>花费/ROI 同轴趋势，预算节奏和回收质量一起看</li>
+            <li>出价策略、优化目标、地区/平台等投放设定结构化留痕</li>
+            <li>Ad Group → 广告 → 素材逐层下钻，换素材不会误伤整条 Campaign</li>
+          </ul>
+        </div>
+        <figure class="su-shot" data-su-lightbox>
+          <img src="img/ua-02-campaign.png" alt="Campaign 详情：头部 KPI、近 7 天花费与 ROI 趋势、Ad Group 列表" loading="lazy">
+          <span class="su-hotspot" style="left:50%;top:17%" data-su-title="ROI 与花费进度并列" data-su-body="ROI 1.25 与花费进度 0% 并列展示——预算花得慢和回收差是两种病，处置方向完全不同。"></span>
+          <span class="su-hotspot" style="left:50%;top:52%" data-su-title="柱线同轴趋势" data-su-body="蓝柱是日花费、绿线是 ROI，加预算当天 ROI 是否被稀释，一张图就能看见。"></span>
+          <span class="su-hotspot" style="left:50%;top:83%" data-su-title="Ad Group 层级表" data-su-body="每个 Ad Group 独立 ROI/CPI，可继续「查看广告」下钻，L0 的换素材动作就发生在这一层。"></span>
+          <figcaption>Campaign 详情：四层投放模型下钻（脱敏演示数据）</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ 3. 素材库 ============ -->
+      <section class="su-panel" id="creatives" data-su-panel="creatives">
+        <div class="su-panel-head">
+          <h2>素材库 · Creative Library</h2>
+          <p>素材不再是网盘里的文件：每条素材带类型（视频/图片/试玩/轮播）、标签、设计师、状态与投放花费，
+            支持按名称/标签/设计师搜索和状态筛选。Agent 轮换素材时读写的就是这套结构化资产，
+            「表现最差的素材」是可查询、可追溯的对象，而不是一句口头描述。</p>
+          <ul class="su-bullets">
+            <li>视频 / 图片 / 试玩 / 轮播分类，标签体系跨市场复用</li>
+            <li>素材级花费与 ROI 回流，好坏素材用同一口径排序</li>
+            <li>Agent 的换素材动作直接落到具体素材 ID，全程留痕</li>
+          </ul>
+        </div>
+        <figure class="su-shot" data-su-lightbox>
+          <img src="img/ua-03-creatives.png" alt="素材库：素材总数/花费/ROI 统计、类型筛选、素材列表" loading="lazy">
+          <span class="su-hotspot" style="left:30%;top:13%" data-su-title="素材口径汇总" data-su-body="素材总数、总花费、平均 ROI、总安装四个汇总值，与大盘共用同一事实层。"></span>
+          <span class="su-hotspot" style="left:22%;top:30%" data-su-title="类型 Tab" data-su-body="全部/视频/图片/试玩/轮播，试玩（playable）在休闲游戏投放里单独成类。"></span>
+          <span class="su-hotspot" style="left:60%;top:52%" data-su-title="标签 + 花费列" data-su-body="市场（GB/DE/JP）、题材（热梗/教程/抽卡）标签与花费并列，选题复盘有数据落点。"></span>
+          <figcaption>素材库（缩略图为占位示意图，脱敏演示数据）</figcaption>
+        </figure>
+      </section>
+
+      <!-- ============ 4. 意图中心 Agent ============ -->
+      <section class="su-panel" id="agent" data-su-panel="agent">
+        <div class="su-panel-head">
+          <h2>意图中心 · Growth Agent</h2>
+          <p>给 Agent 一个自然语言目标，它会自主拆解成多步动作：观察账户 → 筛选对象 → 模拟影响 →
+            对 L1/L2 动作生成审批卡 → 执行后回采影响。右侧三个标签页分别是<b>智能体大脑</b>（已学策略/经验复盘）、
+            <b>主动自治</b>（周期巡检与自动处置）、<b>执行配置</b>（MOCK/SANDBOX/LIVE 环境）。下面可以直接试跑：</p>
+        </div>
+
+        <!-- 可交互 Agent 导览 -->
+        <div class="su-demo">
+          <div class="su-demo-left">
+            <div class="su-goalbox">
+              <label for="suGoal">给 Agent 一个目标</label>
+              <textarea id="suGoal" rows="3">暂停 ROI 低于 0.5 的 campaign，给 ROI 最高的加预算 20%，并轮换表现最差的素材</textarea>
+              <div class="su-chips">
+                <button class="su-chip" data-su-goal="暂停 ROI 低于 0.5 的 campaign，给 ROI 最高的加预算 20%，并轮换表现最差的素材">止损 + 提量 + 换素材</button>
+                <button class="su-chip" data-su-goal="分析一下当前账户表现，给出优化建议">只要分析建议</button>
+              </div>
+              <div class="su-goal-actions">
+                <button class="su-btn su-btn-primary" id="suRun">⚡ 启动 Agent</button>
+                <button class="su-btn" id="suReset">重置</button>
+                <span class="su-prov su-prov-mock">MOCK</span>
+                <span class="su-prov">mock · mock-sim-account</span>
+              </div>
+            </div>
+            <div class="su-stream" id="suStream" aria-live="polite">
+              <div class="su-stream-empty">点击「启动 Agent」，观察它如何拆目标、调工具、请求审批。</div>
+            </div>
+          </div>
+
+          <div class="su-demo-right">
+            <div class="su-tabs" role="tablist">
+              <button class="su-tab is-active" role="tab" data-su-tab="brain">🎯 智能体大脑</button>
+              <button class="su-tab" role="tab" data-su-tab="auto">🔔 主动自治</button>
+              <button class="su-tab" role="tab" data-su-tab="exec">⚙️ 执行配置</button>
+            </div>
+            <div class="su-tabpanels">
+              <div class="su-tabpanel is-active" data-su-tabpanel="brain">
+                <h5>🎯 已学策略</h5>
+                <div class="su-strategy">
+                  <code>WHEN app_id=1 AND channel=Meta AND objective=App Install<br>
+                  IF roi_d7 &lt; 0.5 AND spend_3d &gt; 1000<br>
+                  THEN pause(bid_aggr=false), notify<br>
+                  confidence 0.78 · source: exp#1042</code>
+                </div>
+                <p class="su-hint">「学习策略」把历史记忆编译成带置信度和来源实验号的参数，跨账户/重启不丢。</p>
+                <h5>🧠 经验复盘</h5>
+                <p class="su-hint">每个写动作执行后回采 2h/24h/7d 影响（预测/实测/归因三档分显），成功与失败都沉淀进记忆。</p>
+              </div>
+              <div class="su-tabpanel" data-su-tabpanel="auto">
+                <h5>主动自治 · 周期巡检</h5>
+                <ul class="su-autolist">
+                  <li><span class="su-tag su-tag-green">✅ 已自动处置</span> Campaign_DE_UAC 单日 ROI 跌破 0.6，已按策略降预算 15% <em>L0</em></li>
+                  <li><span class="su-tag su-tag-amber">⏳ 待你审批</span> GB_TikTok 连续 2 天 CTR 下滑 30%，建议轮换素材 <em>L1</em></li>
+                  <li><span class="su-tag su-tag-red">🚨 严重告警</span> Meta 连接器授权剩余 1 天，可能丢回传 <em>L2</em></li>
+                </ul>
+                <p class="su-hint">你上班之前，低风险异常已处置完，高风险提案整齐放在审批队列里。</p>
+              </div>
+              <div class="su-tabpanel" data-su-tabpanel="exec">
+                <h5>执行环境（Provenance）</h5>
+                <ul class="su-modelist">
+                  <li><span class="su-prov su-prov-mock">MOCK</span> 模拟数据，不影响真实账户；mock 样本不进入策略学习</li>
+                  <li><span class="su-prov su-prov-sandbox">SANDBOX</span> 沙箱环境，不产生真实花费，用于联调与预演</li>
+                  <li><span class="su-prov su-prov-live">LIVE</span> 真实账户，动作将扣真实预算，默认全部走审批</li>
+                </ul>
+                <p class="su-hint">会话、步骤、告警上都带环境标签——任何时刻都能回答「这条动作作用在哪个账户」。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <figure class="su-shot" data-su-lightbox>
+          <img src="img/ua-04-agent.png" alt="智能体控制台：目标输入、快捷目标、智能体大脑标签页" loading="lazy">
+          <span class="su-hotspot" style="left:30%;top:30%" data-su-title="自然语言目标" data-su-body="不写规则、不勾表单，用一句话描述投放结果，Agent 负责拆成可执行步骤。"></span>
+          <span class="su-hotspot" style="left:62%;top:47%" data-su-title="学习 / 重置策略" data-su-body="策略不是写死的规则库，而是从执行记忆里编译、可重置的参数。"></span>
+          <span class="su-hotspot" style="left:72%;top:62%" data-su-title="L0–L3 分级说明" data-su-body="L0（如换素材）自动执行；L1/L2 必须在本页批准；L3 仅诊断不动手。"></span>
+          <figcaption>智能体控制台 · 初始态（脱敏演示数据；上方为可交互导览）</figcaption>
+        </figure>
+
+        <figure class="su-shot" data-su-lightbox>
+          <img src="img/ua-05-agent-brain.png" alt="一次完整目标执行后的对话流与智能体大脑中的已学策略参数" loading="lazy">
+          <span class="su-hotspot" style="left:26%;top:55%" data-su-title="完整执行轨迹" data-su-body="一次真实目标跑下来的思考/观察/动作/结论全部留痕；中途两次工具调用失败也可见，Agent 会根据报错自我纠正重试。"></span>
+          <span class="su-hotspot" style="left:62%;top:30%" data-su-title="学出来的参数，不是写死的规则" data-su-body="暂停 ROI 阈值 0.5、加预算上限 20%、换素材下限 0.8，每个参数带置信度、样本量和来源，随执行回采持续更新。"></span>
+          <span class="su-hotspot" style="left:64%;top:70%" data-su-title="经验复盘" data-su-body="复盘记忆按 2h/24h/7d 回采组织，失败动作同样沉淀，避免下次重蹈覆辙。"></span>
+          <figcaption>跑完一轮目标后的「智能体大脑」：已学策略参数 + 完整执行轨迹（脱敏演示数据）</figcaption>
+        </figure>
+      </section>
+
+    </div>
+  </div>
+
+  <footer class="su-footer">
+    <p>SmartUA 产品导览 · 界面与数据均为脱敏演示，不代表任何真实账户。</p>
+    <p>增长决策基础设施与诊断服务见 <a href="/">abtest.chat</a>。</p>
+  </footer>
+</main>
+
+<!-- 热点讲解 modal -->
+<div class="su-modal-mask" id="suModal" hidden>
+  <div class="su-modal" role="dialog" aria-modal="true" aria-labelledby="suModalTitle">
+    <button class="su-modal-close" id="suModalClose" aria-label="关闭">×</button>
+    <h4 id="suModalTitle"></h4>
+    <p id="suModalBody"></p>
+  </div>
+</div>
+
+<!-- 截图灯箱 -->
+<dialog class="su-lightbox" id="suLightbox">
+  <button class="su-lightbox-close" aria-label="关闭">×</button>
+  <img id="suLightboxImg" src="" alt="放大查看">
+</dialog>
+
+<script src="assets/app.js"></script>
+</body>
+</html>

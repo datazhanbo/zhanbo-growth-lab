@@ -130,3 +130,14 @@
   for = "/images/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# /ua — SmartUA 脱敏产品导览（仅直发链接可达，主站导航无入口；禁止收录）
+[[headers]]
+  for = "/ua/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+
+[[headers]]
+  for = "/ua/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
