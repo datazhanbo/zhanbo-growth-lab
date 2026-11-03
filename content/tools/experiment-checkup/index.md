@@ -397,4 +397,48 @@ async function submitInquiry() {
 }
 
 renderQuiz();
+
+(function () {
+  var TOOL = 'experiment_checkup';
+  function track(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', name, Object.assign({ tool: TOOL }, params || {}));
+  }
+  var started = false, completeSent = false;
+  document.addEventListener('click', function (e) {
+    if (!started && e.target.closest && e.target.closest('.ec-opt')) {
+      started = true;
+      track('checkup_start');
+    }
+  });
+  var resultCard = document.getElementById('ec-result-card');
+  if (resultCard) {
+    new MutationObserver(function () {
+      if (completeSent || resultCard.classList.contains('ec-hidden')) return;
+      completeSent = true;
+      track('checkup_verdict_view');
+    }).observe(resultCard, { attributes: true, attributeFilter: ['class'] });
+  }
+  var modal = document.getElementById('ec-modal');
+  if (modal) {
+    new MutationObserver(function () {
+      if (!modal.classList.contains('ec-hidden')) track('checkup_inquiry_open', { kind: 'experiment-checkup-inquiry' });
+    }).observe(modal, { attributes: true, attributeFilter: ['class'] });
+  }
+  var origFetch = window.fetch;
+  window.fetch = function (input, init) {
+    var p = origFetch.apply(this, arguments);
+    try {
+      var url = typeof input === 'string' ? input : (input && input.url) || '';
+      if (init && init.method === 'POST' && (url === '/' || url === '')) {
+        p.then(function (r) {
+          if (!r.ok) return;
+          var m = /form-name=([^&]+)/.exec(String(init.body || ''));
+          if (m) track('checkup_lead_submit', { kind: decodeURIComponent(m[1]) });
+        }).catch(function () {});
+      }
+    } catch (e) {}
+    return p;
+  };
+})();
 </script>

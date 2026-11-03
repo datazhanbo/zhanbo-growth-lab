@@ -6,33 +6,24 @@ keywords: ["增长咨询", "增长诊断", "数据可信度", "实验体系诊�
 draft: false
 ---
 
-## 当 CEO、业务、增长和数据团队看到的不是同一套数时，先把"这套数能不能信"讲清楚。
+<section class="hero">
+  <p class="hero-eyebrow">独立增长咨询 · 出海休闲游戏 / AI 应用 / DTC</p>
+  <h1 class="hero-title">增长决策可信度诊断</h1>
+  <p class="hero-sub">业务后台、归因平台、BI 三套 ROAS 对不上；实验做了，结论没人敢用。<strong>先花 5 分钟自检</strong>，拿到可信度判决，再决定要不要请外部顾问。</p>
+  <div class="hero-cta">
+    <a class="hero-btn primary" href="/tools/checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"ad_checkup"}'>买量团队 · 广告数据快检 →</a>
+    <a class="hero-btn secondary" href="/tools/experiment-checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"experiment_checkup"}'>实验平台 · 能力自检 →</a>
+  </div>
+  <p class="hero-proof">前滴滴 / 快手实验平台背景 · 两周只读固定范围 · 不接管投放 · 不改生产环境</p>
+</section>
 
-业务后台、归因平台、BI 三套 ROAS 对不上；实验做了但结论没人敢用；管理层一边要加预算，一边又在问"这个数到底能不能信"。内部往往仍在本位把任务做完，却感知不到：缺的不是再多一张表，而是**有人能对外包能力、阶段责任和可留下的结果**说清楚。
-
-这类**营销买量**和**实验平台**的数据可信问题，按三步推进：
-
-1. **先做 5 分钟自检**——营销买量用[广告数据可信度快检](/tools/checkup/)，实验平台用[实验能力自检](/tools/experiment-checkup/)。
-2. **提交结果，进入 1v1 诊断或团队工作坊**——带着自检结果过一遍真实场景，判断痛点真伪、数据基础和切入顺序。
-3. **确认值得做，再谈诊断冲刺与平台共建**——只读方式完成诊断，输出问题地图、优先级矩阵与分阶段建设建议。
-
-优先服务正在扩张、投放加码、准备做实验 / Agent，或数据已经"谁都说服不了谁"的**出海休闲游戏、出海应用（尤其 AI 工具）、出海 DTC**团队；内容 / 电商 / SaaS 等场景同样适用。
-
-<p style="margin: 22px 0 8px;">
-  <a href="#selfcheck" style="display:inline-block; padding:13px 26px; background:#0891b2; color:#fff; border-radius:8px; font-weight:700; text-decoration:none;">先做 5 分钟自检 ↓</a>
-  &nbsp;&nbsp;<a href="/services/" style="color:#0891b2; font-weight:700;">查看服务与合作方式 →</a>
-</p>
-
-<p class="hero-meta">
-不接管投放 · 不改生产环境 · 不替你的研发团队做工程交付 · 固定范围固定输出，不按人天堆量
-</p>
 ---
 
 ## 为什么内部觉得「还能扛」，却仍需要外部顾问
 
-多数团队并不缺努力：同事从本位把公司布置的任务做完——投放有人盯、报表有人出、实验有人开。卡住的往往是另一层：**站在本位里，很难看见「能力–责任–结果」上的缝隙**——哪些最佳实践其实可以外包给有真战绩的人；哪一段阶段责任没人认领；项目结束后方法会不会留在组织里。
+业务还在增长时，每个团队都在本位把任务做完——投放有人盯、报表有人出、实验有人开。但管理层一边要加预算，一边在问"这个数到底能不能信"，卡住的往往是另一层：**站在本位里，很难看见「能力–责任–结果」上的缝隙**——哪些最佳实践其实可以外包给有真战绩的人；哪一段阶段责任没人认领；项目结束后方法会不会留在组织里。
 
-这不是责备内部。角色决定视野。外部独立顾问的价值，就钉在这三边上：
+缺的不是再多一张表，而是**有人能对外包能力、阶段责任和可留下的结果**说清楚。外部独立顾问的价值，就钉在这三边上：
 
 | | 顾问带来什么 |
 |---|---|
@@ -56,7 +47,7 @@ draft: false
 | 团队在试 AI Agent，却停留在聊天、报表、Demo | 数据权限、审计、回滚、目标函数不具备 | 哪些场景适合先做、哪些只是"看起来很美"、Agent PoC 的前置条件清单 |
 | 融资 / 预算会 / 董事会前要把增长讲清楚 | 缺少一套能在管理层对齐的共同语言 | 一份可直接进立项会的问题地图、优先级和分阶段建设建议 |
 
-30 秒内如果发现"这就是我团队的问题"，直接在下方做对应自检；想先看完整诊断范围，见 [→ 增长决策可信度诊断](/services/decision-credibility-diagnostic/)。
+30 秒内如果发现"这就是我团队的问题"，直接回顶部做对应自检；想先看完整诊断范围，见 [→ 增长决策可信度诊断](/services/decision-credibility-diagnostic/)。
 
 ---
 
@@ -116,8 +107,8 @@ draft: false
 | **实验平台**：实验做了但没人敢用、想建平台但不知从何入手 | [实验能力自检](/tools/experiment-checkup/) | 15 道单选，定位你的「需求就绪度 × 能力段位 L1–L4」，给切入建议，附棋牌游戏大厂脱敏案例 |
 
 <p style="margin: 18px 0 6px;">
-  <a href="/tools/checkup/" style="display:inline-block; padding:11px 22px; background:#0891b2; color:#fff; border-radius:8px; font-weight:700; text-decoration:none;">营销买量 · 数据快检 →</a>
-  &nbsp;<a href="/tools/experiment-checkup/" style="display:inline-block; padding:11px 22px; background:#0e7490; color:#fff; border-radius:8px; font-weight:700; text-decoration:none;">实验平台 · 能力自检 →</a>
+<a href="/tools/checkup/" style="display:inline-block; padding:11px 22px; background:#0891b2; color:#fff; border-radius:8px; font-weight:700; text-decoration:none;">营销买量 · 数据快检 →</a>
+&nbsp;<a href="/tools/experiment-checkup/" style="display:inline-block; padding:11px 22px; background:#0e7490; color:#fff; border-radius:8px; font-weight:700; text-decoration:none;">实验平台 · 能力自检 →</a>
 </p>
 <p style="margin: 6px 0 0;"><a href="/tools/" style="color:#0891b2;">查看全部工具 →</a></p>
 
@@ -137,13 +128,33 @@ draft: false
 - 邮件：**zanhe@139.com** ｜ 公众号：**展博增长实验室** ｜ GitHub：[@datazhanbo](https://github.com/datazhanbo)
 
 <style>
-.hero-meta {
-  margin-top: 10px;
-  font-size: .88rem;
-  color: #6b7280;
-  line-height: 1.6;
-}
-@media (prefers-color-scheme: dark) {
-  .hero-meta { color: #9ca3af; }
+.hero { max-width: 820px; padding: 8px 0 4px; }
+.md-content .hero-eyebrow { margin: 0 0 10px; font-size: .92rem; font-weight: 600; color: #0891b2; letter-spacing: .02em; }
+.md-content .hero-title { margin: 0 0 14px; font-size: 2.1rem; line-height: 1.25; font-weight: 800; border: none; padding: 0; }
+.md-content .hero-sub { margin: 0 0 22px; font-size: 1.12rem; line-height: 1.75; color: var(--secondary); }
+.hero-sub strong { color: var(--primary); }
+.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 14px; }
+.hero-btn { display: inline-block; padding: 14px 26px; border-radius: 9px; font-weight: 700; font-size: 1.02rem; text-decoration: none; transition: background .15s ease, border-color .15s ease; }
+.hero-btn.primary { background: #0891b2; color: #fff; }
+.hero-btn.primary:hover { background: #0e7490; }
+.hero-btn.secondary { background: transparent; color: #0891b2; border: 1.5px solid #0891b2; }
+.hero-btn.secondary:hover { background: rgba(8,145,178,.08); }
+.md-content .hero-proof { margin: 0; font-size: .88rem; color: var(--secondary); line-height: 1.6; }
+@media (max-width: 640px) {
+  .hero { padding-top: 2px; }
+  .md-content .hero-title { font-size: 1.62rem; }
+  .md-content .hero-sub { font-size: 1.02rem; }
+  .hero-cta { flex-direction: column; gap: 10px; }
+  .hero-btn { display: block; text-align: center; padding: 13px 20px; }
 }
 </style>
+
+<script>
+document.addEventListener('click', function (e) {
+  var a = e.target.closest('a[data-ga-event]');
+  if (!a || typeof window.gtag !== 'function') return;
+  var params = {};
+  try { params = JSON.parse(a.dataset.gaParams || '{}'); } catch (err) {}
+  window.gtag('event', a.dataset.gaEvent, params);
+});
+</script>

@@ -99,6 +99,10 @@ canonifyURLs = false
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
 
+# 顶栏 logo 短名（完整站名仍由顶层 title 输出到浏览器标题与 meta）
+[params.label]
+  text = "展博增长实验室"
+
 [params.schema]
   publisherType = "Person"
   sameAs = ["https://github.com/datazhanbo", "https://abtest.chat", "https://abtest.chat/about/"]

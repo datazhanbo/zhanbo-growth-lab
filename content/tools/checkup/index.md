@@ -243,7 +243,7 @@ show_breadcrumbs: false
 </div>
 
 <div class="cu-footer-note">
-想查的是「实验 / AB 测试能力」而不是广告投放数据？试试 <a href="/tools/experiment-checkup/" style="color: var(--cu-cyan);">实验能力自检（15 题 · 5 分钟定位段位）→</a><br/><br/>本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，按 iOS/Android/Web 与 T1/T2/T3 地理分级切片；不代表统计验证的行业均值，正通过真实用户提交持续校准。T2、T3 iOS 等公开数据稀疏的格子暂未铺种子，等待用户提交飞轮收紧。所有数据按 $5k–$100k 月预算档位归一化。本工作室聚焦内容、电商、SaaS 与平台型业务；不承接游戏（含手游/休闲/中重度）行业相关咨询——游戏类型仅作为基准标签，不销售对应服务。问题反馈：zanhe@139.com。
+想查的是「实验 / AB 测试能力」而不是广告投放数据？试试 <a href="/tools/experiment-checkup/" style="color: var(--cu-cyan);">实验能力自检（15 题 · 5 分钟定位段位）→</a><br/><br/>本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，按 iOS/Android/Web 与 T1/T2/T3 地理分级切片；不代表统计验证的行业均值，正通过真实用户提交持续校准。T2、T3 iOS 等公开数据稀疏的格子暂未铺种子，等待用户提交飞轮收紧。所有数据按 $5k–$100k 月预算档位归一化。服务出海休闲游戏、出海应用（尤其 AI 工具）与出海 DTC 团队；内容 / 电商 / SaaS 场景方法同样适用。问题反馈：zanhe@139.com。
 </div>
 
 </div>
@@ -279,7 +279,7 @@ show_breadcrumbs: false
 const DIR_META = {
   dtc:  { icon: '🛒', desc: 'Shopify 独立站，ROAS / CPM / CTR / CVR 基线' },
   app:  { icon: '📱', desc: '订阅 / 工具 / 社交 / AI，CPI / D1 / D7 / D30 ROAS / LTV·CAC' },
-  game: { icon: '🎮', desc: '仅作基准标签，本工作室不承接游戏咨询' },
+  game: { icon: '🎮', desc: '超休闲 / 混合休闲 / 中重度，IAA / IAP ROAS、CPI 与留存基线' },
 };
 
 const state = {
@@ -800,4 +800,54 @@ async function submitRoas() {
 }
 
 loadCatalog();
+
+(function () {
+  var TOOL = 'ad_checkup';
+  function track(name, params) {
+    if (typeof window.gtag !== 'function') return;
+    window.gtag('event', name, Object.assign({ tool: TOOL }, params || {}));
+  }
+  var started = false, verdictSent = false;
+  document.addEventListener('click', function (e) {
+    if (!started && e.target.closest && e.target.closest('#cu-directions .cu-dir')) {
+      started = true;
+      track('checkup_start');
+    }
+  });
+  var result = document.getElementById('cu-result');
+  if (result) {
+    new MutationObserver(function () {
+      var text = result.textContent.trim();
+      if (verdictSent || !text || text.indexOf('暂时不可用') > -1) return;
+      verdictSent = true;
+      track('checkup_verdict_view');
+    }).observe(result, { childList: true });
+  }
+  ['cu-modal', 'cu-wt-modal'].forEach(function (id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    new MutationObserver(function () {
+      if (!el.classList.contains('cu-hidden')) track('checkup_inquiry_open', { kind: id });
+    }).observe(el, { attributes: true, attributeFilter: ['class'] });
+  });
+  var origFetch = window.fetch;
+  window.fetch = function (input, init) {
+    var p = origFetch.apply(this, arguments);
+    try {
+      var url = typeof input === 'string' ? input : (input && input.url) || '';
+      if (init && init.method === 'POST') {
+        p.then(function (r) {
+          if (!r.ok) return;
+          if (url.indexOf('/api/submit-roas') > -1) {
+            track('checkup_lead_submit', { kind: 'submit_roas' });
+          } else if (url === '/' || url === '') {
+            var m = /form-name=([^&]+)/.exec(String(init.body || ''));
+            if (m) track('checkup_lead_submit', { kind: decodeURIComponent(m[1]) });
+          }
+        }).catch(function () {});
+      }
+    } catch (e) {}
+    return p;
+  };
+})();
 </script>
