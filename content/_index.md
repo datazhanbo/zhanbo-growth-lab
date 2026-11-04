@@ -7,14 +7,14 @@ draft: false
 ---
 
 <section class="hero">
-  <p class="hero-eyebrow">独立增长咨询 · 出海休闲游戏 / AI 应用 / DTC</p>
-  <h1 class="hero-title">增长决策可信度诊断</h1>
-  <p class="hero-sub">业务后台、归因平台、BI 三套 ROAS 对不上；实验做了，结论没人敢用。<strong>先花 5 分钟自检</strong>，拿到可信度判决，再决定要不要请外部顾问。</p>
-  <div class="hero-cta">
-    <a class="hero-btn primary" href="/tools/checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"ad_checkup"}'>买量团队 · 广告数据快检 →</a>
-    <a class="hero-btn secondary" href="/tools/experiment-checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"experiment_checkup"}'>实验平台 · 能力自检 →</a>
-  </div>
-  <p class="hero-proof">前滴滴 / 快手 / 迦游 / 乐信 · 实验与发行营销平台 · 只读诊断按小时</p>
+ <p class="hero-eyebrow">独立增长咨询 · 出海休闲游戏 / AI 应用 / DTC</p>
+ <h1 class="hero-title">增长决策可信度诊断</h1>
+ <p class="hero-sub">业务后台、归因平台、BI 三套 ROAS 对不上；实验做了，结论没人敢用。<strong>先花 5 分钟自检</strong>，拿到可信度判决，再决定要不要请外部顾问。</p>
+ <div class="hero-cta">
+  <a class="hero-btn primary" href="/tools/checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"ad_checkup"}'>买量团队 · 广告数据快检 →</a>
+  <a class="hero-btn secondary" href="/tools/experiment-checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"experiment_checkup"}'>实验平台 · 能力自检 →</a>
+ </div>
+ <p class="hero-proof">前滴滴 / 快手 / 迦游 · 实验与发行营销平台 · 只读诊断按小时</p>
 </section>
 
 ---
@@ -88,7 +88,7 @@ draft: false
 - **增长方法论**：渠道生命周期、批量运营、策略引擎（观察者视角）；
 - **企业级 Agent 治理**：Schema 居中、分级授权、可审计执行、独立验证与效果闭环。
 
-经历过 IBM / TalkingData 的企业数据咨询、滴滴 / 快手的实验与数据产品、Shopee / SEA 的电商算法平台，以及出海休闲游戏方向的**迦游、乐信**（实验平台与发行/营销平台建设与应用）。完整背景见 [关于展博](/about/)。
+经历过 IBM / TalkingData 的企业数据咨询、滴滴 / 快手的实验与数据产品、Shopee / SEA 的电商算法平台，以及出海休闲游戏方向的**迦游**（实验平台与发行/营销平台建设与应用）。完整背景见 [关于展博](/about/)。
 
 ---
 
@@ -138,20 +138,20 @@ draft: false
 .hero-btn.secondary:hover { background: rgba(8,145,178,.08); }
 .md-content .hero-proof { margin: 0; font-size: .88rem; color: var(--secondary); line-height: 1.6; }
 @media (max-width: 640px) {
-  .hero { padding-top: 2px; }
-  .md-content .hero-title { font-size: 1.62rem; }
-  .md-content .hero-sub { font-size: 1.02rem; }
-  .hero-cta { flex-direction: column; gap: 10px; }
-  .hero-btn { display: block; text-align: center; padding: 13px 20px; }
+ .hero { padding-top: 2px; }
+ .md-content .hero-title { font-size: 1.62rem; }
+ .md-content .hero-sub { font-size: 1.02rem; }
+ .hero-cta { flex-direction: column; gap: 10px; }
+ .hero-btn { display: block; text-align: center; padding: 13px 20px; }
 }
 </style>
 
 <script>
 document.addEventListener('click', function (e) {
-  var a = e.target.closest('a[data-ga-event]');
-  if (!a || typeof window.gtag !== 'function') return;
-  var params = {};
-  try { params = JSON.parse(a.dataset.gaParams || '{}'); } catch (err) {}
-  window.gtag('event', a.dataset.gaEvent, params);
+ var a = e.target.closest('a[data-ga-event]');
+ if (!a || typeof window.gtag !== 'function') return;
+ var params = {};
+ try { params = JSON.parse(a.dataset.gaParams || '{}'); } catch (err) {}
+ window.gtag('event', a.dataset.gaEvent, params);
 });
 </script>
