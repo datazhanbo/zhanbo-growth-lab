@@ -14,7 +14,7 @@ draft: false
     <a class="hero-btn primary" href="/tools/checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"ad_checkup"}'>买量团队 · 广告数据快检 →</a>
     <a class="hero-btn secondary" href="/tools/experiment-checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"experiment_checkup"}'>实验平台 · 能力自检 →</a>
   </div>
-  <p class="hero-proof">前滴滴 / 快手实验平台背景 · 只读诊断按小时 · 不接管投放 · 不改生产环境</p>
+  <p class="hero-proof">前滴滴 / 快手 / 迦游 / 乐信 · 实验与发行营销平台 · 只读诊断按小时</p>
 </section>
 
 ---
@@ -88,7 +88,7 @@ draft: false
 - **增长方法论**：渠道生命周期、批量运营、策略引擎（观察者视角）；
 - **企业级 Agent 治理**：Schema 居中、分级授权、可审计执行、独立验证与效果闭环。
 
-经历过 IBM / TalkingData 的企业数据咨询、滴滴 / 快手的实验与数据产品、Shopee / SEA 的电商算法平台。完整背景见 [关于展博](/about/)。
+经历过 IBM / TalkingData 的企业数据咨询、滴滴 / 快手的实验与数据产品、Shopee / SEA 的电商算法平台，以及出海休闲游戏方向的**迦游、乐信**（实验平台与发行/营销平台建设与应用）。完整背景见 [关于展博](/about/)。
 
 ---
 
