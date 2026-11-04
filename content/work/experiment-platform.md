@@ -82,7 +82,7 @@ service: "/services/experiment-platform/"
 
 ---
 
-👉 查看完整服务介绍：[实验平台搭建与诊断冲刺](/services/experiment-platform/)
+👉 查看完整服务介绍：[实验平台诊断与共建](/services/experiment-platform/)
 
 ---
 

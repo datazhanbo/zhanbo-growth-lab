@@ -121,7 +121,7 @@ show_breadcrumbs: false
 </div>
 
 <div class="ec-footer-note">
-本自检由展博增长实验室提供，是实验体系合作的第一道门：<strong>免费自检 → 1v1 诊断 / 团队工作坊 → 两周实验平台诊断冲刺与平台共建</strong>。自检用于 5 分钟快速定位，不替代正式诊断——顾问进场后会启用六维 420 分的完整诊断框架（流量分流 / 实验管理 / 统计引擎 / 指标体系 / 工程架构 / 实验文化）。营销买量侧的数据可信度快检见 <a href="/tools/checkup/" style="color:var(--ec-cyan);">广告数据可信度快检</a>。问题反馈：zanhe@139.com。
+本自检由展博增长实验室提供，是实验体系合作的第一道门：<strong>免费自检 → 免费适配沟通 / 团队工作坊 → 按小时只读诊断与平台共建</strong>。自检用于 5 分钟快速定位，不替代正式诊断——正式诊断会启用六维 420 分的完整框架（流量分流 / 实验管理 / 统计引擎 / 指标体系 / 工程架构 / 实验文化）。营销买量侧的数据可信度快检见 <a href="/tools/checkup/" style="color:var(--ec-cyan);">广告数据可信度快检</a>。问题反馈：zanhe@139.com。
 </div>
 
 </div>
@@ -322,8 +322,8 @@ function showResult() {
   html += '<div class="ec-label" style="margin-top:20px;">接下来可以怎么走</div>';
   html += '<ol class="ec-steps">';
   html += '<li><strong>拿完整解读</strong><div class="ec-muted">留邮箱 / 微信，获取这份自检的逐项对标（每道题你选了什么、行业标准是什么），24 小时内回复。</div></li>';
-  html += '<li><strong>1v1 诊断 / 团队工作坊</strong><div class="ec-muted">带着自检结果过一遍你的真实场景，判断痛点真伪、数据基础和切入顺序；团队工作坊适合先统一「实验解决什么」的认知。</div></li>';
-  html += '<li><strong>两周实验平台诊断冲刺 / 平台共建</strong><div class="ec-muted">需要正式进场时启用：流量域-层切分、统计引擎与护栏指标、实验治理 SOP。详见 <a href="/services/experiment-platform/" style="color:var(--ec-cyan);">实验平台搭建与诊断冲刺</a>。</div></li>';
+  html += '<li><strong>免费适配沟通 / 团队工作坊</strong><div class="ec-muted">带着自检结果过一遍你的真实场景，判断痛点真伪、数据基础和切入顺序；团队工作坊适合先统一「实验解决什么」的认知。</div></li>';
+  html += '<li><strong>按小时只读诊断 / 平台共建</strong><div class="ec-muted">确认问题真实后按 ¥1,000／小时进场：流量域-层切分、统计引擎与护栏指标、实验治理 SOP；后续共建按里程碑推进。详见 <a href="/services/experiment-platform/" style="color:var(--ec-cyan);">实验平台诊断与共建</a>。</div></li>';
   html += '</ol>';
 
   html += '<div style="margin-top:18px; display:flex; gap:10px; flex-wrap:wrap;">';

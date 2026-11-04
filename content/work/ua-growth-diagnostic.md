@@ -76,7 +76,7 @@ service: "/services/ua-growth-diagnostic/"
 
 ---
 
-👉 查看完整服务介绍：[增长数据诊断冲刺](/services/ua-growth-diagnostic/)
+👉 查看完整服务介绍：[增长数据诊断（按小时）](/services/ua-growth-diagnostic/)
 
 ---
 

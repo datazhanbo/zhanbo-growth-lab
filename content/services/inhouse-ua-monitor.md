@@ -191,9 +191,9 @@ Inhouse 是买方的最优解——但绕不开三重门槛。
 ## 相关阅读
 
 - [UA 从微操进入策略和创意时代,Inhouse 是买方的最优解](/posts/ua-从微操进入策略和创意时代inhouse-是买方的最优解/) —— 完整判断与方案发布文
-- [增长数据诊断冲刺](/services/ua-growth-diagnostic/) —— 2 周诊断,判断 ROI / 归因 / 看板卡在哪
+- [增长数据诊断（按小时）](/services/ua-growth-diagnostic/) —— 判断 ROI / 归因 / 看板卡在哪
 - [增长平台建设咨询](/services/publishing-platform/) —— 更泛的增长平台建设方法论
-- [A/B 实验平台搭建与诊断冲刺](/services/experiment-platform/) —— UA 结果的可信反馈闭环
+- [实验平台诊断与共建](/services/experiment-platform/) —— UA 结果的可信反馈闭环
 
 ---
 
