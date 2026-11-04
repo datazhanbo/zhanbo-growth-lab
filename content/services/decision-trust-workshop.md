@@ -15,7 +15,7 @@ comments: false
 ## 会前（客户准备，约 2 小时）
 
 - 贴 1–2 张你们最常吵的 ROI / 实验结论截图（脱敏）
-- 填写开源 [决策可信度 checklist](https://github.com/datazhanbo/growth-decision-trust-checklist) 自评
+- 填写 [决策可信度自检清单](/checklist/) 自评
 - 确认参会人：至少业务拍板人 + 数据/分析负责人
 
 ## 建议日程（可按团队定制）
