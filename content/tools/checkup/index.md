@@ -243,7 +243,7 @@ show_breadcrumbs: false
 </div>
 
 <div class="cu-footer-note">
-想查的是「实验 / AB 测试能力」而不是广告投放数据？试试 <a href="/tools/experiment-checkup/" style="color: var(--cu-cyan);">实验能力自检（15 题 · 5 分钟定位段位）→</a><br/><br/>本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，按 iOS/Android/Web 与 T1/T2/T3 地理分级切片；不代表统计验证的行业均值，正通过真实用户提交持续校准。T2、T3 iOS 等公开数据稀疏的格子暂未铺种子，等待用户提交飞轮收紧。所有数据按 $5k–$100k 月预算档位归一化。服务出海休闲游戏、出海应用（尤其 AI 工具）与出海 DTC 团队；内容 / 电商 / SaaS 场景方法同样适用。问题反馈：zanhe@139.com。
+想查的是「实验 / AB 测试能力」而不是广告投放数据？试试 <a href="/tools/experiment-checkup/" style="color: var(--cu-cyan);">实验能力自检（15 题 · 5 分钟定位段位）→</a><br/><br/>本工具由展博增长实验室提供。Benchmark 种子区间来自公开行业研究（MMP 年度报告、平台 earnings call、上市广告主财报口径）与展博 12 年广告技术经验，按 iOS/Android/Web 与 T1/T2/T3 地理分级切片；不代表统计验证的行业均值，正通过真实用户提交持续校准。T2、T3 iOS 等公开数据稀疏的格子暂未铺种子，等待用户提交飞轮收紧。所有数据按 $5k–$100k 月预算档位归一化。服务出海休闲游戏、出海应用与出海 DTC 团队；内容 / 电商 / SaaS 场景方法同样适用。问题反馈：zanhe@139.com。
 </div>
 
 </div>

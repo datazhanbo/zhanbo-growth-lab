@@ -38,7 +38,7 @@ layout: single
 
 ---
 
-两个免费自检（[广告数据快检](/tools/checkup/) · [实验能力自检](/tools/experiment-checkup/)）是合作的第一步：提交结果即可预约 1v1 诊断或团队工作坊。想直接聊你的增长栈怎么搭？[留言预约](/services/#apply)，或在 [关于页](/about/) 找到联系方式。
+两个免费自检（[广告数据快检](/tools/checkup/) · [实验能力自检](/tools/experiment-checkup/)）是合作的第一步：提交结果即可预约免费适配沟通或团队工作坊。想直接聊你的增长栈怎么搭？邮件 **zanhe@139.com**，或在 [关于页](/about/) 找到联系方式。
 
 <style>
 .own-tool {
