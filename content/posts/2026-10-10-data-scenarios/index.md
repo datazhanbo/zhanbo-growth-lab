@@ -176,7 +176,7 @@ cover:
 对照这五个场景，如果你的团队正卡在其中某一个——被取数淹没、实验结论没人信、多源数据对不齐、或 Agent 推不动：
 
 - 花 5 分钟做 [广告数据可信度快检](/tools/checkup/) 或 [实验能力自检](/tools/experiment-checkup/)，提交结果可预约 1v1 判断；
-- 或看 [增长决策可信度诊断](/services/decision-credibility-diagnostic/)，两周定位最影响业务判断的断点。
+- 或看 [增长决策可信度诊断](/services/decision-credibility-diagnostic/)，按小时只读排查最影响业务判断的断点。
 
 **延伸阅读：**
 - [企业自建 Data Agent 方案]({{< ref "posts/2026-10-10-build-data-agent" >}})

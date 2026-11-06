@@ -1,3 +1,7 @@
 {{- range where (where site.RegularPages "Section" "posts") "Params.short" "!=" nil -}}
 /p/{{ .Params.short }}	{{ .RelPermalink }}	301
 {{ end }}
+# 猜路径兜底：AI/用户按常见命名猜测的 URL 301 到真实页面，避免 404 丢权重
+/cases/	/work/	301
+/articles/	/posts/	301
+/diagnosis/	/services/decision-credibility-diagnostic/	301

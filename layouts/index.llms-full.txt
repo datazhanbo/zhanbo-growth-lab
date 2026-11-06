@@ -1,0 +1,26 @@
+{{- /* 生成 /llms-full.txt — 全部公开页面的 Markdown 全文汇编，供 LLM 一次性获取上下文；排除 /thanks 等工具页与 noindex 内容 */ -}}
+# 展博增长实验室（abtest.chat）· 全文索引
+
+> 本文件汇编展博增长实验室全部公开页面的 Markdown 全文。站点定位：独立增长咨询顾问展博（何赞），服务出海休闲游戏、出海应用、出海 DTC 团队，聚焦数据可信度、AB 实验体系、增长决策链路与企业级 Agent 前置诊断。服务与合作入口见 https://abtest.chat/services/ ，联系邮箱 zanhe@139.com。
+
+{{- $pages := slice }}
+{{- with site.GetPage "/about" }}{{ $pages = $pages | append . }}{{ end }}
+{{- with site.GetPage "/faq" }}{{ $pages = $pages | append . }}{{ end }}
+{{- range where site.RegularPages "Section" "services" }}{{ $pages = $pages | append . }}{{ end }}
+{{- with site.GetPage "/checklist" }}{{ $pages = $pages | append . }}{{ end }}
+{{- range where site.RegularPages "Section" "tools" }}{{ $pages = $pages | append . }}{{ end }}
+{{- range where site.RegularPages "Section" "work" }}{{ $pages = $pages | append . }}{{ end }}
+{{- range where site.RegularPages "Section" "posts" }}{{ $pages = $pages | append . }}{{ end }}
+{{- range $pages }}
+
+---
+
+# {{ .Title }}
+
+- URL: {{ .Permalink }}
+{{- with .Description }}
+- 摘要: {{ . }}
+{{- end }}
+
+{{ .RawContent | replaceRE `\{\{[<%][^}]*\}\}` "" | strings.TrimSpace }}
+{{- end }}

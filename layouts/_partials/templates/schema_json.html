@@ -2,21 +2,40 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "{{- ( site.Params.schema.publisherType | default "Organization") | title -}}",
-  "name": {{ site.Title }},
-  "url": {{ site.Home.Permalink }},
-  "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
-  {{- if (eq site.Params.schema.publisherType "Person") }}
-  "image": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-  {{- else }}
-  "logo": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
-  {{- end }}
-  "sameAs": [
-    {{- if site.Params.schema.sameAs }}
-      {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
-    {{- else}}
-      {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
-    {{- end}}
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": {{ printf "%s#organization" site.Home.Permalink }},
+      "name": {{ site.Title }},
+      "url": {{ site.Home.Permalink }},
+      "description": {{ site.Params.description | plainify | truncate 180 | safeHTML }},
+      "logo": {{ site.Params.assets.favicon | default "favicon.ico" | absURL }},
+      "founder": { "@id": {{ printf "%s#zhanbo" site.Home.Permalink }} },
+      "sameAs": [
+        {{- if site.Params.schema.sameAs }}
+          {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
+        {{- else}}
+          {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
+        {{- end}}
+      ]
+    },
+    {
+      "@type": "Person",
+      "@id": {{ printf "%s#zhanbo" site.Home.Permalink }},
+      "name": {{ site.Params.author }},
+      "alternateName": "何赞",
+      "url": {{ printf "%sabout/" site.Home.Permalink }},
+      "jobTitle": "增长咨询顾问",
+      "knowsAbout": ["AB 实验体系", "营销数据平台", "投放智能化", "企业级 Agent"],
+      "worksFor": { "@id": {{ printf "%s#organization" site.Home.Permalink }} },
+      "sameAs": [
+        {{- if site.Params.schema.sameAs }}
+          {{ range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
+        {{- else}}
+          {{ range $i, $e := site.Params.SocialIcons }}{{ if $i }}, {{ end }}{{ trim $e.url " " | safeURL }}{{ end }}
+        {{- end}}
+      ]
+    }
   ]
 }
 </script>
@@ -60,6 +79,42 @@
 }
 </script>
 {{- if .IsPage }}
+{{- if eq .Section "services" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": {{ .Title | plainify }},
+  "description": {{ with .Description | plainify }}{{ . }}{{ else }}{{ .Summary | plainify }}{{ end }},
+  "url": {{ .Permalink }},
+  "serviceType": {{ .Title | plainify }},
+  "inLanguage": "zh-CN",
+  "areaServed": "全球（出海休闲游戏 / 应用 / DTC 团队，远程合作）",
+  "provider": {
+    "@type": "Person",
+    "name": {{ ($.Params.author | default site.Params.author) }},
+    "url": {{ printf "%sabout/" site.Home.Permalink }},
+    "jobTitle": "增长咨询顾问",
+    "sameAs": [
+      {{- range $i, $e := site.Params.schema.sameAs }}{{ if $i }}, {{ end }}{{ trim $e " " }}{{ end }}
+    ]
+  }{{- with .Params.offer }}
+  ,"offers": {
+    "@type": "Offer",
+    "priceCurrency": {{ .currency | default "CNY" }},
+    "priceSpecification": {
+      "@type": "UnitPriceSpecification",
+      "price": {{ .price }},
+      "priceCurrency": {{ .currency | default "CNY" }},
+      "unitCode": "HUR",
+      "unitText": "小时"
+    },
+    "description": {{ with .description }}{{ . }}{{ else }}按小时只读诊断，试点价见服务页{{ end }},
+    "availability": "https://schema.org/InStock"
+  }{{- end }}
+}
+</script>
+{{- else }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -95,8 +150,8 @@
   "dateModified": {{ .Lastmod }},
   "author": {
     "@type": "Person",
-    "name": {{ ($.Params.author | default site.Params.author) | jsonify }},
-    "url": {{ (printf "%sabout/" site.Home.Permalink) | jsonify }},
+    "name": {{ ($.Params.author | default site.Params.author) }},
+    "url": {{ printf "%sabout/" site.Home.Permalink }},
     "jobTitle": "增长咨询顾问",
     "knowsAbout": ["AB 实验体系", "营销数据平台", "投放智能化", "企业级 Agent"],
     "sameAs": [
@@ -117,6 +172,8 @@
   }
 }
 </script>
+{{- end }}{{/* services / BlogPosting 分支结束 */}}
+{{- end }}{{/* .IsPage end */}}
 {{- if .Params.faq }}
 <script type="application/ld+json">
 {
@@ -127,10 +184,10 @@
     {{- if $i }}, {{ end }}
     {
       "@type": "Question",
-      "name": {{ $item.q | jsonify }},
+      "name": {{ $item.q }},
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": {{ $item.a | plainify | jsonify }}
+        "text": {{ $item.a | plainify }}
       }
     }
     {{- end }}
@@ -138,6 +195,5 @@
 }
 </script>
 {{- end }}{{/* faq end */}}
-{{- end }}{{/* .IsPage end */}}
 
 {{- end -}}

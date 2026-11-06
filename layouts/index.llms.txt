@@ -1,0 +1,45 @@
+{{- /* 生成 /llms.txt — 面向 LLM 的站点导览，规范见 llmstxt.org，随构建自动更新 */ -}}
+# 展博增长实验室（abtest.chat）
+
+> 展博（本名何赞）的独立增长咨询工作室，服务出海休闲游戏、出海应用、出海 DTC 团队，核心命题是让产品和增长决策更科学、更可信：数据口径与归因、AB 实验体系、增长决策链路、发行与营销数据底座、企业级 Agent 前置诊断。公开服务为「增长决策可信度诊断」（只读，¥1,000/小时）、高管工作坊、季度顾问，另有免费自检工具。联系邮箱 zanhe@139.com。
+
+## 常见问题（客户原问题直答）
+
+{{- with site.GetPage "/faq" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+
+## 服务
+
+{{- range where site.RegularPages "Section" "services" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+
+## 免费工具与自检
+
+{{- with site.GetPage "/checklist" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+{{- range where site.RegularPages "Section" "tools" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+
+## 案例
+
+{{- range where site.RegularPages "Section" "work" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+
+## 方法论文章（按发布时间倒序）
+
+{{- range where site.RegularPages "Section" "posts" }}
+- [{{ .Title }}]({{ .Permalink }}): {{ .Description }}
+{{- end }}
+
+## 关于专家实体
+
+- [关于展博]({{ "about/" | absURL }}): 何赞（花名展博），独立增长咨询顾问，经历含滴滴/快手、Shopee、迦游，长期建设与应用实验平台、发行/营销平台；专业领域为 AB 实验体系、营销数据平台、投放智能化、企业级 Agent。
+
+## 全文索引
+
+- [llms-full.txt]({{ "llms-full.txt" | absURL }}): 本站全部公开页面的全文 Markdown 汇编，供一次性检索上下文。

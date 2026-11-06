@@ -67,6 +67,11 @@ canonifyURLs = false
     weight = 50
 
   [[menu.main]]
+    name = "常见问题"
+    url = "/faq/"
+    weight = 55
+
+  [[menu.main]]
     name = "关于"
     url = "/about/"
     weight = 60
@@ -131,7 +136,7 @@ canonifyURLs = false
 # 首页配置
 [homeInfoParams]
   Title = "展博增长实验室"
-  Content = "两周、只读、固定范围的增长决策可信度诊断——把这套数能不能用来做决定讲清楚。"
+  Content = "只读、按小时计费的增长决策可信度诊断——把这套数能不能用来做决定讲清楚。"
 
 # 社交链接
 socialIcons = [
@@ -157,7 +162,7 @@ socialIcons = [
 
 # 输出格式配置
 [outputs]
-  home = ["HTML", "RSS", "JSON", "REDIRECTS"]
+  home = ["HTML", "RSS", "JSON", "REDIRECTS", "LLMS", "LLMSFULL"]
 
 # 短链：自定义输出，构建时生成 Netlify _redirects
 [mediaTypes."text/netlify-redirects"]
@@ -168,4 +173,22 @@ socialIcons = [
   baseName = "_redirects"
   isPlainText = true
   notAlternative = true
+
+# GEO：/llms.txt（站点导览，规范见 llmstxt.org）与 /llms-full.txt（可索引全文汇编）
+[mediaTypes."text/plain"]
+  suffixes = ["txt"]
+
+[outputFormats.LLMS]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isPlainText = true
+  notAlternative = true
+  permalinkable = true
+
+[outputFormats.LLMSFULL]
+  mediaType = "text/plain"
+  baseName = "llms-full"
+  isPlainText = true
+  notAlternative = true
+  permalinkable = true
 
