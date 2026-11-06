@@ -1,7 +1,7 @@
 ---
 title: "工具库"
 date: 2026-08-05T00:00:00+08:00
-description: "展博增长实验室的工具库：广告数据可信度快检、AB 实验、UA 归因与 Martech 自动化工具选型。30 秒检测 ROAS 能不能用来加预算。"
+description: "免费工具库：广告数据可信度快检与 AB 实验能力自检，30 秒检测 ROAS 能否用来加预算。"
 keywords: ["工具库", "广告数据可信度", "ROAS 快检", "AB 实验工具", "UA 归因工具", "Martech", "增长工具"]
 draft: false
 comments: false

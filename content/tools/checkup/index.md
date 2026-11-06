@@ -1,7 +1,7 @@
 ---
 title: "广告数据可信度快检 · Benchmark + ROAS 判决"
 date: 2026-08-22T00:00:00+08:00
-description: "按 DTC / App / Game 三个方向，选品类与渠道，立即看到 ROAS / CPI / CPM / CTR / CVR / D1 / D7 / LTV 的当前基线和近 4 个季度趋势；再输入你后台的 ROAS，30 秒拿到数据可信度判决。"
+description: "选品类渠道查看 ROAS、CPI、LTV 基线与 4 个季度趋势，输入后台 ROAS，30 秒出可信度判决。"
 keywords: ["ROAS benchmark", "CPI benchmark", "广告行业基准", "Meta CPM", "TikTok ROAS", "App CPI", "DTC ROAS", "增长数据诊断", "展博增长实验室"]
 draft: false
 comments: false
@@ -163,7 +163,7 @@ show_breadcrumbs: false
 
 <div class="cu-wrap">
 
-<h1>你的广告数到底在行业哪个位置？</h1>
+<h2>你的广告数到底在行业哪个位置？</h2>
 <div class="cu-sub">第一步：按方向 → 品类 → 平台（iOS / Android / Web）与地理分级（T1/T2/T3）→ 渠道，查看 ROAS / CPI / CPM / CTR / CVR / 留存 / LTV 的当前基线与近 4 个季度趋势。第二步：输入你后台的 ROAS，30 秒拿到数据可信度判决。</div>
 
 <div class="cu-card">

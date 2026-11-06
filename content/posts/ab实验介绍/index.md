@@ -25,7 +25,7 @@ ShowWordCount: true
 
 
 
-<h1 class="wp-block-heading">为什么我们需要AB实验平台</h1>
+<h2 class="wp-block-heading">为什么我们需要AB实验平台</h2>
 
 
 
@@ -233,7 +233,7 @@ ShowWordCount: true
 
 
 
-<h1 class="wp-block-heading">如何设计一个AB实验平台</h1>
+<h2 class="wp-block-heading">如何设计一个AB实验平台</h2>
 
 
 
@@ -245,7 +245,7 @@ ShowWordCount: true
 
 
 
-<h1 class="wp-block-heading">相关链接</h1>
+<h2 class="wp-block-heading">相关链接</h2>
 
 
 
