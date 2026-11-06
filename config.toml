@@ -126,7 +126,7 @@ canonifyURLs = false
 # 站点所有权校验 meta tag：百度资源平台 / GSC / Bing Webmaster 通用接入位
 [params.verification]
   baidu = "codeva-1SwceJddqc"   # 百度资源平台 HTML 标签验证的 code（点「HTML标签验证」后获得）
-  google = ""  # Google Search Console HTML 标签验证的 content
+  google = "LFKEzEVtlWI9itg9tfYLGudzfszYerFWUPoYWGLFRPU"  # Google Search Console HTML 标签验证的 content
   bing = ""    # Bing Webmaster Tools 的 msvalidate.01
 
 [author]
