@@ -293,9 +293,34 @@ button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;tex
    mode / version / built 由 build_app.py 注入。
    DEVUI 在 dev 构建里是内部说明文案对象，release 构建里是 null。
    ========================================================================== */
-const BUILD = {"mode": "release", "version": "0.4.1", "built": "2026-11-23 12:41"};
+const BUILD = {"mode": "release", "version": "0.4.2", "built": "2026-11-23 12:50"};
 const DEV = BUILD.mode === "dev";
 const DEVUI = null;
+
+/* ---------------------------------------------------------------------------
+   埋点：只记「意愿」，不接支付。
+   - 正式版挂在 https 域名下时走 GA4（页面路径统一是 /wdl/，主站报表按路径过滤即可）
+   - 本地或离线打开只是本地计数，不发请求
+   --------------------------------------------------------------------------- */
+function track(name, params){
+  try{
+    if (typeof gtag === "function") gtag("event", name, params || {});
+    const k = "wdl_evt_" + name;
+    localStorage.setItem(k, String((+localStorage.getItem(k) || 0) + 1));
+  }catch(e){ /* 隐私模式下 localStorage 会抛错，忽略 */ }
+}
+(function initAnalytics(){
+  if (DEV || location.protocol !== "https:") return;
+  const ID = "G-H31QEMFKYD";
+  const s = document.createElement("script");
+  s.async = true;
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + ID;
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function(){ window.dataLayer.push(arguments); };
+  window.gtag("js", new Date());
+  window.gtag("config", ID, { anonymize_ip: true });
+})();
 
 /* ============================================================================
    1. 数据层
@@ -1493,6 +1518,9 @@ function paywall(reason){
   const total = legs.length + lcs.length;
   const owned = state.unlocked ? total : 0;
 
+  track("wdl_paywall_view", { reason, club: clubFull,
+    match: state.mi == null ? -1 : state.mi, side: state.side });
+
   modalEl.innerHTML = `<div class="mask" data-close></div>
     <div class="box">
       <div style="text-align:center;margin-bottom:16px">
@@ -1530,9 +1558,9 @@ function paywall(reason){
         ${total ? "" : `<div class="note">这个俱乐部暂无传奇卡。</div>`}
       </div>
 
-      <div class="kv"><span class="k">单场体验</span><span class="v">¥6</span></div>
-      <div class="kv"><span class="k">本赛季传奇包（全部 12 张）</span><span class="v" style="color:var(--gold)">¥18</span></div>
-      <div class="kv"><span class="k">每场额度</span><span class="v">3 → 5 次</span></div>
+      <div class="kv"><span class="k">解锁后</span><span class="v">每场 5 次 · 传奇可用</span></div>
+      <div class="kv"><span class="k">正式版方式</span><span class="v">看一段激励广告</span></div>
+      <div class="kv"><span class="k">内测阶段</span><span class="v" style="color:var(--volt)">免费</span></div>
 
       <div class="note" style="margin:12px 0 14px">
         不承诺提升胜率。传奇改变的是预期进球，比分仍然由概率决定 —— 你可以更强，但仍然可能输。
@@ -1540,21 +1568,19 @@ function paywall(reason){
 
       <div class="dock-row">
         <button class="btn btn-g" data-close>再看看</button>
-        <button class="btn btn-h" id="doBuy">¥18 解锁</button>
+        <button class="btn btn-h" id="doUnlock">解锁体验 · 内测免费</button>
       </div>
-      <div style="text-align:center;margin-top:10px">
-        <button class="note" id="doDemo" style="text-decoration:underline;color:var(--dim)">演示：直接解锁（原型用）</button>
+      <div class="note" style="text-align:center;margin-top:10px;color:var(--dim2);font-size:9.5px">
+        内测不收费，也不播广告。这一次点击会记一条「解锁意愿」。
       </div>
     </div>`;
   modalEl.classList.add("on");
   modalEl.querySelectorAll("[data-close]").forEach(b => b.onclick = closeModal);
-  modalEl.querySelector("#doBuy").onclick = () => {
+  modalEl.querySelector("#doUnlock").onclick = () => {
+    track("wdl_unlock_click", { reason, club: clubFull,
+      match: state.mi == null ? -1 : state.mi, side: state.side });
     state.unlocked = true; state.quota = PAID_QUOTA;
-    closeModal(); render(); toast("传奇已解锁 · 每场 5 次额度");
-  };
-  modalEl.querySelector("#doDemo").onclick = () => {
-    state.unlocked = true; state.quota = PAID_QUOTA;
-    closeModal(); render(); toast("演示模式已解锁");
+    closeModal(); render(); toast("已解锁 · 本场内测免费");
   };
 }
 
