@@ -1,0 +1,1669 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#07090E">
+<meta name="robots" content="noindex,nofollow">
+<title>WDL · 传奇在手，天下我有</title>
+<style>
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent;margin:0;padding:0}
+:root{
+  --bg:#07090E; --s1:#101420; --s2:#171D2B; --s3:#1F2738;
+  --ln:#252E42; --tx:#E9EDF6; --dim:#8592A8; --dim2:#5C6880;
+  --volt:#C8FF3D; --hot:#FF4D5E; --gold:#FFC94A; --sky:#5AC8FA;
+  --r:14px;
+}
+html,body{background:var(--bg);color:var(--tx);
+  font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,sans-serif;
+  -webkit-font-smoothing:antialiased;font-size:15px;line-height:1.45;overscroll-behavior-y:none}
+body{padding-bottom:env(safe-area-inset-bottom)}
+button{font:inherit;color:inherit;background:none;border:none;cursor:pointer;text-align:left}
+.num{font-variant-numeric:tabular-nums;font-feature-settings:"tnum"}
+.wrap{max-width:480px;margin:0 auto;padding:0 16px}
+
+/* ---------- header ---------- */
+.top{position:sticky;top:0;z-index:30;background:rgba(7,9,14,.88);
+  backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid var(--ln)}
+.top-in{max-width:480px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:10px}
+.logo{display:flex;align-items:center;gap:7px;font-weight:800;letter-spacing:-.02em;font-size:16px}
+.logo i{width:22px;height:22px;border-radius:7px;background:var(--volt);display:grid;place-items:center;
+  color:#0A0D12;font-style:normal;font-size:12px;font-weight:900}
+.slogan{font-size:11px;color:var(--dim2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.spacer{flex:1}
+.ver{font-size:9px;font-weight:800;letter-spacing:.03em;color:var(--dim2);white-space:nowrap;
+  flex:0 0 auto;margin-right:2px}
+.ver.dev{color:var(--gold)}
+.icon-btn{width:34px;height:34px;border-radius:10px;background:var(--s2);display:grid;place-items:center;
+  font-size:14px;border:1px solid var(--ln);flex:0 0 auto}
+
+/* ---------- generic ---------- */
+.card{background:var(--s1);border:1px solid var(--ln);border-radius:var(--r);overflow:hidden}
+.pad{padding:14px}
+.sec-h{display:flex;align-items:baseline;gap:8px;margin:20px 0 10px}
+.sec-h h2{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--dim)}
+.sec-h .sub{font-size:11.5px;color:var(--dim2)}
+.btn{display:flex;align-items:center;justify-content:center;gap:8px;width:100%;
+  height:50px;border-radius:13px;font-weight:700;font-size:15px;transition:transform .12s;text-align:center}
+.btn:active{transform:scale(.975)}
+.btn-p{background:var(--volt);color:#0A0D12}
+.btn-g{background:var(--s2);color:var(--tx);border:1px solid var(--ln)}
+.btn-h{background:linear-gradient(135deg,#FFC94A,#FF8A3D);color:#221200}
+.btn-s{height:40px;font-size:13px;border-radius:11px;width:auto;padding:0 14px;display:inline-flex}
+.tag{display:inline-flex;align-items:center;gap:4px;font-size:10px;font-weight:700;
+  padding:2px 6px;border-radius:5px;letter-spacing:.03em;white-space:nowrap}
+.tag-v{background:rgba(200,255,61,.14);color:var(--volt)}
+.tag-g{background:rgba(255,201,74,.15);color:var(--gold)}
+.tag-d{background:var(--s3);color:var(--dim)}
+.tag-s{background:rgba(90,200,250,.14);color:var(--sky)}
+.mono{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:11px;color:var(--dim)}
+.note{font-size:10.5px;color:var(--dim2);line-height:1.65}
+.note b{color:var(--dim)}
+.kv{display:flex;justify-content:space-between;gap:10px;font-size:12px;padding:7px 0;border-bottom:1px solid var(--ln)}
+.kv:last-child{border:none}
+.kv .k{color:var(--dim2);flex:0 0 auto}
+.kv .v{font-weight:700;text-align:right}
+
+/* ---------- club badge ---------- */
+.bd{width:34px;height:34px;border-radius:9px;display:grid;place-items:center;
+  font-size:10.5px;font-weight:900;letter-spacing:-.02em;flex:0 0 auto;
+  box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.bd.lg{width:46px;height:46px;border-radius:12px;font-size:13px}
+
+/* ---------- round strip ---------- */
+.strip{display:flex;gap:6px;overflow-x:auto;padding:12px 0 4px;scrollbar-width:none}
+.strip::-webkit-scrollbar{display:none}
+.rn{flex:0 0 auto;min-width:42px;height:34px;border-radius:9px;background:var(--s1);
+  border:1px solid var(--ln);font-size:12px;font-weight:700;color:var(--dim);
+  display:grid;place-items:center;padding:0 9px}
+.rn.on{background:var(--volt);color:#0A0D12;border-color:var(--volt)}
+
+/* ---------- match row ---------- */
+.mrow{display:flex;align-items:center;gap:10px;padding:12px 14px;
+  border-bottom:1px solid var(--ln);width:100%;position:relative}
+.mrow:last-child{border-bottom:none}
+.mrow:active{background:var(--s2)}
+.mrow.fav{background:linear-gradient(90deg,rgba(200,255,61,.07),transparent 65%)}
+.mrow.fav:before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--volt)}
+.mrow .side{flex:1;display:flex;align-items:center;gap:8px;min-width:0}
+.mrow .side.r{flex-direction:row-reverse;text-align:right}
+.mrow .nm{font-size:13.5px;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mrow .sc{font-size:19px;font-weight:800;min-width:56px;text-align:center;flex:0 0 auto;letter-spacing:.01em}
+.mrow .sc .sep{color:#5E6B85;margin:0 3px;font-weight:600}
+.mrow .sc .w{color:var(--volt)}
+.mrow .sc .l{color:var(--dim2)}
+.mrow .meta{font-size:10px;color:var(--volt);margin-top:1px;font-weight:700}
+
+/* ---------- detail ---------- */
+.score-big{display:flex;align-items:center;justify-content:center;gap:14px;padding:20px 0 8px}
+.score-big .t{display:flex;flex-direction:column;align-items:center;gap:7px;width:92px}
+.score-big .t .nm{font-size:11.5px;font-weight:600;text-align:center;line-height:1.25}
+.score-big .v{font-size:40px;font-weight:900;letter-spacing:-.02em;line-height:1;flex:0 0 auto}
+.score-big .v .sep{color:#6E7C96;margin:0 6px;font-weight:300}
+.stat{display:grid;grid-template-columns:40px 1fr 40px;align-items:center;gap:8px;margin:10px 0;font-size:11.5px}
+.stat .b{height:5px;border-radius:3px;background:var(--s3);overflow:hidden;display:flex}
+.stat .b i{display:block;height:100%}
+.stat .lbl{text-align:center;color:var(--dim2);font-size:10px;letter-spacing:.04em;margin-top:3px}
+.xi-grid{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:repeat(6,auto);
+  grid-auto-flow:column;gap:1px 14px;font-size:11px}
+.xi-i{display:flex;align-items:center;gap:6px;padding:3px 0;color:var(--dim);min-width:0}
+.xi-i b{color:var(--tx);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.xi-i .o{font-size:10px;font-weight:800;color:var(--volt);min-width:17px;flex:0 0 auto}
+.xi-i .ps{font-size:8.5px;color:var(--dim2);margin-left:auto;flex:0 0 auto}
+
+/* ---------- coach card ---------- */
+.coach{display:flex;align-items:center;gap:11px;padding:12px 13px;border-radius:13px;
+  background:linear-gradient(115deg,rgba(90,200,250,.09),rgba(90,200,250,.015));
+  border:1px solid rgba(90,200,250,.26);margin-top:12px;width:100%}
+.coach.lg{background:linear-gradient(115deg,rgba(255,201,74,.12),rgba(255,201,74,.02));
+  border-color:rgba(255,201,74,.34)}
+.coach .av{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;
+  font-size:14px;font-weight:900;flex:0 0 auto;
+  background:rgba(90,200,250,.13);color:var(--sky);border:1px solid rgba(90,200,250,.3)}
+.coach.lg .av{background:rgba(255,201,74,.14);color:var(--gold);border-color:rgba(255,201,74,.36)}
+.coach .body{flex:1;min-width:0}
+.coach .nm{font-size:13.5px;font-weight:800;display:flex;align-items:center;gap:6px}
+.coach .nm span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.coach .mt{font-size:10px;color:var(--dim2);margin-top:2px}
+.coach .sw{font-size:11px;font-weight:800;color:var(--sky);flex:0 0 auto;padding:5px 9px;
+  border-radius:8px;background:rgba(90,200,250,.1)}
+.coach.lg .sw{color:var(--gold);background:rgba(255,201,74,.1)}
+.coach .eff{display:flex;gap:5px;margin-top:5px}
+.coach .eff i{font-style:normal;font-size:9.5px;font-weight:800;padding:1px 5px;border-radius:4px;
+  background:var(--s3);color:var(--dim)}
+
+/* ---------- pitch ---------- */
+.pitch{position:relative;width:100%;aspect-ratio:68/84;border-radius:16px;overflow:hidden;
+  background:repeating-linear-gradient(0deg,#0D1911 0 8.5%,#101E15 8.5% 17%);
+  border:1px solid #1B2B20;margin-top:12px}
+.pitch:before{content:"";position:absolute;left:0;right:0;top:50%;height:1px;background:rgba(255,255,255,.08)}
+.pline{position:absolute;inset:5% 4%;border:1px solid rgba(255,255,255,.09);border-radius:2px;pointer-events:none}
+.pbox{position:absolute;left:23%;right:23%;height:14%;border:1px solid rgba(255,255,255,.09);pointer-events:none}
+.pbox.t{top:5%;border-top:none}
+.pbox.b{bottom:5%;border-bottom:none}
+.pcircle{position:absolute;left:50%;top:50%;width:25%;aspect-ratio:1;transform:translate(-50%,-50%);
+  border:1px solid rgba(255,255,255,.09);border-radius:50%;pointer-events:none}
+.slot{position:absolute;transform:translate(-50%,50%);display:flex;flex-direction:column;
+  align-items:center;gap:3px;width:64px}
+.slot .dot{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;
+  font-size:11.5px;font-weight:800;position:relative;
+  background:radial-gradient(circle at 35% 30%,#2C3A52,#161D2B);
+  border:1.5px solid #38455F;color:var(--tx);box-shadow:0 4px 12px rgba(0,0,0,.5)}
+.slot .dot .ov{position:absolute;right:-6px;bottom:-5px;min-width:21px;height:16px;padding:0 3px;
+  border-radius:8px;background:var(--s1);border:1px solid var(--ln);
+  font-size:9px;font-weight:800;display:grid;place-items:center;color:var(--volt)}
+.slot .nm{font-size:9.5px;font-weight:600;color:#C6D0E0;max-width:64px;
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;text-align:center;
+  text-shadow:0 1px 3px rgba(0,0,0,.95)}
+.slot.sw .dot{background:radial-gradient(circle at 35% 30%,#3A5220,#1E2C10);
+  border-color:var(--volt);box-shadow:0 0 0 3px rgba(200,255,61,.13),0 4px 14px rgba(0,0,0,.5)}
+.slot.lg .dot{background:radial-gradient(circle at 35% 30%,#5A4418,#2A1F08);
+  border-color:var(--gold);box-shadow:0 0 0 3px rgba(255,201,74,.16),0 4px 14px rgba(0,0,0,.5)}
+.slot:active .dot{transform:scale(.92)}
+.slot.off .dot{border-style:dashed;border-color:#4A5A78}
+.slot.off .nm{color:var(--dim2)}
+
+/* ---------- lambda meter ---------- */
+.meter{padding:14px}
+.meter .hd{display:flex;align-items:center;justify-content:space-between;font-size:11px;
+  color:var(--dim2);margin-bottom:10px}
+.bars{display:flex;flex-direction:column;gap:8px}
+.mbar{display:flex;align-items:center;gap:9px;font-size:11.5px}
+.mbar .who{width:54px;font-weight:600;flex:0 0 auto;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.mbar .track{flex:1;height:9px;border-radius:5px;background:var(--s3);overflow:hidden}
+.mbar .fill{height:100%;border-radius:5px;transition:width .4s cubic-bezier(.2,.8,.2,1)}
+.mbar .val{width:34px;text-align:right;font-weight:800;font-size:12.5px;flex:0 0 auto}
+.probs{display:flex;gap:1px;margin-top:12px;height:26px;border-radius:7px;overflow:hidden;font-size:10px;font-weight:700}
+.probs div{display:grid;place-items:center;color:#0A0D12;transition:flex .4s}
+
+/* ---------- sheet ---------- */
+.sheet{position:fixed;inset:0;z-index:60;display:none}
+.sheet.on{display:block}
+.sheet .mask{position:absolute;inset:0;background:rgba(0,0,0,.62);backdrop-filter:blur(3px)}
+.sheet .panel{position:absolute;left:0;right:0;bottom:0;max-height:88vh;background:var(--s1);
+  border-radius:20px 20px 0 0;border-top:1px solid var(--ln);
+  display:flex;flex-direction:column;animation:up .26s cubic-bezier(.2,.9,.3,1)}
+@keyframes up{from{transform:translateY(100%)}to{transform:translateY(0)}}
+.grab{width:38px;height:4px;border-radius:2px;background:var(--s3);margin:8px auto 4px;flex:0 0 auto}
+.ph{padding:6px 18px 10px;flex:0 0 auto;border-bottom:1px solid var(--ln)}
+.ph h3{font-size:16px;font-weight:800;letter-spacing:-.01em}
+.ph p{font-size:11px;color:var(--dim2);margin-top:3px}
+.pl{overflow-y:auto;-webkit-overflow-scrolling:touch;padding:0 0 22px}
+.prow{display:flex;align-items:center;gap:10px;padding:11px 18px;border-bottom:1px solid var(--ln);width:100%}
+.prow:active{background:var(--s2)}
+.prow .ov{width:34px;height:34px;border-radius:9px;background:var(--s2);border:1px solid var(--ln);
+  display:grid;place-items:center;font-size:13px;font-weight:800;flex:0 0 auto}
+.prow .ov.hi{color:var(--volt)}
+.prow .ov.gd{color:var(--gold);border-color:rgba(255,201,74,.4);background:rgba(255,201,74,.08)}
+.prow .ov.sk{color:var(--sky);border-color:rgba(90,200,250,.36);background:rgba(90,200,250,.08)}
+.prow .info{flex:1;min-width:0}
+.prow .info .n{font-size:13.5px;font-weight:600;display:flex;align-items:center;gap:6px}
+.prow .info .n{white-space:nowrap}
+.prow .info .n span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.prow .info .m{font-size:10px;color:var(--dim2);margin-top:1px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.prow .dlt{font-size:11.5px;font-weight:800;white-space:nowrap;flex:0 0 auto}
+.prow .dlt.up{color:var(--volt)}
+.prow .dlt.zero{color:var(--dim2)}
+
+/* ---------- modal ---------- */
+.modal{position:fixed;inset:0;z-index:80;display:none;align-items:center;justify-content:center;padding:18px}
+.modal.on{display:flex}
+.modal .mask{position:absolute;inset:0;background:rgba(0,0,0,.74);backdrop-filter:blur(4px)}
+.modal .box{position:relative;width:100%;max-width:400px;background:var(--s1);
+  border:1px solid var(--ln);border-radius:20px;padding:20px;max-height:88vh;overflow-y:auto;
+  animation:pop .22s cubic-bezier(.2,.9,.3,1)}
+@keyframes pop{from{transform:scale(.94);opacity:0}to{transform:scale(1);opacity:1}}
+
+#toast{position:fixed;left:50%;bottom:84px;transform:translate(-50%,14px);z-index:99;
+  background:rgba(28,36,52,.97);border:1px solid var(--ln);color:var(--tx);
+  padding:10px 16px;border-radius:11px;font-size:12.5px;font-weight:600;
+  opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;backdrop-filter:blur(10px);
+  max-width:88vw;text-align:center}
+#toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* ---------- dock ---------- */
+.dock{position:fixed;left:0;right:0;bottom:0;z-index:25;
+  background:linear-gradient(0deg,var(--bg) 62%,rgba(7,9,14,.92) 88%,transparent);
+  padding:14px 16px calc(14px + env(safe-area-inset-bottom))}
+.dock-in{max-width:480px;margin:0 auto}
+.dock-row{display:flex;gap:9px}
+.quota{display:flex;align-items:center;justify-content:center;gap:7px;font-size:10.5px;
+  color:var(--dim2);margin-bottom:9px}
+.pips{display:flex;gap:4px}
+.pips i{width:15px;height:4px;border-radius:2px;background:var(--s3)}
+.pips i.on{background:var(--volt)}
+
+/* ---------- result ---------- */
+.big-score{text-align:center;padding:22px 0 6px}
+.big-score .v{font-size:60px;font-weight:900;letter-spacing:-.04em;line-height:1}
+.big-score .v .sep{color:#6E7C96;font-weight:300;margin:0 8px}
+.big-score .tagline{margin-top:10px;font-size:12.5px;color:var(--dim)}
+.cmp{display:flex;align-items:center;justify-content:center;gap:9px;font-size:12px;
+  color:var(--dim2);margin-top:7px}
+.cmp .old{text-decoration:line-through;opacity:.6}
+.cmp .ar{color:var(--volt)}
+/* 进球时间线 */
+.tl{display:flex;align-items:center;gap:7px;padding:4px 0;font-size:11.5px;line-height:1.4}
+.tl .mn{width:29px;text-align:right;font-weight:800;font-size:10.5px;color:var(--volt);flex:0 0 auto}
+.tl .bl{width:13px;height:13px;border-radius:50%;background:var(--volt);display:grid;place-items:center;
+  font-size:7px;color:#0A0D12;flex:0 0 auto;line-height:1}
+.tl.aw .bl{background:#4A5878}
+.tl .tx{flex:1;min-width:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.tl .tx b{font-weight:700;color:var(--tx)}
+.tl .tx i{font-style:normal;font-size:9.5px;color:var(--dim2);margin-left:5px}
+.tl .cd{font-size:9px;font-weight:800;color:var(--dim2);flex:0 0 auto}
+.tl-none{font-size:10.5px;color:var(--dim2);padding:6px 0}
+
+.legend-card{display:flex;align-items:center;gap:11px;padding:11px 13px;border-radius:12px;
+  background:linear-gradient(120deg,rgba(255,201,74,.1),rgba(255,201,74,.02));
+  border:1px solid rgba(255,201,74,.28)}
+.legend-card .lk{width:34px;height:34px;border-radius:10px;background:rgba(255,201,74,.14);
+  display:grid;place-items:center;font-size:15px;flex:0 0 auto}
+.abars{display:grid;grid-template-columns:1fr 1fr;gap:6px 16px;margin-top:12px}
+.ab{display:flex;align-items:center;gap:7px;font-size:10.5px}
+.ab .k{width:28px;color:var(--dim2);font-weight:700}
+.ab .t{flex:1;height:4px;border-radius:2px;background:var(--s3);overflow:hidden}
+.ab .t i{display:block;height:100%;border-radius:2px}
+.ab .v{width:18px;text-align:right;font-weight:800;font-size:10.5px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="top-in">
+    <div class="logo"><i>W</i>WDL</div>
+    <div class="slogan">传奇在手，天下我有</div>
+    <div class="spacer"></div>
+    <span class="ver" id="verTag"></span>
+    <button class="icon-btn" id="btnInfo" aria-label="模型说明">ⓘ</button>
+  </div>
+</header>
+
+<main id="app"></main>
+<div id="sheet" class="sheet"></div>
+<div id="modal" class="modal"></div>
+<div id="toast"></div>
+
+<script id="DATA" type="application/json">{"clubs":[{"n":"Arsenal","f":"Arsenal","c":"ARS","col":"#EF0107","xi":[3461,3498,3394,3475,4428,11386,3496,3437,3385,3604,3517],"squad":[11386,3496,3437,3517,3498,3394,3461,3604,3475,3525,3385,4428,3511]},{"n":"Villa","f":"Aston Villa","c":"AVL","col":"#95BFE5","xi":[12608,4347,42700,3041,9533,3583,3436,7153,11117,42699,3450],"squad":[42700,4347,3583,3041,12608,3436,9533,7153,42699,3450,11117]},{"n":"Bournemouth","f":"AFC Bournemouth","c":"BOU","col":"#DA291C","xi":[20074,3345,3341,9626,3608,3343,3344,13248,4416,3346,3049],"squad":[3608,3345,3344,3346,3049,3616,3341,9626,20074,4416,13248,3646,3343]},{"n":"Chelsea","f":"Chelsea","c":"CHE","col":"#034694","xi":[3509,3957,3645,20287,5594,40122,3478,3381,3621,5198,3472],"squad":[5594,3621,3478,3957,3381,3472,5198,3645,20287,3509,3339,40122,28100]},{"n":"Palace","f":"Crystal Palace","c":"CRY","col":"#1B458F","xi":[3619,4884,3407,3693,3443,3277,19688,3464,20641,3085,3507],"squad":[3277,3619,19688,3443,3464,4884,3407,3507,3693,3085,20641,15892]},{"n":"Everton","f":"Everton","c":"EVE","col":"#003399","xi":[13042,30702,3244,20046,4589,3633,4275,3607,3683,3289,26696],"squad":[4589,4275,13042,3289,3633,3244,30702,20046,3607,3683,26696,4317]},{"n":"Leicester","f":"Leicester City","c":"LEI","col":"#003090","xi":[3815,3520,3813,40123,28782,3810,3662,3665,3814,10960,3307],"squad":[3814,3307,10960,3815,3662,3810,3520,3665,28782,3813,40123]},{"n":"Liverpool","f":"Liverpool","c":"LIV","col":"#C8102E","xi":[3539,3495,18872,3471,4590,3473,3532,4090,3635,3380,3501],"squad":[3501,4590,3380,18872,3532,3495,4090,3473,3539,3471,3635]},{"n":"Man City","f":"Manchester City","c":"MCI","col":"#6CABDD","xi":[3291,5596,3101,3389,7110,3054,3064,3087,3233,3237,6821],"squad":[3064,3087,3291,3233,6821,3054,5596,3101,3389,7110,3237,3598]},{"n":"Man Utd","f":"Manchester United","c":"MUN","col":"#DA291C","xi":[4892,3382,10958,3311,4587,4751,3600,6330,2988,3538,3294],"squad":[4892,4587,2988,10958,3382,3600,4751,3294,3311,3538,3612,6330]},{"n":"Newcastle","f":"Newcastle United","c":"NEW","col":"#BBBDBC","xi":[9467,4840,3044,26207,3650,3567,9649,16072,42899,30289,3091],"squad":[3044,4840,30289,9649,16072,3650,42899,9467,3091,26207,3567]},{"n":"Norwich","f":"Norwich City","c":"NOR","col":"#FFF200","xi":[23635,10967,21212,31296,11124,9463,10966,16334,4804,4807,9578],"squad":[10966,16334,11124,21212,9578,10967,9463,31296,23635,3286,4807,4804,9593]},{"n":"Southampton","f":"Southampton","c":"SOU","col":"#D71920","xi":[20201,3651,3960,3300,3329,3629,3828,3098,3685,11062,3831],"squad":[3828,3960,3329,3300,3098,3831,3629,11062,3651,20201,3685,3842]},{"n":"Stoke","f":"Stoke City","c":"STK","col":"#E03A3E","xi":[3537,3467,3480,6560,4724,8251,4891,9625,3325,3603,3670],"squad":[3480,3467,3537,3325,8251,6560,9625,4891,4724,3603,3670,3533]},{"n":"Sunderland","f":"Sunderland","c":"SUN","col":"#EB172B","xi":[6871,3321,4746,6300,10503,10783,5617,18751,16457,3337,42902],"squad":[3321,16457,4746,10503,6300,3337,10783,5617,6871,4429,42902,18751,9554]},{"n":"Swansea","f":"Swansea City","c":"SWA","col":"#D3D3D3","xi":[3262,9627,3644,3290,3340,3462,3057,3944,7063,20521,3347],"squad":[3057,3262,7063,3644,20521,3290,3347,9627,3944,3340,3462]},{"n":"Tottenham","f":"Tottenham Hotspur","c":"TOT","col":"#E2E2E2","xi":[3099,3086,20005,3077,3205,10956,4831,40127,3043,10955,3037],"squad":[3205,10955,3037,10956,20005,3077,3086,4831,3043,40127,3099,3609,3585,8520]},{"n":"Watford","f":"Watford","c":"WAT","col":"#FBEE23","xi":[3522,3725,3263,3309,3991,5540,3721,6870,5556,3454,40118],"squad":[3721,3991,6870,3454,3263,3309,5556,3522,40118,5540,3725,5458]},{"n":"West Brom","f":"West Bromwich Albion","c":"WBA","col":"#122F67","xi":[5108,3541,20285,20527,3523,4022,3967,40124,9485,4630,3490],"squad":[5108,4022,3541,3523,4630,3490,40124,9485,20285,3967,9628,20527,3596,3514]},{"n":"West Ham","f":"West Ham United","c":"WHU","col":"#7A263A","xi":[3623,3062,3843,4280,21254,4273,3874,3684,3491,3962,27853],"squad":[3491,3843,3874,3962,4280,3684,3062,3623,27853,21254,4273,3897,3316,20066,21540]}],"matches":[[1,"2015-08-08",2,1,0,1,11,7,2,3,6,3,3,4,[[71,1,"盖斯特德","韦斯特伍德"]]],[1,"2015-08-08",3,15,2,2,11,18,3,10,4,8,1,3,[[22,0,"奥斯卡",null],[28,1,"安德烈·阿尤",null],[29,0,"",null],[54,1,"戈米",null]]],[1,"2015-08-08",5,17,2,2,10,11,5,5,8,2,1,2,[[12,1,"拉云",null],[75,0,"巴克利","科内"],[82,1,"伊哈洛","迪尼"],[85,0,"科内","卢卡库"]]],[1,"2015-08-08",6,14,4,2,19,10,8,5,6,3,2,4,[[10,0,"瓦尔迪","奥尔布赖顿"],[17,0,"马赫雷斯","奥尔布赖顿"],[24,0,"马赫雷斯",null],[59,1,"迪福","亚当·约翰逊"],[65,0,"奥尔布赖顿",null],[70,1,"史蒂文·弗莱彻","伦斯"]]],[1,"2015-08-08",9,16,1,0,9,9,1,4,1,2,2,3,[[21,0,"",null]]],[1,"2015-08-08",11,4,1,3,17,11,6,7,1,4,1,0,[[37,1,"扎哈","庞琼"],[48,1,"德莱尼","苏阿雷"],[68,0,"雷德蒙德","布拉德利·约翰逊"],[93,1,"卡巴耶","麦克阿瑟"]]],[1,"2015-08-09",0,19,0,2,22,8,6,4,5,4,1,3,[[42,1,"库亚特","帕耶"],[56,1,"萨拉特",null]]],[1,"2015-08-09",10,12,2,2,9,15,4,5,6,6,2,4,[[23,1,"佩莱","塞德里克"],[41,0,"西塞",null],[47,0,"维纳尔杜姆","奥贝坦"],[78,1,"肖恩·朗","塔迪奇"]]],[1,"2015-08-09",13,7,0,1,7,8,1,3,3,5,2,4,null],[1,"2015-08-10",18,8,0,3,9,19,2,7,6,6,4,1,[[8,1,"大卫·席尔瓦",null],[23,1,"亚亚·图雷","博尼"],[58,1,"孔帕尼","大卫·席尔瓦"]]],[2,"2015-08-14",1,9,0,1,5,9,1,2,3,5,2,2,[[28,1,"贾努扎伊","马塔"]]],[2,"2015-08-15",12,5,0,3,17,10,4,4,9,9,4,2,[[21,1,"卢卡库","科内"],[44,1,"卢卡库","巴克利"],[83,1,"巴克利","科尔曼"]]],[2,"2015-08-15",14,11,1,3,6,19,2,6,6,6,1,2,[[25,1,"拉塞尔·马丁",null],[36,1,"惠特克","胡拉汉"],[56,1,"雷德蒙德","胡拉汉"],[87,0,"沃特莫尔",null]]],[2,"2015-08-15",15,10,2,0,19,4,6,2,4,4,2,1,[[8,0,"戈米","谢尔维"],[51,0,"安德烈·阿尤","蒙特罗"]]],[2,"2015-08-15",16,13,2,2,13,16,7,7,4,3,2,2,[[18,0,"戴尔","埃里克森"],[46,0,"沙德利","本·戴维斯"],[77,1,"阿瑙托维奇",null],[82,1,"迪乌夫","爱尔兰"]]],[2,"2015-08-15",17,18,0,0,16,6,5,0,2,4,1,2,null],[2,"2015-08-15",19,6,1,2,10,11,3,6,8,4,1,3,[[26,1,"冈崎慎司",null],[37,1,"马赫雷斯","奥尔布赖顿"],[54,0,"帕耶","库亚特"]]],[2,"2015-08-16",4,0,1,2,11,20,4,7,6,6,1,1,[[15,1,"吉鲁","厄齐尔"],[27,0,"沃德","麦克阿瑟"],[54,1,"",null]]],[2,"2015-08-16",8,3,3,0,18,10,8,3,5,1,4,2,[[31,0,"阿圭罗","亚亚·图雷"],[77,0,"孔帕尼","大卫·席尔瓦"],[82,0,"费尔南多",null]]],[2,"2015-08-17",7,2,1,0,18,13,2,2,6,8,1,4,[[25,0,"本特克","亨德森"]]],[3,"2015-08-22",4,1,2,1,16,11,6,2,6,4,3,3,null],[3,"2015-08-22",6,16,1,1,13,19,2,6,2,7,1,4,[[80,1,"阿里","沙德利"],[81,0,"马赫雷斯","瓦尔迪"]]],[3,"2015-08-22",9,10,0,0,20,7,8,0,11,5,2,2,null],[3,"2015-08-22",11,13,1,1,21,6,7,1,9,0,4,1,[[10,1,"迪乌夫","沙奇里"],[27,0,"拉塞尔·马丁","雷德蒙德"]]],[3,"2015-08-22",14,15,1,1,10,20,2,9,3,4,4,2,null],[3,"2015-08-22",19,2,3,4,10,15,4,7,5,4,0,0,[[10,1,"威尔逊","弗朗西斯"],[27,1,"威尔逊",null],[47,0,"诺布尔",null],[52,0,"库亚特",null],[65,1,"皮尤","格拉德尔"],[78,1,"威尔逊",null],[81,0,"迈加","克雷斯维尔"]]],[3,"2015-08-23",5,8,0,2,10,16,1,9,8,7,0,3,null],[3,"2015-08-23",17,12,0,0,13,14,0,5,5,2,0,2,null],[3,"2015-08-23",18,3,2,3,15,15,6,5,8,7,2,1,null],[3,"2015-08-24",0,7,0,0,19,15,5,8,7,8,1,4,null],[4,"2015-08-29",1,14,2,2,21,7,6,3,5,4,2,1,null],[4,"2015-08-29",2,6,1,1,5,4,2,2,4,4,2,4,null],[4,"2015-08-29",3,4,1,2,26,13,9,6,7,7,1,1,null],[4,"2015-08-29",7,19,0,3,13,12,1,5,5,7,3,1,null],[4,"2015-08-29",8,17,2,0,18,7,5,0,9,3,1,2,null],[4,"2015-08-29",10,0,0,1,1,22,0,9,0,9,6,1,null],[4,"2015-08-29",13,18,0,1,13,15,5,5,6,5,1,4,null],[4,"2015-08-29",16,5,0,0,20,8,6,3,6,2,4,1,null],[4,"2015-08-30",12,11,3,0,23,6,8,1,6,4,0,0,null],[4,"2015-08-30",15,9,2,1,9,11,4,4,0,1,2,2,null],[5,"2015-09-12",0,13,2,0,29,9,12,4,13,1,1,1,null],[5,"2015-09-12",4,8,0,1,10,21,2,7,4,4,2,3,null],[5,"2015-09-12",5,3,3,1,14,15,9,2,7,14,2,2,null],[5,"2015-09-12",9,7,3,1,9,8,3,4,4,4,1,2,null],[5,"2015-09-12",11,2,3,1,12,7,4,2,4,4,2,3,null],[5,"2015-09-12",17,15,1,0,17,8,6,3,1,3,1,1,null],[5,"2015-09-12",18,12,0,0,8,14,1,4,4,5,1,0,null],[5,"2015-09-13",6,1,3,2,21,11,6,4,4,5,2,1,null],[5,"2015-09-13",14,16,0,1,12,15,2,4,6,8,2,1,null],[5,"2015-09-14",19,10,2,0,17,14,3,4,6,7,0,2,null],[6,"2015-09-19",1,18,0,1,13,11,3,6,2,7,2,3,null],[6,"2015-09-19",2,14,2,0,15,9,5,2,7,3,2,4,null],[6,"2015-09-19",3,0,2,0,22,9,7,2,5,5,3,1,null],[6,"2015-09-19",8,19,1,2,27,6,8,3,16,3,1,2,null],[6,"2015-09-19",10,17,1,2,15,13,5,4,5,5,1,2,null],[6,"2015-09-19",13,6,2,2,11,12,4,5,3,4,1,4,null],[6,"2015-09-19",15,5,0,0,12,17,3,2,2,4,2,2,null],[6,"2015-09-20",7,11,1,1,23,7,7,2,6,2,1,2,null],[6,"2015-09-20",12,9,2,3,15,10,8,3,5,5,2,0,null],[6,"2015-09-20",16,4,1,0,22,12,6,4,6,5,1,2,null],[7,"2015-09-26",6,0,2,5,16,26,7,12,6,5,1,1,null],[7,"2015-09-26",7,1,3,2,21,10,12,4,11,1,0,0,null],[7,"2015-09-26",9,14,3,0,12,9,7,4,5,2,0,3,null],[7,"2015-09-26",10,3,2,2,11,16,5,4,4,6,1,2,null],[7,"2015-09-26",12,15,3,1,18,11,7,4,4,3,3,1,null],[7,"2015-09-26",13,2,2,1,8,11,5,6,3,7,1,0,null],[7,"2015-09-26",16,8,4,1,15,22,8,8,5,9,5,1,null],[7,"2015-09-26",19,11,2,2,19,16,7,7,7,5,0,0,null],[7,"2015-09-27",17,4,0,1,15,16,2,3,6,4,4,4,null],[7,"2015-09-28",18,5,2,3,9,12,4,4,6,4,0,3,null],[8,"2015-10-03",1,13,0,1,13,12,2,5,9,5,1,0,null],[8,"2015-10-03",2,17,1,1,12,11,6,2,5,3,1,1,null],[8,"2015-10-03",3,12,1,3,10,13,3,5,4,6,2,5,null],[8,"2015-10-03",4,18,2,0,21,7,8,2,8,3,3,3,null],[8,"2015-10-03",8,10,6,1,23,6,11,4,6,3,3,1,null],[8,"2015-10-03",11,6,1,2,17,16,2,5,16,8,0,1,null],[8,"2015-10-03",14,19,2,2,12,20,3,6,1,8,2,4,null],[8,"2015-10-04",0,9,3,0,12,9,5,5,3,6,1,3,null],[8,"2015-10-04",5,7,1,1,14,13,4,4,5,11,3,3,null],[8,"2015-10-04",15,16,2,2,11,19,2,11,5,6,1,4,null],[9,"2015-10-17",3,1,2,0,9,8,3,1,4,4,1,3,null],[9,"2015-10-17",4,19,1,3,6,24,1,4,1,9,1,3,null],[9,"2015-10-17",5,9,0,3,12,10,3,7,5,3,2,2,null],[9,"2015-10-17",8,2,5,1,15,5,11,1,1,7,2,1,null],[9,"2015-10-17",12,6,2,2,14,26,6,7,6,7,2,0,null],[9,"2015-10-17",16,7,0,0,13,12,4,3,8,6,1,2,null],[9,"2015-10-17",17,0,0,3,8,17,1,6,3,9,2,1,null],[9,"2015-10-17",18,14,1,0,8,9,1,2,1,5,2,2,null],[9,"2015-10-18",10,11,6,2,11,18,6,6,3,7,1,1,null],[9,"2015-10-19",15,13,0,1,14,9,2,2,1,2,2,2,null],[10,"2015-10-24",0,5,2,1,20,10,5,5,7,5,2,0,null],[10,"2015-10-24",1,15,1,2,9,11,3,4,4,6,2,3,null],[10,"2015-10-24",6,4,1,0,12,9,3,4,3,2,3,1,null],[10,"2015-10-24",11,18,0,1,16,7,3,4,13,3,1,2,null],[10,"2015-10-24",13,17,0,2,12,13,1,3,11,5,3,1,null],[10,"2015-10-24",19,3,2,1,12,8,5,4,7,4,1,5,null],[10,"2015-10-25",2,16,1,5,11,14,3,9,4,5,0,1,null],[10,"2015-10-25",7,12,1,1,15,8,2,3,10,7,1,0,null],[10,"2015-10-25",9,8,0,0,6,6,1,1,6,4,2,2,null],[10,"2015-10-25",14,10,3,0,9,21,3,8,1,10,0,2,null],[11,"2015-10-31",3,7,1,3,8,16,2,7,1,7,1,4,null],[11,"2015-10-31",4,9,0,0,10,5,5,1,7,3,3,3,null],[11,"2015-10-31",8,11,2,1,21,5,5,3,12,4,2,2,null],[11,"2015-10-31",10,13,0,0,15,9,6,2,11,4,1,3,null],[11,"2015-10-31",15,0,0,3,8,15,3,5,4,4,2,0,null],[11,"2015-10-31",17,19,2,0,20,8,5,3,7,2,3,0,null],[11,"2015-10-31",18,6,2,3,14,13,6,5,6,4,0,2,null],[11,"2015-11-01",5,14,6,2,15,17,8,9,6,1,3,2,null],[11,"2015-11-01",12,2,2,0,11,16,2,2,4,6,0,2,null],[11,"2015-11-02",16,1,3,1,17,13,6,2,4,3,0,3,null],[12,"2015-11-07",2,10,0,1,20,2,5,1,16,0,2,2,null],[12,"2015-11-07",6,17,2,1,12,8,6,4,4,2,0,1,null],[12,"2015-11-07",9,18,2,0,13,4,3,0,5,1,1,3,null],[12,"2015-11-07",11,15,1,0,9,8,5,0,5,2,1,0,null],[12,"2015-11-07",13,3,1,0,8,19,2,4,1,9,3,1,null],[12,"2015-11-07",14,12,0,1,9,11,3,4,10,11,1,3,null],[12,"2015-11-07",19,5,1,1,16,13,5,4,3,5,1,2,null],[12,"2015-11-08",0,16,1,1,10,14,4,4,7,6,0,1,null],[12,"2015-11-08",1,8,0,0,3,13,0,3,3,8,1,1,null],[12,"2015-11-08",7,4,1,2,22,9,4,4,14,6,1,2,null],[13,"2015-11-21",3,11,1,0,21,4,7,2,6,5,1,4,null],[13,"2015-11-21",5,1,4,0,16,10,9,3,2,3,0,0,null],[13,"2015-11-21",8,7,1,4,11,14,3,9,11,5,0,3,null],[13,"2015-11-21",10,6,0,3,9,18,1,7,4,9,4,1,null],[13,"2015-11-21",12,13,0,1,16,16,1,4,7,3,2,0,null],[13,"2015-11-21",15,2,2,2,11,16,4,4,4,5,3,2,null],[13,"2015-11-21",17,9,1,2,10,13,5,6,4,10,1,2,null],[13,"2015-11-21",18,0,2,1,4,11,1,3,3,5,3,2,null],[13,"2015-11-22",16,19,4,1,22,10,12,4,7,6,2,2,null],[13,"2015-11-23",4,14,0,1,19,12,7,4,11,2,1,3,null],[14,"2015-11-28",1,17,2,3,12,14,6,6,10,10,2,3,null],[14,"2015-11-28",2,5,3,3,19,11,10,6,10,5,2,0,null],[14,"2015-11-28",4,10,5,1,19,7,8,2,7,5,1,1,null],[14,"2015-11-28",6,9,1,1,7,10,3,2,1,8,0,1,null],[14,"2015-11-28",8,12,3,1,16,12,9,8,6,4,2,1,null],[14,"2015-11-28",14,13,2,0,18,7,5,3,9,5,0,2,null],[14,"2015-11-29",7,15,1,0,10,8,2,0,8,7,3,1,null],[14,"2015-11-29",11,0,1,1,7,12,2,3,3,6,1,1,null],[14,"2015-11-29",16,3,0,0,9,5,4,1,4,4,4,2,null],[14,"2015-11-29",19,18,1,1,17,7,6,3,5,2,0,2,null],[15,"2015-12-05",0,14,3,1,16,11,7,4,3,2,1,1,null],[15,"2015-12-05",3,2,0,1,19,15,6,5,11,4,2,1,null],[15,"2015-12-05",9,19,0,0,21,9,1,2,6,2,1,0,null],[15,"2015-12-05",12,1,1,1,23,9,5,2,10,4,1,2,null],[15,"2015-12-05",13,8,2,0,7,11,4,4,1,6,0,1,null],[15,"2015-12-05",15,6,0,3,10,16,2,5,3,8,2,3,null],[15,"2015-12-05",17,11,2,0,14,6,7,1,4,1,3,3,null],[15,"2015-12-05",18,16,1,1,11,9,4,3,3,6,3,2,null],[15,"2015-12-06",10,7,2,0,6,10,1,1,2,7,3,1,null],[15,"2015-12-07",5,4,1,1,19,14,4,5,13,6,1,2,null],[16,"2015-12-12",2,9,2,1,11,11,5,5,5,7,2,1,null],[16,"2015-12-12",4,12,1,0,12,15,5,3,8,5,0,0,null],[16,"2015-12-12",8,15,2,1,13,13,5,7,5,5,3,1,null],[16,"2015-12-12",11,5,1,1,9,15,2,3,5,4,1,0,null],[16,"2015-12-12",14,17,0,1,14,13,2,6,8,3,1,0,null],[16,"2015-12-12",19,13,0,0,22,12,9,3,11,7,1,2,null],[16,"2015-12-13",1,0,0,2,18,8,2,4,5,5,0,0,null],[16,"2015-12-13",7,18,2,2,28,4,8,2,4,4,0,0,null],[16,"2015-12-13",16,10,1,2,20,8,8,4,6,2,2,2,null],[16,"2015-12-14",6,3,2,1,9,11,5,5,1,8,2,0,null],[17,"2015-12-19",3,14,3,1,17,11,7,3,2,2,1,3,null],[17,"2015-12-19",5,6,2,3,13,10,5,5,10,2,2,1,null],[17,"2015-12-19",9,11,1,2,11,6,2,4,11,0,0,2,null],[17,"2015-12-19",10,1,1,1,8,10,4,7,3,7,1,3,null],[17,"2015-12-19",12,16,0,2,11,13,4,6,4,7,1,1,null],[17,"2015-12-19",13,4,1,2,26,12,5,3,7,3,2,0,null],[17,"2015-12-19",18,2,1,2,6,16,2,7,4,8,2,1,null],[17,"2015-12-20",15,19,0,0,21,11,2,2,8,9,0,1,null],[17,"2015-12-20",17,7,3,0,6,12,5,4,7,9,1,0,null],[17,"2015-12-21",0,8,2,1,8,20,5,6,4,8,0,2,null],[18,"2015-12-26",1,19,1,1,15,10,8,4,9,6,3,3,null],[18,"2015-12-26",2,4,0,0,10,8,4,0,8,9,1,0,null],[18,"2015-12-26",3,17,2,2,17,12,2,3,9,4,1,4,null],[18,"2015-12-26",7,6,1,0,25,7,4,3,7,6,2,1,null],[18,"2015-12-26",8,14,4,1,19,11,9,3,5,1,1,1,null],[18,"2015-12-26",10,5,0,1,10,20,1,7,1,7,2,2,null],[18,"2015-12-26",12,0,4,0,15,7,5,4,3,4,1,0,null],[18,"2015-12-26",13,9,2,0,13,11,3,6,1,12,1,2,null],[18,"2015-12-26",15,18,1,0,7,9,2,3,0,7,1,3,null],[18,"2015-12-26",16,11,3,0,15,11,10,3,9,4,1,2,null],[19,"2015-12-28",0,2,2,0,13,10,6,3,9,3,2,0,null],[19,"2015-12-28",4,15,0,0,10,5,2,3,7,4,3,2,null],[19,"2015-12-28",5,13,3,4,15,8,3,5,6,2,2,1,null],[19,"2015-12-28",9,3,0,0,12,8,2,3,5,3,4,2,null],[19,"2015-12-28",11,1,2,0,9,6,4,3,3,7,2,5,null],[19,"2015-12-28",17,16,1,2,9,10,1,3,5,3,4,2,null],[19,"2015-12-28",18,10,1,0,22,7,5,2,18,6,0,0,null],[19,"2015-12-28",19,12,2,1,13,15,5,4,4,7,1,3,null],[19,"2015-12-29",6,8,0,0,11,21,4,5,1,13,1,3,null],[19,"2015-12-30",14,7,0,1,8,17,3,6,6,4,1,3,null],[20,"2016-01-02",0,10,1,0,16,15,3,6,7,4,2,2,null],[20,"2016-01-02",6,2,0,0,16,9,2,0,7,1,1,1,null],[20,"2016-01-02",9,15,2,1,19,9,6,4,4,2,2,1,null],[20,"2016-01-02",11,12,1,0,10,10,1,4,4,9,1,0,null],[20,"2016-01-02",14,1,3,1,13,8,6,3,3,3,3,4,null],[20,"2016-01-02",17,8,1,2,11,16,3,5,4,5,1,0,null],[20,"2016-01-02",18,13,2,1,16,10,5,3,4,6,1,1,null],[20,"2016-01-02",19,7,2,0,18,23,10,2,3,9,1,1,null],[20,"2016-01-03",4,3,0,3,8,10,4,4,5,7,3,0,null],[20,"2016-01-03",5,16,1,1,12,19,3,4,4,4,1,2,null],[21,"2016-01-12",1,4,1,0,13,9,3,1,9,0,2,1,null],[21,"2016-01-12",2,19,1,3,11,10,4,5,4,7,1,1,null],[21,"2016-01-12",10,9,3,3,14,12,6,4,5,3,1,3,null],[21,"2016-01-13",3,18,2,2,14,13,2,6,7,7,3,3,null],[21,"2016-01-13",7,0,3,3,22,14,6,5,9,3,2,0,null],[21,"2016-01-13",8,5,0,0,22,7,5,2,12,5,0,1,null],[21,"2016-01-13",12,17,2,0,15,4,7,1,8,1,1,2,null],[21,"2016-01-13",13,11,3,1,14,5,4,2,7,3,0,1,null],[21,"2016-01-13",15,14,2,4,10,7,5,5,8,6,2,0,null],[21,"2016-01-13",16,6,0,1,21,10,5,2,16,8,1,0,null],[22,"2016-01-16",1,6,1,1,14,12,5,5,3,4,3,2,null],[22,"2016-01-16",2,11,3,0,15,10,8,3,5,3,1,1,null],[22,"2016-01-16",3,5,3,3,14,9,7,4,6,4,1,1,null],[22,"2016-01-16",8,4,4,0,17,9,4,3,5,6,0,2,null],[22,"2016-01-16",10,19,2,1,23,10,10,3,3,3,1,0,null],[22,"2016-01-16",12,18,3,0,9,9,5,0,1,3,0,0,null],[22,"2016-01-16",16,14,4,1,26,5,11,2,11,3,0,2,null],[22,"2016-01-17",7,9,0,1,19,7,4,1,5,4,0,2,null],[22,"2016-01-17",13,0,0,0,14,8,6,3,6,6,0,0,null],[22,"2016-01-18",15,17,1,0,10,13,2,2,6,3,2,2,null],[23,"2016-01-23",4,16,1,3,11,24,3,11,3,10,2,2,null],[23,"2016-01-23",6,13,3,0,15,3,5,2,8,4,0,1,null],[23,"2016-01-23",9,12,0,1,8,7,1,2,4,4,0,0,null],[23,"2016-01-23",11,7,4,5,6,13,5,7,3,3,0,1,null],[23,"2016-01-23",14,2,1,1,10,15,5,5,3,4,1,1,null],[23,"2016-01-23",17,10,2,1,13,11,5,2,2,7,2,1,null],[23,"2016-01-23",18,1,0,0,4,15,0,4,2,6,0,1,null],[23,"2016-01-23",19,8,2,2,10,16,3,3,5,2,2,3,null],[23,"2016-01-24",0,3,0,1,9,12,1,6,6,7,1,3,null],[23,"2016-01-24",5,15,1,2,20,7,2,5,7,1,0,3,null],[24,"2016-02-02",0,12,0,0,21,14,11,3,13,3,2,1,null],[24,"2016-02-02",4,2,1,2,14,8,3,4,5,3,3,4,null],[24,"2016-02-02",6,7,2,0,13,14,6,2,3,12,0,1,null],[24,"2016-02-02",9,13,3,0,15,10,5,0,2,5,2,1,null],[24,"2016-02-02",11,16,0,3,10,17,2,6,6,8,2,2,null],[24,"2016-02-02",14,8,0,1,11,6,2,2,8,4,1,4,null],[24,"2016-02-02",18,15,1,1,17,18,7,4,7,7,0,0,null],[24,"2016-02-02",19,1,2,0,25,6,6,2,5,5,3,0,null],[24,"2016-02-03",5,10,3,0,18,7,7,3,3,3,1,2,null],[24,"2016-02-03",17,3,0,0,12,12,3,4,7,7,2,1,null],[25,"2016-02-06",1,11,2,0,10,12,3,4,2,11,0,2,null],[25,"2016-02-06",7,14,2,2,16,7,5,2,7,2,1,1,null],[25,"2016-02-06",8,6,1,3,22,14,4,7,11,4,2,2,null],[25,"2016-02-06",10,18,1,0,19,7,7,0,8,4,0,3,null],[25,"2016-02-06",12,19,1,0,8,18,2,2,4,5,1,2,null],[25,"2016-02-06",13,5,0,3,11,14,3,6,6,4,1,0,null],[25,"2016-02-06",15,4,1,1,19,12,3,2,9,5,1,2,null],[25,"2016-02-06",16,17,1,0,26,3,9,0,15,1,0,1,null],[25,"2016-02-07",2,0,0,2,17,10,4,5,7,3,0,1,null],[25,"2016-02-07",3,9,1,1,16,17,5,7,10,11,0,3,null],[26,"2016-02-13",2,13,1,3,11,11,2,6,9,2,4,2,null],[26,"2016-02-13",3,10,5,1,15,10,5,4,8,3,0,1,null],[26,"2016-02-13",4,17,1,2,14,10,7,3,8,5,0,2,null],[26,"2016-02-13",5,18,0,1,34,5,6,1,14,1,1,3,null],[26,"2016-02-13",11,19,2,2,13,11,3,6,3,3,2,2,null],[26,"2016-02-13",14,9,2,1,21,12,5,6,6,8,2,3,null],[26,"2016-02-13",15,12,0,1,13,13,2,5,5,4,0,3,null],[26,"2016-02-14",0,6,2,1,24,7,6,3,11,1,4,3,null],[26,"2016-02-14",1,7,0,6,6,11,1,9,0,6,3,1,null],[26,"2016-02-14",8,16,1,2,19,6,4,3,7,1,1,3,null],[27,"2016-02-27",6,11,1,0,13,9,3,1,3,4,0,2,null],[27,"2016-02-27",12,3,1,2,7,16,2,4,7,8,3,1,null],[27,"2016-02-27",13,1,2,1,11,5,3,1,11,0,0,3,null],[27,"2016-02-27",17,2,0,0,14,11,1,3,4,5,3,1,null],[27,"2016-02-27",18,4,3,2,11,15,5,2,3,6,2,2,null],[27,"2016-02-27",19,14,1,0,9,13,3,4,5,6,1,0,null],[27,"2016-02-28",16,15,2,1,34,10,14,4,7,7,2,3,null],[27,"2016-02-28",9,0,3,2,7,13,5,5,2,3,4,3,null],[28,"2016-03-01",1,5,1,3,14,10,5,7,9,8,3,1,null],[28,"2016-03-01",2,12,2,0,9,6,4,1,10,2,0,0,null],[28,"2016-03-01",6,18,2,2,22,11,5,3,11,3,0,2,null],[28,"2016-03-01",11,3,1,2,13,10,2,2,4,4,3,2,null],[28,"2016-03-01",14,4,2,2,17,13,6,5,4,5,1,1,null],[28,"2016-03-02",0,15,1,2,18,11,4,2,7,3,0,2,null],[27,"2016-03-02",7,8,3,0,11,4,7,2,3,2,0,1,null],[28,"2016-03-02",9,17,1,0,14,13,3,3,9,7,1,2,null],[28,"2016-03-02",13,10,1,0,9,5,2,3,5,2,1,0,null],[28,"2016-03-02",19,16,1,0,14,9,3,2,6,3,0,3,null],[29,"2016-03-05",3,13,1,1,20,16,7,5,8,4,1,2,null],[29,"2016-03-05",5,19,2,3,15,17,8,5,9,6,2,3,null],[29,"2016-03-05",8,1,4,0,22,2,9,1,9,1,0,1,null],[29,"2016-03-05",10,2,1,3,14,16,3,5,5,4,1,3,null],[29,"2016-03-05",12,14,1,1,16,11,5,3,12,2,2,1,null],[29,"2016-03-05",15,11,1,0,10,8,3,3,5,0,2,5,null],[29,"2016-03-05",16,0,2,2,26,10,11,4,9,2,2,2,null],[29,"2016-03-05",17,6,0,1,11,14,4,7,3,8,2,2,null],[29,"2016-03-06",4,7,1,2,14,19,4,5,6,6,1,2,null],[29,"2016-03-06",18,9,1,0,9,7,2,1,4,5,1,0,null],[30,"2016-03-12",2,15,3,2,12,12,4,4,5,3,1,0,null],[30,"2016-03-12",11,8,0,0,5,15,0,3,3,8,3,1,null],[30,"2016-03-12",13,12,1,2,13,11,2,4,1,4,1,2,null],[30,"2016-03-13",1,16,0,2,11,19,2,8,5,8,0,0,null],[30,"2016-03-14",6,10,1,0,10,13,1,2,8,4,0,0,null],[30,"2016-03-19",3,19,2,2,22,13,5,6,10,9,3,5,null],[31,"2016-03-19",4,6,0,1,12,8,4,3,10,7,1,1,null],[30,"2016-03-19",5,0,0,2,8,11,2,3,7,5,0,0,null],[31,"2016-03-19",15,1,1,0,10,12,1,2,4,6,3,2,null],[31,"2016-03-19",17,13,1,2,9,9,4,6,9,2,3,1,null],[31,"2016-03-19",18,11,0,1,10,7,0,1,4,3,1,2,null],[31,"2016-03-20",8,9,0,1,26,5,2,3,11,5,1,1,null],[31,"2016-03-20",10,14,1,1,17,14,8,4,2,5,4,1,null],[31,"2016-03-20",12,7,3,2,16,18,5,9,3,5,1,3,null],[31,"2016-03-20",16,2,3,0,17,2,8,0,4,5,0,1,null],[32,"2016-04-02",0,17,4,0,19,6,12,2,8,3,1,1,null],[32,"2016-04-02",1,3,0,4,15,11,4,8,7,2,4,1,null],[32,"2016-04-02",2,8,0,4,11,15,2,7,4,4,0,1,null],[32,"2016-04-02",7,16,1,1,15,18,7,5,12,9,2,0,null],[32,"2016-04-02",11,10,3,2,13,13,6,5,6,5,0,0,null],[32,"2016-04-02",13,15,2,2,12,12,5,3,5,5,0,1,null],[32,"2016-04-02",14,18,0,0,22,3,7,0,9,3,1,1,null],[32,"2016-04-02",19,4,2,2,18,12,6,5,4,5,2,2,null],[32,"2016-04-03",6,12,1,0,11,10,4,2,7,8,2,2,null],[32,"2016-04-03",9,5,1,0,10,7,2,1,5,5,2,0,null],[33,"2016-04-09",1,2,1,2,6,12,1,3,3,8,2,2,null],[33,"2016-04-09",4,11,1,0,13,13,6,4,10,4,2,1,null],[33,"2016-04-09",8,18,2,1,13,13,4,2,8,8,0,1,null],[33,"2016-04-09",12,10,3,1,20,5,6,3,11,2,0,0,null],[33,"2016-04-09",15,3,1,0,12,8,6,2,1,9,5,4,null],[33,"2016-04-09",17,5,1,1,13,12,5,7,7,6,2,1,null],[33,"2016-04-09",19,0,3,3,19,11,7,6,7,4,2,0,null],[33,"2016-04-10",7,13,4,1,14,10,6,3,6,3,0,2,null],[33,"2016-04-10",14,6,0,2,15,17,1,7,1,7,1,1,null],[33,"2016-04-10",16,9,3,0,16,5,8,1,2,7,3,3,null],[34,"2016-04-13",4,5,0,0,18,9,6,5,10,7,0,1,null],[34,"2016-04-16",3,8,0,3,11,11,4,8,11,3,2,3,null],[35,"2016-04-16",5,12,1,1,7,18,2,4,3,10,1,1,null],[34,"2016-04-16",9,1,1,0,13,7,4,1,14,3,0,1,null],[34,"2016-04-16",10,15,3,0,12,11,7,1,3,7,2,1,null],[34,"2016-04-16",11,14,0,3,19,8,6,3,14,0,2,2,null],[34,"2016-04-16",18,17,0,1,16,11,4,4,9,3,0,3,null],[35,"2016-04-17",0,4,1,1,21,7,6,2,10,5,0,2,null],[34,"2016-04-17",2,7,1,2,18,19,5,6,5,4,0,0,null],[34,"2016-04-17",6,19,2,2,6,19,2,4,0,5,1,3,null],[34,"2016-04-18",13,16,0,4,12,23,2,6,5,3,2,0,null],[35,"2016-04-19",10,8,1,1,5,9,3,5,5,3,3,2,null],[36,"2016-04-20",7,5,4,0,37,3,13,0,9,1,1,1,null],[36,"2016-04-20",9,4,2,0,16,5,10,0,10,2,1,2,null],[35,"2016-04-20",19,17,3,1,18,7,7,4,4,2,0,2,null],[36,"2016-04-21",0,18,2,0,16,8,7,1,2,6,0,1,null],[36,"2016-04-23",1,12,2,4,16,17,7,7,6,11,2,0,null],[35,"2016-04-23",2,3,1,4,13,16,4,4,10,7,1,0,null],[37,"2016-04-23",7,10,2,2,13,6,4,3,5,4,1,1,null],[36,"2016-04-23",8,13,4,0,11,14,6,2,9,4,0,0,null],[35,"2016-04-24",6,15,4,0,18,9,9,1,4,6,1,2,null],[37,"2016-04-24",14,0,0,0,12,20,3,7,7,7,2,4,null],[37,"2016-04-25",16,18,1,1,19,16,2,3,9,7,0,1,null],[38,"2016-04-30",0,11,1,0,14,12,3,3,7,3,1,0,null],[37,"2016-04-30",5,2,2,1,12,16,5,2,3,5,1,0,null],[38,"2016-04-30",10,4,1,0,10,9,4,3,4,8,2,0,null],[38,"2016-04-30",13,14,1,1,11,14,3,5,2,8,2,2,null],[37,"2016-04-30",17,1,3,2,18,7,6,2,8,4,2,3,null],[38,"2016-04-30",18,19,0,3,15,8,5,4,8,6,0,0,null],[37,"2016-05-01",9,6,1,1,21,14,6,3,6,5,3,0,null],[37,"2016-05-01",12,8,4,2,14,6,7,5,8,2,2,1,null],[38,"2016-05-01",15,7,3,1,18,11,9,3,4,7,2,2,null],[38,"2016-05-02",3,16,2,2,13,16,5,5,7,8,3,9,null],[39,"2016-05-07",1,10,0,0,2,9,0,3,0,5,1,1,null],[39,"2016-05-07",2,18,1,1,12,12,4,4,5,3,2,1,null],[39,"2016-05-07",4,13,2,1,17,12,4,3,4,3,2,3,null],[38,"2016-05-07",6,5,3,1,32,9,8,5,12,4,0,3,null],[39,"2016-05-07",11,9,0,1,8,15,2,2,1,6,1,0,null],[39,"2016-05-07",14,3,3,2,15,9,4,8,3,3,4,1,null],[39,"2016-05-07",19,15,1,4,25,13,7,6,13,3,3,0,null],[39,"2016-05-08",7,17,2,0,19,14,5,3,8,8,1,2,null],[39,"2016-05-08",8,0,2,2,14,5,3,2,7,2,2,1,null],[39,"2016-05-08",16,12,1,2,20,10,6,2,10,2,0,3,null],[40,"2016-05-10",19,9,3,2,20,3,6,2,6,2,1,3,null],[40,"2016-05-11",7,3,1,1,28,13,9,7,7,3,3,1,null],[40,"2016-05-11",11,17,4,2,18,12,6,7,5,1,2,3,null],[40,"2016-05-11",14,5,3,0,14,17,8,6,5,5,1,0,null],[40,"2016-05-15",0,1,4,0,16,5,7,2,5,4,0,1,null],[41,"2016-05-15",3,6,1,1,17,18,4,5,7,6,0,0,null],[41,"2016-05-15",5,11,3,0,15,10,8,2,4,11,0,0,null],[40,"2016-05-15",10,16,5,1,19,17,10,5,3,8,1,2,null],[40,"2016-05-15",12,4,4,1,18,16,5,4,2,5,1,2,null],[41,"2016-05-15",13,19,2,1,7,20,4,7,4,10,3,1,null],[40,"2016-05-15",15,8,1,1,4,18,1,5,4,4,1,3,null],[41,"2016-05-15",17,14,2,2,21,6,6,4,7,4,1,0,null],[41,"2016-05-15",18,7,1,1,13,7,1,3,7,5,3,1,null],[41,"2016-05-17",9,2,3,1,12,7,5,0,7,1,1,0,null]],"players":[[10955,"凯恩",16,9,3,81,0.652,0.257,[57,63,60,66,48,52,58,0],243,3,"Center Forward"],[3585,"拉梅拉",16,6,2,70,0.511,0.275,[54,60,56,56,53,51,62,0],114,1,"Center Attacking Midfield"],[40127,"梅森",16,6,2,77,0.591,0.398,[54,64,67,64,50,59,55,0],193,2,"Left Center Midfield"],[10956,"戴尔",16,5,2,72,0.158,0.423,[54,50,68,48,51,59,51,0],256,3,"Right Defensive Midfield"],[3205,"沃克",16,4,1,83,0.32,0.684,[61,53,68,50,58,69,56,0],270,3,"Right Back"],[20005,"阿尔德韦雷尔德",16,2,1,72,0.257,0.466,[65,49,72,53,52,51,49,0],270,3,"Right Center Back"],[3077,"维尔通亨",16,2,1,72,0.036,0.471,[55,42,67,50,57,51,49,0],270,3,"Left Center Back"],[3037,"登贝莱",16,10,3,73,0.388,0.676,[66,48,66,70,57,69,46,0],233,3,"Right Wing"],[3086,"本·戴维斯",16,1,1,68,0.184,0.374,[58,45,65,55,53,51,52,0],270,3,"Left Back"],[4831,"沙德利",16,6,2,62,0.3,0.252,[55,59,57,46,51,50,51,0],270,3,"Center Attacking Midfield"],[3099,"洛里斯",16,0,0,70,-0.35,0.365,[39,39,49,39,55,60,39,55],180,2,"Goalkeeper"],[3662,"德林克沃特",6,6,2,76,0.222,0.415,[48,54,66,50,52,60,50,0],259,3,"Left Center Midfield"],[3307,"奥尔布赖顿",6,10,3,83,0.567,0.612,[62,56,64,60,56,68,66,0],257,3,"Right Midfield"],[10960,"瓦尔迪",6,9,3,78,0.483,0.239,[57,58,54,51,49,52,66,0],261,3,"Left Center Forward"],[3810,"冈崎慎司",6,9,3,76,0.458,0.201,[45,64,55,58,50,52,50,0],241,3,"Right Center Forward"],[3665,"安迪·金",6,6,2,69,0.033,0.235,[43,45,61,50,51,50,50,0],270,3,"Right Center Midfield"],[3520,"施卢普",6,1,1,71,0.228,0.361,[60,49,61,53,52,52,49,0],270,3,"Left Back"],[3815,"舒梅切尔",6,0,0,78,-0.35,0.516,[36,36,51,36,59,62,36,60],270,3,"Goalkeeper"],[28782,"德拉特",6,4,1,67,0.071,0.288,[47,43,64,51,55,43,54,0],229,3,"Right Back"],[3814,"马赫雷斯",6,8,3,88,0.913,0.458,[70,69,62,71,54,52,62,0],247,3,"Left Midfield"],[40123,"胡特",6,2,1,64,0.011,0.24,[44,46,55,50,49,61,46,0],270,3,"Right Center Back"],[3813,"摩根",6,2,1,67,0.113,0.303,[46,51,57,50,55,51,46,0],270,3,"Left Center Back"],[10966,"胡拉汉",11,6,2,60,0.045,-0.07,[69,47,64,69,51,50,61,0],227,3,"Left Center Midfield"],[3286,"雷德蒙德",11,10,3,71,0.346,0.023,[68,63,63,67,52,60,67,0],209,2,"Right Midfield"],[16334,"多兰斯",11,6,2,58,-0.009,-0.072,[63,56,70,59,45,60,54,0],259,3,"Right Center Midfield"],[9578,"豪森",11,10,3,56,-0.07,-0.136,[60,47,69,65,51,43,57,0],265,3,"Right Midfield"],[10967,"布拉迪",11,1,1,52,0.271,-0.09,[69,61,64,64,53,44,65,0],270,3,"Left Back"],[31296,"巴松",11,2,1,48,-0.368,-0.133,[60,42,63,55,46,61,46,0],270,3,"Left Center Back"],[9463,"特泰",11,5,2,52,-0.392,0.172,[55,49,62,47,61,66,43,0],233,3,"Center Defensive Midfield"],[4807,"杰罗姆",11,9,3,56,0.064,-0.234,[50,69,53,57,52,52,47,0],194,2,"Center Forward"],[11124,"惠特克",11,4,1,58,-0.075,0.041,[55,55,66,61,57,57,49,0],270,3,"Right Back"],[21212,"拉塞尔·马丁",11,2,1,57,-0.059,0.06,[63,63,69,50,52,61,46,0],270,3,"Right Center Back"],[23635,"拉迪",11,0,0,45,-0.35,-0.457,[36,36,57,36,46,62,36,42],270,3,"Goalkeeper"],[10503,"比利·琼斯",14,4,1,59,-0.3,0.017,[50,44,63,57,54,59,47,0],143,2,"Right Back"],[9554,"史蒂文·弗莱彻",14,9,3,53,-0.151,-0.188,[45,60,55,50,51,52,44,0],130,1,"Right Center Forward"],[3337,"迪福",14,9,3,57,-0.042,-0.216,[45,61,57,53,49,52,52,0],180,2,"Center Forward"],[10783,"卡特莫尔",14,5,2,56,-0.456,0.015,[44,42,61,51,56,58,44,0],119,2,"Center Defensive Midfield"],[5617,"拉尔森",14,6,2,55,-0.312,-0.077,[51,45,60,50,54,51,50,0],135,2,"Right Center Midfield"],[16457,"伦斯",14,8,3,61,0.02,0.067,[58,51,57,58,54,65,63,0],180,2,"Left Midfield"],[4746,"卡布尔",14,2,1,61,-0.123,0.073,[53,56,63,52,58,55,47,0],180,2,"Left Center Back"],[4429,"姆维拉",14,5,2,63,-0.395,0.307,[57,42,66,48,63,64,45,0],90,1,"Left Defensive Midfield"],[6871,"潘蒂利蒙",14,0,0,51,-0.35,-0.362,[39,39,51,39,47,60,39,44],180,2,"Goalkeeper"],[3321,"范安霍尔特",14,1,1,68,-0.323,0.196,[54,43,62,53,59,67,47,0],180,2,"Left Back"],[6300,"科茨",14,2,1,59,-0.341,0.031,[47,47,65,50,60,46,47,0],180,2,"Right Center Back"],[3380,"本特克",7,9,3,72,0.439,0.129,[43,68,56,56,51,59,62,0],90,1,"Center Forward"],[3501,"库蒂尼奥",7,10,3,82,0.617,0.306,[66,68,64,67,50,58,52,0],80,1,"Right Wing"],[4590,"克莱因",7,4,1,73,0.137,0.426,[54,50,63,54,60,58,55,0],90,1,"Right Back"],[4090,"拉拉纳",7,6,2,68,0.281,0.388,[63,56,59,55,58,58,53,0],90,1,"Center Attacking Midfield"],[3473,"米尔纳",7,6,2,67,0.309,0.293,[62,60,61,48,52,58,57,0],90,1,"Right Center Midfield"],[3532,"亨德森",7,6,2,69,0.132,0.293,[53,52,65,54,53,58,53,0],51,1,"Left Center Midfield"],[3471,"洛夫伦",7,2,1,65,-0.104,0.275,[46,45,62,50,55,58,47,0],90,1,"Left Center Back"],[3495,"乔·戈麦斯",7,1,1,69,-0.05,0.334,[49,45,67,54,55,58,47,0],90,1,"Left Back"],[3635,"伊比",7,8,3,65,0.209,0.117,[63,51,52,56,47,58,53,0],69,1,"Left Wing"],[18872,"斯科特尔",7,2,1,71,0.038,0.394,[60,45,67,50,55,58,55,0],90,1,"Right Center Back"],[3539,"米尼奥莱",7,0,0,67,-0.35,0.238,[41,41,57,41,55,59,41,55],90,1,"Goalkeeper"],[3341,"库克",2,2,1,59,-0.25,0.145,[59,46,67,50,58,51,46,0],270,3,"Left Center Back"],[3346,"约书亚·金",2,9,3,63,0.191,-0.008,[64,61,57,57,52,52,56,0],162,3,"Left Center Forward"],[4416,"格拉德尔",2,8,3,62,0.14,0.222,[66,53,59,57,56,67,66,0],186,2,"Left Midfield"],[13248,"奥凯恩",2,6,2,54,-0.234,-0.005,[50,49,63,51,50,59,48,0],183,2,"Right Center Midfield"],[3049,"里奇",2,10,3,61,0.088,0.166,[60,57,68,57,58,52,55,0],270,3,"Right Midfield"],[3608,"弗朗西斯",2,4,1,71,-0.11,0.364,[61,42,69,53,64,60,66,0],270,3,"Right Back"],[3344,"瑟曼",2,6,2,67,-0.028,0.069,[56,46,73,63,53,50,59,0],270,3,"Left Center Midfield"],[3345,"丹尼尔斯",2,1,1,69,0.096,0.27,[73,46,69,66,55,61,56,0],270,3,"Left Back"],[3616,"威尔逊",2,9,3,61,0.217,-0.184,[54,69,48,55,50,52,55,0],270,3,"Right Center Forward"],[9626,"埃尔菲克",2,2,1,49,-0.316,-0.205,[41,49,60,50,48,51,46,0],270,3,"Right Center Back"],[20074,"博鲁茨",2,0,0,49,-0.35,-0.356,[36,36,54,36,46,62,36,42],270,3,"Goalkeeper"],[3629,"马内",12,6,2,68,0.628,0.226,[70,66,59,65,49,50,53,0],180,2,"Center Attacking Midfield"],[3300,"吉田麻也",12,2,1,75,0.11,0.462,[53,53,63,50,60,60,47,0],180,2,"Left Center Back"],[3651,"塔吉特",12,1,1,65,-0.059,0.269,[45,46,55,50,56,60,47,0],180,2,"Left Back"],[3842,"肖恩·朗",12,8,3,65,0.184,0.198,[51,56,56,51,50,59,51,0],97,1,"Left Wing"],[3098,"万亚马",12,6,2,72,0.31,0.36,[58,56,64,61,53,59,48,0],180,2,"Left Center Midfield"],[3828,"史蒂文·戴维斯",12,6,2,79,0.12,0.469,[66,41,69,52,54,59,62,0],168,2,"Right Center Midfield"],[3960,"丰特",12,2,1,79,0.123,0.535,[68,49,68,50,58,60,47,0],180,2,"Right Center Back"],[3329,"塞德里克",12,4,1,78,0.358,0.513,[60,54,65,55,57,65,64,0],135,2,"Right Back"],[3831,"塔迪奇",12,10,3,69,0.279,0.342,[45,56,63,48,56,59,71,0],135,2,"Right Wing"],[11062,"佩莱",12,9,3,68,0.305,0.191,[46,67,58,49,53,52,48,0],180,2,"Center Forward"],[20201,"斯特克伦堡",12,0,0,62,-0.35,-0.105,[39,39,63,39,46,60,39,42],180,2,"Goalkeeper"],[3289,"卢卡库",5,9,3,65,0.237,-0.099,[52,63,57,60,48,52,55,0],178,2,"Center Forward"],[4275,"巴克利",5,6,2,67,0.389,0.027,[60,64,65,62,50,50,63,0],180,2,"Center Attacking Midfield"],[4589,"科尔曼",5,4,1,72,0.075,0.304,[70,43,66,67,57,60,53,0],180,2,"Right Back"],[26696,"科内",5,10,3,61,0.123,-0.056,[57,62,58,51,48,52,53,0],107,1,"Right Wing"],[3607,"麦卡锡",5,5,2,61,-0.199,0.121,[59,43,68,52,49,59,48,0],180,2,"Right Defensive Midfield"],[3633,"巴里",5,5,2,65,-0.149,0.282,[55,46,67,53,55,67,48,0],180,2,"Left Defensive Midfield"],[30702,"加洛韦",5,1,1,62,-0.169,0.152,[59,44,58,55,55,59,47,0],149,2,"Left Back"],[20046,"贾吉尔卡",5,2,1,62,-0.033,0.162,[55,51,67,54,56,51,52,0],180,2,"Left Center Back"],[3244,"斯通斯",5,2,1,65,-0.192,0.237,[65,43,68,50,57,51,47,0],180,2,"Right Center Back"],[3683,"克莱维利",5,8,3,54,-0.12,0.15,[49,47,65,53,54,60,55,0],180,2,"Left Wing"],[13042,"霍华德",5,0,0,67,-0.35,0.337,[39,39,54,39,62,60,39,64],180,2,"Goalkeeper"],[5198,"迭戈·科斯塔",3,9,3,58,0.003,0.062,[57,52,57,53,53,52,52,0],180,2,"Center Forward"],[3472,"威廉",3,10,3,61,0.018,0.13,[66,46,63,52,48,59,59,0],160,2,"Right Wing"],[20287,"特里",3,2,1,56,-0.272,0.046,[42,44,61,50,51,59,47,0],135,2,"Left Center Back"],[3339,"贝戈维奇",3,0,0,63,-0.35,0.141,[40,40,49,40,56,60,40,56],127,1,"Goalkeeper"],[28100,"拉米雷斯",3,10,3,53,-0.163,0.181,[60,42,59,56,55,58,45,0],62,1,"Right Wing"],[3478,"法布雷加斯",3,6,2,72,-0.002,0.369,[60,49,68,49,59,62,59,0],165,2,"Right Center Midfield"],[3645,"卡希尔",3,2,1,57,-0.073,0.067,[46,55,59,50,52,60,47,0],180,2,"Right Center Back"],[3957,"阿斯皮利奎塔",3,1,1,67,-0.225,0.27,[45,43,69,50,58,60,52,0],180,2,"Left Back"],[5594,"伊万诺维奇",3,4,1,75,0.138,0.413,[57,58,62,54,62,67,52,0],180,2,"Right Back"],[3381,"马蒂奇",3,6,2,67,0.078,0.34,[65,50,67,64,58,59,43,0],180,2,"Left Center Midfield"],[3621,"阿扎尔",3,8,3,73,0.292,0.255,[73,51,67,67,51,60,58,0],180,2,"Left Wing"],[3389,"曼加拉",8,2,1,62,0.141,0.283,[49,54,64,50,53,51,47,0],180,2,"Left Center Back"],[3233,"斯特林",8,8,3,72,0.421,0.441,[70,63,64,53,52,59,44,0],150,2,"Left Wing"],[3064,"大卫·席尔瓦",8,6,2,84,0.615,0.497,[63,60,70,62,54,59,68,0],180,2,"Center Attacking Midfield"],[3237,"阿圭罗",8,9,3,79,0.676,0.128,[57,70,51,61,45,59,59,0],109,1,"Center Forward"],[6821,"纳瓦斯",8,10,3,72,0.409,0.355,[63,50,60,64,51,59,61,0],153,2,"Right Wing"],[3054,"费尔南多",8,6,2,70,-0.018,0.475,[46,47,67,47,57,64,48,0],180,2,"Left Center Midfield"],[5596,"科拉罗夫",8,1,1,69,0.419,0.401,[58,57,66,54,52,60,63,0],180,2,"Left Back"],[3087,"亚亚·图雷",8,6,2,80,0.623,0.383,[63,61,71,64,48,59,64,0],169,2,"Right Center Midfield"],[7110,"萨尼亚",8,4,1,60,-0.007,0.205,[44,43,67,52,49,51,52,0],180,2,"Right Back"],[3101,"孔帕尼",8,2,1,64,0.153,0.313,[50,53,64,52,50,60,47,0],180,2,"Right Center Back"],[3291,"哈特",8,0,0,79,-0.35,0.842,[39,39,50,39,68,60,39,73],180,2,"Goalkeeper"],[40122,"奥斯卡",3,6,2,59,0.064,0.076,[60,49,58,65,50,58,45,0],53,1,"Center Attacking Midfield"],[3509,"库尔图瓦",3,0,0,66,-0.35,0.244,[41,41,55,41,58,59,41,60],90,1,"Goalkeeper"],[3944,"西于尔兹松",15,6,2,58,0.102,0.118,[46,64,57,52,54,66,53,0],175,2,"Center Attacking Midfield"],[3057,"谢尔维",15,6,2,74,0.397,0.163,[70,53,68,68,49,59,71,0],180,2,"Left Center Midfield"],[9627,"尼尔·泰勒",15,1,1,61,-0.229,0.21,[55,43,66,52,58,54,47,0],180,2,"Left Back"],[7063,"蒙特罗",15,8,3,67,0.292,0.15,[72,53,57,60,52,59,69,0],146,2,"Left Wing"],[20521,"戈米",15,9,3,65,0.318,-0.145,[46,70,55,65,48,52,48,0],168,2,"Center Forward"],[3340,"诺顿",15,4,1,52,-0.051,0.016,[60,47,67,53,47,52,55,0],180,2,"Right Back"],[3347,"安德烈·阿尤",15,10,3,62,0.23,-0.066,[51,68,55,53,50,52,52,0],161,2,"Right Wing"],[3262,"法比安斯基",15,0,0,69,-0.35,0.524,[39,39,56,39,66,60,39,70],180,2,"Goalkeeper"],[3290,"费尔南德斯",15,2,1,63,0.032,0.244,[58,55,71,52,54,60,52,0],180,2,"Right Center Back"],[3644,"阿什利·威廉姆斯",15,2,1,67,-0.2,0.331,[64,43,71,50,58,60,47,0],180,2,"Left Center Back"],[3043,"埃里克森",16,8,3,78,0.566,0.421,[59,61,64,54,51,60,65,0],180,2,"Left Wing"],[8520,"本塔莱布",16,6,2,66,0.107,0.342,[55,43,60,58,51,58,45,0],74,1,"Left Center Midfield"],[3609,"福尔姆",16,0,0,72,-0.35,0.364,[41,41,64,41,55,59,41,55],90,1,"Goalkeeper"],[4587,"达米安",9,4,1,77,0.034,0.488,[54,44,61,50,60,59,52,0],170,2,"Right Back"],[3538,"鲁尼",9,9,3,67,0.195,0.156,[58,49,56,49,47,52,58,0],180,2,"Center Forward"],[3612,"阿什利·扬",9,8,3,69,0.215,0.386,[69,48,61,53,51,59,51,0],98,1,"Left Wing"],[3382,"卢克·肖",9,1,1,72,0.126,0.379,[67,43,65,52,53,51,52,0],180,2,"Left Back"],[4751,"卡里克",9,5,2,70,-0.056,0.33,[49,42,66,53,52,58,44,0],118,2,"Right Defensive Midfield"],[2988,"德佩",9,8,3,76,0.424,0.229,[57,65,64,54,44,59,49,0],149,2,"Left Wing"],[10958,"斯莫林",9,2,1,76,0.005,0.472,[58,43,64,50,57,60,47,0],180,2,"Right Center Back"],[3600,"施奈德林",9,6,2,71,-0.007,0.448,[47,48,66,49,58,59,43,0],180,2,"Left Center Midfield"],[3311,"布林德",9,2,1,69,0.069,0.316,[64,43,70,52,48,51,47,0],180,2,"Left Center Back"],[3294,"马塔",9,10,3,70,0.228,0.438,[62,51,65,49,53,60,55,0],180,2,"Right Wing"],[4892,"罗梅罗",9,0,0,84,-0.35,0.842,[39,39,57,39,68,60,39,73],180,2,"Goalkeeper"],[3603,"迪乌夫",13,9,3,60,0.171,-0.083,[47,70,50,49,50,52,43,0],180,2,"Center Forward"],[4891,"阿费莱",13,6,2,62,-0.093,0.162,[57,45,63,54,52,59,50,0],146,2,"Center Attacking Midfield"],[8251,"范金克尔",13,5,2,67,0.085,0.372,[58,55,66,55,61,59,50,0],136,2,"Right Defensive Midfield"],[3467,"皮特斯",13,1,1,69,-0.066,0.308,[60,43,67,56,56,60,52,0],180,2,"Left Back"],[3480,"卡梅伦",13,2,1,75,-0.08,0.434,[65,43,67,56,62,60,47,0],180,2,"Right Center Back"],[3533,"沙奇里",13,10,3,54,-0.096,0.124,[54,45,59,54,52,59,52,0],90,1,"Right Wing"],[9625,"惠兰",13,5,2,64,-0.212,0.126,[50,41,67,52,50,59,53,0],180,2,"Left Defensive Midfield"],[3325,"阿瑙托维奇",13,8,3,68,0.241,0.166,[68,51,63,68,49,59,53,0],146,2,"Left Wing"],[6560,"穆涅萨",13,2,1,67,-0.084,0.255,[61,43,66,58,54,60,47,0],180,2,"Left Center Back"],[4724,"格伦·约翰逊",13,4,1,62,-0.042,0.17,[61,43,66,57,49,60,52,0],180,2,"Right Back"],[3537,"巴特兰",13,0,0,69,-0.35,0.417,[39,39,51,39,62,60,39,65],180,2,"Goalkeeper"],[7153,"韦雷图",1,6,2,49,-0.489,-0.181,[53,41,60,48,48,59,50,0],148,2,"Right Center Midfield"],[3041,"克拉克",1,2,1,59,-0.429,0.052,[56,43,65,50,57,60,47,0],180,2,"Left Center Back"],[3450,"乔丹·阿尤",1,10,3,46,-0.321,-0.13,[55,46,55,59,56,52,44,0],148,2,"Right Wing"],[42700,"理查兹",1,2,1,70,-0.139,0.267,[66,49,64,63,64,65,47,0],180,2,"Right Center Back"],[3583,"韦斯特伍德",1,5,2,63,-0.344,-0.036,[53,41,67,52,53,59,63,0],180,2,"Center Defensive Midfield"],[9533,"巴库纳",1,4,1,55,-0.308,-0.045,[52,50,59,53,56,60,47,0],180,2,"Right Back"],[12608,"古赞",1,0,0,59,-0.35,0.069,[39,39,57,39,60,60,39,61],180,2,"Goalkeeper"],[42699,"阿邦拉霍",1,9,3,49,-0.22,-0.328,[49,54,53,53,48,52,52,0],180,2,"Center Forward"],[3436,"盖耶",1,6,2,57,-0.05,0.141,[62,55,60,66,59,67,43,0],180,2,"Left Center Midfield"],[4347,"阿马维",1,1,1,70,-0.278,0.308,[69,43,64,57,64,67,47,0],180,2,"Left Back"],[11117,"辛克莱尔",1,8,3,46,-0.365,-0.056,[65,40,57,59,53,59,44,0],135,2,"Left Wing"],[6330,"贾努扎伊",9,6,2,61,0.336,0.138,[60,56,52,61,45,58,45,0],59,1,"Center Attacking Midfield"],[3685,"杰伊·罗德里格斯",12,8,3,66,0.191,0.313,[50,54,60,52,55,58,54,0],64,1,"Left Wing"],[4840,"艾达拉",10,1,1,66,-0.114,0.083,[59,43,66,66,54,60,55,0],180,2,"Left Back"],[42899,"奥贝坦",10,8,3,57,-0.136,0.005,[60,50,58,53,53,60,55,0],171,2,"Left Wing"],[30289,"西塞",10,9,3,65,0.132,-0.229,[52,68,55,55,48,52,54,0],127,2,"Center Forward"],[16072,"阿尼塔",10,6,2,58,-0.442,0.065,[48,45,65,48,57,59,44,0],157,2,"Right Center Midfield"],[9649,"科尔巴克",10,6,2,61,-0.322,-0.03,[56,41,63,52,51,59,56,0],180,2,"Left Center Midfield"],[3650,"扬马特",10,4,1,58,-0.216,-0.074,[52,43,63,67,50,60,47,0],180,2,"Right Back"],[3567,"维纳尔杜姆",10,6,2,50,-0.1,-0.288,[46,59,55,59,44,59,44,0],170,2,"Center Attacking Midfield"],[3044,"姆本巴",10,2,1,70,-0.302,0.216,[64,43,62,52,64,56,47,0],180,2,"Right Center Back"],[9467,"克鲁尔",10,0,0,57,-0.35,-0.201,[39,39,56,39,52,60,39,50],180,2,"Goalkeeper"],[26207,"科洛奇尼",10,2,1,53,-0.17,-0.115,[50,56,65,52,51,51,47,0],180,2,"Left Center Back"],[3091,"西索科",10,10,3,56,-0.188,0.064,[66,43,62,56,54,59,54,0],135,2,"Right Wing"],[3646,"皮尤",2,8,3,62,0.184,-0.046,[57,67,60,61,51,52,44,0],108,1,"Left Midfield"],[3343,"戈斯林",2,6,2,49,-0.018,-0.027,[52,64,61,48,50,58,45,0],89,1,"Right Center Midfield"],[21540,"诺兰",19,6,2,58,-0.091,0.099,[47,43,51,53,50,58,45,0],57,1,"Right Attacking Midfield"],[21254,"詹金森",19,4,1,69,0.166,0.309,[64,47,62,56,50,60,52,0],180,2,"Right Back"],[3684,"库亚特",19,6,2,63,0.326,0.159,[56,62,59,52,54,43,52,0],255,3,"Left Center Midfield"],[3874,"诺布尔",19,6,2,70,0.059,0.21,[55,47,71,53,47,52,50,0],270,3,"Right Center Midfield"],[4280,"里德",19,2,1,68,-0.113,0.319,[52,42,67,50,56,51,46,0],270,3,"Right Center Back"],[3491,"帕耶",19,8,3,80,0.505,0.495,[68,53,64,70,55,66,61,0],270,3,"Left Wing"],[3897,"奥比昂",19,5,2,68,0.016,0.329,[52,47,64,55,51,64,44,0],135,1,"Center Defensive Midfield"],[20066,"兰多夫",19,0,0,60,-0.35,-0.092,[41,41,51,41,47,59,41,43],90,1,"Goalkeeper"],[3962,"萨科",19,9,3,70,0.322,0.145,[61,58,53,61,50,52,45,0],252,3,"Center Forward"],[3062,"克雷斯维尔",19,1,1,63,0.206,0.176,[52,44,69,61,47,51,64,0],270,3,"Left Back"],[3843,"奥邦纳",19,2,1,73,-0.103,0.426,[50,43,65,50,59,60,46,0],214,3,"Left Center Back"],[4804,"布拉德利·约翰逊",11,8,3,59,0.095,-0.21,[50,64,60,59,50,52,60,0],90,1,"Left Midfield"],[9593,"格拉班",11,9,3,56,0.063,-0.226,[52,67,51,53,49,58,55,0],53,1,"Center Forward"],[15892,"穆奇",4,6,2,51,0.143,-0.018,[63,66,57,55,53,51,44,0],117,1,"Center Attacking Midfield"],[3443,"沃德",4,4,1,65,-0.025,0.179,[51,56,64,56,59,59,52,0],180,2,"Right Back"],[3407,"丹恩",4,2,1,60,-0.335,0.086,[47,43,57,52,58,60,47,0],180,2,"Right Center Back"],[3277,"卡巴耶",4,5,2,69,0.196,0.369,[56,65,65,62,64,67,48,0],180,2,"Center Defensive Midfield"],[3464,"麦克阿瑟",4,6,2,65,-0.212,0.07,[50,41,60,54,56,59,63,0],169,2,"Left Center Midfield"],[3085,"默里",4,9,3,56,-0.001,-0.192,[43,62,53,48,50,52,58,0],81,1,"Center Forward"],[3507,"扎哈",4,10,3,58,-0.038,-0.064,[69,47,56,60,45,59,49,0],146,2,"Right Midfield"],[3693,"德莱尼",4,2,1,49,-0.192,-0.114,[40,56,55,50,51,60,47,0],180,2,"Left Center Back"],[4884,"苏阿雷",4,1,1,64,-0.092,0.121,[55,43,59,66,57,60,53,0],180,2,"Left Back"],[19688,"庞琼",4,6,2,66,0.292,-0.006,[63,59,62,62,52,50,67,0],180,2,"Right Center Midfield"],[3619,"麦卡锡",4,0,0,68,-0.35,0.384,[39,39,52,39,64,60,39,68],180,2,"Goalkeeper"],[3316,"汤姆金斯",19,4,1,66,0.003,0.271,[50,45,62,50,52,58,55,0],90,1,"Right Back"],[3623,"阿德里安",19,0,0,78,-0.35,0.638,[39,39,54,39,64,60,39,68],180,2,"Goalkeeper"],[4273,"奥克斯福德",19,5,2,60,-0.212,0.191,[41,42,55,48,54,58,44,0],123,2,"Center Defensive Midfield"],[27853,"萨拉特",19,10,3,74,0.364,0.282,[67,51,61,66,52,52,53,0],144,2,"Right Wing"],[3604,"吉鲁",0,9,3,67,0.411,0.161,[51,69,51,49,48,52,43,0],180,2,"Center Forward"],[3496,"厄齐尔",0,6,2,79,0.496,0.463,[68,53,66,50,50,59,70,0],172,2,"Center Attacking Midfield"],[11386,"卡索拉",0,5,2,84,0.567,0.635,[69,56,71,58,56,59,64,0],180,2,"Left Defensive Midfield"],[3437,"科克兰",0,5,2,78,0.081,0.702,[52,42,67,53,63,66,51,0],120,2,"Right Defensive Midfield"],[3475,"默特萨克",0,2,1,63,0.155,0.327,[52,50,64,50,51,51,47,0],180,2,"Right Center Back"],[4428,"德布希",0,4,1,67,0.288,0.397,[55,53,62,50,52,58,56,0],66,1,"Right Back"],[3517,"拉姆塞",0,10,3,77,0.523,0.637,[64,58,70,54,57,62,63,0],180,2,"Right Wing"],[3525,"张伯伦",0,10,3,85,0.753,0.528,[70,61,66,70,53,59,58,0],117,1,"Right Wing"],[3394,"科斯切尔尼",0,2,1,71,0.21,0.491,[59,51,66,50,57,51,47,0],180,2,"Left Center Back"],[3498,"蒙雷亚尔",0,1,1,75,0.206,0.541,[63,43,68,56,58,51,52,0],180,2,"Left Back"],[3461,"切赫",0,0,0,68,-0.35,0.286,[39,39,59,39,53,60,39,52],180,2,"Goalkeeper"],[40124,"兰伯特",18,9,3,58,-0.088,-0.194,[43,59,60,50,47,52,49,0],141,2,"Right Center Forward"],[3490,"莫里森",18,10,3,59,-0.111,0.261,[58,52,63,53,61,60,48,0],180,2,"Right Midfield"],[3541,"布伦特",18,1,1,64,-0.018,0.089,[55,55,65,54,52,60,52,0],180,2,"Left Back"],[5108,"G·迈希尔",18,0,0,69,-0.35,0.255,[39,39,54,39,61,60,39,63],180,2,"Goalkeeper"],[4022,"达伦·弗莱彻",18,5,2,66,-0.196,0.009,[52,41,64,65,50,59,48,0],180,2,"Right Defensive Midfield"],[9628,"切斯特",18,4,1,58,-0.306,-0.023,[42,45,59,54,53,58,47,0],90,1,"Right Back"],[9485,"加德纳",18,8,3,52,-0.274,-0.049,[44,46,57,50,55,52,53,0],151,2,"Left Midfield"],[3523,"道森",18,4,1,63,-0.162,0.082,[42,54,60,50,58,60,52,0],180,2,"Right Back"],[20285,"莱斯科特",18,2,1,69,-0.323,0.196,[46,45,63,50,62,58,47,0],90,1,"Left Center Back"],[3514,"麦卡锡",18,8,3,50,-0.331,0.027,[54,42,54,52,55,58,45,0],67,1,"Left Midfield"],[4630,"贝拉希诺",18,9,3,62,0.018,-0.101,[56,59,54,58,50,52,43,0],169,2,"Left Center Forward"],[3598,"博尼",8,9,3,68,0.386,0.104,[44,64,55,56,46,58,52,0],62,1,"Center Forward"],[42902,"亚当·约翰逊",14,10,3,63,-0.003,-0.003,[56,45,67,63,50,59,68,0],90,1,"Right Midfield"],[18751,"罗德维尔",14,6,2,59,-0.083,-0.043,[60,54,64,52,48,58,53,0],90,1,"Left Center Midfield"],[20527,"奥尔森",18,2,1,54,-0.336,-0.093,[44,45,51,50,52,58,47,0],90,1,"Left Center Back"],[3967,"亚各布",18,5,2,59,-0.364,0.072,[41,42,54,55,60,58,45,0],90,1,"Left Defensive Midfield"],[3596,"麦考利",18,2,1,52,-0.289,-0.132,[41,45,51,50,51,58,55,0],90,1,"Right Center Back"],[3454,"迪尼",17,9,3,64,0.151,-0.098,[44,62,57,53,51,52,65,0],180,2,"Center Forward"],[3263,"卡斯卡特",17,2,1,62,-0.251,0.124,[52,43,65,50,54,60,52,0],180,2,"Left Center Back"],[3309,"普勒德尔",17,2,1,59,-0.288,0.071,[53,43,63,50,55,51,47,0],180,2,"Right Center Back"],[3991,"尼翁",17,4,1,73,0.043,0.289,[71,48,63,63,57,62,47,0],180,2,"Right Back"],[5556,"拉云",17,8,3,59,-0.008,0.031,[52,54,57,53,53,59,55,0],112,2,"Left Midfield"],[5540,"贝赫拉米",17,6,2,56,-0.283,0.151,[59,41,57,54,60,52,44,0],168,2,"Left Center Midfield"],[40118,"安亚",17,10,3,57,-0.122,0.137,[68,45,66,47,50,60,55,0],180,2,"Right Midfield"],[6870,"胡拉多",17,6,2,67,0.318,0.042,[63,58,58,67,50,59,61,0],155,2,"Center Attacking Midfield"],[5458,"伊哈洛",17,6,2,50,0.182,-0.07,[56,68,50,56,53,51,45,0],107,1,"Center Attacking Midfield"],[3522,"戈麦斯",17,0,0,58,-0.35,-0.099,[39,39,51,39,52,60,39,50],180,2,"Goalkeeper"],[3721,"卡普埃",17,6,2,74,0.134,0.351,[71,47,68,66,60,59,56,0],180,2,"Right Center Midfield"],[3670,"沃尔特斯",13,10,3,59,0.09,-0.03,[48,55,51,53,52,52,60,0],58,1,"Right Wing"],[4317,"米拉拉斯",5,10,3,55,-0.095,0.103,[62,46,62,58,51,58,45,0],76,1,"Right Wing"],[3725,"霍莱巴斯",17,1,1,65,0.007,0.159,[63,49,63,57,54,58,55,0],90,1,"Left Back"],[3385,"桑切斯",0,8,3,75,0.522,0.417,[61,69,63,52,51,58,45,0],74,1,"Left Wing"],[3511,"贝莱林",0,4,1,62,0.193,0.271,[56,45,60,54,46,58,55,0],90,1,"Right Back"],[20641,"威克姆",4,9,3,55,-0.073,-0.125,[46,60,58,48,51,52,52,0],90,1,"Center Forward"],[3462,"科克",15,6,2,64,0.101,0.17,[54,55,62,55,56,58,60,0],90,1,"Right Center Midfield"]],"meta":{"season":"2015/16","n":380}}</script>
+<script>
+"use strict";
+
+/* ============================================================================
+   0. 构建信息
+   mode / version / built 由 build_app.py 注入。
+   DEVUI 在 dev 构建里是内部说明文案对象，release 构建里是 null。
+   ========================================================================== */
+const BUILD = {"mode": "release", "version": "0.4.1", "built": "2026-11-23 12:41"};
+const DEV = BUILD.mode === "dev";
+const DEVUI = null;
+
+/* ============================================================================
+   1. 数据层
+   ========================================================================== */
+const D = JSON.parse(document.getElementById("DATA").textContent);
+const SLOTS = ["GK","LB","CB","CB","RB","DM","CM","CM","LW","ST","RW"];
+const SLOT_CN = ["门将","左后卫","中卫","中卫","右后卫","后腰","中场","中场","左边锋","中锋","右边锋"];
+
+/* 槽位权重：进攻通道 / 防守通道 */
+const W_ATT = [0.00,0.08,0.04,0.04,0.08,0.08,0.14,0.14,0.13,0.14,0.13];
+const W_DEF = [0.20,0.11,0.16,0.16,0.11,0.11,0.05,0.05,0.02,0.01,0.02];
+
+/* 引擎常量 */
+const HOME_AVG = 1.492, AWAY_AVG = 1.208, LG_AVG = 1.35;
+const K_PLAYER = 3.2;      // 阵容调整的放大系数
+const RHO0 = -0.12, MAXG = 13, LAM_CAP = 4.5;
+const FREE_QUOTA = 3, PAID_QUOTA = 5;
+
+const CLUBS = D.clubs;
+const MATCHES = D.matches;
+const P = {};
+const PLAYERS = D.players.map(a => {
+  const p = {id:a[0], name:a[1], club:a[2], slot:a[3], grp:a[4], ovr:a[5],
+             att:a[6], dfn:a[7], a:a[8], min:a[9], st:a[10], pos:a[11], kind:"p"};
+  P[p.id] = p;
+  return p;
+});
+const SQUAD = CLUBS.map(() => []);
+PLAYERS.forEach(p => { if (SQUAD[p.club]) SQUAD[p.club].push(p); });
+SQUAD.forEach(s => s.sort((x,y) => y.ovr - x.ovr));
+const DEFAULT_XI = CLUBS.map(c => c.xi.map(id => P[id]).filter(Boolean));
+
+/* ---------------------------------------------------------------- 教练层
+   教练不进入 11 人权重，而是直接在 log 空间给整队加成：
+     λ主 = 1.492 · exp( 攻主 − 防客 + ca主 − cd客 + 3.2·阵容调整 )
+   一个换人通常只动一条通道，一个换帅同时动两条 —— 这就是「化腐朽为神奇」。
+   ------------------------------------------------------------------------ */
+const STYLES = {
+  控球: {ca: 0.050, cd: -0.020},
+  反击: {ca: 0.025, cd: 0.035},
+  高压: {ca: 0.060, cd: -0.035},
+  铁桶: {ca: -0.055, cd: 0.090},
+  均衡: {ca: 0.000, cd: 0.000},
+};
+
+function mkCoach(o){
+  const st = STYLES[o.style] || STYLES.均衡;
+  const base = (o.ovr - 78) / 55;
+  return {
+    id: o.id, name: o.name, club: o.club, ovr: o.ovr, style: o.style,
+    ca: +(base + st.ca).toFixed(4),
+    cd: +(base + st.cd).toFixed(4),
+    note: o.note || "", kind: "c", legend: !!o.legend,
+  };
+}
+
+/* 2015/16 各队真实主帅 */
+const COACHES = [
+  {id:"c0",  name:"范加尔",      club:"Manchester United", ovr:82, style:"控球", note:"体系严密，但进球很难。"},
+  {id:"c1",  name:"温格",        club:"Arsenal",           ovr:86, style:"控球", note:"二十年同一种执念。"},
+  {id:"c2",  name:"佩莱格里尼",  club:"Manchester City",   ovr:83, style:"均衡", note:"手里牌最好，踢得最平。"},
+  {id:"c3",  name:"穆里尼奥",    club:"Chelsea",           ovr:86, style:"铁桶", note:"卫冕冠军，然后一切崩塌。"},
+  {id:"c4",  name:"克洛普",      club:"Liverpool",         ovr:88, style:"高压", note:"第一年就把安菲尔德点着了。"},
+  {id:"c5",  name:"波切蒂诺",    club:"Tottenham Hotspur", ovr:87, style:"高压", note:"全英超最能跑的那支队。"},
+  {id:"c6",  name:"拉涅利",      club:"Leicester City",    ovr:89, style:"反击", note:"五千年一遇的补锅匠。"},
+  {id:"c7",  name:"马丁内斯",    club:"Everton",           ovr:77, style:"控球", note:"漂亮，但后防线一直在漏。"},
+  {id:"c8",  name:"科曼",        club:"Southampton",       ovr:82, style:"均衡", note:"卖人卖成豪门供货商，还能踢。"},
+  {id:"c9",  name:"比利奇",      club:"West Ham United",   ovr:80, style:"反击", note:"西汉姆最像样的一年。"},
+  {id:"c10", name:"普利斯",      club:"West Bromwich Albion", ovr:78, style:"铁桶", note:"先把门关上，再谈别的。"},
+  {id:"c11", name:"阿勒代斯",    club:"Sunderland",        ovr:78, style:"铁桶", note:"保级专家，救火队长。"},
+  {id:"c12", name:"埃迪·豪",     club:"AFC Bournemouth",   ovr:79, style:"高压", note:"把小球会带进英超还站住了。"},
+  {id:"c13", name:"帕杜",        club:"Crystal Palace",    ovr:74, style:"均衡", note:"开局惊艳，然后自由落体。"},
+  {id:"c14", name:"马克·休斯",   club:"Stoke City",        ovr:76, style:"均衡", note:"从硬朗踢成了技术流。"},
+  {id:"c15", name:"弗洛雷斯",    club:"Watford",           ovr:76, style:"反击", note:"升班马踢出了欧战区的手感。"},
+  {id:"c16", name:"亚历克斯·尼尔",club:"Norwich City",     ovr:70, style:"均衡", note:"阵容不够，办法也不多。"},
+  {id:"c17", name:"舍伍德",      club:"Aston Villa",       ovr:65, style:"高压", note:"热血，但撑不住一个赛季。"},
+  {id:"c18", name:"贝尼特斯",    club:"Newcastle United",  ovr:81, style:"铁桶", note:"来晚了，但还是想救。"},
+  {id:"c19", name:"圭多林",      club:"Swansea City",      ovr:74, style:"控球", note:"小球队的意大利绅士。"},
+  // 2015/16 赛季中途下课、当时确实赋闲的三位
+  {id:"c20", name:"罗杰斯",      club:null,                ovr:84, style:"控球", note:"十月从安菲尔德下课，正等着下一份工作。"},
+  {id:"c21", name:"莫耶斯",      club:null,                ovr:79, style:"均衡", note:"被曼联和皇家社会都放弃过，但他是真的会带队。"},
+  {id:"c22", name:"麦克拉伦",    club:null,                ovr:68, style:"均衡", note:"英格兰主帅的那把伞，还没干。"},
+].map(mkCoach);
+
+/* 传奇教练（付费） */
+const LEGEND_COACHES = [
+  {id:"Lc0", name:"弗格森",   club:"Manchester United",   ovr:96, style:"均衡", legend:true,
+   note:"补时七分钟，他还在场边。"},
+  {id:"Lc1", name:"瓜迪奥拉", club:"Manchester City",     ovr:95, style:"控球", legend:true,
+   note:"把球权变成一种防守。"},
+  {id:"Lc2", name:"香克利",   club:"Liverpool",           ovr:94, style:"均衡", legend:true,
+   note:"他先建了一座城，再建了一支球队。"},
+  {id:"Lc3", name:"格拉汉姆", club:"Arsenal",             ovr:88, style:"铁桶", legend:true,
+   note:"一比零，就够了。"},
+  {id:"Lc4", name:"维亚利",   club:"Chelsea",             ovr:88, style:"高压", legend:true,
+   note:"球员兼教练，先自己上去进一个。"},
+  {id:"Lc5", name:"雷德克纳普",club:"Tottenham Hotspur",  ovr:85, style:"反击", legend:true,
+   note:"转会窗最后一天，他总能捡到人。"},
+].map(mkCoach);
+
+const ALL_COACHES = COACHES.concat(LEGEND_COACHES);
+const DEFAULT_COACH = {};
+COACHES.forEach(c => { if (c.club && !DEFAULT_COACH[c.club]) DEFAULT_COACH[c.club] = c; });
+const C = {};
+ALL_COACHES.forEach(c => { C[c.id] = c; });
+
+/* 换帅候选：本队现任 + 赋闲在家的自由身 + 本队传奇（付费） */
+function coachPool(clubFull, allowLegend){
+  const own = COACHES.filter(c => c.club === clubFull);
+  const free = COACHES.filter(c => !c.club);
+  const leg = allowLegend ? LEGEND_COACHES.filter(c => c.club === clubFull) : [];
+  return own.concat(free, leg);
+}
+
+/* 传奇球员（付费） */
+const LEGENDS = [
+  {name:"坎通纳",  club:"Manchester United", slot:9, ovr:94, att:1.12, dfn:0.10,
+   a:[82,96,88,90,42,92,90], note:"国王。禁区里最冷的那双脚。"},
+  {name:"吉格斯",  club:"Manchester United", slot:8, ovr:92, att:1.05, dfn:0.34,
+   a:[90,84,90,94,50,74,92], note:"二十年的左路，永远多一个人。"},
+  {name:"罗伊·基恩",club:"Manchester United", slot:5, ovr:91, att:0.72, dfn:0.96,
+   a:[74,74,86,76,96,94,80], note:"中场就是他的地盘。"},
+  {name:"亨利",    club:"Arsenal", slot:9, ovr:95, att:1.15, dfn:0.12,
+   a:[97,95,88,95,40,86,90], note:"左路启动，全英超都知道要发生什么。"},
+  {name:"维埃拉",  club:"Arsenal", slot:5, ovr:92, att:0.80, dfn:1.00,
+   a:[78,76,88,80,97,96,82], note:"一米九二的中场，抢断和出球一样干净。"},
+  {name:"博格坎普",club:"Arsenal", slot:6, ovr:91, att:0.94, dfn:0.28,
+   a:[72,90,94,92,44,78,96], note:"他不追球，他等球。"},
+  {name:"杰拉德",  club:"Liverpool", slot:6, ovr:92, att:0.92, dfn:0.82,
+   a:[80,92,92,82,84,90,90], note:"一个人能把整支球队扛在肩上。"},
+  {name:"苏亚雷斯",club:"Liverpool", slot:9, ovr:93, att:1.10, dfn:0.20,
+   a:[88,94,82,94,46,82,86], note:"不讲道理的射手。"},
+  {name:"德罗巴",  club:"Chelsea", slot:9, ovr:93, att:1.08, dfn:0.16,
+   a:[86,94,76,82,44,97,80], note:"一个人顶住整条后防线。"},
+  {name:"兰帕德",  club:"Chelsea", slot:6, ovr:91, att:0.96, dfn:0.58,
+   a:[76,94,90,80,66,84,88], note:"中场进球最多的那个人。"},
+  {name:"贝尔",    club:"Tottenham Hotspur", slot:8, ovr:92, att:1.06, dfn:0.30,
+   a:[96,92,84,90,48,84,84], note:"左路起速之后，没有第二个人。"},
+  {name:"莫德里奇",club:"Tottenham Hotspur", slot:6, ovr:91, att:0.84, dfn:0.52,
+   a:[74,82,96,90,58,66,94], note:"球在他脚下，时间就慢下来。"},
+];
+LEGENDS.forEach((l,i) => {
+  l.id = "L"+i; l.legend = true; l.kind = "p";
+  l.pos = SLOT_CN[l.slot]; l.min = 0; l.st = 0; l.clubIdx = CLUBS.findIndex(c => c.f === l.club);
+});
+const LEG_BY_CLUB = {};
+LEGENDS.forEach(l => { (LEG_BY_CLUB[l.club] = LEG_BY_CLUB[l.club] || []).push(l); });
+
+/* ============================================================================
+   1. 引擎
+   ========================================================================== */
+function fnv1a32(s){
+  let h = 0x811c9dc5;
+  for (let i=0;i<s.length;i++){ h ^= s.charCodeAt(i); h = Math.imul(h, 0x01000193) >>> 0; }
+  return h >>> 0;
+}
+function splitmix32(a){
+  return function(){
+    a = (a + 0x9e3779b9) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t>>>16), 0x21f0aaad) >>> 0;
+    t = Math.imul(t ^ (t>>>15), 0x735a2d97) >>> 0;
+    return ((t ^ (t>>>15)) >>> 0) / 4294967296;
+  };
+}
+function makeRng(seed){
+  const sm = splitmix32(seed >>> 0);
+  let a = (sm()*4294967296)>>>0, b = (sm()*4294967296)>>>0,
+      c = (sm()*4294967296)>>>0, d = (sm()*4294967296)>>>0;
+  return function(){
+    a|=0; b|=0; c|=0; d|=0;
+    let t = ((a + b) | 0) + d | 0;
+    a = b ^ (b >>> 9);
+    b = (c + (c << 3)) | 0;
+    c = (c << 21) | (c >>> 11);
+    d = (d + 1) | 0;
+    t = (t + d) | 0;
+    c = (c + t) | 0;
+    return (t >>> 0) / 4294967296;
+  };
+}
+function invPoisson(u, lam){
+  let p = Math.exp(-lam), c = p;
+  if (u <= c) return 0;
+  for (let k=1;k<MAXG;k++){ p = p*lam/k; c += p; if (u <= c) return k; }
+  return MAXG;
+}
+function rhoEff(lh, la){ return RHO0 * Math.min(1, 6.0 / Math.max(lh*la, 1e-6)); }
+function dcTau(x,y,lh,la,r){
+  if (x===0&&y===0) return 1 - lh*la*r;
+  if (x===0&&y===1) return 1 + lh*r;
+  if (x===1&&y===0) return 1 + la*r;
+  if (x===1&&y===1) return 1 - r;
+  return 1;
+}
+function pmf(k, lam){
+  let p = Math.exp(-lam);
+  for (let i=1;i<=k;i++) p = p*lam/i;
+  return p;
+}
+function settle(seed, lh, la){
+  const rng = makeRng(seed);
+  const q = v => Math.round(v*1e6)/1e6;
+  const u1=q(rng()), u2=q(rng()), u3=q(rng());
+  let x = invPoisson(u1, lh), y = invPoisson(u2, la);
+  if ((x===0&&y===0)||(x===0&&y===1)||(x===1&&y===0)||(x===1&&y===1)){
+    const r = rhoEff(lh,la);
+    const cells = [[0,0],[0,1],[1,0],[1,1]];
+    const w = cells.map(([a,b]) => pmf(a,lh)*pmf(b,la)*dcTau(a,b,lh,la,r));
+    const s = w.reduce((p,c)=>p+c,0);
+    let acc = 0;
+    for (let i=0;i<4;i++){ acc += w[i]/s; if (u3 <= acc){ x=cells[i][0]; y=cells[i][1]; break; } }
+  }
+  return {x, y, rng};
+}
+function outcomeProbs(lh, la){
+  const ph = [], pa = [];
+  for (let k=0;k<=MAXG;k++){ ph.push(pmf(k,lh)); pa.push(pmf(k,la)); }
+  const r = rhoEff(lh,la);
+  let w=0,d=0,l=0;
+  for (let i=0;i<=MAXG;i++) for (let j=0;j<=MAXG;j++){
+    const p = ph[i]*pa[j]*dcTau(i,j,lh,la,r);
+    if (i>j) w+=p; else if (i===j) d+=p; else l+=p;
+  }
+  const s = w+d+l;
+  return [w/s, d/s, l/s];
+}
+
+/* 球队强度：只用本轮之前的赛果，向联赛均值回归 */
+const _st = {};
+function strength(round){
+  if (_st[round]) return _st[round];
+  const n = CLUBS.length;
+  const gf = new Array(n).fill(0), ga = new Array(n).fill(0), np = new Array(n).fill(0);
+  for (const m of MATCHES){
+    if (m[0] >= round) continue;
+    gf[m[2]] += m[4]; ga[m[2]] += m[5]; np[m[2]]++;
+    gf[m[3]] += m[5]; ga[m[3]] += m[4]; np[m[3]]++;
+  }
+  const k = 6, att = [], def = [];
+  for (let i=0;i<n;i++){
+    const d = np[i] + k;
+    att[i] = Math.log(((gf[i] + k*LG_AVG) / d) / LG_AVG);
+    def[i] = Math.log(((ga[i] + k*LG_AVG) / d) / LG_AVG);
+  }
+  return (_st[round] = {att, def, np});
+}
+
+/* 位置适配：跨位置出场的衰减。门将例外，非门将站门将位置基本报废。 */
+function posFit(p, slot){
+  if (slot === 0 || p.slot === 0) return (slot === 0 && p.slot === 0) ? 1 : 0.12;
+  const d = Math.abs(p.slot - slot);
+  return d === 0 ? 1 : (d <= 2 ? 0.74 : 0.5);
+}
+function effOf(p, slot){
+  const f = posFit(p, slot);
+  return {att: p.att * f, dfn: p.dfn * f, fit: f};
+}
+
+function lineupPower(xi){
+  let a = 0, d = 0;
+  for (let i=0;i<11;i++){
+    const p = xi[i];
+    if (!p) continue;
+    const e = effOf(p, i);
+    a += W_ATT[i] * e.att;
+    d += W_DEF[i] * e.dfn;
+  }
+  return {a, d};
+}
+const clamp = (v,lo,hi) => Math.min(hi, Math.max(lo, v));
+
+/* 完整 λ：球队强度 + 阵容调整 + 教练加成 */
+function lambdas(mi, xiH, xiA, cH, cA){
+  const m = MATCHES[mi], r = m[0], h = m[2], a = m[3];
+  const s = strength(r);
+  const pH = lineupPower(xiH), pA = lineupPower(xiA);
+  const bH = lineupPower(DEFAULT_XI[h]), bA = lineupPower(DEFAULT_XI[a]);
+  const adjH = (pH.a - bH.a) - (pA.d - bA.d);
+  const adjA = (pA.a - bA.a) - (pH.d - bH.d);
+  const coachH = (cH ? cH.ca : 0) - (cA ? cA.cd : 0);
+  const coachA = (cA ? cA.ca : 0) - (cH ? cH.cd : 0);
+  return [
+    clamp(HOME_AVG * Math.exp(s.att[h] - s.def[a] + coachH + K_PLAYER*adjH), 0.15, LAM_CAP),
+    clamp(AWAY_AVG * Math.exp(s.att[a] - s.def[h] + coachA + K_PLAYER*adjA), 0.15, LAM_CAP)
+  ];
+}
+function seedFor(mi, side, lh, la, ci){
+  const key = mi + "|" + side + "|" + Math.round(lh*1e4) + "|" + Math.round(la*1e4) + "|" + (ci||"");
+  return splitmix32(fnv1a32(key))() * 4294967296 >>> 0;
+}
+function xiWith(xi, slot, p){
+  const n = xi.slice();
+  n[slot] = p;
+  return n;
+}
+
+/* 当前局面：把「谁的阵容/教练」抽象成一对参数 */
+function sidesOf(mi, st){
+  const m = MATCHES[mi];
+  return {
+    h: m[2], a: m[3],
+    xiH: st.side === 0 ? st.xi : DEFAULT_XI[m[2]],
+    xiA: st.side === 1 ? st.xi : DEFAULT_XI[m[3]],
+    cH: st.side === 0 ? st.coach : DEFAULT_COACH[CLUBS[m[2]].f],
+    cA: st.side === 1 ? st.coach : DEFAULT_COACH[CLUBS[m[3]].f],
+  };
+}
+function currentL(st, mi){
+  const s = sidesOf(mi, st);
+  return lambdas(mi, s.xiH, s.xiA, s.cH, s.cA);
+}
+function winOf(pr, side){ return side === 0 ? pr[0] : pr[2]; }
+
+/* ============================================================================
+   2. 状态
+   ========================================================================== */
+const FAV = (() => { const i = CLUBS.findIndex(c => c.f === "Manchester United"); return i < 0 ? 0 : i; })();
+const state = {
+  screen: "home",
+  round: 8,
+  mi: null,
+  side: 1,
+  xi: null,
+  coach: null,
+  swaps: [],
+  coachSwap: null,
+  result: null,
+  unlocked: false,
+  quota: FREE_QUOTA,
+};
+
+const $ = id => document.getElementById(id);
+const app = $("app"), sheetEl = $("sheet"), modalEl = $("modal"), toastEl = $("toast");
+const esc = s => String(s == null ? "" : s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+function lum(hex){
+  const r = parseInt(hex.slice(1,3),16), g = parseInt(hex.slice(3,5),16), b = parseInt(hex.slice(5,7),16);
+  return (0.299*r + 0.587*g + 0.114*b) > 150 ? "#0A0D12" : "#FFFFFF";
+}
+const bd = (ci, big) => {
+  const c = CLUBS[ci];
+  return `<div class="bd${big?" lg":""}" style="background:${c.col};color:${lum(c.col)}">${c.c}</div>`;
+};
+function toast(t){
+  toastEl.textContent = t;
+  toastEl.classList.add("on");
+  clearTimeout(toast._t);
+  toast._t = setTimeout(() => toastEl.classList.remove("on"), 1900);
+}
+function go(s, opt){
+  state.screen = s;
+  if (opt) Object.assign(state, opt);
+  render();
+  window.scrollTo({top:0});
+}
+
+/* ============================================================================
+   3. 渲染
+   ========================================================================== */
+function render(){
+  const f = {home:renderHome, detail:renderDetail, edit:renderEdit, result:renderResult}[state.screen];
+  app.innerHTML = f ? f() : "";
+}
+
+/* ---------------------------------------------------------------- 首页 */
+function renderHome(){
+  const ms = MATCHES.map((m,i)=>({m,i})).filter(o => o.m[0] === state.round);
+  ms.sort((x,y) => {
+    const fx = x.m[2]===FAV||x.m[3]===FAV, fy = y.m[2]===FAV||y.m[3]===FAV;
+    return fy - fx;
+  });
+  const dates = [...new Set(ms.map(o=>o.m[1]))].sort();
+  const dstr = dates.length > 1
+    ? `${dates[0].slice(5).replace("-","/")} – ${dates[dates.length-1].slice(5).replace("-","/")}`
+    : (dates[0] || "").slice(5).replace("-","/");
+
+  let rounds = "";
+  for (let r=1;r<=38;r++) rounds += `<button class="rn${r===state.round?" on":""}" data-r="${r}">${r}</button>`;
+
+  return `<div class="wrap">
+    <div class="strip">${rounds}</div>
+    <div class="sec-h"><h2>英超 ${D.meta.season}</h2>
+      <div class="sub num">第 ${state.round} 轮 · ${dstr} · ${ms.length} 场</div></div>
+    <div class="card">${ms.map(({m,i})=>matchRow(m,i)).join("")}</div>
+
+    <div class="sec-h"><h2>怎么玩</h2></div>
+    <div class="card pad"><div class="note" style="line-height:1.8">
+      点进任何一场 <b>真实比赛</b>，看赛前模型怎么判、最后发生了什么。<br>
+      不服就 <b>换人、换帅</b> 重算 —— 引擎立刻给你新的预期进球和胜率。<br>
+      缺的那个人，往往是个 <b style="color:var(--gold)">传奇</b>。
+    </div></div>
+
+    <div class="card pad" style="margin-top:12px"><div class="note">
+      赛果 <b>football-data.co.uk</b>（380 场全季）· 球员 <b>StatsBomb Open Data</b>（事件级，${PLAYERS.length} 人）<br>
+      俱乐部与球员为真实名称；队徽为自绘色块，未使用官方标识。<br>
+      非官方作品，与英超联盟及任何俱乐部无关联。
+    </div>
+    <div class="note mono" style="margin-top:8px;color:var(--dim2);font-size:9px">
+      v${BUILD.version}${DEV ? " · DEV 构建" : ""} · ${BUILD.built}
+    </div></div>
+    <div style="height:28px"></div>
+  </div>`;
+}
+function matchRow(m, i){
+  const [,date,h,a,hg,ag] = m;
+  const isFav = h === FAV || a === FAV;
+  const hw = hg > ag, aw = ag > hg;
+  return `<button class="mrow${isFav?" fav":""}" data-mi="${i}">
+    <div class="side">${bd(h)}<div style="min-width:0"><div class="nm">${esc(CLUBS[h].n)}</div>
+      ${isFav&&h===FAV?`<div class="meta">主队</div>`:""}</div></div>
+    <div class="sc num"><span class="${hw?"w":""}">${hg}</span><span class="sep">:</span><span class="${aw?"w":""}">${ag}</span></div>
+    <div class="side r">${bd(a)}<div style="min-width:0"><div class="nm">${esc(CLUBS[a].n)}</div>
+      ${isFav&&a===FAV?`<div class="meta">主队</div>`:""}</div></div>
+  </button>`;
+}
+
+/* ---------------------------------------------------------------- 详情 */
+function renderDetail(){
+  const mi = state.mi, m = MATCHES[mi];
+  const [r,date,h,a,hg,ag,hs,as,hst,ast,hc,ac,hy,ay] = m;
+  const s = strength(r);
+  const cH = DEFAULT_COACH[CLUBS[h].f], cA = DEFAULT_COACH[CLUBS[a].f];
+  const L = lambdas(mi, DEFAULT_XI[h], DEFAULT_XI[a], cH, cA);
+  const pr = outcomeProbs(L[0], L[1]);
+  const v = judge(hg, ag, pr);
+
+  return `<div class="wrap">
+    <div style="padding:14px 0 0"><button class="btn btn-s btn-g" data-back>← 返回</button></div>
+    <div class="score-big">
+      <div class="t">${bd(h,true)}<div class="nm">${esc(CLUBS[h].n)}</div></div>
+      <div class="v num">${hg}<span class="sep">:</span>${ag}</div>
+      <div class="t">${bd(a,true)}<div class="nm">${esc(CLUBS[a].n)}</div></div>
+    </div>
+    <div style="text-align:center;font-size:10.5px;color:var(--dim2);margin-bottom:12px">
+      ${date.replace(/-/g,"/")} · 第 ${r} 轮
+    </div>
+
+    ${(m[14] && m[14].length) ? `<div class="card pad" style="padding:11px 14px">
+      ${goalList(m[14], h, a)}
+      <div class="note" style="margin-top:7px;color:var(--dim2);font-size:9.5px">
+        进球与助攻来自 StatsBomb 事件数据
+      </div>
+    </div>` : (DEVUI && hg + ag > 0 ? DEVUI.noEventNote(hg + ag) : "")}
+
+    <div class="sec-h"><h2>引擎复盘</h2><div class="sub">赛前判断</div></div>
+    <div class="card pad">
+      <div class="meter" style="padding:0">
+        <div class="hd"><span>${DEV ? "预期进球 λ" : "模型预期"}</span><span class="mono">${L[0].toFixed(2)} : ${L[1].toFixed(2)}</span></div>
+        <div class="probs">
+          <div style="flex:${pr[0]};background:var(--volt)">${Math.round(pr[0]*100)}%</div>
+          <div style="flex:${pr[1]};background:#5C6880;color:#E9EDF6">${Math.round(pr[1]*100)}%</div>
+          <div style="flex:${pr[2]};background:#2A3550;color:#C6D0E0">${Math.round(pr[2]*100)}%</div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:9.5px;color:var(--dim2);margin-top:5px">
+          <span>${esc(CLUBS[h].n)}胜</span><span>平</span><span>${esc(CLUBS[a].n)}胜</span>
+        </div>
+      </div>
+      <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--ln)">
+        <div class="note"><b style="color:var(--tx);font-size:12px">${v.t}</b><br>${v.d}</div>
+      </div>
+      ${DEVUI ? DEVUI.sampleNote(s.np, h, a) : ""}    </div>
+
+    <div class="sec-h"><h2>主帅</h2></div>
+    <div style="display:flex;flex-direction:column;gap:8px">
+      ${coachChip(cH)}${coachChip(cA)}
+    </div>
+
+    <div class="sec-h"><h2>全场数据</h2></div>
+    <div class="card pad">
+      ${statBar("射门", hs, as)}${statBar("射正", hst, ast)}
+      ${statBar("角球", hc, ac)}${statBar("黄牌", hy, ay, true)}
+    </div>
+
+    <div class="sec-h"><h2>首发</h2><div class="sub">2015/16 能力值</div></div>
+    <div class="card pad">
+      <div class="xi-grid">${DEFAULT_XI[h].map((p,i)=>xiCell(p,i)).join("")}</div>
+      <div style="height:1px;background:var(--ln);margin:12px 0"></div>
+      <div class="xi-grid">${DEFAULT_XI[a].map((p,i)=>xiCell(p,i)).join("")}</div>
+    </div>
+    <div style="height:96px"></div>
+  </div>
+  <div class="dock"><div class="dock-in"><div class="dock-row">
+    <button class="btn btn-p" data-edit>魔改这场 · 换人换帅</button>
+  </div></div></div>`;
+}
+
+function coachChip(c){
+  if (!c) return "";
+  return `<div class="coach" style="margin-top:0">
+    <div class="av">${c.ovr}</div>
+    <div class="body">
+      <div class="nm"><span>${esc(c.name)}</span>
+        ${c.legend?`<span class="tag tag-g">传奇</span>`:""}
+        <span class="tag tag-s">${c.style}</span></div>
+      <div class="mt">${esc(c.note)}</div>
+      <div class="eff"><i>攻 ${c.ca>=0?"+":""}${(c.ca*100).toFixed(0)}</i><i>防 ${c.cd>=0?"+":""}${(c.cd*100).toFixed(0)}</i></div>
+    </div>
+  </div>`;
+}
+/* rows: [[minute, side(0主/1客), scorer, assist]] */
+function goalList(rows, h, a){
+  if (!rows || !rows.length) return `<div class="tl-none">这场没有进球。</div>`;
+  return rows.map(([mn, side, who, assist]) => `<div class="tl${side ? " aw" : ""}">
+    <div class="mn num">${mn}′</div>
+    <div class="bl">⚽</div>
+    <div class="tx"><b>${esc(who || "乌龙球")}</b>${assist ? `<i>助攻 ${esc(assist)}</i>` : ""}</div>
+    <div class="cd">${esc(CLUBS[side ? a : h].c)}</div>
+  </div>`).join("");
+}
+function xiCell(p, i){
+  if (!p) return "";
+  return `<div class="xi-i"><span class="o num">${p.ovr}</span><b>${esc(p.name)}</b><span class="ps">${SLOTS[i]}</span></div>`;
+}
+function statBar(label, x, y){
+  const t = Math.max(x + y, 1), a = x / t * 100;
+  const even = x === y;
+  const lc = even ? "#3A4763" : (x > y ? "var(--volt)" : "#3A4763");
+  const rc = even ? "#3A4763" : (x > y ? "#3A4763" : "var(--volt)");
+  return `<div class="stat">
+    <div class="num" style="font-weight:800;font-size:12.5px">${x}</div>
+    <div><div class="b"><i style="width:${a}%;background:${lc}"></i>
+      <i style="flex:1;background:${rc};opacity:.6"></i></div>
+      <div class="lbl">${label}</div></div>
+    <div class="num" style="font-weight:800;font-size:12.5px;text-align:right">${y}</div>
+  </div>`;
+}
+function judge(hg, ag, pr){
+  const top = pr.indexOf(Math.max(...pr));
+  const actual = hg > ag ? 0 : (hg === ag ? 1 : 2);
+  const conf = Math.max(...pr);
+  if (top === actual) return {t:"模型方向判对了。",
+    d:`赛前给这一边的概率是 ${Math.round(conf*100)}%，结果也确实落在那里。`};
+  if (actual === 1) return {t:"模型没算到这场会平。",
+    d:`赛前平局只有 ${Math.round(pr[1]*100)}%。足球里最不缺的就是这种夜晚。`};
+  return {t:"这场是冷门。",
+    d:`赛前模型给这个结果只有 ${Math.round(pr[actual]*100)}%。这就是为什么比分值得重写一次。`};
+}
+/* ---------------------------------------------------------------- 魔改 */
+const PITCH_POS = [[50,4],[12,25],[36,27],[64,27],[88,25],[50,43],[30,59],[70,59],[14,80],[50,87],[86,80]];
+
+function usedQuota(){ return state.swaps.length + (state.coachSwap ? 1 : 0); }
+
+function renderEdit(){
+  const mi = state.mi, m = MATCHES[mi];
+  const [,date,h,a,hg,ag] = m;
+  const xi = state.xi, co = state.coach;
+  const clubIdx = state.side === 0 ? h : a;
+  const oppIdx = state.side === 0 ? a : h;
+  const L = currentL(state, mi);
+  const pr = outcomeProbs(L[0], L[1]);
+  const myL = state.side === 0 ? L[0] : L[1];
+  const opL = state.side === 0 ? L[1] : L[0];
+  const n = usedQuota(), left = state.quota - n;
+
+  return `<div class="wrap">
+    <div style="display:flex;gap:8px;padding:14px 0 0;align-items:center">
+      <button class="btn btn-s btn-g" data-back>← 返回</button>
+      <div class="spacer"></div>
+      <div class="tag ${n?"tag-v":"tag-d"}">已改 ${n} · 剩 ${left}</div>
+    </div>
+
+    <div style="display:flex;align-items:center;gap:9px;margin:14px 0 0">
+      ${bd(clubIdx)}
+      <div style="flex:1;min-width:0">
+        <div style="font-size:15px;font-weight:800">${esc(CLUBS[clubIdx].n)}</div>
+        <div style="font-size:10.5px;color:var(--dim2)">vs ${esc(CLUBS[oppIdx].n)} · 现实 ${hg}:${ag}</div>
+      </div>
+      <div class="tag tag-d">${state.side===0?"主队":"客队"}</div>
+    </div>
+
+    ${coachCard(co, clubIdx)}
+
+    <div class="pitch">
+      <div class="pline"></div><div class="pbox t"></div><div class="pbox b"></div><div class="pcircle"></div>
+      ${xi.map((p,i)=>{
+        if (!p) return "";
+        const sw = state.swaps.some(s => s.slot === i);
+        const cls = (p.legend ? " lg" : (sw ? " sw" : "")) + (posFit(p, i) < 1 ? " off" : "");
+        return `<button class="slot${cls}" style="left:${PITCH_POS[i][0]}%;bottom:${PITCH_POS[i][1]}%" data-slot="${i}">
+          <div class="dot">${SLOTS[i]}<span class="ov num">${p.ovr}</span></div>
+          <div class="nm">${esc(p.name)}</div>
+        </button>`;
+      }).join("")}
+    </div>
+
+    <div class="card" style="margin-top:12px">
+      <div class="meter">
+        <div class="hd"><span>实时预期进球</span><span class="mono">${myL.toFixed(2)} : ${opL.toFixed(2)}</span></div>
+        <div class="bars">
+          <div class="mbar"><div class="who">${esc(CLUBS[clubIdx].n)}</div>
+            <div class="track"><div class="fill" style="width:${myL/LAM_CAP*100}%;background:var(--volt)"></div></div>
+            <div class="val num" style="color:var(--volt)">${myL.toFixed(2)}</div></div>
+          <div class="mbar"><div class="who">${esc(CLUBS[oppIdx].n)}</div>
+            <div class="track"><div class="fill" style="width:${opL/LAM_CAP*100}%;background:#5C6880"></div></div>
+            <div class="val num">${opL.toFixed(2)}</div></div>
+        </div>
+        <div class="probs">
+          <div style="flex:${pr[0]};background:var(--volt)">${Math.round(pr[0]*100)}%</div>
+          <div style="flex:${pr[1]};background:#5C6880;color:#E9EDF6">${Math.round(pr[1]*100)}%</div>
+          <div style="flex:${pr[2]};background:#2A3550;color:#C6D0E0">${Math.round(pr[2]*100)}%</div>
+        </div>
+      </div>
+    </div>
+
+    ${(n) ? `<div class="sec-h"><h2>改动</h2></div><div class="card pad">
+      ${state.coachSwap ? `<div class="kv"><span class="k">主帅</span>
+        <span class="v"><span style="color:var(--dim2)">${esc(state.coachSwap.out.name)}</span>
+        <span style="color:var(--gold)"> → </span>${esc(state.coachSwap.in.name)}</span></div>` : ""}
+      ${state.swaps.map(s=>`<div class="kv"><span class="k">${SLOTS[s.slot]}</span>
+        <span class="v"><span style="color:var(--dim2)">${esc(s.out?s.out.name:"-")}</span>
+        <span style="color:${s.in.legend?"var(--gold)":"var(--volt)"}"> → </span>${esc(s.in.name)}</span></div>`).join("")}
+    </div>` : ""}
+
+    <div style="height:126px"></div>
+  </div>
+
+  <div class="dock"><div class="dock-in">
+    <div class="quota"><span>换人换帅额度</span>
+      <div class="pips">${Array.from({length:state.quota},(_,i)=>`<i class="${i<n?"on":""}"></i>`).join("")}</div>
+      <span>${n}/${state.quota}</span></div>
+    <div class="dock-row">
+      <button class="btn btn-g" style="flex:0 0 auto;width:auto;padding:0 16px" data-reco>✦ 引擎推荐</button>
+      <button class="btn ${n?"btn-p":"btn-g"}" style="${n?"":"opacity:.42"}" data-play>重算比分</button>
+    </div>
+  </div></div>`;
+}
+
+function coachCard(c, clubIdx){
+  if (!c) return "";
+  const locked = c.legend && !state.unlocked;
+  return `<button class="coach${c.legend?" lg":""}" data-coach>
+    <div class="av">${c.ovr}</div>
+    <div class="body">
+      <div class="nm"><span>${esc(c.name)}</span>
+        ${c.legend?`<span class="tag tag-g">传奇</span>`:""}
+        ${locked?`<span style="font-size:11px">🔒</span>`:""}</div>
+      <div class="mt"><span class="tag tag-s">${c.style}</span>
+        <span style="margin-left:5px">攻 ${c.ca>=0?"+":""}${(c.ca*100).toFixed(0)} · 防 ${c.cd>=0?"+":""}${(c.cd*100).toFixed(0)}</span></div>
+    </div>
+    <div class="sw">换帅</div>
+  </button>`;
+}
+
+/* ---------------------------------------------------------------- 球员选人 */
+function openPicker(slot){
+  const mi = state.mi, m = MATCHES[mi];
+  const clubIdx = state.side === 0 ? m[2] : m[3];
+  const cur = state.xi[slot];
+  const pool = SQUAD[clubIdx].slice();
+  (LEG_BY_CLUB[CLUBS[clubIdx].f] || []).forEach(l => pool.push(l));
+
+  const baseL = currentL(state, mi);
+  const baseMy = state.side === 0 ? baseL[0] : baseL[1];
+  const baseOp = state.side === 0 ? baseL[1] : baseL[0];
+  const baseGd = baseMy - baseOp;
+  const basePr = outcomeProbs(baseL[0], baseL[1]);
+  const baseWin = winOf(basePr, state.side);
+
+  const rows = [];
+  for (const p of pool){
+    if (cur && p.id === cur.id) continue;
+    if (posFit(p, slot) < 0.5) continue;
+    const xi2 = xiWith(state.xi, slot, p);
+    const s = state.side === 0
+      ? {xiH:xi2, xiA:DEFAULT_XI[m[3]], cH:state.coach, cA:DEFAULT_COACH[CLUBS[m[3]].f]}
+      : {xiH:DEFAULT_XI[m[2]], xiA:xi2, cH:DEFAULT_COACH[CLUBS[m[2]].f], cA:state.coach};
+    const L = lambdas(mi, s.xiH, s.xiA, s.cH, s.cA);
+    const pr = outcomeProbs(L[0], L[1]);
+    const myL = state.side === 0 ? L[0] : L[1];
+    const opL = state.side === 0 ? L[1] : L[0];
+    rows.push({p, d:(myL - opL) - baseGd, win:winOf(pr, state.side), fit: posFit(p, slot)});
+  }
+  rows.sort((x,y) => y.win - x.win);
+
+  sheetEl.innerHTML = `<div class="mask" data-close></div>
+    <div class="panel"><div class="grab"></div>
+      <div class="ph"><h3>${SLOT_CN[slot]} · 换谁上</h3>
+        <p>当前 ${esc(cur?cur.name:"空")}（${cur?cur.ovr:"-" }）· 按预期净胜球排序 · 现 λ ${baseMy.toFixed(2)}:${baseOp.toFixed(2)}</p></div>
+      <div class="pl">
+        ${rows.slice(0,42).map(o=>{
+          const dd = o.d;
+          const locked = o.p.legend && !state.unlocked;
+          const off = o.fit < 1;
+          return `<button class="prow" data-pick="${o.p.id}" data-pslot="${slot}">
+            <div class="ov ${o.p.legend?"gd":(o.p.ovr>=78?"hi":"")}">${o.p.ovr}</div>
+            <div class="info">
+              <div class="n"><span>${esc(o.p.name)}</span>
+                ${o.p.legend?`<span class="tag tag-g">传奇</span>`:""}${locked?`<span style="font-size:11px">🔒</span>`:""}
+                ${off?`<span class="tag tag-d">${SLOTS[o.p.slot]}→${SLOTS[slot]}</span>`:""}</div>
+              <div class="m">${o.p.pos} · ${o.p.min}′${o.p.st?` · 首发 ${o.p.st} 场`:""}</div>
+            </div>
+            <div class="dlt ${dd>0.005?"up":"zero"}">${dd>0.005?"+":""}${dd.toFixed(2)}</div>
+          </button>`;
+        }).join("")}
+      </div></div>`;
+  sheetEl.classList.add("on");
+  sheetEl.querySelector("[data-close]").onclick = closeSheet;
+  sheetEl.querySelectorAll("[data-pick]").forEach(b => b.onclick = () => {
+    const id = b.dataset.pick;
+    const p = P[id] || LEGENDS.find(l => l.id === id);
+    if (p.legend && !state.unlocked){ closeSheet(); paywall("legend"); return; }
+    doSwap(parseInt(b.dataset.pslot,10), p);
+  });
+}
+
+/* ---------------------------------------------------------------- 教练选人 */
+function openCoachPicker(){
+  const mi = state.mi, m = MATCHES[mi];
+  const clubIdx = state.side === 0 ? m[2] : m[3];
+  const clubFull = CLUBS[clubIdx].f;
+  const pool = coachPool(clubFull, true);
+
+  const baseL = currentL(state, mi);
+  const basePr = outcomeProbs(baseL[0], baseL[1]);
+  const baseWin = winOf(basePr, state.side);
+  const baseMy = state.side === 0 ? baseL[0] : baseL[1];
+  const baseOp = state.side === 0 ? baseL[1] : baseL[0];
+  const baseGd = baseMy - baseOp;
+
+  const rows = pool.filter(c => c.id !== (state.coach && state.coach.id)).map(c => {
+    const s = state.side === 0
+      ? {xiH:state.xi, xiA:DEFAULT_XI[m[3]], cH:c, cA:DEFAULT_COACH[CLUBS[m[3]].f]}
+      : {xiH:DEFAULT_XI[m[2]], xiA:state.xi, cH:DEFAULT_COACH[CLUBS[m[2]].f], cA:c};
+    const L = lambdas(mi, s.xiH, s.xiA, s.cH, s.cA);
+    const pr = outcomeProbs(L[0], L[1]);
+    const myL = state.side === 0 ? L[0] : L[1];
+    const opL = state.side === 0 ? L[1] : L[0];
+    return {c, win: winOf(pr, state.side), L, d: (myL - opL) - baseGd};
+  }).sort((x,y) => y.d - x.d);
+
+  sheetEl.innerHTML = `<div class="mask" data-close></div>
+    <div class="panel"><div class="grab"></div>
+      <div class="ph"><h3>换帅 · ${esc(CLUBS[clubIdx].n)}</h3>
+        <p>教练同时改攻防两条通道 · 按预期净胜球排序 · 现 λ ${baseMy.toFixed(2)}:${baseOp.toFixed(2)}</p></div>
+      <div class="pl">
+        ${rows.map(o=>{
+          const locked = o.c.legend && !state.unlocked;
+          const dw = o.d;
+          return `<button class="prow" data-coach-pick="${o.c.id}">
+            <div class="ov ${o.c.legend?"gd":"sk"}">${o.c.ovr}</div>
+            <div class="info">
+              <div class="n"><span>${esc(o.c.name)}</span>
+                ${o.c.legend?`<span class="tag tag-g">传奇</span>`:""}${locked?`<span style="font-size:11px">🔒</span>`:""}</div>
+              <div class="m">${o.c.style} · 攻 ${o.c.ca>=0?"+":""}${(o.c.ca*100).toFixed(0)} / 防 ${o.c.cd>=0?"+":""}${(o.c.cd*100).toFixed(0)}</div>
+            </div>
+            <div class="dlt ${dw>0.005?"up":"zero"}">${dw>0.005?"+":""}${dw.toFixed(2)}</div>
+          </button>`;
+        }).join("") || `<div class="note" style="padding:20px 18px">这个俱乐部只有一位主帅。</div>`}
+        <div style="padding:14px 18px 0"><div class="note">
+          换人动的是某一个人，换帅动的是整支球队的基准。弱队换上一个顶级教练，λ 的提升比换一个前锋更明显。
+        </div></div>
+      </div></div>`;
+  sheetEl.classList.add("on");
+  sheetEl.querySelector("[data-close]").onclick = closeSheet;
+  sheetEl.querySelectorAll("[data-coach-pick]").forEach(b => b.onclick = () => {
+    const c = C[b.dataset.coachPick];
+    if (c.legend && !state.unlocked){ closeSheet(); paywall("legend"); return; }
+    doCoachSwap(c);
+  });
+}
+
+function closeSheet(){ sheetEl.classList.remove("on"); sheetEl.innerHTML = ""; }
+
+function doSwap(slot, p){
+  if (usedQuota() >= state.quota){ closeSheet(); toast("额度用完了"); paywall("quota"); return; }
+  const out = state.xi[slot];
+  if (!out || out.id === p.id){ closeSheet(); return; }
+  const before = currentL(state, state.mi);
+  state.xi = xiWith(state.xi, slot, p);
+  state.swaps = state.swaps.filter(s => s.slot !== slot).concat([{slot, out, in:p}]);
+  const after = currentL(state, state.mi);
+  closeSheet(); render();
+  const same = Math.abs(after[0]-before[0]) < 1e-4 && Math.abs(after[1]-before[1]) < 1e-4;
+  toast(same ? "阵容变了，但强度没变 —— 引擎认为这两人等价"
+             : `${p.name} 上场 · ${SLOTS[slot]}`);
+}
+function doCoachSwap(c){
+  if (usedQuota() >= state.quota && !state.coachSwap){ closeSheet(); toast("额度用完了"); paywall("quota"); return; }
+  const out = state.coach;
+  if (!out || out.id === c.id){ closeSheet(); return; }
+  state.coach = c;
+  state.coachSwap = {out, in:c};
+  closeSheet(); render();
+  toast(`换帅：${c.name}`);
+}
+
+/* ---------------------------------------------------------------- 引擎推荐
+   贪心搜索：每步在「换人」和「换帅」里挑胜率增量最大的一个。
+   ------------------------------------------------------------------------ */
+function recommend(mi, side, xi, coach, quota, allowLegend){
+  const m = MATCHES[mi];
+  const clubIdx = side === 0 ? m[2] : m[3];
+  const clubFull = CLUBS[clubIdx].f;
+
+  const pool = SQUAD[clubIdx].slice();
+  if (allowLegend) (LEG_BY_CLUB[clubFull] || []).forEach(l => pool.push(l));
+  const cpool = coachPool(clubFull, allowLegend);
+
+  const evalPair = (xi2, c2) => {
+    const s = side === 0
+      ? {xiH:xi2, xiA:DEFAULT_XI[m[3]], cH:c2, cA:DEFAULT_COACH[CLUBS[m[3]].f]}
+      : {xiH:DEFAULT_XI[m[2]], xiA:xi2, cH:DEFAULT_COACH[CLUBS[m[2]].f], cA:c2};
+    const L = lambdas(mi, s.xiH, s.xiA, s.cH, s.cA);
+    const pr = outcomeProbs(L[0], L[1]);
+    return {L, win: winOf(pr, side)};
+  };
+
+  const base = evalPair(xi, coach);
+  let curXi = xi.slice(), curC = coach, curWin = base.win;
+  const steps = [];
+  const usedIds = new Set(curXi.filter(Boolean).map(p => p.id));
+  const usedSlots = new Set();
+  let coachDone = false;
+
+  for (let k=0;k<quota;k++){
+    let best = null;
+    for (let s=0;s<11;s++){
+      if (usedSlots.has(s)) continue;
+      for (const p of pool){
+        if (usedIds.has(p.id)) continue;
+        if (posFit(p, s) < 0.5) continue;
+        const r = evalPair(xiWith(curXi, s, p), curC);
+        if (!best || r.win > best.r.win) best = {type:"p", s, p, r};
+      }
+    }
+    if (!coachDone){
+      for (const c of cpool){
+        if (c.id === curC.id) continue;
+        const r = evalPair(curXi, c);
+        if (!best || r.win > best.r.win) best = {type:"c", c, r};
+      }
+    }
+    if (!best || best.r.win <= curWin + 0.0015) break;
+    if (best.type === "p"){
+      steps.push({type:"p", slot:best.s, out:curXi[best.s], in:best.p,
+                  win:best.r.win, gain:best.r.win - curWin});
+      curXi = xiWith(curXi, best.s, best.p);
+      usedIds.add(best.p.id); usedSlots.add(best.s);
+    } else {
+      steps.push({type:"c", out:curC, in:best.c, win:best.r.win, gain:best.r.win - curWin});
+      curC = best.c; coachDone = true;
+    }
+    curWin = best.r.win;
+  }
+  return {steps, xi:curXi, coach:curC, baseL:base.L, afterL:evalPair(curXi, curC).L,
+          baseWin:base.win, afterWin:curWin};
+}
+
+function openReco(){
+  const mi = state.mi, m = MATCHES[mi];
+  const clubIdx = state.side === 0 ? m[2] : m[3];
+  const clubFull = CLUBS[clubIdx].f;
+  const hasLeg = (LEG_BY_CLUB[clubFull] || []).length + LEGEND_COACHES.filter(c => c.club === clubFull).length > 0;
+  const free = recommend(mi, state.side, state.xi, state.coach, state.quota, false);
+  const full = hasLeg ? recommend(mi, state.side, state.xi, state.coach, state.quota, true) : free;
+  const showLocked = !state.unlocked && hasLeg && full.afterWin > free.afterWin + 0.02;
+  const R = (state.unlocked || !showLocked) ? (state.unlocked ? full : free) : full;
+
+  const myL = R.afterL[state.side===0?0:1], opL = R.afterL[state.side===0?1:0];
+
+  const stepHtml = R.steps.length ? R.steps.map(s=>{
+    const isC = s.type === "c";
+    return `<div class="prow" style="border:none;padding:10px 0">
+      <div class="ov ${s.in.legend?"gd":(isC?"sk":"")}">${s.in.ovr}</div>
+      <div class="info">
+        <div class="n"><span>${esc(s.in.name)}</span>
+          ${s.in.legend?`<span class="tag tag-g">传奇</span><span style="font-size:11px">🔒</span>`:""}
+          ${isC?`<span class="tag tag-s">换帅</span>`:""}</div>
+        <div class="m">${isC ? esc(s.in.style)+" · 整队加成" : SLOTS[s.slot]+" · 替下 "+esc(s.out?s.out.name:"-")}</div>
+      </div>
+      <div class="dlt up">${Math.round(R.baseWin*100)}→${Math.round(s.win*100)}%</div>
+    </div>`;
+  }).join("") : `<div class="note" style="padding:14px 0">这套阵容已经是引擎能给出的最优解了。</div>`;
+
+  sheetEl.innerHTML = `<div class="mask" data-close></div>
+    <div class="panel"><div class="grab"></div>
+      <div class="ph"><h3>引擎推荐 · ${R.steps.length} 步</h3>
+        <p>在「换人」和「换帅」之间贪心搜索 · 候选 ${SQUAD[clubIdx].length + (LEG_BY_CLUB[clubFull]||[]).length} 人 + ${coachPool(clubFull, true).length} 帅</p></div>
+      <div class="pl" style="padding:0 18px">
+        <div style="display:flex;align-items:center;gap:10px;padding:14px 0;border-bottom:1px solid var(--ln)">
+          <div style="flex:1">
+            <div style="font-size:10px;color:var(--dim2);margin-bottom:3px">当前</div>
+            <div class="num" style="font-size:19px;font-weight:800">${(state.side===0?R.baseL[0]:R.baseL[1]).toFixed(2)}<span style="color:var(--dim2)"> : </span>${(state.side===0?R.baseL[1]:R.baseL[0]).toFixed(2)}</div>
+            <div style="font-size:11px;color:var(--dim);margin-top:2px">胜率 ${Math.round(R.baseWin*100)}%</div>
+          </div>
+          <div style="color:var(--volt);font-size:18px">→</div>
+          <div style="flex:1;text-align:right">
+            <div style="font-size:10px;color:var(--dim2);margin-bottom:3px">${state.quota} 步之后</div>
+            <div class="num" style="font-size:19px;font-weight:800;color:var(--volt)">${myL.toFixed(2)}<span style="color:var(--dim2)"> : </span>${opL.toFixed(2)}</div>
+            <div style="font-size:11px;color:var(--volt);margin-top:2px">胜率 ${Math.round(R.afterWin*100)}%</div>
+          </div>
+        </div>
+        ${stepHtml}
+        ${showLocked ? `<div class="legend-card" style="margin:14px 0 6px">
+          <div class="lk">🔒</div>
+          <div style="flex:1">
+            <div style="font-size:12.5px;font-weight:700;color:var(--gold)">最优解里全是传奇</div>
+            <div style="font-size:11px;color:var(--dim);margin-top:2px">
+              免费阵容最多做到 ${Math.round(free.afterWin*100)}%，传奇组合能到 ${Math.round(full.afterWin*100)}%。
+            </div>
+          </div></div>` : ""}
+        <div style="height:16px"></div>
+      </div></div>`;
+  sheetEl.classList.add("on");
+  sheetEl.querySelector("[data-close]").onclick = closeSheet;
+
+  const foot = document.createElement("div");
+  foot.style.cssText = "padding:0 18px 26px";
+  foot.innerHTML = showLocked
+    ? `<div class="dock-row">
+         <button class="btn btn-g" id="rFree">免费方案</button>
+         <button class="btn btn-h" id="rBuy">解锁传奇</button></div>`
+    : `<div class="dock-row">
+         <button class="btn btn-g" id="rNone">不用了</button>
+         <button class="btn btn-p" id="rApply">套用</button></div>`;
+  sheetEl.querySelector(".panel").appendChild(foot);
+
+  const apply = rr => {
+    closeSheet();
+    let xi = state.xi.slice(), co = state.coach;
+    const sw = [];
+    let cs = null;
+    rr.steps.forEach(s => {
+      if (s.type === "p"){ const out = xi[s.slot]; xi = xiWith(xi, s.slot, s.in); sw.push({slot:s.slot, out, in:s.in}); }
+      else { cs = {out:co, in:s.in}; co = s.in; }
+    });
+    state.xi = xi; state.coach = co; state.swaps = sw; state.coachSwap = cs;
+    render(); toast("方案已套用");
+  };
+
+  if (showLocked){
+    foot.querySelector("#rFree").onclick = () => { closeSheet(); openRecoFree(); };
+    foot.querySelector("#rBuy").onclick = () => { closeSheet(); paywall("legend"); };
+  } else {
+    foot.querySelector("#rNone").onclick = closeSheet;
+    foot.querySelector("#rApply").onclick = () => apply(R);
+  }
+}
+
+function openRecoFree(){
+  const R = recommend(state.mi, state.side, state.xi, state.coach, state.quota, false);
+  const myL = R.afterL[state.side===0?0:1], opL = R.afterL[state.side===0?1:0];
+  sheetEl.innerHTML = `<div class="mask" data-close></div>
+    <div class="panel"><div class="grab"></div>
+      <div class="ph"><h3>免费方案</h3>
+        <p>只用现有阵容和主帅 · 胜率 ${Math.round(R.baseWin*100)}% → ${Math.round(R.afterWin*100)}%</p></div>
+      <div class="pl" style="padding:0 18px">
+        ${R.steps.map(s=>`<div class="prow" style="border:none;padding:10px 0">
+          <div class="ov ${s.type==="c"?"sk":""}">${s.in.ovr}</div>
+          <div class="info"><div class="n"><span>${esc(s.in.name)}</span>
+            ${s.type==="c"?`<span class="tag tag-s">换帅</span>`:""}</div>
+            <div class="m">${s.type==="c"?esc(s.in.style):SLOTS[s.slot]+" · 替下 "+esc(s.out?s.out.name:"-")}</div></div>
+          <div class="dlt up">+${Math.round((s.win-R.baseWin)*100)}%</div>
+        </div>`).join("") || `<div class="note" style="padding:14px 0">换不动了，这套已经是上限。</div>`}
+        <div style="padding:12px 0 4px"><div class="note">
+          λ ${myL.toFixed(2)} : ${opL.toFixed(2)} —— 现有牌面的天花板就在这里。要再往上，只能上传奇。
+        </div></div><div style="height:14px"></div>
+      </div></div>`;
+  sheetEl.classList.add("on");
+  sheetEl.querySelector("[data-close]").onclick = closeSheet;
+  const foot = document.createElement("div");
+  foot.style.cssText = "padding:0 18px 26px";
+  foot.innerHTML = `<div class="dock-row"><button class="btn btn-g" id="f1">关闭</button>
+    <button class="btn btn-p" id="f2">套用</button></div>`;
+  sheetEl.querySelector(".panel").appendChild(foot);
+  foot.querySelector("#f1").onclick = closeSheet;
+  foot.querySelector("#f2").onclick = () => {
+    closeSheet();
+    let xi = state.xi.slice(), co = state.coach, cs = null;
+    const sw = [];
+    R.steps.forEach(s => {
+      if (s.type === "p"){ const out = xi[s.slot]; xi = xiWith(xi, s.slot, s.in); sw.push({slot:s.slot, out, in:s.in}); }
+      else { cs = {out:co, in:s.in}; co = s.in; }
+    });
+    state.xi = xi; state.coach = co; state.swaps = sw; state.coachSwap = cs;
+    render(); toast("方案已套用");
+  };
+}
+
+/* ---------------------------------------------------------------- 重算 */
+function play(){
+  const mi = state.mi, m = MATCHES[mi];
+  const L = currentL(state, mi);
+  const seed = seedFor(mi, state.side, L[0], L[1], state.coach ? state.coach.id : "");
+  const r = settle(seed, L[0], L[1]);
+  const rng = r.rng;
+
+  const xiH = state.side === 0 ? state.xi : DEFAULT_XI[m[2]];
+  const xiA = state.side === 1 ? state.xi : DEFAULT_XI[m[3]];
+
+  const seq = [];
+  for (let i=0;i<r.x;i++) seq.push(0);
+  for (let i=0;i<r.y;i++) seq.push(1);
+  for (let i=seq.length-1;i>0;i--){ const j = Math.floor(rng()*(i+1)); [seq[i],seq[j]]=[seq[j],seq[i]]; }
+  const times = seq.map(()=>1+Math.floor(rng()*90)).sort((a,b)=>a-b);
+
+  const pickW = (pool, w) => {
+    const tot = w.reduce((a,b)=>a+b,0);
+    let u = rng()*tot;
+    for (let i=0;i<pool.length;i++){ u -= w[i]; if (u <= 0) return pool[i]; }
+    return pool[pool.length-1];
+  };
+  const scorerOf = (xiArr) => {
+    const pool = xiArr.filter(Boolean);
+    if (!pool.length) return null;
+    return pickW(pool, pool.map(p => Math.max(0.02,
+      (p.att + 1.15) * (p.slot >= 8 ? 2.4 : (p.slot >= 5 ? 1.1 : 0.30)))));
+  };
+  // 约三分之二的进球有助攻，助攻者按视野(vis)加权，排除进球者本人
+  const assisterOf = (xiArr, scorer) => {
+    if (rng() < 0.34) return null;
+    const pool = xiArr.filter(p => p && (!scorer || p.id !== scorer.id));
+    if (!pool.length) return null;
+    return pickW(pool, pool.map(p => Math.max(0.05, (p.a[6] + 8) * (p.slot >= 5 ? 1.7 : 0.5))));
+  };
+
+  const evs = seq.map((sd, i) => {
+    const xiArr = sd === 0 ? xiH : xiA;
+    const p = scorerOf(xiArr);
+    return { mn: times[i], ci: sd === 0 ? m[2] : m[3], p, sd, assist: assisterOf(xiArr, p) };
+  }).sort((a,b) => a.mn - b.mn);
+
+  state.result = {x:r.x, y:r.y, L, seed, evs, hg:m[4], ag:m[5]};
+  go("result");
+}
+
+/* ---------------------------------------------------------------- 结果 */
+function renderResult(){
+  const R = state.result, m = MATCHES[state.mi];
+  const h = m[2], a = m[3];
+  const changed = R.x !== R.hg || R.y !== R.ag;
+  const touched = state.swaps.length > 0 || !!state.coachSwap;
+  const myNew = state.side === 0 ? R.x : R.y;
+  const opNew = state.side === 0 ? R.y : R.x;
+
+  return `<div class="wrap">
+    <div style="padding:14px 0 0"><button class="btn btn-s btn-g" data-back>← 返回</button></div>
+    <div class="big-score">
+      <div style="display:flex;align-items:flex-end;justify-content:center;gap:26px;margin-bottom:10px">
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+          ${bd(h,true)}<div style="font-size:10.5px;color:var(--dim2)">${esc(CLUBS[h].n)}</div></div>
+        <div style="display:flex;flex-direction:column;align-items:center;gap:6px">
+          ${bd(a,true)}<div style="font-size:10.5px;color:var(--dim2)">${esc(CLUBS[a].n)}</div></div>
+      </div>
+      <div class="v num">${R.x}<span class="sep">:</span>${R.y}</div>
+      <div class="tagline">${!touched
+        ? `<span style="color:var(--dim2)">按首发阵容重算了一遍</span>`
+        : changed ? `<span style="color:var(--volt)">比分被改写了</span>`
+        : `结果没变 —— 但过程已经不一样了`}</div>
+      <div class="cmp"><span>现实</span><span class="old num">${R.hg}:${R.ag}</span>
+        <span class="ar">→</span><span class="num" style="color:var(--volt);font-weight:800">${R.x}:${R.y}</span></div>
+    </div>
+
+    <div class="card pad" style="margin-top:14px;padding:11px 14px">
+      ${R.evs.length
+        ? goalList(R.evs.map(e=>[e.mn, e.sd, e.p ? e.p.name : "", e.assist ? e.assist.name : null]), h, a)
+        : `<div class="tl-none">一场 0:0。有时候换人也救不回一个夜晚。</div>`}
+      <div class="note" style="margin-top:7px;color:var(--dim2);font-size:9.5px">
+        ${DEVUI ? DEVUI.resultNote : "重算后的比赛，进球时间与助攻由模型生成"}
+      </div>
+    </div>
+
+    ${(state.swaps.length || state.coachSwap) ? `<div class="sec-h"><h2>你的改动</h2></div>
+    <div class="card pad">
+      ${state.coachSwap ? `<div class="kv"><span class="k">主帅</span>
+        <span class="v"><span style="color:var(--dim2)">${esc(state.coachSwap.out.name)}</span>
+        <span style="color:var(--gold)"> → </span>${esc(state.coachSwap.in.name)}</span></div>` : ""}
+      ${state.swaps.map(s=>`<div class="kv"><span class="k">${SLOTS[s.slot]}</span>
+        <span class="v"><span style="color:var(--dim2)">${esc(s.out?s.out.name:"-")}</span>
+        <span style="color:${s.in.legend?"var(--gold)":"var(--volt)"}"> → </span>${esc(s.in.name)}</span></div>`).join("")}
+    </div>` : ""}
+
+    <div class="sec-h"><h2>模型</h2></div>
+    <div class="card pad">
+      <div class="kv"><span class="k">${DEV ? "预期进球 λ" : "模型预期"}</span><span class="v num">${R.L[0].toFixed(2)} : ${R.L[1].toFixed(2)}</span></div>
+      ${DEVUI ? DEVUI.seedBlock(R.seed) : `<div class="note" style="margin-top:10px">
+        同一套阵容，永远得到同一个比分。改一个人，就是另一条时间线。
+      </div>`}
+    </div>
+    <div style="height:108px"></div>
+  </div>
+
+  <div class="dock"><div class="dock-in"><div class="dock-row">
+    <button class="btn btn-g" style="flex:0 0 auto;width:auto;padding:0 18px" data-again>再改</button>
+    <button class="btn btn-p" data-share>生成分享卡</button>
+  </div></div></div>`;
+}
+
+/* ---------------------------------------------------------------- 分享卡 */
+function shareCard(){
+  const R = state.result, m = MATCHES[state.mi];
+  const W = 1080, H = 1350;
+  const cv = document.createElement("canvas");
+  cv.width = W; cv.height = H;
+  const g = cv.getContext("2d");
+
+  const bg = g.createLinearGradient(0,0,0,H);
+  bg.addColorStop(0,"#0B0F18"); bg.addColorStop(1,"#06090F");
+  g.fillStyle = bg; g.fillRect(0,0,W,H);
+  const rg = g.createRadialGradient(W/2, H*0.32, 30, W/2, H*0.32, W*0.95);
+  rg.addColorStop(0,"rgba(200,255,61,.10)"); rg.addColorStop(1,"rgba(200,255,61,0)");
+  g.fillStyle = rg; g.fillRect(0,0,W,H);
+
+  g.textAlign = "center";
+  g.fillStyle = "#C8FF3D"; g.font = "900 30px -apple-system,PingFang SC,sans-serif";
+  g.fillText("W D L", W/2, 92);
+  g.fillStyle = "#5C6880"; g.font = "600 22px -apple-system,PingFang SC,sans-serif";
+  g.fillText("传奇在手，天下我有", W/2, 132);
+
+  const badge = (ci, x, y, s) => {
+    const c = CLUBS[ci], r = 20;
+    g.fillStyle = c.col;
+    g.beginPath();
+    g.moveTo(x-s/2+r, y-s/2);
+    g.arcTo(x+s/2, y-s/2, x+s/2, y+s/2, r);
+    g.arcTo(x+s/2, y+s/2, x-s/2, y+s/2, r);
+    g.arcTo(x-s/2, y+s/2, x-s/2, y-s/2, r);
+    g.arcTo(x-s/2, y-s/2, x+s/2, y-s/2, r);
+    g.closePath(); g.fill();
+    g.fillStyle = lum(c.col); g.font = "900 38px -apple-system,sans-serif";
+    g.fillText(c.c, x, y+13);
+  };
+
+  badge(m[2], W/2-215, 268, 124);
+  badge(m[3], W/2+215, 268, 124);
+  g.fillStyle = "#8592A8"; g.font = "600 27px -apple-system,PingFang SC,sans-serif";
+  g.fillText(CLUBS[m[2]].n, W/2-215, 368);
+  g.fillText(CLUBS[m[3]].n, W/2+215, 368);
+
+  g.fillStyle = "#E9EDF6"; g.font = "900 150px -apple-system,sans-serif";
+  g.fillText(`${R.x} : ${R.y}`, W/2, 528);
+
+  g.fillStyle = "#5C6880"; g.font = "600 27px -apple-system,PingFang SC,sans-serif";
+  g.fillText(`现实比分  ${R.hg} : ${R.ag}`, W/2, 588);
+
+  g.fillStyle = "#3A4560"; g.font = "500 22px -apple-system,PingFang SC,sans-serif";
+  g.fillText(`${DEV ? "模型预期  λ " : "模型预期  "}${R.L[0].toFixed(2)} : ${R.L[1].toFixed(2)}`, W/2, 630);
+
+  let y = 706;
+  if (state.coachSwap){
+    g.fillStyle = "#252E42"; g.fillRect(110, y-42, W-220, 84);
+    g.textAlign = "left";
+    g.fillStyle = "#FFC94A"; g.font = "800 26px -apple-system,PingFang SC,sans-serif";
+    g.fillText("换帅", 142, y+9);
+    g.fillStyle = "#8592A8"; g.font = "600 25px -apple-system,PingFang SC,sans-serif";
+    g.fillText(state.coachSwap.out.name, 236, y+9);
+    g.fillStyle = "#FFC94A"; g.fillText("→", 560, y+9);
+    g.fillStyle = "#E9EDF6"; g.fillText(state.coachSwap.in.name, 616, y+9);
+    g.textAlign = "center"; y += 100;
+  }
+  if (state.swaps.length){
+    g.fillStyle = "#C8FF3D"; g.font = "800 26px -apple-system,PingFang SC,sans-serif";
+    g.fillText("我改了这个阵容", W/2, y - 26); y += 22;
+    state.swaps.slice(0,3).forEach(sp => {
+      g.fillStyle = "#252E42"; g.fillRect(110, y-40, W-220, 80);
+      g.textAlign = "left";
+      g.fillStyle = "#5C6880"; g.font = "700 23px -apple-system,PingFang SC,sans-serif";
+      g.fillText(SLOTS[sp.slot], 142, y+8);
+      g.fillStyle = "#8592A8"; g.font = "600 24px -apple-system,PingFang SC,sans-serif";
+      g.fillText(sp.out ? sp.out.name : "-", 236, y+8);
+      g.fillStyle = "#C8FF3D"; g.fillText("→", 596, y+8);
+      g.fillStyle = sp.in.legend ? "#FFC94A" : "#E9EDF6";
+      g.fillText(sp.in.name, 652, y+8);
+      g.textAlign = "center"; y += 94;
+    });
+  }
+
+  g.fillStyle = "#252E42"; g.fillRect(0, H-172, W, 1);
+  g.fillStyle = "#8592A8"; g.font = "600 23px -apple-system,PingFang SC,sans-serif";
+  g.fillText("英超 2015/16 · 真实赛果 + 模型重算", W/2, H-114);
+  g.fillStyle = "#C8FF3D"; g.font = "800 28px -apple-system,PingFang SC,sans-serif";
+  g.fillText("扫码，改你自己的那场", W/2, H-64);
+
+  const url = cv.toDataURL("image/png");
+  modalEl.innerHTML = `<div class="mask" data-close></div>
+    <div class="box" style="padding:12px">
+      <img src="${url}" style="width:100%;border-radius:12px;display:block">
+      <div class="dock-row" style="margin-top:12px">
+        <button class="btn btn-g" data-close>关闭</button>
+        <a class="btn btn-p" download="wdl.png" href="${url}">保存图片</a>
+      </div></div>`;
+  modalEl.classList.add("on");
+  modalEl.querySelectorAll("[data-close]").forEach(b => b.onclick = closeModal);
+}
+function closeModal(){ modalEl.classList.remove("on"); modalEl.innerHTML = ""; }
+
+/* ---------------------------------------------------------------- 付费墙 */
+function paywall(reason){
+  const clubIdx = state.mi != null
+    ? (state.side === 0 ? MATCHES[state.mi][2] : MATCHES[state.mi][3])
+    : FAV;
+  const clubFull = CLUBS[clubIdx].f;
+  const legs = LEG_BY_CLUB[clubFull] || [];
+  const lcs = LEGEND_COACHES.filter(c => c.club === clubFull);
+  const total = legs.length + lcs.length;
+  const owned = state.unlocked ? total : 0;
+
+  modalEl.innerHTML = `<div class="mask" data-close></div>
+    <div class="box">
+      <div style="text-align:center;margin-bottom:16px">
+        <div style="font-size:10.5px;color:var(--gold);font-weight:800;letter-spacing:.16em">LEGEND PACK</div>
+        <div style="font-size:23px;font-weight:900;margin-top:6px;letter-spacing:-.02em">传奇在手，天下我有</div>
+        <div style="font-size:11.5px;color:var(--dim);margin-top:8px;line-height:1.7">
+          ${reason === "quota"
+            ? "免费每场只能改 3 次。<br>解锁后每场 5 次，还能把主队传奇拉进阵容和教练席。"
+            : `引擎算过了：<br>${esc(CLUBS[clubIdx].n)} 的最优解里有传奇，而传奇是锁着的。`}
+        </div>
+      </div>
+
+      <div style="background:var(--s2);border-radius:12px;padding:13px;margin-bottom:14px">
+        <div style="font-size:10.5px;color:var(--dim2);margin-bottom:8px">${esc(CLUBS[clubIdx].n)} 传奇收藏 ${owned}/${total}</div>
+        ${lcs.map(l=>`<div style="display:flex;align-items:center;gap:10px;padding:6px 0">
+          <div style="width:30px;height:30px;border-radius:9px;background:rgba(90,200,250,.12);
+            display:grid;place-items:center;font-size:13px">${state.unlocked?"★":"🔒"}</div>
+          <div style="flex:1">
+            <div style="font-size:12.5px;font-weight:700;color:${state.unlocked?"var(--tx)":"var(--dim)"}">${esc(l.name)}
+              <span class="tag tag-s" style="margin-left:4px">主帅</span></div>
+            <div style="font-size:9.5px;color:var(--dim2)">${l.style} · ${l.ovr}</div>
+          </div>
+          <div style="font-size:10.5px;color:var(--gold);font-weight:800">${state.unlocked?"已拥有":"未解锁"}</div>
+        </div>`).join("")}
+        ${legs.map(l=>`<div style="display:flex;align-items:center;gap:10px;padding:6px 0">
+          <div style="width:30px;height:30px;border-radius:9px;background:rgba(255,201,74,.12);
+            display:grid;place-items:center;font-size:13px">${state.unlocked?"★":"🔒"}</div>
+          <div style="flex:1">
+            <div style="font-size:12.5px;font-weight:700;color:${state.unlocked?"var(--tx)":"var(--dim)"}">${esc(l.name)}
+              <span class="tag tag-g" style="margin-left:4px">球员</span></div>
+            <div style="font-size:9.5px;color:var(--dim2)">${SLOT_CN[l.slot]} · ${l.ovr}</div>
+          </div>
+          <div style="font-size:10.5px;color:var(--gold);font-weight:800">${state.unlocked?"已拥有":"未解锁"}</div>
+        </div>`).join("")}
+        ${total ? "" : `<div class="note">这个俱乐部暂无传奇卡。</div>`}
+      </div>
+
+      <div class="kv"><span class="k">单场体验</span><span class="v">¥6</span></div>
+      <div class="kv"><span class="k">本赛季传奇包（全部 12 张）</span><span class="v" style="color:var(--gold)">¥18</span></div>
+      <div class="kv"><span class="k">每场额度</span><span class="v">3 → 5 次</span></div>
+
+      <div class="note" style="margin:12px 0 14px">
+        不承诺提升胜率。传奇改变的是预期进球，比分仍然由概率决定 —— 你可以更强，但仍然可能输。
+      </div>
+
+      <div class="dock-row">
+        <button class="btn btn-g" data-close>再看看</button>
+        <button class="btn btn-h" id="doBuy">¥18 解锁</button>
+      </div>
+      <div style="text-align:center;margin-top:10px">
+        <button class="note" id="doDemo" style="text-decoration:underline;color:var(--dim)">演示：直接解锁（原型用）</button>
+      </div>
+    </div>`;
+  modalEl.classList.add("on");
+  modalEl.querySelectorAll("[data-close]").forEach(b => b.onclick = closeModal);
+  modalEl.querySelector("#doBuy").onclick = () => {
+    state.unlocked = true; state.quota = PAID_QUOTA;
+    closeModal(); render(); toast("传奇已解锁 · 每场 5 次额度");
+  };
+  modalEl.querySelector("#doDemo").onclick = () => {
+    state.unlocked = true; state.quota = PAID_QUOTA;
+    closeModal(); render(); toast("演示模式已解锁");
+  };
+}
+
+/* ---------------------------------------------------------------- 模型说明 */
+function infoModal(){
+  const evN = MATCHES.filter(m => m[14] && m[14].length).length;
+  const body = DEVUI ? DEVUI.modelBody : `
+        <b>1 · 球队强度</b><br>
+        只看本轮之前的赛果，样本越多，估计越稳。<br><br>
+        <b>2 · 阵容</b><br>
+        11 个位置各有攻、防权重，换人后按新阵容相对首发的偏移重算。<br><br>
+        <b>3 · 主帅</b><br>
+        教练在进攻和防守两端同时加成，所以一次换帅往往比换一个人更管用。<br><br>
+        <b>4 · 比分</b><br>
+        按预期进球数抽样，比分服从双泊松分布，低比分做了相关性修正。<br><br>
+        <b>5 · 可复现</b><br>
+        同一场、同一套阵容，永远得到同一个比分。改一个人，就是另一条时间线。`;
+
+  const foot = DEVUI ? DEVUI.modelFoot(evN, MATCHES.length)
+    : `球员能力值来自 StatsBomb 公开事件数据，赛果来自 football-data.co.uk。<br>
+        俱乐部与球员为真实名称；队徽为自绘色块，未使用官方标识。<br>
+      非官方作品，与英超联盟及任何俱乐部无关联。`;
+
+  modalEl.innerHTML = `<div class="mask" data-close></div>
+    <div class="box">
+      <div style="font-size:17px;font-weight:900;margin-bottom:12px">模型是怎么算的</div>
+      <div class="note" style="line-height:1.9">${body}
+      </div>
+      <div class="note" style="margin-top:14px;padding-top:12px;border-top:1px solid var(--ln)">
+        ${foot}
+      </div>
+      <div class="note mono" style="margin-top:12px;color:var(--dim2);font-size:9.5px;text-align:center">
+        v${BUILD.version}${DEV ? " · DEV" : ""} · ${BUILD.built}
+      </div>
+      <button class="btn btn-g" style="margin-top:12px" data-close>知道了</button>
+    </div>`;
+  modalEl.classList.add("on");
+  modalEl.querySelectorAll("[data-close]").forEach(b => b.onclick = closeModal);
+}
+
+/* ---------------------------------------------------------------- 事件 */
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-r],[data-mi],[data-back],[data-edit],[data-slot],[data-coach],[data-reco],[data-play],[data-again],[data-share]");
+  if (!t) return;
+
+  if (t.dataset.r != null){ state.round = +t.dataset.r; render(); return; }
+  if (t.dataset.mi != null){ go("detail", {mi:+t.dataset.mi}); return; }
+
+  if (t.hasAttribute("data-back")){
+    if (state.screen === "detail") go("home");
+    else if (state.screen === "edit") go("detail");
+    else if (state.screen === "result") go("edit");
+    return;
+  }
+  if (t.hasAttribute("data-edit")){
+    const m = MATCHES[state.mi];
+    const side = m[2] === FAV ? 0 : (m[3] === FAV ? 1 : 1);
+    const clubIdx = side === 0 ? m[2] : m[3];
+    go("edit", {
+      side, xi: DEFAULT_XI[clubIdx].slice(),
+      coach: DEFAULT_COACH[CLUBS[clubIdx].f],
+      swaps: [], coachSwap: null, result: null,
+    });
+    return;
+  }
+  if (t.dataset.slot != null){ openPicker(+t.dataset.slot); return; }
+  if (t.hasAttribute("data-coach")){ openCoachPicker(); return; }
+  if (t.hasAttribute("data-reco")){ openReco(); return; }
+  if (t.hasAttribute("data-play")){
+    if (usedQuota() === 0){ toast("先换个人或换个帅"); return; }
+    play(); return;
+  }
+  if (t.hasAttribute("data-again")){ go("edit"); return; }
+  if (t.hasAttribute("data-share")){ shareCard(); return; }
+});
+$("btnInfo").onclick = infoModal;
+document.addEventListener("keydown", e => { if (e.key === "Escape"){ closeSheet(); closeModal(); } });
+
+/* 启动 */
+(function boot(){
+  const vt = document.getElementById("verTag");
+  vt.textContent = "v" + BUILD.version + (DEV ? " DEV" : "");
+  if (DEV) vt.classList.add("dev");
+
+  const h = new URLSearchParams(location.hash.slice(1));
+  if (!h.has("m")){ render(); return; }
+  const mi = +h.get("m");
+  if (!(mi >= 0 && mi < MATCHES.length)){ render(); return; }
+  state.mi = mi;
+  const m = MATCHES[mi];
+  const side = m[2] === FAV ? 0 : (m[3] === FAV ? 1 : 1);
+  const clubIdx = side === 0 ? m[2] : m[3];
+  if (h.has("edit")){
+    Object.assign(state, {
+      side, xi: DEFAULT_XI[clubIdx].slice(),
+      coach: DEFAULT_COACH[CLUBS[clubIdx].f], swaps: [], coachSwap: null,
+    });
+    if (h.has("pay")){ state.unlocked = true; state.quota = PAID_QUOTA; }
+    if (h.has("reco")){
+      render(); go("edit");
+      setTimeout(() => (state.unlocked ? openReco() : openReco()), 60);
+      return;
+    }
+    if (h.has("play")){ render(); play(); return; }
+    go("edit");
+    return;
+  }
+  render(); go("detail");
+})();
+</script>
+</body>
+</html>

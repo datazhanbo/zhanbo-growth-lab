@@ -141,3 +141,10 @@
   for = "/ua/img/*"
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
+
+# /wdl — WDL 足球魔改小游戏（仅直发链接可达，主站导航无入口；禁止收录）
+[[headers]]
+  for = "/wdl/*"
+  [headers.values]
+    X-Robots-Tag = "noindex, nofollow"
+    Cache-Control = "public, max-age=0, must-revalidate"
