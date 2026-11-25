@@ -64,6 +64,7 @@ zanbo-growth-lab/
 - ✅ Git 驱动，版本控制完整记录
 - ✅ GitHub 提交自动部署
 - ✅ 文章分类、标签管理
+- ✅ 站内搜索（Fuse.js，`/search/`，零外部依赖）
 - ✅ 目录导航、阅读时间统计
 - ✅ 评论系统（Giscus）
 - ✅ RSS 订阅

@@ -4,7 +4,7 @@ title: "AD Agent 开发实录和版本迭代——4 天从两个 Skill 到一个
 date: 2026-07-11T00:00:00+08:00
 description: "4 天、10 个版本、5 个 Phase：从 Cursor 里的两个 Skill，到能自治的 SmartUA ad-agent。附 5 道就绪度自测和 90 天路线图诊断。"
 keywords: ["Ad Agent", "Agentic UA", "vibe coding", "投放自动化", "ReAct", "Human in the loop", "Ark 推理"]
-tags: ["ad-agent", "agentic", "vibe-coding", "企业 Agent", "决策工作流"]
+tags: ["Ad Agent", "agentic", "vibe-coding", "决策工作流"]
 categories: ["实战笔记"]
 draft: false
 showToc: true

@@ -4,7 +4,7 @@ title: "AdTech 入门和概念整理：一次广告展示背后，到底有哪�
 date: 2026-10-10T00:00:00+08:00
 description: "AdTech 不难在术语，难在分清角色：广告主侧的 DSP、开发者侧的 SSP、中间的 Exchange、负责归因的 MMP，以及绕开这一切的大媒体围墙花园。从一次 100 毫秒的实时竞价讲清整条链路，再串起归因、出价与隐私冲击。"
 keywords: ["AdTech", "广告技术入门", "DSP", "SSP", "RTB", "广告归因", "MMP", "in-app bidding", "SKAN", "隐私", "程序化广告"]
-tags: ["AdTech", "广告技术", "程序化", "归因", "入门"]
+tags: ["AdTech", "程序化", "归因", "入门"]
 categories: ["入门"]
 draft: false
 showToc: true

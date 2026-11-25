@@ -5,7 +5,7 @@ description: "按小时只读的 AB 实验平台诊断：流量分层、重叠�
 keywords: ["实验平台建设", "AB实验咨询", "实验体系搭建", "重叠实验框架", "实验诊断", "因果推断", "增长实验", "展博增长实验室"]
 draft: false
 comments: false
-tags: ["A/B测试", "实验平台", "因果推断", "增长系统"]
+tags: ["AB实验", "实验平台", "因果推断", "增长系统"]
 categories: ["增长服务"]
 offer:
   price: "1000"

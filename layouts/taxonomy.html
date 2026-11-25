@@ -11,21 +11,48 @@
 </header>
 {{- end }}
 
-<div class="taxonomy-intro" style="margin-bottom: 2rem; padding: 1rem; background: var(--code-bg); border-radius: 8px;">
-    <p>通过标签可以快速浏览全站内容，包括 <strong>📝 文章</strong>、<strong>💼 案例</strong> 和 <strong>📦 服务</strong>。</p>
+<div class="taxonomy-intro" style="margin-bottom: 1.25rem; padding: 1rem; background: var(--code-bg); border-radius: 8px;">
+    <p style="margin:0 0 0.5rem">找文章优先用 <a href="{{ "/topics/" | relURL }}"><strong>主题导航</strong></a>（已归类、只计文章数）。本页是完整标签墙，文末点击仍会进到这里。</p>
+    {{- partial "topic_chips.html" . -}}
 </div>
 
+{{- /* ByCount：重点标签先暴露；单篇标签收到折叠区 */ -}}
+{{- $type := .Type -}}
+{{- $featured := slice -}}
+{{- $rare := slice -}}
+{{- range .Data.Terms.ByCount -}}
+  {{- $name := .Name -}}
+  {{- $count := .Count -}}
+  {{- with site.GetPage (printf "/%s/%s" $type $name) -}}
+    {{- $item := dict "page" . "count" $count "name" $name -}}
+    {{- if ge $count 2 -}}
+      {{- $featured = $featured | append $item -}}
+    {{- else -}}
+      {{- $rare = $rare | append $item -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<h2 style="font-size:1.05rem;margin:1.5rem 0 0.75rem">常用标签 <span style="color:var(--secondary);font-weight:500">（≥2 篇）</span></h2>
 <ul class="terms-tags">
-    {{- $type := .Type }}
-        {{- range $key, $value := .Data.Terms.Alphabetical }}
-            {{- $name := .Name }}
-            {{- $count := .Count }}
-            {{- with site.GetPage (printf "/%s/%s" $type $name) }}
-            <li>
-                <a href="{{ .Permalink }}">{{ .LinkTitle }} <sup><strong><sup>{{ $count }}</sup></strong></sup> </a>
-            </li>
-        {{- end }}
-    {{- end }}
+  {{- range $featured -}}
+  <li>
+    <a href="{{ .page.Permalink }}">{{ .page.LinkTitle }} <sup><strong>{{ .count }}</strong></sup></a>
+  </li>
+  {{- end -}}
 </ul>
 
-{{- end }}{{/* end main */ -}}
+{{- if $rare -}}
+<details style="margin-top:1.5rem">
+  <summary style="cursor:pointer;font-weight:600">更多标签（仅 1 篇，{{ len $rare }} 个）</summary>
+  <ul class="terms-tags" style="margin-top:0.75rem">
+    {{- range $rare -}}
+    <li>
+      <a href="{{ .page.Permalink }}">{{ .page.LinkTitle }} <sup>{{ .count }}</sup></a>
+    </li>
+    {{- end -}}
+  </ul>
+</details>
+{{- end -}}
+
+{{- end }}

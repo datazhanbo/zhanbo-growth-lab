@@ -5,7 +5,7 @@ description: "出海团队实验平台从互斥桶到正交流量、形成千级
 keywords: ["实验平台案例", "AB实验案例", "流量分层", "并发实验", "实验平台共建", "增长咨询案例", "展博增长实验室"]
 draft: false
 comments: false
-tags: ["实验平台", "A/B测试", "平台共建", "匿名案例"]
+tags: ["实验平台", "AB实验", "平台共建", "匿名案例"]
 service: "/services/decision-credibility-diagnostic/"
 ---
 

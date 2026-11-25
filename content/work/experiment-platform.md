@@ -5,7 +5,7 @@ description: "亿级 MAU 实验架构升级：互斥桶到重叠框架，千级�
 keywords: ["实验平台案例", "AB实验案例", "重叠实验框架", "流量分层", "实验平台架构", "互斥桶", "并发实验", "展博增长实验室"]
 draft: false
 comments: false
-tags: ["实验平台", "A/B测试", "流量架构"]
+tags: ["实验平台", "AB实验", "流量架构"]
 service: "/services/experiment-platform/"
 ---
 

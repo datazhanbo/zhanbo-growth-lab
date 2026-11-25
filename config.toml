@@ -39,7 +39,7 @@ unsafe = true
 relativeURLs = false
 canonifyURLs = false
 
-# 菜单
+# 菜单（转化优先：服务/案例/文章靠前；工具与搜索后置；预约诊断压轴）
 [menu]
   [[menu.main]]
     name = "首页"
@@ -47,23 +47,23 @@ canonifyURLs = false
     weight = 10
 
   [[menu.main]]
-    name = "工具"
-    url = "/tools/"
-    weight = 20
-
-  [[menu.main]]
     name = "服务"
     url = "/services/"
-    weight = 30
+    weight = 20
 
   [[menu.main]]
     name = "案例"
     url = "/work/"
-    weight = 40
+    weight = 30
 
   [[menu.main]]
     name = "文章"
     url = "/posts/"
+    weight = 40
+
+  [[menu.main]]
+    name = "关于"
+    url = "/about/"
     weight = 50
 
   [[menu.main]]
@@ -72,9 +72,15 @@ canonifyURLs = false
     weight = 55
 
   [[menu.main]]
-    name = "关于"
-    url = "/about/"
+    name = "工具"
+    url = "/tools/"
     weight = 60
+
+  [[menu.main]]
+    identifier = "search"
+    name = "搜索"
+    url = "/search/"
+    weight = 65
 
   [[menu.main]]
     name = "预约诊断"
@@ -103,6 +109,21 @@ canonifyURLs = false
   ShowWordCount = false
   ShowRssButtonInSectionTermList = true
   UseHugoToc = true
+
+# 站内搜索（PaperMod 内置 Fuse.js，索引由 layouts/index.json 生成）
+[params.fuseOpts]
+  iscasesensitive = false
+  includescore = false
+  includematches = false
+  minmatchcharlength = 1
+  shouldsort = true
+  findallmatches = false
+  location = 0
+  threshold = 0.35
+  distance = 1000
+  ignorelocation = true
+  limit = 20
+  keys = ["title", "permalink", "summary", "content", "tags"]
 
 # 顶栏 logo 短名（完整站名仍由顶层 title 输出到浏览器标题与 meta）
 [params.label]

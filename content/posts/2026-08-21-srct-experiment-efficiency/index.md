@@ -4,7 +4,7 @@ title: "AI 能替你跑实验吗？能筛，不能定"
 date: 2026-08-21T00:00:00+08:00
 description: "从 RCT 到 s-RCT：让 AI agent 先模拟、先筛，把流量省给值得的实验。Amazon 论文显示原始方向信号偏弱，校准后误差才大降——能筛，不能定。"
 keywords: ["s-RCT", "模拟RCT", "实验效率", "AI 增长", "实验漏斗", "sim-to-real", "AB实验", "增长诊断"]
-tags: ["experiment", "s-rct", "实验效率", "ai-growth", "增长诊断"]
+tags: ["AB实验", "s-rct", "实验效率", "ai-growth", "增长诊断"]
 categories: ["方法论"]
 draft: false
 showToc: true

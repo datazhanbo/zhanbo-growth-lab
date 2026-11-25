@@ -5,7 +5,7 @@ description: "8–12 周建 Inhouse 数据底座＋ROI 报表＋盯盘规则引�
 keywords: ["Inhouse UA", "UA 数据底座", "UA-Monitor", "Agentic UA", "买量投放", "数据主权", "归因模型", "ROI 归因", "出海投放", "展博增长实验室"]
 draft: false
 comments: false
-tags: ["Inhouse UA", "UA 数据底座", "UA-Monitor", "Agentic UA", "买量投放", "数据主权"]
+tags: ["Inhouse UA", "UA-Monitor", "Agentic UA", "买量", "数据主权"]
 categories: ["增长服务"]
 ---
 

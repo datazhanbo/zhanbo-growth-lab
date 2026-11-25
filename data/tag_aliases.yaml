@@ -1,0 +1,46 @@
+# 标签规范名治理：旧写法 → 规范名
+# 跑 scripts/normalize_tags.py 写回 content/**/*.md 的 tags
+# 主题桶 data/tag_buckets.yaml 可同时保留别名作兜底
+
+canonical:
+  # 实验 / AB
+  "A/B Testing": "AB实验"
+  "A/B测试": "AB实验"
+  "AB测试": "AB实验"
+  "abtest": "AB实验"
+  "Abtest": "AB实验"
+  "experiment": "AB实验"
+
+  # Agent 大小写与连写（细类不互并：AI Agent / Ad Agent / Data Agent 保留）
+  "agent": "Agent"
+  "ad-agent": "Ad Agent"
+  "企业 Agent": "Ad Agent"
+  "agentic-ua": "Agentic UA"
+  "agentic-ads": "Agentic Ads"
+  # bare "agentic" 不并进 Agentic Ads（语义过宽）
+  "agent护栏": "Agent护栏"
+
+  # UA / 监控
+  "inhouse-ua": "Inhouse UA"
+  "inhouse 自建": "Inhouse UA"
+  "ua-monitor": "UA-Monitor"
+  "UA 数据底座": "UA-Monitor"
+
+  # 测量
+  "measurement": "测量"
+  "IROAS": "iROAS"
+  "mmm": "MMM"
+  "mcp": "MCP"
+
+  # 买量
+  "买量投放": "买量"
+
+  # 实验平台近义（建设/前置仍可留细标签；仅并明显重复）
+  "实验平台建设": "实验平台"
+
+  # 大小写 / 中英明显同义
+  "saas": "SaaS"
+  "consulting": "咨询"
+  "企业AI": "企业级 AI"
+  "广告技术": "AdTech"
+  "顾问": "咨询顾问"

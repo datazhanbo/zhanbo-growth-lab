@@ -1,0 +1,120 @@
+# 文章路由：把自动生成的碎标签归进「问题桶」
+# 计数只含 section=posts；文末原标签仍保留，点击进 /tags/xxx/
+# 维护：新文若打了新标签，把同义写法补进对应 tags 列表
+
+buckets:
+  - id: experiment-trust
+    title: 实验可信
+    summary: 样本量、置信/功效、序贯、holdout——先问结论能不能信
+    tags:
+      - AB实验
+      - A/B Testing
+      - A/B测试
+      - AB测试
+      - abtest
+      - 实验平台
+      - 实验体系
+      - 实验成本
+      - 样本量
+      - MDE
+      - 置信水平
+      - 检验力
+      - 统计可信度
+      - 序贯检验
+      - mSPRT
+      - 早停
+      - holdout
+      - s-rct
+      - Eval
+      - 证据等级
+
+  - id: measure-then-scale
+    title: 测可信再放量
+    summary: 双账、尺子、iROAS、口径——平台好看不等于生意增量
+    tags:
+      - 测量
+      - measurement
+      - 增量测量
+      - iROAS
+      - ROAS
+      - 双账
+      - 尺子
+      - benchmark
+      - 口径
+      - 归因
+      - mmm
+      - AppLovin
+      - 杀养闸
+      - 净增量
+      - 软启动
+
+  - id: ua-scale
+    title: 买量与放量
+    summary: 买量阶段、素材外推、技术红利窗口
+    tags:
+      - 买量
+      - 素材
+      - 场景标签
+      - 技术红利
+      - 增长曲线
+      - AI投放
+      - 自动化投放
+      - Advantage+
+      - PMax
+      - AdTech
+      - 聚合投放
+      - 智能投放
+
+  - id: agent-governance
+    title: Agent 与放权
+    summary: Agent 执行边界、护栏、意图中心、变更日志
+    tags:
+      - Agent
+      - agent
+      - AI Agent
+      - Ad Agent
+      - ad-agent
+      - agentic
+      - Agentic UA
+      - agentic-ua
+      - agentic-ads
+      - Agentic Ads
+      - agent护栏
+      - 护栏
+      - 意图中心
+      - SmartUA
+      - 变更治理
+      - 信任结构
+      - 决策工作流
+      - MCP
+      - mcp
+
+  - id: publishing-ops
+    title: 发行与周会
+    summary: 周会三屏、发行动作、放量节奏
+    tags:
+      - 发行周会
+      - 三屏
+      - 增长周报
+      - 人效提升
+      - Inhouse UA
+      - inhouse-ua
+      - inhouse 自建
+      - UA-Monitor
+      - ua-monitor
+
+  - id: consulting-method
+    title: 咨询方法
+    summary: 价值判断、选型交付、诊断框架
+    tags:
+      - 咨询
+      - consulting
+      - 咨询定位
+      - 咨询顾问
+      - 价值三层
+      - 选型
+      - 交付
+      - 增长诊断
+      - 数据诊断
+      - 行业观察
+      - 数据主权

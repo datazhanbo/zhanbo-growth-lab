@@ -4,7 +4,7 @@ title: "From Abtest to Eval：当产品里开始跑大模型，决策证据链�
 date: 2026-10-10T00:00:00+08:00
 description: "证据金字塔没有被大模型推翻，而是横切出 Offline / Online 两条线：Eval 用题库+专家标注离线筛选项，AB 用真实流量做因果裁决。团队该做的不是在每一步都开 AB，而是建一条「Eval 过 → AB 验」的证据流水线。"
 keywords: ["Eval", "AB测试", "证据等级", "LLM评估", "Offline Eval", "Simulation", "LLM-as-judge", "决策引擎", "数据主权"]
-tags: ["Eval", "AB测试", "证据等级", "LLM评估", "决策引擎"]
+tags: ["Eval", "AB实验", "证据等级", "LLM评估", "决策引擎"]
 categories: ["方法论"]
 draft: false
 showToc: true

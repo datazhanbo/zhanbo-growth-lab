@@ -4,7 +4,7 @@ title: "UA 从微操进入策略和创意时代,Inhouse 是买方的最优解"
 date: 2026-07-29T00:00:00+08:00
 description: "广告平台一键投放成为默认,MMP 从归因工具向数据产品公司演化,代投/代理/SaaS 三种模式同时被冲击。Agentic UA 时代,把数据主权握回自己手里,Inhouse UA 数据底座是买方的最优解。"
 keywords: ["Inhouse UA", "Agentic UA", "UA 数据底座", "UA-Monitor", "MMP", "AppsFlyer", "数据主权", "买量投放", "PMax", "Advantage+", "Smart+"]
-tags: ["inhouse-ua", "agentic-ua", "ua-monitor", "数据底座", "mmp", "买量", "咨询方案"]
+tags: ["Inhouse UA", "Agentic UA", "UA-Monitor", "数据底座", "mmp", "买量", "咨询方案"]
 categories: ["方案发布"]
 draft: false
 showToc: true

@@ -26,86 +26,16 @@
 </header>
 {{- end }}
 
-{{- /* 按section分组显示内容 */ -}}
+{{- /* 按section分组：文章优先（路由主目标），再案例/服务 */ -}}
 {{- $pages := .Pages }}
 {{- $posts := where $pages "Section" "eq" "posts" }}
 {{- $work := where $pages "Section" "eq" "work" }}
 {{- $services := where $pages "Section" "eq" "services" }}
 
-{{- /* 显示服务 */ -}}
-{{- if $services }}
-<div class="tag-section">
-  <h3 class="tag-section-title">📦 相关服务</h3>
-  {{- range $services }}
-  <article class="post-entry tag-entry">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">
-        {{- .Title }}
-        {{- if .Draft }}
-        <span class="entry-hint" title="Draft">
-          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-            <path
-              d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-          </svg>
-        </span>
-        {{- end }}
-      </h2>
-    </header>
-    {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
-    </footer>
-    {{- end }}
-    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-  </article>
-  {{- end }}
-</div>
-{{- end }}
-
-{{- /* 显示案例 */ -}}
-{{- if $work }}
-<div class="tag-section">
-  <h3 class="tag-section-title">💼 相关案例</h3>
-  {{- range $work }}
-  <article class="post-entry tag-entry">
-    <header class="entry-header">
-      <h2 class="entry-hint-parent">
-        {{- .Title }}
-        {{- if .Draft }}
-        <span class="entry-hint" title="Draft">
-          <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" fill="currentColor">
-            <path
-              d="M160-410v-60h300v60H160Zm0-165v-60h470v60H160Zm0-165v-60h470v60H160Zm360 580v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q9 9 13 20t4 22q0 11-4.5 22.5T862.09-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
-          </svg>
-        </span>
-        {{- end }}
-      </h2>
-    </header>
-    {{- if (ne (.Param "hideSummary") true) }}
-    <div class="entry-content">
-      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-    </div>
-    {{- end }}
-    {{- if not (.Param "hideMeta") }}
-    <footer class="entry-footer">
-      {{- partial "post_meta.html" . -}}
-    </footer>
-    {{- end }}
-    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
-  </article>
-  {{- end }}
-</div>
-{{- end }}
-
 {{- /* 显示文章 */ -}}
 {{- if $posts }}
 <div class="tag-section">
-  <h3 class="tag-section-title">📝 相关文章</h3>
+  <h3 class="tag-section-title">📝 相关文章 <sup>{{ len $posts }}</sup></h3>
   {{- range $posts }}
   <article class="post-entry tag-entry">
     <header class="entry-header">
@@ -137,6 +67,48 @@
 </div>
 {{- end }}
 
+{{- /* 案例 */ -}}
+{{- if $work }}
+<div class="tag-section">
+  <h3 class="tag-section-title">💼 相关案例 <sup>{{ len $work }}</sup></h3>
+  {{- range $work }}
+  <article class="post-entry tag-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    <footer class="entry-footer">{{- partial "post_meta.html" . -}}</footer>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- end }}
+
+{{- /* 服务 */ -}}
+{{- if $services }}
+<div class="tag-section">
+  <h3 class="tag-section-title">📦 相关服务 <sup>{{ len $services }}</sup></h3>
+  {{- range $services }}
+  <article class="post-entry tag-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    <footer class="entry-footer">{{- partial "post_meta.html" . -}}</footer>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end }}
+</div>
+{{- end }}
+
 {{- /* 如果没有找到任何内容 */ -}}
 {{- if and (not $posts) (not $work) (not $services) }}
 <div class="post-content">
@@ -144,9 +116,11 @@
 </div>
 {{- end }}
 
-{{- /* 回到所有标签页面的链接 */ -}}
+{{- /* 回到所有标签 / 主题 */ -}}
 <div style="margin-top: 2rem; text-align: center;">
-  <a href="/tags/" class="back-link">← 查看所有标签</a>
+  <a href="{{ "/topics/" | relURL }}" class="back-link">主题导航</a>
+  &nbsp;·&nbsp;
+  <a href="{{ "/tags/" | relURL }}" class="back-link">所有标签</a>
 </div>
 
 <style>

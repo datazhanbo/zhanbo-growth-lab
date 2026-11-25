@@ -4,7 +4,7 @@ title: "平台离不开，数据和裁量权要拿回自己手里"
 date: 2026-09-17T00:00:00+08:00
 description: "AdX 案划的是拍卖规则，不是你的数据产权。平台继续用，但 impression 级收入、成本对账与增量裁决这三类产权要回流到自己的数仓——能力可以租，裁判不能租。"
 keywords: ["数据主权", "AdX 案", "Google 广告技术案", "AppLovin", "MAX mediation", "geo holdout", "增量实验", "数据回流", "mediation A/B", "底价"]
-tags: ["数据主权", "measurement", "增量测量", "in-app", "行业观察"]
+tags: ["数据主权", "测量", "增量测量", "in-app", "行业观察"]
 categories: ["行业观察"]
 draft: false
 showToc: true

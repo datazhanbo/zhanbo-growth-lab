@@ -1,0 +1,43 @@
+{{- /* 文章问题桶芯片：只计 posts，链接到 /topics/<id>/ */ -}}
+{{- $buckets := site.Data.tag_buckets.buckets | default slice -}}
+{{- $allPosts := where site.RegularPages "Section" "eq" "posts" -}}
+{{- if $buckets -}}
+<nav class="topic-chips" aria-label="按主题浏览文章">
+  <div class="topic-chips-head">
+    <span class="topic-chips-label">按主题</span>
+    <a class="topic-chips-all" href="{{ "/topics/" | relURL }}">全部主题</a>
+  </div>
+  <div class="topic-chips-row">
+    {{- range $buckets -}}
+      {{- $tagSet := .tags -}}
+      {{- $count := 0 -}}
+      {{- range $allPosts -}}
+        {{- $pageTags := .Params.tags | default slice -}}
+        {{- if intersect $pageTags $tagSet -}}
+          {{- $count = add $count 1 -}}
+        {{- end -}}
+      {{- end -}}
+      {{- if gt $count 0 -}}
+      <a class="topic-chip" href="{{ printf "/topics/%s/" .id | relURL }}">
+        {{ .title }} <sup>{{ $count }}</sup>
+      </a>
+      {{- end -}}
+    {{- end -}}
+  </div>
+</nav>
+<style>
+.topic-chips { margin: 0 0 1.5rem; padding: 1rem 1.1rem; background: var(--code-bg); border-radius: 10px; }
+.topic-chips-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin-bottom: 0.75rem; }
+.topic-chips-label { font-size: 0.95rem; font-weight: 600; color: var(--primary); }
+.topic-chips-all { font-size: 0.85rem; color: var(--secondary); }
+.topic-chips-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.topic-chip {
+  display: inline-flex; align-items: center; gap: 0.15rem;
+  padding: 0.35rem 0.75rem; border-radius: 999px;
+  background: var(--theme); border: 1px solid var(--border);
+  color: var(--primary); text-decoration: none; font-size: 0.9rem;
+}
+.topic-chip:hover { border-color: var(--secondary); }
+.topic-chip\sup { font-size: 0.75em; color: var(--secondary); font-weight: 700; }
+</style>
+{{- end -}}

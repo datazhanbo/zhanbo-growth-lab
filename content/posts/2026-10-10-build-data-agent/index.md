@@ -4,7 +4,7 @@ title: "企业自建 Data Agent 方案：先想清楚的六件事和 12 周路�
 date: 2026-10-10T00:00:00+08:00
 description: "自建 Data Agent 不是再做一个聊天框，而是 AI-ready 数据 → 语义层 → Agent 运行时 → 评测 → 运营 → 业务闭环的系统工程。首期只做一个窄域、严格只读，成功标准是业务人员少找一轮分析师，而不是能回答多少问题。"
 keywords: ["Data Agent", "企业自建", "语义层", "NL2SQL", "Agent评测", "买量ROI诊断", "数据治理", "开源方案"]
-tags: ["Data Agent", "语义层", "企业AI", "数据治理"]
+tags: ["Data Agent", "语义层", "企业级 AI", "数据治理"]
 categories: ["方案"]
 draft: false
 showToc: true

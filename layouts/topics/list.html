@@ -1,0 +1,48 @@
+{{- define "main" }}
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ .Title }}</h1>
+  {{- if .Description }}
+  <div class="post-description">{{ .Description | markdownify }}</div>
+  {{- end }}
+</header>
+
+{{- if .Content }}
+<div class="post-content">{{ .Content }}</div>
+{{- end }}
+
+{{- partial "topic_chips.html" . -}}
+
+{{- $allPosts := where site.RegularPages "Section" "eq" "posts" -}}
+<div class="topic-grid">
+{{- range site.Data.tag_buckets.buckets -}}
+  {{- $tagSet := .tags -}}
+  {{- $count := 0 -}}
+  {{- range $allPosts -}}
+    {{- if intersect (.Params.tags | default slice) $tagSet -}}
+      {{- $count = add $count 1 -}}
+    {{- end -}}
+  {{- end -}}
+  <a class="topic-card" href="{{ printf "/topics/%s/" .id | relURL }}">
+    <h2>{{ .title }} <sup>{{ $count }}</sup></h2>
+    <p>{{ .summary }}</p>
+  </a>
+{{- end -}}
+</div>
+
+<p style="margin-top:1.5rem"><a href="{{ "/posts/" | relURL }}">← 文章列表</a> · <a href="{{ "/tags/" | relURL }}">所有标签</a></p>
+
+<style>
+.topic-grid { display: grid; gap: 0.85rem; margin-top: 0.5rem; }
+@media (min-width: 720px) { .topic-grid { grid-template-columns: 1fr 1fr; } }
+.topic-card {
+  display: block; padding: 1rem 1.1rem; border-radius: 10px;
+  border: 1px solid var(--border); background: var(--entry);
+  text-decoration: none; color: inherit;
+}
+.topic-card:hover { border-color: var(--secondary); }
+.topic-card h2 { font-size: 1.1rem; margin: 0 0 0.4rem; }
+.topic-card h2 sup { color: var(--secondary); font-size: 0.75em; }
+.topic-card p { margin: 0; color: var(--secondary); font-size: 0.92rem; line-height: 1.45; }
+</style>
+{{- end }}

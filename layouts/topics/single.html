@@ -1,0 +1,71 @@
+{{- define "main" }}
+{{- $bucketId := .Params.bucket_id -}}
+{{- $bucket := dict -}}
+{{- range site.Data.tag_buckets.buckets -}}
+  {{- if eq .id $bucketId -}}{{- $bucket = . -}}{{- end -}}
+{{- end -}}
+
+<header class="page-header">
+  {{- partial "breadcrumbs.html" . }}
+  <h1>{{ with $bucket.title }}{{ . }}{{ else }}{{ .Title }}{{ end }}</h1>
+  {{- with $bucket.summary }}
+  <div class="post-description">{{ . }}</div>
+  {{- end }}
+</header>
+
+{{- partial "topic_chips.html" . -}}
+
+{{- $tagSet := $bucket.tags | default slice -}}
+{{- $matched := slice -}}
+{{- range where site.RegularPages "Section" "eq" "posts" -}}
+  {{- $pageTags := .Params.tags | default slice -}}
+  {{- if intersect $pageTags $tagSet -}}
+    {{- $matched = $matched | append . -}}
+  {{- end -}}
+{{- end -}}
+
+<p class="topic-count">共 <strong>{{ len $matched }}</strong> 篇文章</p>
+
+{{- if $matched -}}
+  {{- range $matched -}}
+  <article class="post-entry">
+    <header class="entry-header">
+      <h2 class="entry-hint-parent">{{ .Title }}</h2>
+    </header>
+    {{- if (ne (.Param "hideSummary") true) }}
+    <div class="entry-content">
+      <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+    </div>
+    {{- end }}
+    <footer class="entry-footer">
+      {{- partial "post_meta.html" . -}}
+    </footer>
+    <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+  </article>
+  {{- end -}}
+{{- else -}}
+<div class="post-content">
+  <p>该主题下暂无文章。可先看 <a href="{{ "/posts/" | relURL }}">全部文章</a> 或 <a href="{{ "/search/" | relURL }}">搜索</a>。</p>
+</div>
+{{- end -}}
+
+{{- with $tagSet -}}
+<details class="topic-aliases">
+  <summary>归入本主题的标签（{{ len . }}）</summary>
+  <ul class="terms-tags">
+    {{- range . -}}
+    <li><a href="{{ printf "/tags/%s/" (. | urlize) | relURL }}">{{ . }}</a></li>
+    {{- end -}}
+  </ul>
+</details>
+{{- end -}}
+
+<p style="margin-top:1.5rem"><a href="{{ "/topics/" | relURL }}">← 全部主题</a> · <a href="{{ "/tags/" | relURL }}">所有标签</a></p>
+
+<style>
+.topic-count { color: var(--secondary); margin: 0 0 1rem; }
+.topic-aliases { margin-top: 2rem; padding: 1rem; background: var(--code-bg); border-radius: 8px; }
+.topic-aliases summary { cursor: pointer; font-weight: 600; }
+.topic-aliases .terms-tags { margin-top: 0.75rem; }
+</style>
+{{- end }}

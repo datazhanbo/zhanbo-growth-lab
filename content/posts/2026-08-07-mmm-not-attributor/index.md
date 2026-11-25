@@ -4,7 +4,7 @@ title: "MMM 不是归因器：为什么你花几十万建的模型最后都进�
 date: 2026-08-07T00:00:00+08:00
 description: "需求是看清每笔预算，验收却是这条 campaign 的 ROAS——错配是 MMM 项目死亡的第一推手。MMM 是预算组合优化器，不是归因器。"
 keywords: ["MMM", "营销组合建模", "归因", "geo holdout", "增量实验", "Robyn", "Meridian", "iROAS", "预算组合优化", "增长测量"]
-tags: ["measurement", "mmm", "归因", "增量测量", "增长诊断"]
+tags: ["测量", "MMM", "归因", "增量测量", "增长诊断"]
 categories: ["方法论"]
 draft: false
 showToc: true
