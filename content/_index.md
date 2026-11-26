@@ -8,14 +8,30 @@ draft: false
 
 <section class="hero">
   <p class="hero-eyebrow">独立增长咨询 · 出海休闲游戏 / 出海应用 / DTC</p>
-  <h1 class="hero-title">增长决策可信度诊断</h1>
-  <p class="hero-sub">业务后台、归因平台、BI 三套 ROAS 对不上；实验做了，结论没人敢用。<strong>先花 5 分钟自检</strong>，拿到可信度判决，再决定要不要请外部顾问。</p>
+  <p class="hero-identity">展博 · 前滴滴 / 快手 / 迦游 · 只读诊断，不做代投</p>
+  <h1 class="hero-title">三套 ROAS 对不上时，先别加预算</h1>
+  <p class="hero-sub">业务后台、归因平台、BI 三套数打架；实验跑完，结论没人敢签字。卡住的往往不是报表，而是<strong>这套数能不能用来做决定</strong>。</p>
   <div class="hero-cta">
-    <a class="hero-btn primary" href="/tools/checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"ad_checkup"}'>买量团队 · 广告数据快检 →</a>
-    <a class="hero-btn secondary" href="/tools/experiment-checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"experiment_checkup"}'>实验平台 · 能力自检 →</a>
+    <p class="hero-cta-line">数字对不上，预算不敢加？<a href="/tools/checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"ad_checkup"}'>先查数据可信度 →</a></p>
+    <p class="hero-cta-line">实验开了不少，没人敢采信？<a href="/tools/experiment-checkup/" data-ga-event="hero_cta_click" data-ga-params='{"tool":"experiment_checkup"}'>先查实验能力缺口 →</a></p>
+    <p class="hero-cta-line">问题说不清，也不知道找谁？<a href="/services/#apply" data-ga-event="hero_cta_click" data-ga-params='{"tool":"scenario_form"}'>留一个具体场景 →</a></p>
   </div>
-  <p class="hero-proof">前滴滴 / 快手 / 迦游 · 实验与发行营销平台 · 只读诊断按小时</p>
+  <p class="hero-proof">只读诊断按小时 · 不做代投 · 不做人月外包</p>
 </section>
+
+---
+
+## 你是否正在面对这些问题
+
+| 你正在经历的现象 | 深层问题 | 先做哪个自检 / 诊断会回答什么 |
+|---|---|---|
+| 业务后台、归因、BI 的 ROAS / ROI 长期对不上 | 指标口径与数据合同缺失，决策建立在争议数字上 | [广告数据快检](/tools/checkup/)先判数据可信度；诊断再定位哪几条预算决策链路的断点在哪、先对齐哪几个口径 |
+| 新渠道 / 新市场扩张，历史经验无法判断哪些可复用 | 数据底座不支撑跨渠道归因和复用 | 哪些信号可信、哪些必须重新基线化、哪些投入应暂缓 |
+| 有实验工具但实验量少、结果不被采用 | 流量分层、统计可信度、实验治理未进入业务流程 | [实验能力自检](/tools/experiment-checkup/)先定位需求 × 能力现状；诊断再给治理 SOP 缺口、从"有分流"到"可规模化实验"的路径 |
+| 团队在试 AI Agent，却停留在聊天、报表、Demo | 数据权限、审计、回滚、目标函数不具备 | 哪些场景适合先做、哪些只是"看起来很美"、Agent PoC 的前置条件清单 |
+| 融资 / 预算会 / 董事会前要把增长讲清楚 | 缺少一套能在管理层对齐的共同语言 | 一份可直接进立项会的问题地图、优先级和分阶段建设建议 |
+
+30 秒内如果发现"这就是我团队的问题"，直接回顶部做对应自检；想先看完整诊断范围，见 [→ 增长决策可信度诊断](/services/decision-credibility-diagnostic/)。
 
 ---
 
@@ -32,22 +48,6 @@ draft: false
 | **结果** | 交付物无条件归属客户方：问题地图 / 口径 / 标准 / 共建方法沉淀在组织内——不是顾问带走就断 |
 
 **和「找一家服务商」怎么分。** 服务商更适合规模化执行（代投、整包、人月扩编）；独立顾问更适合 1→10 / 10→100 时的判断、口径与阶段责任外包，协调成本通常更低。服务方式与适用边界见 [服务页](/services/)。展博落在**独立顾问侧**：不做代投，也不做人月外包。
-
-下面先对号入座常见痛点；对上了，用自检漏斗往下走即可。
-
----
-
-## 你是否正在面对这些问题
-
-| 你正在经历的现象 | 深层问题 | 先做哪个自检 / 诊断会回答什么 |
-|---|---|---|
-| 业务后台、归因、BI 的 ROAS / ROI 长期对不上 | 指标口径与数据合同缺失，决策建立在争议数字上 | [广告数据快检](/tools/checkup/)先判数据可信度；诊断再定位哪几条预算决策链路的断点在哪、先对齐哪几个口径 |
-| 新渠道 / 新市场扩张，历史经验无法判断哪些可复用 | 数据底座不支撑跨渠道归因和复用 | 哪些信号可信、哪些必须重新基线化、哪些投入应暂缓 |
-| 有实验工具但实验量少、结果不被采用 | 流量分层、统计可信度、实验治理未进入业务流程 | [实验能力自检](/tools/experiment-checkup/)先定位需求 × 能力现状；诊断再给治理 SOP 缺口、从"有分流"到"可规模化实验"的路径 |
-| 团队在试 AI Agent，却停留在聊天、报表、Demo | 数据权限、审计、回滚、目标函数不具备 | 哪些场景适合先做、哪些只是"看起来很美"、Agent PoC 的前置条件清单 |
-| 融资 / 预算会 / 董事会前要把增长讲清楚 | 缺少一套能在管理层对齐的共同语言 | 一份可直接进立项会的问题地图、优先级和分阶段建设建议 |
-
-30 秒内如果发现"这就是我团队的问题"，直接回顶部做对应自检；想先看完整诊断范围，见 [→ 增长决策可信度诊断](/services/decision-credibility-diagnostic/)。
 
 ---
 
@@ -126,23 +126,21 @@ draft: false
 
 <style>
 .hero { max-width: 820px; padding: 8px 0 4px; }
-.md-content .hero-eyebrow { margin: 0 0 10px; font-size: .92rem; font-weight: 600; color: #0891b2; letter-spacing: .02em; }
+.md-content .hero-eyebrow { margin: 0 0 6px; font-size: .92rem; font-weight: 600; color: #0891b2; letter-spacing: .02em; }
+.md-content .hero-identity { margin: 0 0 12px; font-size: .86rem; color: var(--secondary); }
 .md-content .hero-title { margin: 0 0 14px; font-size: 2.1rem; line-height: 1.25; font-weight: 800; border: none; padding: 0; }
 .md-content .hero-sub { margin: 0 0 22px; font-size: 1.12rem; line-height: 1.75; color: var(--secondary); }
 .hero-sub strong { color: var(--primary); }
-.hero-cta { display: flex; gap: 14px; flex-wrap: wrap; margin: 0 0 14px; }
-.hero-btn { display: inline-block; padding: 14px 26px; border-radius: 9px; font-weight: 700; font-size: 1.02rem; text-decoration: none; transition: background .15s ease, border-color .15s ease; }
-.hero-btn.primary { background: #0891b2; color: #fff; }
-.hero-btn.primary:hover { background: #0e7490; }
-.hero-btn.secondary { background: transparent; color: #0891b2; border: 1.5px solid #0891b2; }
-.hero-btn.secondary:hover { background: rgba(8,145,178,.08); }
+.hero-cta { margin: 0 0 14px; }
+.hero-cta-line { margin: 0 0 6px; font-size: .96rem; line-height: 1.6; color: var(--secondary); }
+.hero-cta-line a { margin-left: 8px; color: var(--primary); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--primary); padding-bottom: 1px; }
+.hero-cta-line a:hover { background: rgba(8,145,178,.08); }
 .md-content .hero-proof { margin: 0; font-size: .88rem; color: var(--secondary); line-height: 1.6; }
 @media (max-width: 640px) {
   .hero { padding-top: 2px; }
   .md-content .hero-title { font-size: 1.62rem; }
   .md-content .hero-sub { font-size: 1.02rem; }
-  .hero-cta { flex-direction: column; gap: 10px; }
-  .hero-btn { display: block; text-align: center; padding: 13px 20px; }
+  .hero-cta-line { font-size: .92rem; }
 }
 </style>
 

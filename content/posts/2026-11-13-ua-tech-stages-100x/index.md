@@ -76,26 +76,14 @@ Meta 11 月 11 日的工程博客讲 [Intelligent Delivery](https://engineering.
 
 这三件是互相咬合的：agent 提高试错通量，increment ROAS 决定钱该加在哪、停在哪，自有测量保证你不被平台口径带着走。缺任何一件，另外两件都会打折。
 
-我把五阶段对号表、第五阶段启动项勾选和会前 Yes/No 诊断题，整理成了《买量技术阶段对照》一页纸，诊断题就印在纸里。公众号回复「**阶段对照**」领取，先对号，再看差在哪。
-
-SmartUA可信买量：从通用ROI报表和素材洞察的可信放量，到计划搭建和巡检的提效，最后通过Agent完成策略的沉淀—— SmartUA 的落地路径。想对照自己现在卡在第几阶段，可交换自检或沟通诊断。
-
-广告时间：
-
-- 产品增长咨询：[《PMF到ColdStart ScaleUp如何做可信增长咨询》](https://mp.weixin.qq.com/s/FLDItpwyKsV9pKwl8MQifw)
-- 智能投放：[《SmartUA：PMF-ColdStart-Scale的可信信号》](https://mp.weixin.qq.com/s/rWzN614CajV8t_1voOqoGA)
-
----
+SmartUA可信买量：从通用ROI报表和素材洞察的可信放量，到计划搭建和巡检的提效，最后通过Agent完成策略的沉淀—— SmartUA 的落地路径。
 
 ## 延伸阅读
 
+- [案例版：买量技术红利以及100X增长曲线](/work/ua-tech-stages-100x/)：把这条曲线拆成五段红利窗口与第五阶段的三个门槛。
 - [《平台 ROAS 达标了，为什么我还是不让团队加预算》](https://mp.weixin.qq.com/s/BYZsr6xQTo8GPnIsf_JblA)：平台 ROAS 不等于生意增量，两本账与 holdout 怎么做，这篇讲透了。
 - [《发行周会看这三屏就够了》](https://mp.weixin.qq.com/s/9Gn7QLQW3EG9ITJ80aqjfw)：周会三屏各盯什么，agent 放量为什么要走审批。
 - Meta Engineering：[Intelligent Delivery: Making Every Unit of Compute Serve Better Ads](https://engineering.fb.com/2026/11/11/ml-applications/intelligent-delivery-serve-better-ads/)（2026-11-11；文中 10% / 20% / 80% 均为 Meta 自述）
 - AdExchanger：[Google Will Now Tell You Exactly How Much It's Crediting You For Invalid Traffic](https://www.adexchanger.com/platforms/google-will-now-tell-you-exactly-how-much-its-crediting-you-for-invalid-traffic/)（IVT 双口径首次拆开展示，agentic activity 纳入判定）
 
----
-
----
-
-**想对照自己的实验 / 买量决策卡在哪一层？** 可先做 [实验能力自检](/tools/experiment-checkup/)，或从 [服务与预约](/services/#apply) 留下场景。公众号回复文中关键词，也可领取对应一页纸清单。
+如果想顺着这个判断往下看：[专题：买量与放量](/topics/ua-scale/)。有同类问题，也可以[留一个具体场景](/services/#apply)。

@@ -206,11 +206,9 @@ ChinaJoy 2026 真正的信号不是"Agent 多强"，是**执行正在快速商�
 
 这就是"专家指导层"存在的理由——不和 SaaS 抢生意，不和内部研发抢活，在 Agent 看不见、不愿做、也不被授权做的地方，提供专家经验和机制设计。
 
-如果你正在建 Agent、买 Agent、或者被 Agent 替代焦虑困扰，可以邮件 **zanhe@139.com** 或扫码加微信，主题写"Agent 护栏"，附一句话现状，我们聊聊你这三件事里最先该补哪一块。
-
-<img src="/images/wechat-qr.jpg" alt="展博微信二维码" width="240">
-
 ---
+
+如果想顺着这个判断往下看：[专题：Agent 与放权](/topics/agent-governance/)。有同类问题，也可以[留一个具体场景](/services/#apply)。
 
 ## 延伸阅读
 

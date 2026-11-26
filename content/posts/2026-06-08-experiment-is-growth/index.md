@@ -8,6 +8,7 @@ categories: ["增长方法论"]
 keywords: ["AB实验", "实验体系", "增长系统", "AB测试", "实验平台", "因果推断", "假设验证", "展博增长实验室"]
 draft: false
 weight: -100
+pinned: true
 showToc: true
 TocOpen: false
 hidemeta: false

@@ -99,15 +99,6 @@ cover:
 1. 你手上正在跑的实验，开题时写 MDE 和样本量了吗，还是「先跑跑看」？
 2. 上一次 holdout 实验，让渡的收入和测出来的决策价值，对账过吗？
 
-私信回复「**样本量**」，我发你一份《实验设计与样本量自检》一页纸：RCT 五要素核对、MDE 倒推速查（含两比例样本量公式与常用基线率对照表）、实验两本成本账模板、媒体 lift 门槛清单（Google/Meta 公开口径）、跨媒体 geo 实验的退档设计，外加 10 道打分题。
-
-广告时间：
-
-- 产品增长咨询：[《PMF到ColdStart ScaleUp如何做可信增长咨询》](https://mp.weixin.qq.com/s/FLDItpwyKsV9pKwl8MQifw)
-- 智能投放：[《SmartUA：PMF-ColdStart-Scale的可信信号》](https://mp.weixin.qq.com/s/rWzN614CajV8t_1voOqoGA)
-
----
-
 ## 延伸阅读
 
 - [《素材一放量就死，多半不是创意不行，是你在比两场不同的比赛》](https://mp.weixin.qq.com/s/E9BFuRy3G2LG1C6r5NpF8A)：实验外推闸门，局部有效不等于全局真理，和本篇的 MDE 是同一道纪律的两面。
@@ -115,8 +106,4 @@ cover:
 - 本地旧文《AI 能替你跑实验吗？能筛，不能定》：s-RCT 模拟实验的边界与校准方法。
 - [Wang et al. (2026), arXiv:2608.18352](https://arxiv.org/abs/2608.18352)：本文拆解的原始论文，预印本，46 页含完整方法与限制。
 
----
-
----
-
-**想对照自己的实验 / 买量决策卡在哪一层？** 可先做 [实验能力自检](/tools/experiment-checkup/)，或从 [服务与预约](/services/#apply) 留下场景。公众号回复文中关键词，也可领取对应一页纸清单。
+如果想顺着这个判断往下看：[专题：实验可信](/topics/experiment-trust/)。有同类问题，也可以[留一个具体场景](/services/#apply)。

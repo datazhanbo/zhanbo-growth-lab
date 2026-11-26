@@ -34,12 +34,44 @@
 </div>
 {{- end }}
 
-{{- $pages := union .RegularPages .Sections }}
+{{- $allPages := union .RegularPages .Sections }}
+{{- $pinnedPages := where $allPages "Params.pinned" true }}
+{{- $pinnedPages = sort $pinnedPages "Weight" "asc" }}
+{{- $pages := slice }}
+{{- range $allPages }}
+  {{- if not (.Param "pinned") }}
+    {{- $pages = $pages | append . }}
+  {{- end }}
+{{- end }}
 {{- $paginator := .Paginate $pages }}
 
 {{- /* L1：问题桶路由（文章数），仅列表首页 */ -}}
 {{- if eq $paginator.PageNumber 1 }}
 {{- partial "topic_chips.html" . -}}
+{{- end }}
+
+{{- /* 置顶文章：双卡，独立于普通列表，不重复计入分页 */ -}}
+{{- if eq $paginator.PageNumber 1 }}
+{{- with $pinnedPages }}
+<section class="pinned-posts" style="margin:0 0 1.75rem">
+  <h2 style="font-size:1.05rem;margin:0 0 .75rem">置顶文章</h2>
+  <div class="pinned-grid" style="display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px">
+    {{- range . }}
+    <article class="pinned-card" style="position:relative;padding:16px;border:1px solid var(--border);border-radius:10px;background:var(--entry)">
+      <span class="pinned-badge" style="display:inline-block;font-size:.78rem;line-height:1.4;color:var(--primary);border:1px solid var(--primary);border-radius:999px;padding:2px 8px;margin-bottom:8px">置顶</span>
+      <h3 style="margin:0 0 8px;font-size:1.05rem;line-height:1.45"><a href="{{ .Permalink }}" style="color:var(--primary);text-decoration:none">{{ .Title }}</a></h3>
+      <p style="margin:0 0 10px;color:var(--secondary);font-size:.9rem;line-height:1.6">{{ .Description | plainify | htmlUnescape }}</p>
+      <a class="pinned-read" href="{{ .Permalink }}" style="color:var(--primary);font-size:.88rem;text-decoration:none;border-bottom:1px solid var(--primary)">继续读 →</a>
+    </article>
+    {{- end }}
+  </div>
+</section>
+<style>
+@media (max-width: 640px) {
+  .pinned-grid { grid-template-columns: 1fr; }
+}
+</style>
+{{- end }}
 {{- end }}
 
 {{- range $index, $page := $paginator.Pages }}

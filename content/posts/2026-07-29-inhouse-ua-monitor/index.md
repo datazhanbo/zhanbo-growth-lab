@@ -41,7 +41,6 @@ cover:
 - 三个正在发生的结构性变化——广告平台一键投放成默认、MMP 从归因工具向数据产品公司演化、代投/代理/SaaS 三种模式同时被冲击——共同把买方推向一个新的十字路口。
 - 我的判断:**Inhouse 是买方的最优解**。理由有四:数据自主、数据深度应用、策略灵活性、AI 时代的复利。
 - 我把这三重门槛的解法沉淀成了一套可交付方案——[Inhouse UA 数据底座与 UA-Monitor 建设](/services/inhouse-ua-monitor/)。8-12 周 Phase 1、12-24 周 Phase 2、24+ 周 Phase 3,分阶段推进,底座 own 在客户,不做 lock-in。
-- 邮件 **zanhe@139.com** 或扫码加微信,主题写 **"UA底座"** 获取完整方案 PDF;主题写 **"UA技术"** 获取技术细节 Solution PDF。
 
 ---
 
@@ -293,17 +292,7 @@ cost 和 revenue 数据全开放给 MMP,短期看起来能用,但你的商业议
 - 从"看后台"到"数据决策"的组织能力升级
 - Agentic UA 时代的三年战略
 
-**可以做的:**
-
-1. 邮件 **zanhe@139.com** 或扫码加微信,主题写 **"UA底座"** → 获取完整《Inhouse UA 建设方案 Proposal》PDF(15-20 页)
-2. 邮件 **zanhe@139.com** 或扫码加微信,主题写 **"UA技术"** → 获取完整《Inhouse UA 建设方案 Solution》PDF(30-40 页 · 技术细节)
-3. 约一次 30 分钟 Discovery Call → 判断你的团队现状 + 给出初步方向
-
-<img src="/images/wechat-qr.jpg" alt="展博微信二维码" width="240">
-
-不做群发、不推销 SaaS、不承诺 ROI 提升——只做一件事:**帮你把数据主权握回自己手里**。
-
----
+如果想顺着这个判断往下看：[专题：测可信再放量](/topics/measure-then-scale/)。有同类问题，也可以[留一个具体场景](/services/#apply)。
 
 ## 延伸阅读
 

@@ -108,16 +108,7 @@ cover:
 
 这篇的起点是一个真实的误会，所以也想听听你那边的：你们团队的实验，置信档是开题定的，还是看结果的时候顺手选的？
 
-回复「两根轴」，我发你一份《实验决策一页纸》：α/β 对照表、四格错误图、五问决策卡，背面是「口径—预注册—复算—闸门」四段的检查项，附 5 道自测题。
-
 实验这条线，我交付的从来不是一套平台，是四件事：口径能对齐、假设能预注册、结论能复算、发布有人签字。哪一段断了，一页纸背面就能看出来。
-
-广告时间：
-
-- 产品增长咨询：[《PMF到ColdStart ScaleUp如何做可信增长咨询》](https://mp.weixin.qq.com/s/FLDItpwyKsV9pKwl8MQifw)
-- 智能投放：[《SmartUA：PMF-ColdStart-Scale的可信信号》](https://mp.weixin.qq.com/s/rWzN614CajV8t_1voOqoGA)
-
----
 
 ## 延伸阅读
 
@@ -125,8 +116,4 @@ cover:
 - 《Meta 让 agent 接走 60% 的实验迁移，四道闸门一道没少》（站内待收录）：门槛可以调，最后那道人工终审不能省。
 - [Google 80% confidence 原文报道（PPC Land，2026-11-19）](https://ppc.land/google-says-80-confidence-is-good-enough-for-directional-ad-tests/)：三档置信度与预算测试拆分的原始出处，转述与官方文档口径差异一并记录在案。
 
----
-
----
-
-**想对照自己的实验 / 买量决策卡在哪一层？** 可先做 [实验能力自检](/tools/experiment-checkup/)，或从 [服务与预约](/services/#apply) 留下场景。公众号回复文中关键词，也可领取对应一页纸清单。
+如果想顺着这个判断往下看：[专题：实验可信](/topics/experiment-trust/)。有同类问题，也可以[留一个具体场景](/services/#apply)。
